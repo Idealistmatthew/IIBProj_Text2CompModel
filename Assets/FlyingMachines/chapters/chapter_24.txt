@@ -1,0 +1,159 @@
+CHAPTER XIV. ABOUT WIND CURRENTS, ETC.
+One of the first difficulties which the novice will encounter is the
+      uncertainty of the wind currents. With a low velocity the wind, some
+      distance away from the ground, is ordinarily steady. As the velocity
+      increases, however, the wind generally becomes gusty and fitful in its
+      action. This, it should be remembered, does not refer to the velocity of
+      the machine, but to that of the air itself.
+In this connection Mr. Arthur T. Atherholt, president of the Aero Club of
+      Pennsylvania, in addressing the Boston Society of Scientific Research,
+      said:
+"Probably the whirlpools of Niagara contain no more erratic currents than
+      the strata of air which is now immediately above us, a fact hard to
+      realize on account of its invisibility."
+Changes In Wind Currents.
+While Mr. Atherholt's experience has been mainly with balloons it is all
+      the more valuable on this account, as the balloons were at the mercy of
+      the wind and their varying directions afforded an indisputable guide as to
+      the changing course of the air currents. In speaking of this he said:
+"In the many trips taken, varying in distance traversed from twenty-five
+      to 900 miles, it was never possible except in one instance to maintain a
+      straight course. These uncertain currents were most noticeable in the
+      Gordon-Bennett race from St. Louis in 1907. Of the nine aerostats
+      competing in that event, eight covered a more or less direct course due
+      east and southeast, whereas the writer, with Major Henry B. Hersey, first
+      started northwest, then north, northeast, east, east by south, and when
+      over the center of Lake Erie were again blown northwest notwithstanding
+      that more favorable winds were sought for at altitudes varying from 100 to
+      3,000 meters, necessitating a finish in Canada nearly northeast of the
+      starting point.
+"These nine balloons, making landings extending from Lake Ontario, Canada,
+      to Virginia, all started from one point within the same hour.
+"The single exception to these roving currents occurred on October 21st,
+      of last year (1909) when, starting from Philadelphia, the wind shifted
+      more than eight degrees, the greatest variation being at the lowest
+      altitudes, yet at no time was a height of over a mile reached.
+"Throughout the entire day the sky was overcast, with a thermometer
+      varying from fifty-seven degrees at 300 feet to forty-four degrees,
+      Fahrenheit at 5,000 feet, at which altitude the wind had a velocity of 43
+      miles an hour, in clouds of a cirro-cumulus nature, a landing finally
+      being made near Tannersville, New York, in the Catskill mountains, after a
+      voyage of five and one-half hours.
+"I have no knowledge of a recorded trip of this distance and duration,
+      maintained in practically a straight line from start to finish."
+This wind disturbance is more noticeable and more difficult to contend
+      with in a balloon than in a flying machine, owing to the bulk and unwieldy
+      character of the former. At the same time it is not conducive to pleasant,
+      safe or satisfactory sky-sailing in an aeroplane. This is not stated with
+      the purpose of discouraging aviation, but merely that the operator may
+      know what to expect and be prepared to meet it.
+Not only does the wind change its horizontal course abruptly and without
+      notice, but it also shifts in a vertical direction, one second blowing up,
+      and another down. No man has as yet fathomed the why and wherefore of this
+      erratic action; it is only known that it exists.
+The most stable currents will be found from 50 to 100 feet from the earth,
+      provided the wind is not diverted by such objects as trees, rocks, etc.
+      That there are equally stable currents higher up is true, but they are
+      generally to be found at excessive altitudes.
+How a Bird Meets Currents.
+Observe a bird in action on a windy day and you will find it continually
+      changing the position of its wings. This is done to meet the varying gusts
+      and eddies of the air so that sustentation may be maintained and headway
+      made. One second the bird is bending its wings, altering the angle of
+      incidence; the next it is lifting or depressing one wing at a time. Still
+      again it will extend one wing tip in advance of the other, or be spreading
+      or folding, lowering or raising its tail.
+All these motions have a meaning, a purpose. They assist the bird in
+      preserving its equilibrium. Without them the bird would be just as
+      helpless in the air as a human being and could not remain afloat.
+When the wind is still, or comparatively so, a bird, having secured the
+      desired altitude by flight at an angle, may sail or soar with no wing
+      action beyond an occasional stroke when it desires to advance. But, in a
+      gusty, uncertain wind it must use its wings or alight somewhere.
+Trying to Imitate the Bird.
+Writing in Fly, Mr. William E. White says:
+Fly
+"The bird's flight suggests a number of ways in which the equilibrium of a
+      mechanical bird may be controlled. Each of these methods of control may be
+      effected by several different forms of mechanism.
+"Placing the two wings of an aeroplane at an angle of three to five
+      degrees to each other is perhaps the oldest way of securing lateral
+      balance. This way readily occurs to anyone who watches a sea gull soaring.
+      The theory of the dihedral angle is that when one wing is lifted by a gust
+      of wind, the air is spilled from under it; while the other wing, being
+      correspondingly depressed, presents a greater resistance to the gust and
+      is lifted restoring the balance. A fixed angle of three to five degrees,
+      however, will only be sufficient for very light puffs of wind and to mount
+      the wings so that the whole wing may be moved to change the dihedral angle
+      presents mechanical difficulties which would be better avoided.
+"The objection of mechanical impracticability applies to any plan to
+      preserve the balance by shifting weight or ballast. The center of gravity
+      should be lower than the center of the supporting surfaces, but cannot be
+      made much lower. It is a common mistake to assume that complete stability
+      will be secured by hanging the center of gravity very low on the principle
+      of the parachute. An aeroplane depends upon rapid horizontal motion for
+      its support, and if the center of gravity be far below the center of
+      support, every change of speed or wind pressure will cause the machine to
+      turn about its center of gravity, pitching forward and backward
+      dangerously.
+Preserving Longitudinal Balance.
+"The birds maintain longitudinal, or fore and aft balance, by elevating or
+      depressing their tails. Whether this action is secured in an aeroplane by
+      means of a horizontal rudder placed in the rear, or by deflecting planes
+      placed in front of the main planes, the principle is evidently the same. A
+      horizontal rudder placed well to the rear as in the Antoinette, Bleriot or
+      Santos-Dumont monoplanes, will be very much safer and steadier than the
+      deflecting planes in front, as in the Wright or Curtiss biplanes, but not
+      so sensitive or prompt in action.
+"The natural fore and aft stability is very much strengthened by placing
+      the load well forward. The center of gravity near the front and a tail or
+      rudder streaming to the rear secures stability as an arrow is balanced by
+      the head and feathering. The adoption of this principle makes it almost
+      impossible for the aeroplane to turn over.
+The Matter of Lateral Balance.
+"All successful aeroplanes thus far have maintained lateral balance by the
+      principle of changing the angle of incidence of the wings.
+"Other ways of maintaining the lateral balance, suggested by observation
+      of the flight of birds are—extending the wing tips and spilling the
+      air through the pinions; or, what is the same thing, varying the area of
+      the wings at their extremities.
+"Extending the wing tips seems to be a simple and effective solution of
+      the problem. The tips may be made to swing outward upon a vertical axis
+      placed at the front edge of the main planes; or they may be hinged to the
+      ends of the main plane so as to be elevated or depressed through suitable
+      connections by the aviator; or they may be supported from a horizontal
+      axis parallel with the ends of the main planes so that they may swing
+      outward, the aviator controlling both tips through one lever so that as
+      one tip is extended the other is retracted.
+"The elastic wing pinions of a bird bend easily before the wind,
+      permitting the gusts to glance off, but presenting always an even and
+      efficient curvature to the steady currents of the air."
+High Winds Threaten Stability.
+To ensure perfect stability, without control, either human or automatic,
+      it is asserted that the aeroplane must move faster than the wind is
+      blowing. So long as the wind is blowing at the rate of 30 miles an hour,
+      and the machine is traveling 40 or more, there will be little trouble as
+      regards equilibrium so far as wind disturbance goes, provided the wind
+      blows evenly and does not come in gusts or eddying currents. But when
+      conditions are reversed—when the machine travels only 30 miles an
+      hour and the wind blows at the rate of 50, look out for loss of
+      equilibrium.
+One of the main reasons for this is that high winds are rarely steady;
+      they seldom blow for any length of time at the same speed. They are
+      usually "gusty," the gusts being a momentary movement at a higher speed.
+      Tornadic gusts are also formed by the meeting of two opposing currents,
+      causing a whirling motion, which makes stability uncertain. Besides, it is
+      not unusual for wind of high speed to suddenly change its direction
+      without warning.
+Trouble With Vertical Columns.
+Vertical currents—columns of ascending air—are frequently
+      encountered in unexpected places and have more or less tendency, according
+      to their strength, to make it difficult to keep the machine within a
+      reasonable distance from the ground.
+These vertical currents are most generally noticeable in the vicinity of
+      steep cliffs, or deep ravines. In such instances they are usually of
+      considerable strength, being caused by the deflection of strong winds
+      blowing against the face of the cliffs. This deflection exerts a back
+      pressure which is felt quite a distance away from the point of origin, so
+      that the vertical current exerts an influence in forcing the machine
+      upward long before the cliff is reached.

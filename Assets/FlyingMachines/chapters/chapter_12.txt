@@ -1,0 +1,90 @@
+CHAPTER III. MECHANICAL BIRD ACTION
+In order to understand the theory of the modern flying machine one must
+      also understand bird action and wind action. In this connection the
+      following simple experiment will be of interest:
+Take a circular-shaped bit of cardboard, like the lid of a hat box, and
+      remove the bent-over portion so as to have a perfectly flat surface with a
+      clean, sharp edge. Holding the cardboard at arm's length, withdraw your
+      hand, leaving the cardboard without support. What is the result? The
+      cardboard, being heavier than air, and having nothing to sustain it, will
+      fall to the ground. Pick it up and throw it, with considerable force,
+      against the wind edgewise. What happens? Instead of falling to the ground,
+      the cardboard sails along on the wind, remaining afloat so long as it is
+      in motion. It seeks the ground, by gravity, only as the motion ceases, and
+      then by easy stages, instead of dropping abruptly as in the first
+      instance.
+Here we have a homely, but accurate illustration of the action of the
+      flying machine. The motor does for the latter what the force of your arm
+      does for the cardboard—imparts a motion which keeps it afloat. The
+      only real difference is that the motion given by the motor is continuous
+      and much more powerful than that given by your arm. The action of the
+      latter is limited and the end of its propulsive force is reached within a
+      second or two after it is exerted, while the action of the motor is
+      prolonged.
+Another Simple Illustration.
+Another simple means of illustrating the principle of flying machine
+      operation, so far as sustentation and the elevation and depression of the
+      planes is concerned, is explained in the accompanying diagram.
+A is a piece of cardboard about 2 by 3 inches in size. B is a piece of
+      paper of the same size pasted to one edge of A. If you bend the paper to a
+      curve, with convex side up and blow across it as shown in Figure C, the
+      paper will rise instead of being depressed. The dotted lines show that the
+      air is passing over the top of the curved paper and yet, no matter how
+      hard you may blow, the effect will be to elevate the paper, despite the
+      fact that the air is passing over, instead of under the curved surface.
+In Figure D we have an opposite effect. Here the paper is in a curve
+      exactly the reverse of that shown in Figure C, bringing the concave side
+      up. Now if you will again blow across the surface of the card the action
+      of the paper will be downward—it will be impossible to make it rise.
+      The harder you blow the greater will be the downward movement.
+Principle In General Use.
+This principle is taken advantage of in the construction of all successful
+      flying machines. Makers of monoplanes and biplanes alike adhere to curved
+      bodies, with the concave surface facing downward. Straight planes were
+      tried for a time, but found greatly lacking in the power of sustentation.
+      By curving the planes, and placing the concave surface downward, a sort of
+      inverted bowl is formed in which the air gathers and exerts a buoyant
+      effect. Just what the ratio of the curve should be is a matter of
+      contention. In some instances one inch to the foot is found to be
+      satisfactory; in others this is doubled, and there are a few cases in
+      which a curve of as much as 3 inches to the foot has been used.
+Right here it might be well to explain that the word "plane" applied to
+      flying machines of modern construction is in reality a misnomer. Plane
+      indicates a flat, level surface. As most successful flying machines have
+      curved supporting surfaces it is clearly wrong to speak of "planes," or
+      "aeroplanes." Usage, however, has made the terms convenient and, as they
+      are generally accepted and understood by the public, they are used in like
+      manner in this volume.
+Getting Under Headway.
+A bird, on first rising from the ground, or beginning its flight from a
+      tree, will flap its wings to get under headway. Here again we have another
+      illustration of the manner in which a flying machine gets under headway—the
+      motor imparts the force necessary to put the machine into the air, but
+      right here the similarity ceases. If the machine is to be kept afloat the
+      motor must be kept moving. A flying machine will not sustain itself; it
+      will not remain suspended in the air unless it is under headway. This is
+      because it is heavier than air, and gravity draws it to the ground.
+Puzzle in Bird Soaring.
+But a bird, which is also heavier than air, will remain suspended, in a
+      calm, will even soar and move in a circle, without apparent movement of
+      its wings. This is explained on the theory that there are generally
+      vertical columns of air in circulation strong enough to sustain a bird,
+      but much too weak to exert any lifting power on a flying machine, It is
+      easy to understand how a bird can remain suspended when the wind is in
+      action, but its suspension in a seeming dead calm was a puzzle to
+      scientists until Mr. Chanute advanced the proposition of vertical columns
+      of air.
+Modeled Closely After Birds.
+So far as possible, builders of flying machines have taken what may be
+      called "the architecture" of birds as a model. This is readily noticeable
+      in the form of construction. When a bird is in motion its wings (except
+      when flapping) are extended in a straight line at right angles to its
+      body. This brings a sharp, thin edge against the air, offering the least
+      possible surface for resistance, while at the same time a broad surface
+      for support is afforded by the flat, under side of the wings. Identically
+      the same thing is done in the construction of the flying machine.
+Note, for instance, the marked similarity in form as shown in the
+      illustration in Chapter II. Here A is the bird, and B the general outline
+      of the machine. The thin edge of the plane in the latter is almost a
+      duplicate of that formed by the outstretched wings of the bird, while the
+      rudder plane in the rear serves the same purpose as the bird's tail.

@@ -1,0 +1,87 @@
+CHAPTER XXV. NEW MOTORS AND DEVICES.
+Since the first edition of this book was printed, early in 1910, there has
+      been a remarkable advance in the construction of aeroplane motors, which
+      has resulted in a wonderful decrease in the amount of surface area from
+      that formerly required. Marked gain in lightness and speed of the motor
+      has enabled aviators to get along, in some instances, with one-quarter of
+      the plane supporting area previously used. The first Wright biplane,
+      propelled by a motor of 25 h.p., productive of a fair average speed of 30
+      miles an hour, had a plane surface of 538 square feet. Now, by using a
+      specially designed motor of 65 h. p., capable of developing a speed of
+      from 70 to 80 miles an hour, the Wrights are enabled to successfully
+      navigate a machine the plane area of which is about 130 square feet. This
+      apparatus is intended to carry only one person (the operator). At Belmont
+      Park, N. Y., the Wrights demonstrated that the small-surfaced biplane is
+      much faster, easier to manage in the hands of a skilled manipulator, and a
+      better altitude climber than the large and cumbersome machines with 538
+      square feet of surface heretofore used by them.
+In this may be found a practical illustration of the principle that
+      increased speed permits of a reduction in plane area in mathematical ratio
+      to the gain in speed. The faster any object can be made to move through
+      the air, the less will be the supporting surface required to sustain a
+      given weight. But, there is a limit beyond which the plane surface cannot
+      be reduced with safety. Regard must always be had to the securing of an
+      ample sustaining surface so that in case of motor stoppage there will be
+      sufficient buoyancy to enable the operator to descend safely.
+The baby Wright used at the Belmont Park (N. Y.) aviation meet in the fall
+      of 1910, had a plane length of 19 feet 6 inches, and an extreme breadth of
+      21 feet 6 inches, with a total surface area of 146 square feet. It was
+      equipped with a new Wright 8-cylinder motor of 60 h. p., and two Wright
+      propellers of 8 feet 6 inches diameter and 500 r. p. m. It was easily the
+      fastest machine at the meet. After the tests, Wilbur Wright said:
+"It is our intention to put together a machine with specially designed
+      propellers, specially designed gears and a motor which will give us 65
+      horsepower at least. We will then be able, after some experimental work we
+      are doing now, to send forth a machine that will make a new speed record."
+In the new Wright machines the front elevating planes for up-and-down
+      control have been eliminated, and the movements of the apparatus are now
+      regulated solely by the rear, or "tail" control.
+A Powerful Light Motor.
+Another successful American aviation motor is the aeromotor, manufactured
+      by the Detroit Aeronautic Construction. Aeromotors are made in four models
+      as follows:
+Model 1.—4-cylinder, 30-40 h. p., weight 200 pounds.
+Model 2.—4-cylinder, (larger stroke and bore) 40-50 h. p., weight
+      225 pounds.
+Model 3.—6-cylinder. 50-60 h. p., weight 210 pounds.
+Model 4.—6-cylinder, 60-75 h. p., weight 275 pounds.
+This motor is of the 4-cycle, vertical, water-cooled type. Roberts
+      Aviation Motor.
+One of the successful aviation motors of American make, is that produced
+      by the Roberts Motor Co., of Sandusky, Ohio. It is designed by E. W.
+      Roberts, M. E., who was formerly chief assistant and designer for Sir
+      Hiram Maxim, when the latter was making his celebrated aeronautical
+      experiments in England in 1894-95. This motor is made in both the 4- and
+      6-cylinder forms. The 4-cylinder motor weighs complete with Bosch magneto
+      and carbureter 165 pounds, and will develop 40 actual brake h. p. at 1,000
+      r. p. m., 46 h. p. at 1,200 and 52 h. p. at 1,400. The 6-cylinder weighs
+      220 pounds and will develop 60 actual brake h. p. at 1,000 r. p. m., 69 h.
+      p. at 1,200 and 78 h. p. at 1,500.
+Extreme lightness has been secured by doing away with all superfluous
+      parts, rather than by a shaving down of materials to a dangerous thinness.
+      For example, there is neither an intake or exhaust manifold on the motor.
+      The distributing valve forms a part of the crankcase as does the water
+      intake, and the gear pump. Magnalium takes the place of aluminum in the
+      crankcase, because it is not only lighter but stronger and can be cast
+      very thin. The crankshaft is 2 1/2-inch diameter with a 2 1/4-inch hole,
+      and while it would be strong enough in ordinary 40 per cent carbon steel
+      it is made of steel twice the strength of that customarily employed.
+      Similar care has been exercised on other parts and the result is a motor
+      weighing 4 pounds per h. p.
+The Rinek Motor.
+The Rinek aviation motor, constructed by the Rinek Aero Mfg. Co., of
+      Easton, Pa., is another that is meeting with favor among aviators. Type
+      B-8 is an 8-cylinder motor, the cylinders being set at right angles, on a
+      V-shaped crank case. It is water cooled, develops 50-60 h. p., the minimum
+      at 1,220 r. p. m., and weighs 280 pounds with all accessories. Type B-4, a
+      4-cylinder motor, develops 30 h. p. at 1,800 r. p. m., and weighs 130
+      pounds complete. The cylinders in both motors are made of cast iron with
+      copper water jackets.
+The Overhead Camshaft Boulevard.
+The overhead camshaft Boulevard is still another form of aviation motor
+      which has been favorably received. This is the product of the Boulevard
+      Engine Co., of St. Louis. It is made with 4 and 8 cylinders. The former
+      develops 30-35 h. p. at 1,200 r. p. m., and weighs 130 pounds. The
+      8-cylinder motor gives 60-70 h. p. at 1,200 r. p. m., and weighs 200
+      pounds. Simplicity of construction is the main feature of this motor,
+      especially in the manipulation of the valves.

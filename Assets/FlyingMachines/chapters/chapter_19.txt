@@ -1,0 +1,161 @@
+CHAPTER X. PROPER DIMENSIONS OF MACHINES.
+In laying out plans for a flying machine the first thing to decide upon is
+      the size of the plane surfaces. The proportions of these must be based
+      upon the load to be carried. This includes the total weight of the machine
+      and equipment, and also the operator. This will be a rather difficult
+      problem to figure out exactly, but practical approximate figures may be
+      reached.
+It is easy to get at the weight of the operator, motor and propeller, but
+      the matter of determining, before they are constructed, what the planes,
+      rudders, auxiliaries, etc., will weigh when completed is an intricate
+      proposition. The best way is to take the dimensions of some successful
+      machine and use them, making such alterations in a minor way as you may
+      desire.
+Dimensions of Leading Machines.
+In the following tables will be found the details as to surface area,
+      weight, power, etc., of the nine principal types of flying machines which
+      are now prominently before the public:
+MONOPLANES.
+                              Surface area    Spread in     Depth in
+   Make          Passengers     sq. feet      linear feet  linear
+   feet
+   Santos-Dumont.. 1           110             16.0         26.0
+   Bleriot..... 1           150.6           24.6         22.0
+   R. E. P..... 1           215             34.1         28.9
+   Bleriot..... 2           236             32.9         23.0
+   Antoinette.... 2           538             41.2         37.9
+                  No. of                  Weight Without
+   Propeller
+   Make         Cylinders   Horse Power       Operator
+   Diameter
+   Santos-Dumont.. 2          30                250            5.0
+   Bleriot..... 3          25                680            6.9
+   R. E. P..... 7          35                900            6.6
+   Bleriot..... 7          50              1,240            8.1
+   Antoinette... 8          50              1,040            7.2
+
+                               BIPLANES.
+                            Surface Area       Spread in      Depth
+   in
+   Make      Passengers       sq. feet        linear feet    linear
+   feet
+   Curtiss... 2               258             29.0
+   28.7
+   Wright.... 2               538             41.0
+   30.7
+   Farman.... 2               430             32.9
+   39.6
+   Voisin.... 2               538             37.9
+   39.6
+
+                No. of                     Weight Without
+   Propeller
+   Make       Cylinders      Horse Power      Operator
+   Diameter
+   Curtiss... 8               50               600          6.0
+   Wright.... 4               25             1,100          8.1
+   Farman.... 7               50             1,200          8.9
+   Voisin.... 8               50             1,200          6.6
+In giving the depth dimensions the length over all—from the extreme
+      edge of the front auxiliary plane to the extreme tip of the rear is
+      stated. Thus while the dimensions of the main planes of the Wright machine
+      are 41 feet spread by 6 1/2 feet in depth, the depth over all is 30.7.
+Figuring Out the Details.
+With this data as a guide it should be comparatively easy to decide upon
+      the dimensions of the machine required. In arriving at the maximum lifting
+      capacity the weight of the operator must be added. Assuming this to
+      average 170 pounds the method of procedure would be as follows:
+Add the weight of the operator to the weight of the complete machine. The
+      new Wright machine complete weighs 900 pounds. This, plus 170, the weight
+      of the operator, gives a total of 1,070 pounds. There are 538 square feet
+      of supporting surface, or practically one square foot of surface area to
+      each two pounds of load.
+There are some machines, notably the Bleriot, in which the supporting
+      power is much greater. In this latter instance we find a surface area of
+      150 1/2 square feet carrying a load of 680 plus 170, or an aggregate of
+      850 pounds. This is the equivalent of five pounds to the square foot. This
+      ratio is phenomenally large, and should not be taken as a guide by
+      amateurs.
+The Matter of Passengers.
+These deductions are based on each machine carrying one passenger, which
+      is admittedly the limit at present of the monoplanes like those operated
+      for record-making purposes by Santos-Dumont and Bleriot. The biplanes,
+      however, have a two-passenger capacity, and this adds materially to the
+      proportion of their weight-sustaining power as compared with the surface
+      area. In the following statement all the machines are figured on the
+      one-passenger basis. Curtiss and Wright have carried two passengers on
+      numerous occasions, and an extra 170 pounds should therefore be added to
+      the total weight carried, which would materially increase the capacity.
+      Even with the two-passenger load the limit is by no means reached, but as
+      experiments have gone no further it is impossible to make more accurate
+      figures.
+Average Proportions of Load.
+It will be interesting, before proceeding to lay out the dimension
+      details, to make a comparison of the proportion of load effect with the
+      supporting surfaces of various well-known machines. Here are the figures:
+Santos-Dumont—A trifle under four pounds per square foot.
+Bleriot—Five pounds.
+R. E. P.—Five pounds.
+Antoinette—About two and one-quarter pounds.
+Curtiss—About two and one-half pounds.
+Wright—Two and one-quarter pounds.
+Farman—A trifle over three pounds.
+Voisin—A little under two and one-half pounds.
+Importance of Engine Power.
+While these figures are authentic, they are in a way misleading, as the
+      important factor of engine power is not taken into consideration. Let us
+      recall the fact that it is the engine power which keeps the machine in
+      motion, and that it is only while in motion that the machine will remain
+      suspended in the air. Hence, to attribute the support solely to the
+      surface area is erroneous. True, that once under headway the planes
+      contribute largely to the sustaining effect, and are absolutely essential
+      in aerial navigation—the motor could not rise without them—still,
+      when it comes to a question of weight-sustaining power, we must also
+      figure on the engine capacity.
+In the Wright machine, in which there is a lifting capacity of
+      approximately 2 1/4 pounds to the square foot of surface area, an engine
+      of only 25 horsepower is used. In the Curtiss, which has a lifting
+      capacity of 2 1/2 pounds per square foot, the engine is of 50 horsepower.
+      This is another of the peculiarities of aerial construction and
+      navigation. Here we have a gain of 1/4 pound in weight-lifting capacity
+      with an expenditure of double the horsepower. It is this feature which
+      enables Curtiss to get along with a smaller surface area of supporting
+      planes at the expense of a big increase in engine power. Proper Weight of
+      Machine.
+As a general proposition the most satisfactory machine for amateur
+      purposes will be found to be one with a total weight-sustaining power of
+      about 1,200 pounds. Deducting 170 pounds as the weight of the operator,
+      this will leave 1,030 pounds for the complete motor-equipped machine, and
+      it should be easy to construct one within this limit. This implies, of
+      course, that due care will be taken to eliminate all superfluous weight by
+      using the lightest material compatible with strength and safety.
+This plan will admit of 686 pounds weight in the frame work, coverings,
+      etc., and 344 for the motor, propeller, etc., which will be ample. Just
+      how to distribute the weight of the planes is a matter which must be left
+      to the ingenuity of the builder.
+Comparison of Bird Power.
+There is an interesting study in the accompanying illustration. Note that
+      the surface area of the albatross is much smaller than that of the
+      vulture, although the wing spread is about the same. Despite this the
+      albatross accomplishes fully as much in the way of flight and soaring as
+      the vulture. Why? Because the albaboss is quicker and more powerful in
+      action. It is the application of this same principle in flying machines
+      which enables those of great speed and power to get along with less
+      supporting surface than those of slower movement.
+Measurements of Curtiss Machine.
+Some idea of framework proportion may be had from the following
+      description of the Curtiss machine. The main planes have a spread (width)
+      of 29 feet, and are 4 1/2 feet deep. The front double surface horizontal
+      rudder is 6x2 feet, with an area of 24 square feet. To the rear of the
+      main planes is a single surface horizontal plane 6x2 feet, with an area of
+      12 square feet. In connection with this is a vertical rudder 2 1/2 feet
+      square. Two movable ailerons, or balancing planes, are placed at the
+      extreme ends of the upper planes. These are 6x2 feet, and have a combined
+      area of 24 square feet. There is also a triangular shaped vertical
+      steadying surface in connection with the front rudder.
+Thus we have a total of 195 square feet, but as the official figures are
+      258, and the size of the triangular-shaped steadying surface is unknown,
+      we must take it for granted that this makes up the difference. In the
+      matter of proportion the horizontal double-plane rudder is about one-tenth
+      the size of the main plane, counting the surface area of only one plane,
+      the vertical rudder one-fortieth, and the ailerons one-twentieth.

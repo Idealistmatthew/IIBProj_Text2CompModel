@@ -1,0 +1,185 @@
+CHAPTER XIII. PECULIARITIES OF AIRSHIP POWER.
+As a general proposition it takes much more power to propel an airship a
+      given number of miles in a certain time than it does an automobile
+      carrying a far heavier load. Automobiles with a gross load of 4,000
+      pounds, and equipped with engines of 30 horsepower, have travelled
+      considerable distances at the rate of 50 miles an hour. This is an
+      equivalent of about 134 pounds per horsepower. For an average modern
+      flying machine, with a total load, machine and passengers, of 1,200
+      pounds, and equipped with a 50-horsepower engine, 50 miles an hour is the
+      maximum. Here we have the equivalent of exactly 24 pounds per horsepower.
+      Why this great difference?
+No less an authority than Mr. Octave Chanute answers the question in a
+      plain, easily understood manner. He says:
+"In the case of an automobile the ground furnishes a stable support; in
+      the case of a flying machine the engine must furnish the support and also
+      velocity by which the apparatus is sustained in the air."
+Pressure of the Wind.
+Air pressure is a big factor in the matter of aeroplane horsepower.
+      Allowing that a dead calm exists, a body moving in the atmosphere creates
+      more or less resistance. The faster it moves, the greater is this
+      resistance. Moving at the rate of 60 miles an hour the resistance, or wind
+      pressure, is approximately 50 pounds to the square foot of surface
+      presented. If the moving object is advancing at a right angle to the wind
+      the following table will give the horsepower effect of the resistance per
+      square foot of surface at various speeds.
+Horse Power
+          Miles per Hour    per sq. foot
+          10             0.013
+          15             0 044
+          20             0.105
+          25             0.205
+          30             0.354
+          40             0.84
+          50             1.64
+          60             2.83
+          80             6.72
+          100            13.12
+While the pressure per square foot at 60 miles an hour, is only 1.64
+      horsepower, at 100 miles, less than double the speed, it has increased to
+      13.12 horsepower, or exactly eight times as much. In other words the
+      pressure of the wind increases with the square of the velocity. Wind at 10
+      miles an hour has four times more pressure than wind at 5 miles an hour.
+How to Determine Upon Power.
+This element of air resistance must be taken into consideration in
+      determining the engine horsepower required. When the machine is under
+      headway sufficient to raise it from the ground (about 20 miles an hour),
+      each square foot of surface resistance, will require nearly nine-tenths of
+      a horsepower to overcome the wind pressure, and propel the machine through
+      the air. As shown in the table the ratio of power required increases
+      rapidly as the speed increases until at 60 miles an hour approximately 3
+      horsepower is needed.
+In a machine like the Curtiss the area of wind-exposed surface is about 15
+      square feet. On the basis of this resistance moving the machine at 40
+      miles an hour would require 12 horsepower. This computation covers only
+      the machine's power to overcome resistance. It does not cover the power
+      exerted in propelling the machine forward after the air pressure is
+      overcome. To meet this important requirement Mr. Curtiss finds it
+      necessary to use a 50-horsepower engine. Of this power, as has been
+      already stated, 12 horsepower is consumed in meeting the wind pressure,
+      leaving 38 horsepower for the purpose of making progress.
+The flying machine must move faster than the air to which it is opposed.
+      Unless it does this there can be no direct progress. If the two forces are
+      equal there is no straight-ahead advancement. Take, for sake of
+      illustration, a case in which an aeroplane, which has developed a speed of
+      30 miles an hour, meets a wind velocity of equal force moving in an
+      opposite direction. What is the result? There can be no advance because it
+      is a contest between two evenly matched forces. The aeroplane stands
+      still. The only way to get out of the difficulty is for the operator to
+      wait for more favorable conditions, or bring his machine to the ground in
+      the usual manner by manipulation of the control system.
+Take another case. An aeroplane, capable of making 50 miles an hour in a
+      calm, is met by a head wind of 25 miles an hour. How much progress does
+      the aeroplane make? Obviously it is 25 miles an hour over the ground.
+Put the proposition in still another way. If the wind is blowing harder
+      than it is possible for the engine power to overcome, the machine will be
+      forced backward.
+Wind Pressure a Necessity.
+While all this is true, the fact remains that wind pressure, up to a
+      certain stage, is an absolute necessity in aerial navigation. The
+      atmosphere itself has very little real supporting power, especially if
+      inactive. If a body heavier than air is to remain afloat it must move
+      rapidly while in suspension.
+One of the best illustrations of this is to be found in skating over thin
+      ice. Every school boy knows that if he moves with speed he may skate or
+      glide in safety across a thin sheet of ice that would not begin to bear
+      his weight if he were standing still. Exactly the same proposition obtains
+      in the case of the flying machine.
+The non-technical reason why the support of the machine becomes easier as
+      the speed increases is that the sustaining power of the atmosphere
+      increases with the resistance, and the speed with which the object is
+      moving increases this resistance. With a velocity of 12 miles an hour the
+      weight of the machine is practically reduced by 230 pounds. Thus, if under
+      a condition of absolute calm it were possible to sustain a weight of 770
+      pounds, the same atmosphere would sustain a weight of 1,000 pounds moving
+      at a speed of 12 miles an hour. This sustaining power increases rapidly as
+      the speed increases. While at 12 miles the sustaining power is figured at
+      230 pounds, at 24 miles it is four times as great, or 920 pounds.
+Supporting Area of Birds.
+One of the things which all producing aviators seek to copy is the motive
+      power of birds, particularly in their relation to the area of support.
+      Close investigation has established the fact that the larger the bird the
+      less is the relative area of support required to secure a given result.
+      This is shown in the following table:
+Supporting
+                  Weight       Surface       Horse      area
+     Bird         in lbs.     in sq. feet   power     per lb.
+     Pigeon         1.00      0.7           0.012     0.7
+     Wild Goose     9.00      2.65          0.026     0.2833
+     Buzzard        5.00      5.03          0.015     1.06
+     Condor        17.00      9.85          0.043     0.57
+So far as known the condor is the largest of modern birds. It has a wing
+      stretch of 10 feet from tip to tip, a supporting area of about 10 square
+      feet, and weighs 17 pounds. It. is capable of exerting perhaps 1-30
+      horsepower. (These figures are, of course, approximate.) Comparing the
+      condor with the buzzard with a wing stretch of 6 feet, supporting area of
+      5 square feet, and a little over 1-100 horsepower, it may be seen that,
+      broadly speaking, the larger the bird the less surface area (relatively)
+      is needed for its support in the air.
+Comparison With Aeroplanes.
+If we compare the bird figures with those made possible by the development
+      of the aeroplane it will be readily seen that man has made a wonderful
+      advance in imitating the results produced by nature. Here are the figures:
+Supporting
+                     Weight      Surface       Horse      area
+     Machine         in lbs.    in sq. feet    power     per lb.
+     Santos-Dumont..  350      110.00        30        0.314
+     Bleriot.....     700      150.00        25        0.214
+     Antoinette.... 1,200      538.00        50        0.448
+     Curtiss.....     700      258.00        60        0.368
+     Wright.....4 1,100      538.00        25        0.489
+     Farman......   1,200      430.00        50        0.358
+     Voisin......   1,200      538.00        50        0.448
+4
+While the average supporting surface is in favor of the aeroplane, this is
+      more than overbalanced by the greater amount of horsepower required for
+      the weight lifted. The average supporting surface in birds is about
+      three-quarters of a square foot per pound. In the average aeroplane it is
+      about one-half square foot per pound. On the other hand the average
+      aeroplane has a lifting capacity of 24 pounds per horsepower, while the
+      buzzard, for instance, lifts 5 pounds with 15-100 of a horsepower. If the
+      Wright machine—which has a lifting power of 50 pounds per horsepower—should
+      be alone considered the showing would be much more favorable to the
+      aeroplane, but it would not be a fair comparison.
+More Surface, Less Power.
+Broadly speaking, the larger the supporting area the less will be the
+      power required. Wright, by the use of 538 square feet of supporting
+      surface, gets along with an engine of 25 horsepower. Curtiss, who uses
+      only 258 square feet of surface, finds an engine of 50 horsepower is
+      needed. Other things, such as frame, etc., being equal, it stands to
+      reason that a reduction in the area of supporting surface will
+      correspondingly reduce the weight of the machine. Thus we have the Curtiss
+      machine with its 258 square feet of surface, weighing only 600 pounds
+      (without operator), but requiring double the horsepower of the Wright
+      machine with 538 square feet of surface and weighing 1,100 pounds. This
+      demonstrates in a forceful way the proposition that the larger the surface
+      the less power will be needed.
+But there is a limit, on account of its bulk and awkwardness in handling,
+      beyond which the surface area cannot be enlarged. Otherwise it might be
+      possible to equip and operate aeroplanes satisfactorily with engines of 15
+      horsepower, or even less.
+The Fuel Consumption Problem.
+Fuel consumption is a prime factor in the production of engine power. The
+      veriest mechanical tyro knows in a general way that the more power is
+      secured the more fuel must be consumed, allowing that there is no
+      difference in the power-producing qualities of the material used. But few
+      of us understand just what the ratio of increase is, or how it is caused.
+      This proposition is one of keen interest in connection with aviation.
+Let us cite a problem which will illustrate the point quoted: Allowing
+      that it takes a given amount of gasolene to propel a flying machine a
+      given distance, half the way with the wind, and half against it, the wind
+      blowing at one-half the speed of the machine, what will be the increase in
+      fuel consumption?
+Increase of Thirty Per Cent.
+On the face of it there would seem to be no call for an increase as the
+      resistance met when going against the wind is apparently offset by the
+      propulsive force of the wind when the machine is travelling with it. This,
+      however, is called faulty reasoning. The increase in fuel consumption, as
+      figured by Mr. F. W. Lanchester, of the Royal Society of Arts, will be
+      fully 30 per cent over the amount required for a similar operation of the
+      machine in still air. If the journey should be made at right angles to the
+      wind under the same conditions the increase would be 15 per cent.
+In other words Mr. Lanchester maintains that the work done by the motor in
+      making headway against the wind for a certain distance calls for more
+      engine energy, and consequently more fuel by 30 per cent, than is saved by
+      the helping force of the wind on the return journey.

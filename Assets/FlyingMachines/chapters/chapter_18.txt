@@ -1,0 +1,290 @@
+CHAPTER IX. SELECTION OF THE MOTOR.
+Motors for flying machines must be light in weight, of great strength,
+      productive of extreme speed, and positively dependable in action. It
+      matters little as to the particular form, or whether air or water cooled,
+      so long as the four features named are secured. There are at least a dozen
+      such motors or engines now in use. All are of the gasolene type, and all
+      possess in greater or lesser degree the desired qualities. Some of these
+      motors are:
+Renault—8-cylinder, air-cooled; 50 horse power; weight 374 pounds.
+Fiat—8-cylinder, air-cooled; 50 horse power; weight 150 pounds.
+Farcot—8-cylinder, air-cooled; from 30 to 100 horse power, according
+      to bore of cylinders; weight of smallest, 84 pounds.
+R. E. P.—10-cylinder, air-cooled; 150 horse power; weight 215
+      pounds.
+Gnome—7 and 14 cylinders, revolving type, air-cooled; 50 and 100
+      horse power; weight 150 and 300 pounds.
+Darracq—2 to 14 cylinders, water cooled; 30 to 200 horse power;
+      weight of smallest 100 pounds.
+Wright—4-cylinder, water-cooled; 25 horse power; weight 200 pounds.
+Antoinette—8 and 16-cylinder, water-cooled; 50 and 100 horse power;
+      weight 250 and 500 pounds.
+E. N. V.—8-cylinder, water-cooled; from 30 to 80 horse power,
+      according to bore of cylinder; weight 150 to 400 pounds.
+Curtiss—8-cylinder, water-cooled; 60 horse power; weight 300 pounds.
+Average Weight Per Horse Power.
+It will be noticed that the Gnome motor is unusually light, being about
+      three pounds to the horse power produced, as opposed to an average of 4
+      1/2 pounds per horse power in other makes. This result is secured by the
+      elimination of the fly-wheel, the engine itself revolving, thus obtaining
+      the same effect that would be produced by a fly-wheel. The Farcot is even
+      lighter, being considerably less than three pounds per horse power, which
+      is the nearest approach to the long-sought engine equipment that will make
+      possible a complete flying machine the total weight of which will not
+      exceed one pound per square foot of area.
+How Lightness Is Secured.
+Thus far foreign manufacturers are ahead of Americans in the production of
+      light-weight aerial motors, as is evidenced by the Gnome and Farcot
+      engines, both of which are of French make. Extreme lightness is made
+      possible by the use of fine, specially prepared steel for the cylinders,
+      thus permitting them to be much thinner than if ordinary forms of steel
+      were used. Another big saving in weight is made by substituting what are
+      known as "auto lubricating" alloys for bearings. These alloys are made of
+      a combination of aluminum and magnesium.
+Still further gains are made in the use of alloy steel tubing instead of
+      solid rods, and also by the paring away of material wherever it can be
+      done without sacrificing strength. This plan, with the exclusive use of
+      the best grades of steel, regardless of cost, makes possible a marked
+      reduction in weight.
+Multiplicity of Cylinders.
+Strange as it may seem, multiplicity of cylinders does not always add
+      proportionate weight. Because a 4-cylinder motor weighs say 100 pounds, it
+      does not necessarily follow that an 8-cylinder equipment will weigh 200
+      pounds. The reason of this will be plain when it is understood that many
+      of the parts essential to a 4-cylinder motor will fill the requirements of
+      an 8-cylinder motor without enlargement or addition.
+Neither does multiplying the cylinders always increase the horsepower
+      proportionately. If a 4-cylinder motor is rated at 25 horsepower it is not
+      safe to take it for granted that double the number of cylinders will give
+      50 horsepower. Generally speaking, eight cylinders, the bore, stroke and
+      speed being the same, will give double the power that can be obtained from
+      four, but this does not always hold good. Just why this exception should
+      occur is not explainable by any accepted rule.
+Horse Power and Speed.
+Speed is an important requisite in a flying-machine motor, as the velocity
+      of the aeroplane is a vital factor in flotation. At first thought, the
+      propeller and similar adjuncts being equal, the inexperienced mind would
+      naturally argue that a 50-horsepower engine should produce just double the
+      speed of one of 25-horsepower. That this is a fallacy is shown by actual
+      performances. The Wrights, using a 25-horsepower motor, have made 44 miles
+      an hour, while Bleriot, with a 50-horsepower motor, has a record of a
+      short-distance flight at the rate of 52 miles an hour. The fact is that,
+      so far as speed is concerned, much depends upon the velocity of the wind,
+      the size and shape of the aeroplane itself, and the size, shape and
+      gearing of the propeller. The stronger the wind is blowing the easier it
+      will be for the aeroplane to ascend, but at the same time the more
+      difficult it will be to make headway against the wind in a horizontal
+      direction. With a strong head wind, and proper engine force, your machine
+      will progress to a certain extent, but it will be at an angle. If the
+      aviator desired to keep on going upward this would be all right, but there
+      is a limit to the altitude which it is desirable to reach—from 100
+      to 500 feet for experts—and after that it becomes a question of
+      going straight ahead.
+Great Waste of Power.
+One thing is certain—even in the most efficient of modern aerial
+      motors there is a great loss of power between the two points of production
+      and effect. The Wright outfit, which is admittedly one of the most
+      effective in use, takes one horsepower of force for the raising and
+      propulsion of each 50 pounds of weight. This, for a 25-horsepower engine,
+      would give a maximum lifting capacity of 1250 pounds. It is doubtful if
+      any of the higher rated motors have greater efficiency. As an 8-cylinder
+      motor requires more fuel to operate than a 4-cylinder, it naturally
+      follows that it is more expensive to run than the smaller motor, and a
+      normal increase in capacity, taking actual performances as a criterion, is
+      lacking. In other words, what is the sense of using an 8-cylinder motor
+      when one of 4 cylinders is sufficient?
+What the Propeller Does.
+Much of the efficiency of the motor is due to the form and gearing of the
+      propeller. Here again, as in other vital parts of flying-machine
+      mechanism, we have a wide divergence of opinion as to the best form. A
+      fish makes progress through the water by using its fins and tail; a bird
+      makes its way through the air in a similar manner by the use of its wings
+      and tail. In both instances the motive power comes from the body of the
+      fish or bird.
+In place of fins or wings the flying machine is equipped with a propeller,
+      the action of which is furnished by the engine. Fins and wings have been
+      tried, but they don't work.
+While operating on the same general principle, aerial propellers are much
+      larger than those used on boats. This is because the boat propeller has a
+      denser, more substantial medium to work in (water), and consequently can
+      get a better "hold," and produce more propulsive force than one of the
+      same size revolving in the air. This necessitates the aerial propellers
+      being much larger than those employed for marine purposes. Up to this
+      point all aviators agree, but as to the best form most of them differ.
+Kinds of Propellers Used.
+One of the most simple is that used by Curtiss. It consists of two
+      pear-shaped blades of laminated wood, each blade being 5 inches wide at
+      its extreme point, tapering slightly to the shaft connection. These blades
+      are joined at the engine shaft, in a direct line. The propeller has a
+      pitch of 5 feet, and weighs, complete, less than 10 pounds. The length
+      from end to end of the two blades is 6 1/2 feet.
+Wright uses two wooden propellers, in the rear of his biplane, revolving
+      in opposite directions. Each propeller is two-bladed.
+Bleriot also uses a two-blade wooden propeller, but it is placed in front
+      of his machine. The blades are each about 3 1/2 feet long and have an
+      acute "twist."
+Santos-Dumont uses a two-blade wooden propeller, strikingly similar to the
+      Bleriot.
+On the Antoinette monoplane, with which good records have been made, the
+      propeller consists of two spoon-shaped pieces of metal, joined at the
+      engine shaft in front, and with the concave surfaces facing the machine.
+The propeller on the Voisin biplane is also of metal, consisting of two
+      aluminum blades connected by a forged steel arm.
+Maximum thrust, or stress—exercise of the greatest air-displacing
+      force—is the object sought. This, according to experts, is best
+      obtained with a large propeller diameter and reasonably low speed. The
+      diameter is the distance from end to end of the blades, which on the
+      largest propellers ranges from 6 to 8 feet. The larger the blade surface
+      the greater will be the volume of air displaced, and, following this, the
+      greater will be the impulse which forces the aeroplane ahead. In all
+      centrifugal motion there is more or less tendency to disintegration in the
+      form of "flying off" from the center, and the larger the revolving object
+      is the stronger is this tendency. This is illustrated in the many
+      instances in which big grindstones and fly-wheels have burst from being
+      revolved too fast. To have a propeller break apart in the air would
+      jeopardize the life of the aviator, and to guard against this it has been
+      found best to make its revolving action comparatively slow. Besides this
+      the slow motion (it is only comparatively slow) gives the atmosphere a
+      chance to refill the area disturbed by one propeller blade, and thus have
+      a new surface for the next blade to act upon.
+Placing of the Motor.
+As on other points, aviators differ widely in their ideas as to the proper
+      position for the motor. Wright locates his on the lower plane, midway
+      between the front and rear edges, but considerably to one side of the
+      exact center. He then counter-balances the engine weight by placing his
+      seat far enough away in the opposite direction to preserve the center of
+      gravity. This leaves a space in the center between the motor and the
+      operator in which a passenger may be carried without disturbing the
+      equilibrium.
+Bleriot, on the contrary, has his motor directly in front and preserves
+      the center of gravity by taking his seat well back, this, with the weight
+      of the aeroplane, acting as a counter-balance.
+On the Curtiss machine the motor is in the rear, the forward seat of the
+      operator, and weight of the horizontal rudder and damping plane in front
+      equalizing the engine weight.
+No Perfect Motor as Yet.
+Engine makers in the United States, England, France and Germany are all
+      seeking to produce an ideal motor for aviation purposes. Many of the
+      productions are highly creditable, but it may be truthfully said that none
+      of them quite fill the bill as regards a combination of the minimum of
+      weight with the maximum of reliable maintained power. They are all, in
+      some respects, improvements upon those previously in use, but the great
+      end sought for has not been fully attained.
+One of the motors thus produced was made by the French firm of Darracq at
+      the suggestion of Santos Dumont, and on lines laid down by him. Santos
+      Dumont wanted a 2-cylinder horizontal motor capable of developing 30
+      horsepower, and not exceeding 4 1/2 pounds per horsepower in weight.
+There can be no question as to the ability and skill of the Darracq
+      people, or of their desire to produce a motor that would bring new credit
+      and prominence to the firm. Neither could anything radically wrong be
+      detected in the plans. But the motor, in at least one important
+      requirement, fell short of expectations.
+It could not be depended upon to deliver an energy of 30 horsepower
+      continuously for any length of time. Its maximum power could be secured
+      only in "spurts."
+This tends to show how hard it is to produce an ideal motor for aviation
+      purposes. Santos Dumont, of undoubted skill and experience as an aviator,
+      outlined definitely what he wanted; one of the greatest designers in the
+      business drew the plans, and the famous house of Darracq bent its best
+      energies to the production. But the desired end was not fully attained.
+Features of Darracq Motor.
+Horizontal motors were practically abandoned some time ago in favor of the
+      vertical type, but Santos Dumont had a logical reason for reverting to
+      them. He wanted to secure a lower center of gravity than would be possible
+      with a vertical engine. Theoretically his idea was correct as the
+      horizontal motor lies flat, and therefore offers less resistance to the
+      wind, but it did not work out as desired.
+At the same time it must be admitted that this Darracq motor is a marvel
+      of ingenuity and exquisite workmanship. The two cylinders, having a bore
+      of 5 1-10 inches and a stroke of 4 7-10 inches, are machined out of a
+      solid bar of steel until their weight is only 8 4-5 pounds complete. The
+      head is separate, carrying the seatings for the inlet and exhaust valves,
+      is screwed onto the cylinder, and then welded in position. A copper
+      water-jacket is fitted, and it is in this condition that the weight of 8
+      4-5 pounds is obtained.
+On long trips, especially in regions where gasolene is hard to get, the
+      weight of the fuel supply is an important feature in aviation. As a
+      natural consequence flying machine operators favor the motor of greatest
+      economy in gasolene consumption, provided it gives the necessary power.
+An American inventor, Ramsey by name, is working on a motor which is said
+      to possess great possibilities in this line. Its distinctive features
+      include a connecting rod much shorter than usual, and a crank shaft
+      located the length of the crank from the central axis of the cylinder.
+      This has the effect of increasing the piston stroke, and also of
+      increasing the proportion of the crank circle during which effective
+      pressure is applied to the crank.
+Making the connecting rod shorter and leaving the crank mechanism the same
+      would introduce excessive cylinder friction. This Ramsey overcomes by the
+      location of his crank shaft. The effect of the long piston stroke thus
+      secured, is to increase the expansion of the gases, which in turn
+      increases the power of the engine without increasing the amount of fuel
+      used.
+Propeller Thrust Important.
+There is one great principle in flying machine propulsion which must not
+      be overlooked. No matter how powerful the engine may be unless the
+      propeller thrust more than overcomes the wind pressure there can be no
+      progress forward. Should the force of this propeller thrust and that of
+      the wind pressure be equal the result is obvious. The machine is at a
+      stand-still so far as forward progress is concerned and is deprived of the
+      essential advancing movement.
+Speed not only furnishes sustentation for the airship, but adds to the
+      stability of the machine. An aeroplane which may be jerky and uncertain in
+      its movements, so far as equilibrium is concerned, when moving at a slow
+      gait, will readily maintain an even keel when the speed is increased.
+Designs for Propeller Blades.
+It is the object of all men who design propellers to obtain the maximum of
+      thrust with the minimum expenditure of engine energy. With this purpose in
+      view many peculiar forms of propeller blades have been evolved. In theory
+      it would seem that the best effects could be secured with blades so shaped
+      as to present a thin (or cutting) edge when they come out of the wind, and
+      then at the climax of displacement afford a maximum of surface so as to
+      displace as much air as possible. While this is the form most generally
+      favored there are others in successful operation.
+There is also wide difference in opinion as to the equipment of the
+      propeller shaft with two or more blades. Some aviators use two and some
+      four. All have more or less success. As a mathematical proposition it
+      would seem that four blades should give more propulsive force than two,
+      but here again comes in one of the puzzles of aviation, as this result is
+      not always obtained.
+Difference in Propeller Efficiency.
+That there is a great difference in propeller efficiency is made readily
+      apparent by the comparison of effects produced in two leading makes of
+      machines—the Wright and the Voisin.
+In the former a weight of from 1,100 to 1,200 pounds is sustained and
+      advance progress made at the rate of 40 miles an hour and more, with half
+      the engine speed of a 25 horse-power motor. This would be a sustaining
+      capacity of 48 pounds per horsepower. But the actual capacity of the
+      Wright machine, as already stated, is 50 pounds per horsepower.
+The Voisin machine, with aviator, weighs about 1,370 pounds, and is
+      operated with a so-horsepower motor. Allowing it the same speed as the
+      Wright we find that, with double the engine energy, the lifting capacity
+      is only 27 1/2 pounds per horsepower. To what shall we charge this
+      remarkable difference? The surface of the planes is exactly the same in
+      both machines so there is no advantage in the matter of supporting area.
+Comparison of Two Designs.
+On the Wright machine two wooden propellers of two blades each (each blade
+      having a decided "twist") are used. As one 25 horsepower motor drives both
+      propellers the engine energy amounts to just one-half of this for each, or
+      12 1/2 horsepower. And this energy is utilized at one-half the normal
+      engine speed.
+On the Voisin a radically different system is employed. Here we have one
+      metal two-bladed propeller with a very slight "twist" to the blade
+      surfaces. The full energy of a 50-horsepower motor is utilized.
+Experts Fail to Agree.
+Why should there be such a marked difference in the results obtained? Who
+      knows? Some experts maintain that it is because there are two propellers
+      on the Wright machine and only one on the Voisin, and consequently double
+      the propulsive power is exerted. But this is not a fair deduction, unless
+      both propellers are of the same size. Propulsive power depends upon the
+      amount of air displaced, and the energy put into the thrust which
+      displaces the air.
+Other experts argue that the difference in results may be traced to the
+      difference in blade design, especially in the matter of "twist."
+The fact is that propeller results depend largely upon the nature of the
+      aeroplanes on which they are used. A propeller, for instance, which gives
+      excellent results on one type of aeroplane, will not work satisfactorily
+      on another.
+There are some features, however, which may be safely adopted in propeller
+      selection. These are: As extensive a diameter as possible; blade area 10
+      to 15 per cent of the area swept; pitch four-fifths of the diameter;
+      rotation slow. The maximum of thrust effort will be thus obtained.

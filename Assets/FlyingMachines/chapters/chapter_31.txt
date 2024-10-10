@@ -1,0 +1,271 @@
+By Octave Chanute.
+5
+      There is a wonderful performance daily exhibited in southern climes and
+      occasionally seen in northerly latitudes in summer, which has never been
+      thoroughly explained. It is the soaring or sailing flight of certain
+      varieties of large birds who transport themselves on rigid, unflapping
+      wings in any desired direction; who in winds of 6 to 20 miles per hour,
+      circle, rise, advance, return and remain aloft for hours without a beat of
+      wing, save for getting under way or convenience in various maneuvers. They
+      appear to obtain from the wind alone all the necessary energy, even to
+      advancing dead against that wind. This feat is so much opposed to our
+      general ideas of physics that those who have not seen it sometimes deny
+      its actuality, and those who have only occasionally witnessed it
+      subsequently doubt the evidence of their own eyes. Others, who have seen
+      the exceptional performances, speculate on various explanations, but the
+      majority give it up as a sort of "negative gravity."
+5
+5
+Soaring Power of Birds.
+The writer of this paper published in the "Aeronautical Annual" for 1896
+      and 1897 an article upon the sailing flight of birds, in which he gave a
+      list of the authors who had described such flight or had advanced theories
+      for its explanation, and he passed these in review. He also described his
+      own observations and submitted some computations to account for the
+      observed facts. These computations were correct as far as they went, but
+      they were scanty. It was, for instance, shown convincingly by analysis
+      that a gull weighing 2.188 pounds, with a total supporting surface of
+      2.015 square feet, a maximum body cross-section of 0.126 square feet and a
+      maximum cross-section of wing edges of 0.098 square feet, patrolling on
+      rigid wings (soaring) on the weather side of a steamer and maintaining an
+      upward angle or attitude of 5 degrees to 7 degrees above the horizon, in a
+      wind blowing 12.78 miles an hour, which was deflected upward 10 degrees to
+      20 degrees by the side of the steamer (these all being carefully observed
+      facts), was perfectly sustained at its own "relative speed" of 17.88 miles
+      per hour and extracted from the upward trend of the wind sufficient energy
+      to overcome all the resistances, this energy amounting to 6.44 foot-pounds
+      per second.
+Great Power of Gulls.
+It was shown that the same bird in flapping flight in calm air, with an
+      attitude or incidence of 3 degrees to 5 degrees above the horizon and a
+      speed of 20.4 miles an hour was well sustained and expended 5.88
+      foot-pounds per second, this being at the rate of 204 pounds sustained per
+      horsepower. It was stated also that a gull in its observed maneuvers,
+      rising up from a pile head on unflapping wings, then plunging forward
+      against the wind and subsequently rising higher than his starting point,
+      must either time his ascents and descents exactly with the variations in
+      wind velocities, or must meet a wind billow rotating on a horizontal axis
+      and come to a poise on its crest, thus availing of an ascending trend.
+But the observations failed to demonstrate that the variations of the wind
+      gusts and the movements of the bird were absolutely synchronous, and it
+      was conjectured that the peculiar shape of the soaring wing of certain
+      birds, as differentiated from the flapping wing, might, when experimented
+      upon, hereafter account for the performance.
+Mystery to be Explained.
+These computations, however satisfactory they were for the speed of winds
+      observed, failed to account for the observed spiral soaring of buzzards in
+      very light winds and the writer was compelled to confess: "Now, this
+      spiral soaring in steady breezes of 5 to 10 miles per hour which are
+      apparently horizontal, and through which the bird maintains an average
+      speed of about 20 miles an hour, is the mystery to be explained. It is not
+      accounted for, quantitatively, by any of the theories which have been
+      advanced, and it is the one performance which has led some observers to
+      claim that it was done through 'aspiration.' i, e., that a bird acted upon
+      by a current, actually drew forward into that current against its exact
+      direction of motion."
+Buzzards Soar in Dead Calm.
+A still greater mystery was propounded by the few observers who asserted
+      that they had seen buzzards soaring in a dead calm, maintaining their
+      elevation and their speed. Among these observers was Mr. E. C. Huffaker,
+      at one time assistant experimenter for Professor Langley. The writer
+      believed and said then that he must in some way have been mistaken, yet,
+      to satisfy himself, he paid several visits to Mr. Huffaker, in Eastern
+      Tennessee and took along his anemometer. He saw quite a number of buzzards
+      sailing at a height of 75 to 100 feet in breezes measuring 5 or 6 miles an
+      hour at the surface of the ground, and once he saw one buzzard soaring
+      apparently in a dead calm.
+The writer was fairly baffled. The bird was not simply gliding, utilizing
+      gravity or acquired momentum, he was actually circling horizontally in
+      defiance of physics and mathematics. It took two years and a whole series
+      of further observations to bring those two sciences into accord with the
+      facts.
+Results of Close Observations.
+Curiously enough the key to the performance of circling in a light wind or
+      a dead calm was not found through the usual way of gathering human
+      knowledge, i. e., through observations and experiment. These had failed
+      because I did not know what to look for. The mystery was, in fact, solved
+      by an eclectic process of conjecture and computation, but once these
+      computations indicated what observations should be made, the results gave
+      at once the reasons for the circling of the birds, for their then observed
+      attitude, and for the necessity of an independent initial sustaining speed
+      before soaring began. Both Mr. Huffaker and myself verified the data many
+      times and I made the computations.
+These observations disclosed several facts:
+1st.—That winds blowing five to seventeen miles per hour frequently
+      had rising trends of 10 degrees to 15 degrees, and that upon occasions
+      when there seemed to be absolutely no wind, there was often nevertheless a
+      local rising of the air estimated at a rate of four to eight miles or more
+      per hour. This was ascertained by watching thistledown, and rising fogs
+      alongside of trees or hills of known height. Everyone will readily realize
+      that when walking at the rate of four to eight miles an hour in a dead
+      calm the "relative wind" is quite inappreciable to the senses and that
+      such a rising air would not be noticed.
+2nd.—That the buzzard, sailing in an apparently dead horizontal
+      calm, progressed at speeds of fifteen to eighteen miles per hour, as
+      measured by his shadow on the ground. It was thought that the air was then
+      possibly rising 8.8 feet per second, or six miles per hour.
+3rd.—That when soaring in very light winds the angle of incidence of
+      the buzzards was negative to the horizon—i. e., that when seen
+      coming toward the eye, the afternoon light shone on the back instead of on
+      the breast, as would have been the case had the angle been inclined above
+      the horizon.
+4th.—That the sailing performance only occurred after the bird had
+      acquired an initial velocity of at least fifteen or eighteen miles per
+      hour, either by industrious flapping or by descending from a perch.
+An Interesting Experiment.
+5th.—That the whole resistance of a stuffed buzzard, at a negative
+      angle of 3 degrees in a current of air of 15.52 miles per hour, was 0.27
+      pounds. This test was kindly made for the writer by Professor A. F. Zahm
+      in the "wind tunnel" of the Catholic University at Washington, D. C., who,
+      moreover, stated that the resistance of a live bird might be less, as the
+      dried plumage could not be made to lie smooth.
+This particular buzzard weighed in life 4.25 pounds, the area of his wings
+      and body was 4.57 square feet, the maximum cross-section of his body was
+      0.110 square feet, and that of his wing edges when fully extended was
+      0.244 square feet.
+With these data, it became surprisingly easy to compute the performance
+      with the coefficients of Lilienthal for various angles of incidence and to
+      demonstrate how this buzzard could soar horizontally in a dead horizontal
+      calm, provided that it was not a vertical calm, and that the air was
+      rising at the rate of four or six miles per hour, the lowest observed, and
+      quite inappreciable without actual measuring.
+Some Data on Bird Power.
+The most difficult case is purposely selected. For if we assume that the
+      bird has previously acquired an initial minimum speed of seventeen miles
+      an hour (24.93 feet per second, nearly the lowest measured), and that the
+      air was rising vertically six miles an hour (8.80 feet per second), then
+      we have as the trend of the "relative wind" encountered:
+6
+      — = 0.353, or the tangent of 19 degrees 26'.
+      17
+which brings the case into the category of rising wind effects. But the
+      bird was observed to have a negative angle to the horizon of about 3
+      degrees, as near as could be guessed, so that his angle of incidence to
+      the "relative wind" was reduced to 16 degrees 26'.
+The relative speed of his soaring was therefore:
+Velocity = square root of (17 squared + 6 squared) = 18.03 miles per hour.
+At this speed, using the Langley co-efficient recently practically
+      confirmed by the accurate experiments of Mr. Eiffel, the air pressure
+      would be:
+18.03 squared X 0.00327 = 1.063 pounds per square foot.
+If we apply Lilienthal's co-efficients for an angle of 6 degrees 26', we
+      have for the force in action:
+Normal: 4.57 X 1.063 X 0.912 = 4.42 pounds.
+
+   Tangential: 4.57 X 1.063 X 0.074 = - 0.359 pounds,
+   which latter, being negative, is a propelling force.
+Results Astonish Scientists.
+Thus we have a bird weighing 4.25 pounds not only thoroughly supported,
+      but impelled forward by a force of 0.359 pounds, at seventeen miles per
+      hour, while the experiments of Professor A. F. Zahm showed that the
+      resistance at 15.52 miles per hour was only 0.27 pounds,
+17 squared
+   or 0.27 X ———- = 0.324 pounds, at seventeen miles an
+             15.52 squared
+   hour.
+These are astonishing results from the data obtained, and they lead to the
+      inquiry whether the energy of the rising air is sufficient to make up the
+      losses which occur by reason of the resistance and friction of the bird's
+      body and wings, which, being rounded, do not encounter air pressures in
+      proportion to their maximum cross-section.
+We have no accurate data upon the co-efficients to apply and estimates
+      made by myself proved to be much smaller than the 0.27 pounds resistance
+      measured by Professor Zahm, so that we will figure with the latter as
+      modified. As the speed is seventeen miles per hour, or 24.93 feet per
+      second, we have for the work:
+Work done, 0.324 X 24.93 = 8.07 foot pounds per second.
+Endorsed by Prof. Marvin.
+Corresponding energy of rising air is not sufficient at four miles per
+      hour. This amounts to but 2.10 foot pounds per second, but if we assume
+      that the air was rising at the rate of seven miles per hour (10.26 feet
+      per second), at which the pressure with the Langley coefficient would be
+      0.16 pounds per square foot, we have on 4.57 square feet for energy of
+      rising air: 4.57 X 0.16 X 10.26 = 7.50 foot pounds per second, which is
+      seen to be still a little too small, but well within the limits of error,
+      in view of the hollow shape of the bird's wings, which receive greater
+      pressure than the flat planes experimented upon by Langley.
+These computations were chiefly made in January, 1899, and were
+      communicated to a few friends, who found no fallacy in them, but thought
+      that few aviators would understand them if published. They were then
+      submitted to Professor C. F. Marvin of the Weather Bureau, who is well
+      known as a skillful physicist and mathematician. He wrote that they were,
+      theoretically, entirely sound and quantitatively, probably, as accurate as
+      the present state of the measurements of wind pressures permitted. The
+      writer determined, however, to withhold publication until the feat of
+      soaring flight had been performed by man, partly because he believed that,
+      to ensure safety, it would be necessary that the machine should be
+      equipped with a motor in order to supplement any deficiency in wind force.
+Conditions Unfavorable for Wrights.
+The feat would have been attempted in 1902 by Wright brothers if the local
+      circumstances had been more favorable. They were experimenting on "Kill
+      Devil Hill," near Kitty Hawk, N. C. This sand hill, about 100 feet high,
+      is bordered by a smooth beach on the side whence come the sea breezes, but
+      has marshy ground at the back. Wright brothers were apprehensive that if
+      they rose on the ascending current of air at the front and began to circle
+      like the birds, they might be carried by the descending current past the
+      back of the hill and land in the marsh. Their gliding machine offered no
+      greater head resistance in proportion than the buzzard, and their gliding
+      angles of descent are practically as favorable, but the birds performed
+      higher up in the air than they.
+Langley's Idea of Aviation.
+Professor Langley said in concluding his paper upon "The Internal Work of
+      the Wind":
+"The final application of these principles to the art of aerodromics
+      seems, then, to be, that while it is not likely that the perfected
+      aerodrome will ever be able to dispense altogether with the ability to
+      rely at intervals on some internal source of power, it will not be
+      indispensable that this aerodrome of the future shall, in order to go any
+      distance—even to circumnavigate the globe without alighting—need
+      to carry a weight of fuel which would enable it to perform this journey
+      under conditions analogous to those of a steamship, but that the fuel and
+      weight need only be such as to enable it to take care of itself in
+      exceptional moments of calm."
+Now that dynamic flying machines have been evolved and are being brought
+      under control, it seems to be worth while to make these computations and
+      the succeeding explanations known, so that some bold man will attempt the
+      feat of soaring like a bird. The theory underlying the performance in a
+      rising wind is not new, it has been suggested by Penaud and others, but it
+      has attracted little attention because the exact data and the maneuvers
+      required were not known and the feat had not yet been performed by a man.
+      The puzzle has always been to account for the observed act in very light
+      winds, and it is hoped that by the present selection of the most difficult
+      case to explain—i. e., the soaring in a dead horizontal calm—somebody
+      will attempt the exploit.
+Requisites for Soaring Flights.
+The following are deemed to be the requisites and maneuvers to master the
+      secrets of soaring flight:
+1st—Develop a dynamic flying machine weighing about one pound per
+      square foot of area, with stable equilibrium and under perfect control,
+      capable of gliding by gravity at angles of one in ten (5 3/4 degrees) in
+      still air.
+2nd.—Select locations where soaring birds abound and occasions where
+      rising trends of gentle winds are frequent and to be relied on.
+3rd.—Obtain an initial velocity of at least 25 feet per second
+      before attempting to soar.
+4th.—So locate the center of gravity that the apparatus shall assume
+      a negative angle, fore and aft, of about 3 degrees.
+Calculations show, however, that sufficient propelling force may still
+      exist at 0 degrees, but disappears entirely at +4 degrees.
+5th.—Circle like the bird. Simultaneously with the steering, incline
+      the apparatus to the side toward which it is desired to turn, so that the
+      centrifugal force shall be balanced by the centripetal force. The amount
+      of the required inclination depends upon the speed and on the radius of
+      the circle swept over.
+6th.—Rise spirally like the bird. Steer with the horizontal rudder,
+      so as to descend slightly when going with the wind and to ascend when
+      going against the wind. The bird circles over one spot because the rising
+      trends of wind are generally confined to small areas or local chimneys, as
+      pointed out by Sir H. Maxim and others.
+7th.—Once altitude is gained, progress may be made in any direction
+      by gliding downward by gravity.
+The bird's flying apparatus and skill are as yet infinitely superior to
+      those of man, but there are indications that within a few years the latter
+      may evolve more accurately proportioned apparatus and obtain absolute
+      control over it.
+It is hoped, therefore, that if there be found no radical error in the
+      above computations, they will carry the conviction that soaring flight is
+      not inaccessible to man, as it promises great economies of motive power in
+      favorable localities of rising winds.
+The writer will be grateful to experts who may point out any mistake
+      committed in data or calculations, and will furnish additional information
+      to any aviator who may wish to attempt the feat of soaring.

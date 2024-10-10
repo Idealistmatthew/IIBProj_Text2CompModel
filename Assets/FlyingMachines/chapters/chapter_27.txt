@@ -1,0 +1,136 @@
+CHAPTER XVII. SOME OF THE NEW DESIGNS.
+Spurred on by the success attained by the more experienced and better
+      known aviators numerous inventors of lesser fame are almost daily
+      producing practical flying machines varying radically in construction from
+      those now in general use.
+One of these comparatively new designs is the Van Anden biplane, made by
+      Frank Van Anden of Islip, Long Island, a member of the New York Aeronautic
+      Society. While his machine is wholly experimental, many successful short
+      flights were made with it last fall (1909). One flight, made October 19th,
+      1909, is of particular interest as showing the practicability of an
+      automatic stabilizing device installed by the inventor. The machine was
+      caught in a sudden severe gust of wind and keeled over, but almost
+      immediately righted itself, thus demonstrating in a most satisfactory
+      manner the value of one new attachment.
+Features of Van Anden Model.
+In size the surfaces of the main biplane are 26 feet in spread, and 4 feet
+      in depth from front to rear. The upper and lower planes are 4 feet apart.
+      Silkolene coated with varnish is used for the coverings. Ribs (spruce) are
+      curved one inch to the foot, the deepest part of the curve (4 inches)
+      being one foot back from the front edge of the horizontal beam. Struts
+      (also of spruce, as is all the framework) are elliptical in shape. The
+      main beams are in three sections, nearly half round in form, and joined by
+      metal sleeves.
+There is a two-surface horizontal rudder, 2x2x4 feet, in front. This is
+      pivoted at its lateral center 8 feet from the front edge of the main
+      planes. In the rear is another two-surface horizontal rudder 2x2x2 1/2
+      feet, pivoted in the same manner as the front one, 15 feet from the rear
+      edges of the main planes.
+Hinged to the rear central strut of the rear rudder is a vertical rudder 2
+      feet high by 3 feet in length.
+The Method of Control.
+In the operation of these rudders—both front and rear—and the
+      elevation and depression of the main planes, the Curtiss system is
+      employed. Pushing the steering-wheel post outward depresses the front
+      edges of the planes, and brings the machine downward; pulling the
+      steering-wheel post inward elevates the front edges of the planes and
+      causes the machine to ascend.
+Turning the steering wheel itself to the right swings the tail rudder to
+      the left, and the machine, obeying this like a boat, turns in the same
+      direction as the wheel is turned. By like cause turning the wheel to the
+      left turns the machine to the left.
+Automatic Control of Wings.
+There are two wing tips, each of 6 feet spread (length) and 2 feet from
+      front to rear. These are hinged half way between the main surfaces to the
+      two outermost rear struts. Cables run from these to an automatic device
+      working with power from the engine, which automatically operates the tips
+      with the tilting of the machine. Normally the wing tips are held
+      horizontal by stiff springs introduced in the cables outside of the
+      device.
+It was the successful working of this device which righted the Van Anden
+      craft when it was overturned in the squall of October 19th, 1909. Previous
+      to that occurrence Mr. Van Anden had looked upon the device as purely
+      experimental, and had admitted that he had grave uncertainty as to how it
+      would operate in time of emergency. He is now quoted as being thoroughly
+      satisfied with its practicability. It is this automatic device which gives
+      the Van Anden machine at least one distinctively new feature.
+While on this subject it will not be amiss to add that Mr. Curtiss does
+      not look kindly on automatic control. "I would rather trust to my own
+      action than that of a machine," he says. This is undoubtedly good logic so
+      far as Mr. Curtiss is concerned, but all aviators are not so cool-headed
+      and resourceful.
+Motive Power of Van Anden.
+A 50-horsepower "H-F" water cooled motor drives a laminated wood propeller
+      6 feet in diameter, with a 17 degree pitch at the extremities, increasing
+      toward the hub. The rear end of the motor is about 6 inches back from the
+      rear transverse beam and the engine shaft is in a direct line with the
+      axes of the two horizontal rudders. An R. I. V. ball bearing carries the
+      shaft at this point. Flying, the motor turns at about 800 revolutions per
+      minute, delivering 180 pounds pull. A test of the motor running at 1,200
+      showed a pull of 250 pounds on the scales.
+Still Another New Aeroplane.
+Another new aeroplane is that produced by A. M. Herring (an old-timer) and
+      W. S. Burgess, under the name of the Herring-Burgess. This is also
+      equipped with an automatic stability device for maintaining the balance
+      transversely. The curvature of the planes is also laid out on new lines.
+      That this new plan is effective is evidenced by the fact that the machine
+      has been elevated to an altitude of 40 feet by using one-half the power of
+      the 30-horsepower motor.
+The system of rudder and elevation control is very simple. The aviator
+      sits in front of the lower plane, and extending his arms, grasps two
+      supports which extend down diagonally in front. On the under side of these
+      supports just beneath his fingers are the controls which operate the
+      vertical rudder, in the rear. Thus, if he wishes to turn to the right, he
+      presses the control under the fingers of his right hand; if to the left,
+      that under the fingers of his left hand. The elevating rudder is operated
+      by the aviator's right foot, the control being placed on a foot-rest.
+Motor Is Extremely Light.
+Not the least notable feature of the craft is its motor. Although
+      developing, under load, 30-horsepower, or that of an ordinary automobile,
+      it weighs, complete, hardly 100 pounds. Having occasion to move it a
+      little distance for inspection, Mr. Burgess picked it up and walked off
+      with it—cylinders, pistons, crankcase and all, even the magneto,
+      being attached. There are not many 30-horsepower engines which can be so
+      handled. Everything about it is reduced to its lowest terms of simplicity,
+      and hence, of weight. A single camshaft operates not only all of the inlet
+      and exhaust valves, but the magneto and gear water pump, as well. The
+      motor is placed directly behind the operator, and the propeller is
+      directly mounted on the crankshaft.
+This weight of less than 100 pounds, it must be remembered, is not for the
+      motor alone; it includes the entire power plant equipment.
+The "thrust" of the propeller is also extraordinary, being between 250 and
+      260 pounds. The force of the wind displacement is strong enough to knock
+      down a good-sized boy as one youngster ascertained when he got behind the
+      propeller as it was being tested. He was not only knocked down but driven
+      for some distance away from the machine. The propeller has four blades
+      which are but little wider than a lath.
+Machine Built by Students.
+Students at the University of Pennsylvania, headed by Laurence J. Lesh, a
+      protege of Octave Chanute, have constructed a practical aeroplane of
+      ordinary maximum size, in which is incorporated many new ideas. The most
+      unique of these is to be found in the steering gear, and the provision
+      made for the accommodation of a pupil while taking lessons under an
+      experienced aviator.
+Immediately back of the aviator is an extra seat and an extra steering
+      wheel which works in tandem style with the front wheel. By this
+      arrangement a beginner may be easily and quickly taught to have perfect
+      control of the machine. These tandem wheels are also handy for passengers
+      who may wish to operate the car independently of one another, it being
+      understood, of course, that there will be no conflict of action.
+Frame Size and Engine Power.
+The frame has 36 feet spread and measures 35 feet from the front edge to
+      the end of the tail in the rear. It is equipped with two rear propellers
+      operated by a Ramsey 8-cylinder motor of 50 horsepower, placed
+      horizontally across the lower plane, with the crank shaft running clear
+      through the engine.
+The "Pennsylvania I" is the first two-propeller biplane chainless car,
+      this scheme having been adopted in order to avoid the crossing of chains.
+      The lateral control is by a new invention by Octave Chanute and Laurence
+      J. Lesh, for which Lesh is now applying for a patent. The device was
+      worked out before the Wright brothers' suit was begun, and is said to be
+      superior to the Wright warping or the Curtiss ailerons. The landing device
+      is also new in design. This aeroplane will weigh about 1,500 pounds, and
+      will carry fuel for a flight of 150 miles, and it is expected to attain a
+      speed of at least 45 miles an hour.
+There are others, lots of them, too numerous in fact to admit of mention
+      in a book of this size.

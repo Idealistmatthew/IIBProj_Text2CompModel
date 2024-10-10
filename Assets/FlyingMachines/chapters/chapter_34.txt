@@ -1,0 +1,183 @@
+CHAPTER XXIII. AMATEURS MAY USE WRIGHT PATENTS.
+Owing to the fact that the Wright brothers have enjoined a number of
+      professional aviators from using their system of control, amateurs have
+      been slow to adopt it. They recognize its merits, and would like to use
+      the system, but have been apprehensive that it might involve them in
+      litigation. There is no danger of this, as will be seen by the following
+      statement made by the Wrights:
+What Wright Brothers Say.
+"Any amateur, any professional who is not exhibiting for money, is at
+      liberty to use our patented devices. We shall be glad to have them do so,
+      and there will be no interference on our part, by legal action, or
+      otherwise. The only men we proceed against are those who, without our
+      permission, without even asking our consent, coolly appropriate the
+      results of our labors and use them for the purpose of making money.
+      Curtiss, Delagrange, Voisin, and all the rest of them who have used our
+      devices have done so in money-making exhibitions. So long as there is any
+      money to be made by the use of the products of our brains, we propose to
+      have it ourselves. It is the only way in which we can get any return for
+      the years of patient work we have given to the problem of aviation. On the
+      other hand, any man who wants to use these devices for the purpose of
+      pleasure, or the advancement of science, is welcome to do so, without
+      money and without price. This is fair enough, is it not?"
+Basis of the Wright Patents.
+In a flying machine a normally flat aeroplane having lateral marginal
+      portions capable of movement to different positions above or below the
+      normal plane of the body of the aeroplane, such movement being about an
+      axis transverse to the line of flight, whereby said lateral marginal
+      portions may be moved to different angles relatively to the normal plane
+      of the body of the aeroplane, so as to present to the atmosphere different
+      angles of incidence, and means for so moving said lateral marginal
+      portions, substantially as described.
+Application of vertical struts near the ends having flexible joints.
+Means for simultaneously imparting such movement to said lateral portions
+      to different angles relatively to each other.
+Refers to the movement of the lateral portions on the same side to the
+      same angle.
+Means for simultaneously moving vertical rudder so as to present to the
+      wind that side thereof nearest the side of the aeroplane having the
+      smallest angle of incidence.
+Lateral stability is obtained by warping the end wings by moving the lever
+      at the right hand of the operator, connection being made by wires from the
+      lever to the wing tips. The rudder may also be curved or warped in similar
+      manner by lever action.
+Wrights Obtain an Injunction.
+In January, 1910, Judge Hazel, of the United States Circuit Court, granted
+      a preliminary injunction restraining the Herring-Curtiss Co., and Glenn H.
+      Curtiss, from manufacturing, selling, or using for exhibition purposes the
+      machine known as the Curtiss aeroplane. The injunction was obtained on the
+      ground that the Curtiss machine is an infringement upon the Wright patents
+      in the matter of wing warping and rudder control.
+It is not the purpose of the authors to discuss the subject pro or con.
+      Such discussion would have no proper place in a volume of this kind. It is
+      enough to say that Curtiss stoutly insists that his machine is not an
+      infringement of the Wright patents, although Judge Hazel evidently thinks
+      differently.
+What the Judge Said.
+In granting the preliminary injunction the judge said:
+"Defendants claim generally that the difference in construction of their
+      apparatus causes the equilibrium or lateral balance to be maintained and
+      its aerial movement secured upon an entirely different principle from that
+      of complainant; the defendants' aeroplanes are curved, firmly attached to
+      the stanchions and hence are incapable of twisting or turning in any
+      direction; that the supplementary planes or so-called rudders are secured
+      to the forward stanchion at the extreme lateral ends of the planes and are
+      adjusted midway between the upper and lower planes with the margins
+      extending beyond the edges; that in moving the supplementary planes equal
+      and uniform angles of incidence are presented as distinguished from
+      fluctuating angles of incidence. Such claimed functional effects, however,
+      are strongly contradicted by the expert witness for complainant.
+Similar to Plan of Wrights.
+"Upon this contention it is sufficient to say that the affidavits for the
+      complainant so clearly define the principle of operation of the flying
+      machines in question that I am reasonably satisfied that there is a
+      variableness of the angle of incidence in the machine of defendants which
+      is produced when a supplementary plane on one side is tilted or raised and
+      the other stimultaneously tilted or lowered. I am also satisfied that the
+      rear rudder is turned by the operator to the side having the least angle
+      of incidence and that such turning is done at the time the supplementary
+      planes are raised or depressed to prevent tilting or upsetting the
+      machine. On the papers presented I incline to the view, as already
+      indicated, that the claims of the patent in suit should be broadly
+      construed; and when given such construction, the elements of the Wright
+      machine are found in defendants' machine performing the same functional
+      result. There are dissimilarities in the defendants' structure—changes
+      of form and strengthening of parts—which may be improvements, but
+      such dissimilarities seem to me to have no bearing upon the means adopted
+      to preserve the equilibrium, which means are the equivalent of the claims
+      in suit and attain an identical result.
+Variance From Patent Immaterial.
+"Defendants further contend that the curved or arched surfaces of the
+      Wright aeroplanes in commercial use are departures from the patent, which
+      describes 'substantially flat surfaces,' and that such a construction
+      would be wholly impracticable. The drawing, Fig. 3, however, attached to
+      the specification, shows a curved line inward of the aeroplane with
+      straight lateral edges, and considering such drawing with the terminology
+      of the specification, the slight arching of the surface is not thought a
+      material departure; at any rate, the patent in issue does not belong to
+      the class of patents which requires narrowing to the details of
+      construction."
+"June Bug" First Infringement.
+Referring to the matter of priority, the judge said:
+"Indeed, no one interfered with the rights of the patentees by
+      constructing machines similar to theirs until in July, 1908, when Curtiss
+      exhibited a flying machine which he called the 'June Bug.' He was
+      immediately notified by the patentees that such machine with its movable
+      surfaces at the tips of wings infringed the patent in suit, and he replied
+      that he did not intend to publicly exhibit the machine for profit, but
+      merely was engaged in exhibiting it for scientific purposes as a member of
+      the Aerial Experiment Association. To this the patentees did not object.
+      Subsequently, however, the machine, with supplementary planes placed
+      midway between the upper and lower aeroplanes, was publicly exhibited by
+      the defendant corporation and used by Curtiss in aerial flights for prizes
+      and emoluments. It further appears that the defendants now threaten to
+      continue such use for gain and profit, and to engage in the manufacture
+      and sale of such infringing machines, thereby becoming an active rival of
+      complainant in the business of constructing flying machines embodying the
+      claims in suit, but such use of the infringing machines it is the duty of
+      this court, on the papers presented, to enjoin.
+"The requirements in patent causes for the issuance of an injunction
+      pendente lite—the validity of the patent, general acquiescence by
+      the public and infringement by the defendants—are so reasonably
+      clear that I believe if not probable the complainant may succeed at final
+      hearing, and therefore, status quo should be preserved and a preliminary
+      injunction granted.
+"So ordered."
+Points Claimed By Curtiss.
+That the Herring-Curtiss Co. will appeal is a certainty. Mr. Emerson R.
+      Newell, counsel for the company, states its case as follows:
+"The Curtiss machine has two main supporting surfaces, both of which are
+      curved * * * and are absolutely rigid at all times and cannot be moved,
+      warped or distorted in any manner. The front horizontal rudder is used for
+      the steering up or down, and the rear vertical rudder is used only for
+      steering to the right or left, in the same manner as a boat is steered by
+      its rudder. The machine is provided at the rear with a fixed horizontal
+      surface, which is not present in the machine of the patent, and which has
+      a distinct advantage in the operation of defendants' machine, as will be
+      hereafter discussed.
+Does Not Warp Main Surface.
+"Defendants' machine does not use the warping of the main supporting
+      surfaces in restoring the lateral equilibrium, but has two comparatively
+      small pivoted balancing surfaces or rudders. When one end of the machine
+      is tipped up or down from the normal, these planes may be thrown in
+      opposite directions by the operator, and so steer each end of the machine
+      up or down to its normal level, at which time tension upon them is
+      released and they are moved back by the pressure of the wind to their
+      normal position.
+Rudder Used Only For Steering.
+"When defendants' balancing surfaces are moved they present equal angles
+      of incidence to the normal rush of air and equal resistances, at each side
+      of the machine, and there is therefore no tendency to turn around a
+      vertical axis as is the case of the machine of the patent, consequently no
+      reason or necessity for turning the vertical rear rudder in defendants'
+      machine to counteract any such turning tendency. At any rate, whatever may
+      be the theories in regard to this matter, the fact is that the operator of
+      defendants' machine does not at any time turn his vertical rudder to
+      counteract any turning tendency clue to the side balancing surfaces, but
+      only uses it to steer the machine the same as a boat is steered."
+Aero Club Recognizes Wrights.
+The Aero Club of America has officially recognized the Wright patents.
+      This course was taken following a conference held April 9th, 1910,
+      participated in by William Wright and Andrew Freedman, representing the
+      Wright Co., and the Aero Club's committee, of Philip T. Dodge, W. W.
+      Miller, L. L. Gillespie, Wm. H. Page and Cortlandt F. Bishop.
+At this meeting arrangements were made by which the Aero Club recognizes
+      the Wright patents and will not give its section to any open meet where
+      the promoters thereof have not secured a license from the Wright Company.
+The substance of the agreement was that the Aero Club of America
+      recognizes the rights of the owners of the Wright patents under the
+      decisions of the Federal courts and refuses to countenance the
+      infringement of those patents as long as these decisions remain in force.
+In the meantime, in order to encourage aviation, both at home and abroad,
+      and in order to permit foreign aviators to take part in aviation contests
+      in this country it was agreed that the Aero Club of America, as the
+      American representative of the International Aeronautic Federation, should
+      approve only such public contests as may be licensed by the Wright Company
+      and that the Wright Company, on the other hand, should encourage the
+      holding of open meets or contests where ever approved as aforesaid by the
+      Aero Club of America by granting licenses to promoters who make
+      satisfactory arrangements with the company for its compensation for the
+      use of its patents. At such licensed meet any machine of any make may
+      participate freely without securing any further license or permit. The
+      details and terms of all meets will be arranged by the committee having in
+      charge the interests of both organizations.

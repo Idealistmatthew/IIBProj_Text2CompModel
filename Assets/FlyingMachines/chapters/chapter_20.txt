@@ -1,0 +1,3053 @@
+CHAPTER XI. PLANE AND RUDDER CONTROL.
+    
+
+      Having constructed and equipped your machine, the next thing is to decide
+      upon the method of controlling the various rudders and auxiliary planes by
+      which the direction and equilibrium and ascending and descending of the
+      machine are governed.
+    
+
+      The operator must be in position to shift instantaneously the position of
+      rudders and planes, and also to control the action of the motor. This
+      latter is supposed to work automatically and as a general thing does so
+      with entire satisfaction, but there are times when the supply of gasolene
+      must be regulated, and similar things done. Airship navigation calls for
+      quick action, and for this reason the matter of control is an important
+      one—it is more than important; it is vital.
+    
+
+      Several Methods of Control.
+    
+
+      Some aviators use a steering wheel somewhat after the style of that used
+      in automobiles, and by this not only manipulate the rudder planes, but
+      also the flow of gasolene. Others employ foot levers, and still others,
+      like the Wrights, depend upon hand levers.
+    
+
+      Curtiss steers his aeroplane by means of a wheel, but secures the desired
+      stabilizing effect with an ingenious jointed chair-back. This is so
+      arranged that by leaning toward the high point of his wing planes the
+      aeroplane is restored to an even keel. The steering post of the wheel is
+      movable backward and forward, and by this motion elevation is obtained.
+    
+
+      The Wrights for some time used two hand levers, one to steer by and warp
+      the flexible tips of the planes, the other to secure elevation. They have
+      now consolidated all the functions in one lever. Bleriot also uses the
+      single lever control.
+    
+
+      Farman employs a lever to actuate the rudders, but manipulates the
+      balancing planes by foot levers.
+    
+
+      Santos-Dumont uses two hand levers with which to steer and elevate, but
+      manipulates the planes by means of an attachment to the back of his outer
+      coat.
+    
+
+      Connection With the Levers.
+    
+
+      No matter which particular method is employed, the connection between the
+      levers and the object to be manipulated is almost invariably by wire. For
+      instance, from the steering levers (or lever) two wires connect with
+      opposite sides of the rudder. As a lever is moved so as to draw in the
+      right-hand wire the rudder is drawn to the right and vice versa. The
+      operation is exactly the same as in steering a boat. It is the same way in
+      changing the position of the balancing planes. A movement of the hands or
+      feet and the machine has changed its course, or, if the equilibrium is
+      threatened, is back on an even keel.
+    
+
+      Simple as this seems it calls for a cool head, quick eye, and steady hand.
+      The least hesitation or a false movement, and both aviator and craft are
+      in danger.
+    
+
+      Which Method is Best?
+    
+
+      It would be a bold man who would attempt to pick out any one of these
+      methods of control and say it was better than the others. As in other
+      sections of aeroplane mechanism each method has its advocates who dwell
+      learnedly upon its advantages, but the fact remains that all the various
+      plans work well and give satisfaction.
+    
+
+      What the novice is interested in knowing is how the control is effected,
+      and whether he has become proficient enough in his manipulation of it to
+      be absolutely dependable in time of emergency. No amateur should attempt a
+      flight alone, until he has thoroughly mastered the steering and plane
+      control. If the services and advice of an experienced aviator are not to
+      be had the novice should mount his machine on some suitable supports so it
+      will be well clear of the ground, and, getting into the operator's seat,
+      proceed to make himself well acquainted with the operation of the steering
+      wheel and levers.
+    
+
+      Some Things to Be Learned.
+    
+
+      He will soon learn that certain movements of the steering gear produce
+      certain effects on the rudders. If, for instance, his machine is equipped
+      with a steering wheel, he will find that turning the wheel to the right
+      turns the aeroplane in the same direction, because the tiller is brought
+      around to the left. In the same way he will learn that a given movement of
+      the lever throws the forward edge of the main plane upward, and that the
+      machine, getting the impetus of the wind under the concave surfaces of the
+      planes, will ascend. In the same way it will quickly become apparent to
+      him that an opposite movement of the lever will produce an opposite effect—the
+      forward edges of the planes will be lowered, the air will be "spilled" out
+      to the rear, and the machine will descend.
+    
+
+      The time expended in these preliminary lessons will be well spent. It
+      would be an act of folly to attempt to actually sail the craft without
+      them.
+    
+
+
+ 
+
+
+
+
+
+
+
+
+      CHAPTER XII. HOW TO USE THE MACHINE.
+    
+
+      It is a mistaken idea that flying machines must be operated at extreme
+      altitudes. True, under the impetus of handsome prizes, and the incentive
+      to advance scientific knowledge, professional aviators have ascended to
+      considerable heights, flights at from 500 to 1,500 feet being now common
+      with such experts as Farman, Bleriot, Latham, Paulhan, Wright and Curtiss.
+      The altitude record at this time is about 4,165 feet, held by Paulhan.
+    
+
+      One of the instructions given by experienced aviators to pupils, and for
+      which they insist upon implicit obeyance, is: "If your machine gets more
+      than 30 feet high, or comes closer to the ground than 6 feet, descend at
+      once." Such men as Wright and Curtiss will not tolerate a violation of
+      this rule. If their instructions are not strictly complied with they
+      decline to give the offender further lessons.
+    
+
+      Why This Rule Prevails.
+    
+
+      There is good reason for this precaution. The higher the altitude the more
+      rarefied (thinner) becomes the air, and the less sustaining power it has.
+      Consequently the more difficult it becomes to keep in suspension a given
+      weight. When sailing within 30 feet of the ground sustentation is
+      comparatively easy and, should a fall occur, the results are not likely to
+      be serious. On the other hand, sailing too near the ground is almost as
+      objectionable in many ways as getting up too high. If the craft is
+      navigated too close to the ground trees, shrubs, fences and other
+      obstructions are liable to be encountered. There is also the handicap of
+      contrary air currents diverted by the obstructions referred to, and which
+      will be explained more fully further on.
+    
+
+      How to Make a Start.
+    
+
+      Taking it for granted that the beginner has familiarized himself with the
+      manipulation of the machine, and especially the control mechanism, the
+      next thing in order is an actual flight. It is probable that his machine
+      will be equipped with a wheeled alighting gear, as the skids used by the
+      Wrights necessitate the use of a special starting track. In this respect
+      the wheeled machine is much easier to handle so far as novices are
+      concerned as it may be easily rolled to the trial grounds. This, as in the
+      case of the initial experiments, should be a clear, reasonably level
+      place, free from trees, fences, rocks and similar obstructions with which
+      there may be danger of colliding.
+    
+
+      The beginner will need the assistance of three men. One of these should
+      take his position in the rear of the machine, and one at each end. On
+      reaching the trial ground the aviator takes his seat in the machine and,
+      while the men at the ends hold it steady the one in the rear assists in
+      retaining it until the operator is ready. In the meantime the aviator has
+      started his motor. Like the glider the flying machine, in order to
+      accomplish the desired results, should be headed into the wind.
+    
+
+      When the Machine Rises.
+    
+
+      Under the impulse of the pushing movement, and assisted by the motor
+      action, the machine will gradually rise from the ground—provided it
+      has been properly proportioned and put together, and everything is in
+      working order. This is the time when the aviator requires a cool head, At
+      a modest distance from the ground use the control lever to bring the
+      machine on a horizontal level and overcome the tendency to rise. The exact
+      manipulation of this lever depends upon the method of control adopted, and
+      with this the aviator is supposed to have thoroughly familiarized himself
+      as previously advised in Chapter XI.
+    
+
+      It is at this juncture that the operator must act promptly, but with the
+      perfect composure begotten of confidence. One of the great drawbacks in
+      aviation by novices is the tendency to become rattled, and this is much
+      more prevalent than one might suppose, even among men who, under other
+      conditions, are cool and confident in their actions.
+    
+
+      There is something in the sensation of being suddenly lifted from the
+      ground, and suspended in the air that is disconcerting at the start, but
+      this will soon wear off if the experimenter will keep cool. A few
+      successful flights no matter how short they may be, will put a lot of
+      confidence into him.
+    
+
+      Make Your Flights Short.
+    
+
+      Be modest in your initial flights. Don't attempt to match the records of
+      experienced men who have devoted years to mastering the details of
+      aviation. Paulhan, Farman, Bleriot, Wright, Curtiss, and all the rest of
+      them began, and practiced for years, in the manner here described, being
+      content to make just a little advancement at each attempt. A flight of 150
+      feet, cleanly and safely made, is better as a beginning than one of 400
+      yards full of bungling mishaps.
+    
+
+      And yet these latter have their uses, provided the operator is of a
+      discerning mind and can take advantage of them as object lessons. But, it
+      is not well to invite them. They will occur frequently enough under the
+      most favorable conditions, and it is best to have them come later when the
+      feeling of trepidation and uncertainty as to what to do has worn off.
+    
+
+      Above all, don't attempt to fly too high. Keep within a reasonable
+      distance from the ground—about 25 or 30 feet. This advice is not
+      given solely to lessen the risk of serious accident in case of collapse,
+      but mainly because it will assist to instill confidence in the operator.
+    
+
+      It is comparatively easy to learn to swim in shallow water, but the
+      knowledge that one is tempting death in deep water begets timidity.
+    
+
+      Preserving the Equilibrium.
+    
+
+      After learning how to start and stop, to ascend and descend, the next
+      thing to master is the art of preserving equilibrium, the knack of keeping
+      the machine perfectly level in the air—on an "even keel," as a
+      sailor would say. This simile is particularly appropriate as all aviators
+      are in reality sailors, and much more daring ones than those who course
+      the seas. The latter are in craft which are kept afloat by the buoyancy of
+      the water, whether in motion or otherwise and, so long as normal
+      conditions prevail, will not sink. Aviators sail the air in craft in which
+      constant motion must be maintained in order to ensure flotation.
+    
+
+      The man who has ridden a bicycle or motorcycle around curves at anything
+      like high speed, will have a very good idea as to the principle of
+      maintaining equilibrium in an airship. He knows that in rounding curves
+      rapidly there is a marked tendency to change the direction of the motion
+      which will result in an upset unless he overcomes it by an inclination of
+      his body in an opposite direction. This is why we see racers lean well
+      over when taking the curves. It simply must be done to preserve the
+      equilibrium and avoid a spill.
+    
+
+      How It Works In the Air.
+    
+
+      If the equilibrium of an airship is disturbed to an extent which
+      completely overcomes the center of gravity it falls according to the
+      location of the displacement. If this displacement, for instance, is at
+      either end the apparatus falls endways; if it is to the front or rear, the
+      fall is in the corresponding direction.
+    
+
+      Owing to uncertain air currents—the air is continually shifting and
+      eddying, especially within a hundred feet or so of the earth—the
+      equilibrium of an airship is almost constantly being disturbed to some
+      extent. Even if this disturbance is not serious enough to bring on a fall
+      it interferes with the progress of the machine, and should be overcome at
+      once. This is one of the things connected with aerial navigation which
+      calls for prompt, intelligent action.
+    
+
+      Frequently, when the displacement is very slight, it may be overcome, and
+      the craft immediately righted by a mere shifting of the operator's body.
+      Take, for illustration, a case in which the extreme right end of the
+      machine becomes lowered a trifle from the normal level. It is possible to
+      bring it back into proper position by leaning over to the left far enough
+      to shift the weight to the counter-balancing point. The same holds good as
+      to minor front or rear displacements.
+    
+
+      When Planes Must Be Used.
+    
+
+      There are other displacements, however, and these are the most frequent,
+      which can be only overcome by manipulation of the stabilizing planes. The
+      method of procedure depends upon the form of machine in use. The Wright
+      machine, as previously explained, is equipped with plane ends which are so
+      contrived as to admit of their being warped (position changed) by means of
+      the lever control. These flexible tip planes move simultaneously, but in
+      opposite directions. As those on one end rise, those on the other end fall
+      below the level of the main plane. By this means air is displaced at one
+      point, and an increased amount secured in another.
+    
+
+      This may seem like a complicated system, but its workings are simple when
+      once understood. It is by the manipulation or warping of these flexible
+      tips that transverse stability is maintained, and any tendency to
+      displacement endways is overcome. Longitudinal stability is governed by
+      means of the front rudder.
+    
+
+      Stabilizing planes of some form are a feature, and a necessary feature, on
+      all flying machines, but the methods of application and manipulation vary
+      according to the individual ideas of the inventors. They all tend,
+      however, toward the same end—the keeping of the machine perfectly
+      level when being navigated in the air.
+    
+
+      When to Make a Flight.
+    
+
+      A beginner should never attempt to make a flight when a strong wind is
+      blowing. The fiercer the wind, the more likely it is to be gusty and
+      uncertain, and the more difficult it will be to control the machine. Even
+      the most experienced and daring of aviators find there is a limit to wind
+      speed against which they dare not compete. This is not because they lack
+      courage, but have the sense to realize that it would be silly and useless.
+    
+
+      The novice will find a comparatively still day, or one when the wind is
+      blowing at not to exceed 15 miles an hour, the best for his experiments.
+      The machine will be more easily controlled, the trip will be safer, and
+      also cheaper as the consumption of fuel increases with the speed of the
+      wind against which the aeroplane is forced.
+    
+
+
+ 
+
+
+
+
+
+
+
+
+      CHAPTER XIII. PECULIARITIES OF AIRSHIP POWER.
+    
+
+      As a general proposition it takes much more power to propel an airship a
+      given number of miles in a certain time than it does an automobile
+      carrying a far heavier load. Automobiles with a gross load of 4,000
+      pounds, and equipped with engines of 30 horsepower, have travelled
+      considerable distances at the rate of 50 miles an hour. This is an
+      equivalent of about 134 pounds per horsepower. For an average modern
+      flying machine, with a total load, machine and passengers, of 1,200
+      pounds, and equipped with a 50-horsepower engine, 50 miles an hour is the
+      maximum. Here we have the equivalent of exactly 24 pounds per horsepower.
+      Why this great difference?
+    
+
+      No less an authority than Mr. Octave Chanute answers the question in a
+      plain, easily understood manner. He says:
+    
+
+      "In the case of an automobile the ground furnishes a stable support; in
+      the case of a flying machine the engine must furnish the support and also
+      velocity by which the apparatus is sustained in the air."
+    
+
+      Pressure of the Wind.
+    
+
+      Air pressure is a big factor in the matter of aeroplane horsepower.
+      Allowing that a dead calm exists, a body moving in the atmosphere creates
+      more or less resistance. The faster it moves, the greater is this
+      resistance. Moving at the rate of 60 miles an hour the resistance, or wind
+      pressure, is approximately 50 pounds to the square foot of surface
+      presented. If the moving object is advancing at a right angle to the wind
+      the following table will give the horsepower effect of the resistance per
+      square foot of surface at various speeds.
+    
+
+                            Horse Power
+          Miles per Hour    per sq. foot
+          10             0.013
+          15             0 044
+          20             0.105
+          25             0.205
+          30             0.354
+          40             0.84
+          50             1.64
+          60             2.83
+          80             6.72
+          100            13.12
+
+
+      While the pressure per square foot at 60 miles an hour, is only 1.64
+      horsepower, at 100 miles, less than double the speed, it has increased to
+      13.12 horsepower, or exactly eight times as much. In other words the
+      pressure of the wind increases with the square of the velocity. Wind at 10
+      miles an hour has four times more pressure than wind at 5 miles an hour.
+    
+
+      How to Determine Upon Power.
+    
+
+      This element of air resistance must be taken into consideration in
+      determining the engine horsepower required. When the machine is under
+      headway sufficient to raise it from the ground (about 20 miles an hour),
+      each square foot of surface resistance, will require nearly nine-tenths of
+      a horsepower to overcome the wind pressure, and propel the machine through
+      the air. As shown in the table the ratio of power required increases
+      rapidly as the speed increases until at 60 miles an hour approximately 3
+      horsepower is needed.
+    
+
+      In a machine like the Curtiss the area of wind-exposed surface is about 15
+      square feet. On the basis of this resistance moving the machine at 40
+      miles an hour would require 12 horsepower. This computation covers only
+      the machine's power to overcome resistance. It does not cover the power
+      exerted in propelling the machine forward after the air pressure is
+      overcome. To meet this important requirement Mr. Curtiss finds it
+      necessary to use a 50-horsepower engine. Of this power, as has been
+      already stated, 12 horsepower is consumed in meeting the wind pressure,
+      leaving 38 horsepower for the purpose of making progress.
+    
+
+      The flying machine must move faster than the air to which it is opposed.
+      Unless it does this there can be no direct progress. If the two forces are
+      equal there is no straight-ahead advancement. Take, for sake of
+      illustration, a case in which an aeroplane, which has developed a speed of
+      30 miles an hour, meets a wind velocity of equal force moving in an
+      opposite direction. What is the result? There can be no advance because it
+      is a contest between two evenly matched forces. The aeroplane stands
+      still. The only way to get out of the difficulty is for the operator to
+      wait for more favorable conditions, or bring his machine to the ground in
+      the usual manner by manipulation of the control system.
+    
+
+      Take another case. An aeroplane, capable of making 50 miles an hour in a
+      calm, is met by a head wind of 25 miles an hour. How much progress does
+      the aeroplane make? Obviously it is 25 miles an hour over the ground.
+    
+
+      Put the proposition in still another way. If the wind is blowing harder
+      than it is possible for the engine power to overcome, the machine will be
+      forced backward.
+    
+
+      Wind Pressure a Necessity.
+    
+
+      While all this is true, the fact remains that wind pressure, up to a
+      certain stage, is an absolute necessity in aerial navigation. The
+      atmosphere itself has very little real supporting power, especially if
+      inactive. If a body heavier than air is to remain afloat it must move
+      rapidly while in suspension.
+    
+
+      One of the best illustrations of this is to be found in skating over thin
+      ice. Every school boy knows that if he moves with speed he may skate or
+      glide in safety across a thin sheet of ice that would not begin to bear
+      his weight if he were standing still. Exactly the same proposition obtains
+      in the case of the flying machine.
+    
+
+      The non-technical reason why the support of the machine becomes easier as
+      the speed increases is that the sustaining power of the atmosphere
+      increases with the resistance, and the speed with which the object is
+      moving increases this resistance. With a velocity of 12 miles an hour the
+      weight of the machine is practically reduced by 230 pounds. Thus, if under
+      a condition of absolute calm it were possible to sustain a weight of 770
+      pounds, the same atmosphere would sustain a weight of 1,000 pounds moving
+      at a speed of 12 miles an hour. This sustaining power increases rapidly as
+      the speed increases. While at 12 miles the sustaining power is figured at
+      230 pounds, at 24 miles it is four times as great, or 920 pounds.
+    
+
+      Supporting Area of Birds.
+    
+
+      One of the things which all producing aviators seek to copy is the motive
+      power of birds, particularly in their relation to the area of support.
+      Close investigation has established the fact that the larger the bird the
+      less is the relative area of support required to secure a given result.
+      This is shown in the following table:
+    
+
+                                                   Supporting
+                  Weight       Surface       Horse      area
+     Bird         in lbs.     in sq. feet   power     per lb.
+     Pigeon         1.00      0.7           0.012     0.7
+     Wild Goose     9.00      2.65          0.026     0.2833
+     Buzzard        5.00      5.03          0.015     1.06
+     Condor        17.00      9.85          0.043     0.57
+
+
+      So far as known the condor is the largest of modern birds. It has a wing
+      stretch of 10 feet from tip to tip, a supporting area of about 10 square
+      feet, and weighs 17 pounds. It. is capable of exerting perhaps 1-30
+      horsepower. (These figures are, of course, approximate.) Comparing the
+      condor with the buzzard with a wing stretch of 6 feet, supporting area of
+      5 square feet, and a little over 1-100 horsepower, it may be seen that,
+      broadly speaking, the larger the bird the less surface area (relatively)
+      is needed for its support in the air.
+    
+
+      Comparison With Aeroplanes.
+    
+
+      If we compare the bird figures with those made possible by the development
+      of the aeroplane it will be readily seen that man has made a wonderful
+      advance in imitating the results produced by nature. Here are the figures:
+    
+
+                                                       Supporting
+                     Weight      Surface       Horse      area
+     Machine         in lbs.    in sq. feet    power     per lb.
+     Santos-Dumont..  350      110.00        30        0.314
+     Bleriot.....     700      150.00        25        0.214
+     Antoinette.... 1,200      538.00        50        0.448
+     Curtiss.....     700      258.00        60        0.368
+     Wright.....4 1,100      538.00        25        0.489
+     Farman......   1,200      430.00        50        0.358
+     Voisin......   1,200      538.00        50        0.448
+
+
+      While the average supporting surface is in favor of the aeroplane, this is
+      more than overbalanced by the greater amount of horsepower required for
+      the weight lifted. The average supporting surface in birds is about
+      three-quarters of a square foot per pound. In the average aeroplane it is
+      about one-half square foot per pound. On the other hand the average
+      aeroplane has a lifting capacity of 24 pounds per horsepower, while the
+      buzzard, for instance, lifts 5 pounds with 15-100 of a horsepower. If the
+      Wright machine—which has a lifting power of 50 pounds per horsepower—should
+      be alone considered the showing would be much more favorable to the
+      aeroplane, but it would not be a fair comparison.
+    
+
+      More Surface, Less Power.
+    
+
+      Broadly speaking, the larger the supporting area the less will be the
+      power required. Wright, by the use of 538 square feet of supporting
+      surface, gets along with an engine of 25 horsepower. Curtiss, who uses
+      only 258 square feet of surface, finds an engine of 50 horsepower is
+      needed. Other things, such as frame, etc., being equal, it stands to
+      reason that a reduction in the area of supporting surface will
+      correspondingly reduce the weight of the machine. Thus we have the Curtiss
+      machine with its 258 square feet of surface, weighing only 600 pounds
+      (without operator), but requiring double the horsepower of the Wright
+      machine with 538 square feet of surface and weighing 1,100 pounds. This
+      demonstrates in a forceful way the proposition that the larger the surface
+      the less power will be needed.
+    
+
+      But there is a limit, on account of its bulk and awkwardness in handling,
+      beyond which the surface area cannot be enlarged. Otherwise it might be
+      possible to equip and operate aeroplanes satisfactorily with engines of 15
+      horsepower, or even less.
+    
+
+      The Fuel Consumption Problem.
+    
+
+      Fuel consumption is a prime factor in the production of engine power. The
+      veriest mechanical tyro knows in a general way that the more power is
+      secured the more fuel must be consumed, allowing that there is no
+      difference in the power-producing qualities of the material used. But few
+      of us understand just what the ratio of increase is, or how it is caused.
+      This proposition is one of keen interest in connection with aviation.
+    
+
+      Let us cite a problem which will illustrate the point quoted: Allowing
+      that it takes a given amount of gasolene to propel a flying machine a
+      given distance, half the way with the wind, and half against it, the wind
+      blowing at one-half the speed of the machine, what will be the increase in
+      fuel consumption?
+    
+
+      Increase of Thirty Per Cent.
+    
+
+      On the face of it there would seem to be no call for an increase as the
+      resistance met when going against the wind is apparently offset by the
+      propulsive force of the wind when the machine is travelling with it. This,
+      however, is called faulty reasoning. The increase in fuel consumption, as
+      figured by Mr. F. W. Lanchester, of the Royal Society of Arts, will be
+      fully 30 per cent over the amount required for a similar operation of the
+      machine in still air. If the journey should be made at right angles to the
+      wind under the same conditions the increase would be 15 per cent.
+    
+
+      In other words Mr. Lanchester maintains that the work done by the motor in
+      making headway against the wind for a certain distance calls for more
+      engine energy, and consequently more fuel by 30 per cent, than is saved by
+      the helping force of the wind on the return journey.
+    
+
+
+ 
+
+
+
+
+
+
+
+
+      CHAPTER XIV. ABOUT WIND CURRENTS, ETC.
+    
+
+      One of the first difficulties which the novice will encounter is the
+      uncertainty of the wind currents. With a low velocity the wind, some
+      distance away from the ground, is ordinarily steady. As the velocity
+      increases, however, the wind generally becomes gusty and fitful in its
+      action. This, it should be remembered, does not refer to the velocity of
+      the machine, but to that of the air itself.
+    
+
+      In this connection Mr. Arthur T. Atherholt, president of the Aero Club of
+      Pennsylvania, in addressing the Boston Society of Scientific Research,
+      said:
+    
+
+      "Probably the whirlpools of Niagara contain no more erratic currents than
+      the strata of air which is now immediately above us, a fact hard to
+      realize on account of its invisibility."
+    
+
+      Changes In Wind Currents.
+    
+
+      While Mr. Atherholt's experience has been mainly with balloons it is all
+      the more valuable on this account, as the balloons were at the mercy of
+      the wind and their varying directions afforded an indisputable guide as to
+      the changing course of the air currents. In speaking of this he said:
+    
+
+      "In the many trips taken, varying in distance traversed from twenty-five
+      to 900 miles, it was never possible except in one instance to maintain a
+      straight course. These uncertain currents were most noticeable in the
+      Gordon-Bennett race from St. Louis in 1907. Of the nine aerostats
+      competing in that event, eight covered a more or less direct course due
+      east and southeast, whereas the writer, with Major Henry B. Hersey, first
+      started northwest, then north, northeast, east, east by south, and when
+      over the center of Lake Erie were again blown northwest notwithstanding
+      that more favorable winds were sought for at altitudes varying from 100 to
+      3,000 meters, necessitating a finish in Canada nearly northeast of the
+      starting point.
+    
+
+      "These nine balloons, making landings extending from Lake Ontario, Canada,
+      to Virginia, all started from one point within the same hour.
+    
+
+      "The single exception to these roving currents occurred on October 21st,
+      of last year (1909) when, starting from Philadelphia, the wind shifted
+      more than eight degrees, the greatest variation being at the lowest
+      altitudes, yet at no time was a height of over a mile reached.
+    
+
+      "Throughout the entire day the sky was overcast, with a thermometer
+      varying from fifty-seven degrees at 300 feet to forty-four degrees,
+      Fahrenheit at 5,000 feet, at which altitude the wind had a velocity of 43
+      miles an hour, in clouds of a cirro-cumulus nature, a landing finally
+      being made near Tannersville, New York, in the Catskill mountains, after a
+      voyage of five and one-half hours.
+    
+
+      "I have no knowledge of a recorded trip of this distance and duration,
+      maintained in practically a straight line from start to finish."
+    
+
+      This wind disturbance is more noticeable and more difficult to contend
+      with in a balloon than in a flying machine, owing to the bulk and unwieldy
+      character of the former. At the same time it is not conducive to pleasant,
+      safe or satisfactory sky-sailing in an aeroplane. This is not stated with
+      the purpose of discouraging aviation, but merely that the operator may
+      know what to expect and be prepared to meet it.
+    
+
+      Not only does the wind change its horizontal course abruptly and without
+      notice, but it also shifts in a vertical direction, one second blowing up,
+      and another down. No man has as yet fathomed the why and wherefore of this
+      erratic action; it is only known that it exists.
+    
+
+      The most stable currents will be found from 50 to 100 feet from the earth,
+      provided the wind is not diverted by such objects as trees, rocks, etc.
+      That there are equally stable currents higher up is true, but they are
+      generally to be found at excessive altitudes.
+    
+
+      How a Bird Meets Currents.
+    
+
+      Observe a bird in action on a windy day and you will find it continually
+      changing the position of its wings. This is done to meet the varying gusts
+      and eddies of the air so that sustentation may be maintained and headway
+      made. One second the bird is bending its wings, altering the angle of
+      incidence; the next it is lifting or depressing one wing at a time. Still
+      again it will extend one wing tip in advance of the other, or be spreading
+      or folding, lowering or raising its tail.
+    
+
+      All these motions have a meaning, a purpose. They assist the bird in
+      preserving its equilibrium. Without them the bird would be just as
+      helpless in the air as a human being and could not remain afloat.
+    
+
+      When the wind is still, or comparatively so, a bird, having secured the
+      desired altitude by flight at an angle, may sail or soar with no wing
+      action beyond an occasional stroke when it desires to advance. But, in a
+      gusty, uncertain wind it must use its wings or alight somewhere.
+    
+
+      Trying to Imitate the Bird.
+    
+
+      Writing in Fly, Mr. William E. White says:
+    
+
+      "The bird's flight suggests a number of ways in which the equilibrium of a
+      mechanical bird may be controlled. Each of these methods of control may be
+      effected by several different forms of mechanism.
+    
+
+      "Placing the two wings of an aeroplane at an angle of three to five
+      degrees to each other is perhaps the oldest way of securing lateral
+      balance. This way readily occurs to anyone who watches a sea gull soaring.
+      The theory of the dihedral angle is that when one wing is lifted by a gust
+      of wind, the air is spilled from under it; while the other wing, being
+      correspondingly depressed, presents a greater resistance to the gust and
+      is lifted restoring the balance. A fixed angle of three to five degrees,
+      however, will only be sufficient for very light puffs of wind and to mount
+      the wings so that the whole wing may be moved to change the dihedral angle
+      presents mechanical difficulties which would be better avoided.
+    
+
+      "The objection of mechanical impracticability applies to any plan to
+      preserve the balance by shifting weight or ballast. The center of gravity
+      should be lower than the center of the supporting surfaces, but cannot be
+      made much lower. It is a common mistake to assume that complete stability
+      will be secured by hanging the center of gravity very low on the principle
+      of the parachute. An aeroplane depends upon rapid horizontal motion for
+      its support, and if the center of gravity be far below the center of
+      support, every change of speed or wind pressure will cause the machine to
+      turn about its center of gravity, pitching forward and backward
+      dangerously.
+    
+
+      Preserving Longitudinal Balance.
+    
+
+      "The birds maintain longitudinal, or fore and aft balance, by elevating or
+      depressing their tails. Whether this action is secured in an aeroplane by
+      means of a horizontal rudder placed in the rear, or by deflecting planes
+      placed in front of the main planes, the principle is evidently the same. A
+      horizontal rudder placed well to the rear as in the Antoinette, Bleriot or
+      Santos-Dumont monoplanes, will be very much safer and steadier than the
+      deflecting planes in front, as in the Wright or Curtiss biplanes, but not
+      so sensitive or prompt in action.
+    
+
+      "The natural fore and aft stability is very much strengthened by placing
+      the load well forward. The center of gravity near the front and a tail or
+      rudder streaming to the rear secures stability as an arrow is balanced by
+      the head and feathering. The adoption of this principle makes it almost
+      impossible for the aeroplane to turn over.
+    
+
+      The Matter of Lateral Balance.
+    
+
+      "All successful aeroplanes thus far have maintained lateral balance by the
+      principle of changing the angle of incidence of the wings.
+    
+
+      "Other ways of maintaining the lateral balance, suggested by observation
+      of the flight of birds are—extending the wing tips and spilling the
+      air through the pinions; or, what is the same thing, varying the area of
+      the wings at their extremities.
+    
+
+      "Extending the wing tips seems to be a simple and effective solution of
+      the problem. The tips may be made to swing outward upon a vertical axis
+      placed at the front edge of the main planes; or they may be hinged to the
+      ends of the main plane so as to be elevated or depressed through suitable
+      connections by the aviator; or they may be supported from a horizontal
+      axis parallel with the ends of the main planes so that they may swing
+      outward, the aviator controlling both tips through one lever so that as
+      one tip is extended the other is retracted.
+    
+
+      "The elastic wing pinions of a bird bend easily before the wind,
+      permitting the gusts to glance off, but presenting always an even and
+      efficient curvature to the steady currents of the air."
+    
+
+      High Winds Threaten Stability.
+    
+
+      To ensure perfect stability, without control, either human or automatic,
+      it is asserted that the aeroplane must move faster than the wind is
+      blowing. So long as the wind is blowing at the rate of 30 miles an hour,
+      and the machine is traveling 40 or more, there will be little trouble as
+      regards equilibrium so far as wind disturbance goes, provided the wind
+      blows evenly and does not come in gusts or eddying currents. But when
+      conditions are reversed—when the machine travels only 30 miles an
+      hour and the wind blows at the rate of 50, look out for loss of
+      equilibrium.
+    
+
+      One of the main reasons for this is that high winds are rarely steady;
+      they seldom blow for any length of time at the same speed. They are
+      usually "gusty," the gusts being a momentary movement at a higher speed.
+      Tornadic gusts are also formed by the meeting of two opposing currents,
+      causing a whirling motion, which makes stability uncertain. Besides, it is
+      not unusual for wind of high speed to suddenly change its direction
+      without warning.
+    
+
+      Trouble With Vertical Columns.
+    
+
+      Vertical currents—columns of ascending air—are frequently
+      encountered in unexpected places and have more or less tendency, according
+      to their strength, to make it difficult to keep the machine within a
+      reasonable distance from the ground.
+    
+
+      These vertical currents are most generally noticeable in the vicinity of
+      steep cliffs, or deep ravines. In such instances they are usually of
+      considerable strength, being caused by the deflection of strong winds
+      blowing against the face of the cliffs. This deflection exerts a back
+      pressure which is felt quite a distance away from the point of origin, so
+      that the vertical current exerts an influence in forcing the machine
+      upward long before the cliff is reached.
+    
+
+
+ 
+
+
+
+
+
+
+
+
+      CHAPTER XV. THE ELEMENT OF DANGER.
+    
+
+      That there is an element of danger in aviation is undeniable, but it is
+      nowhere so great as the public imagines. Men are killed and injured in the
+      operation of flying machines just as they are killed and injured in the
+      operation of railways. Considering the character of aviation the
+      percentage of casualties is surprisingly small.
+    
+
+      This is because the results following a collapse in the air are very much
+      different from what might be imagined. Instead of dropping to the ground
+      like a bullet an aeroplane, under ordinary conditions will, when anything
+      goes wrong, sail gently downward like a parachute, particularly if the
+      operator is cool-headed and nervy enough to so manipulate the apparatus as
+      to preserve its equilibrium and keep the machine on an even keel.
+    
+
+      Two Fields of Safety.
+    
+
+      At least one prominent aviator has declared that there are two fields of
+      safety—one close to the ground, and the other well up in the air. In
+      the first-named the fall will be a slight one with little chance of the
+      operator being seriously hurt. From the field of high altitude the the
+      descent will be gradual, as a rule, the planes of the machine serving to
+      break the force of the fall. With a cool-headed operator in control the
+      aeroplane may be even guided at an angle (about 1 to 8) in its descent so
+      as to touch the ground with a gliding motion and with a minimum of impact.
+    
+
+      Such an experience, of course, is far from pleasant, but it is by no means
+      so dangerous as might appear. There is more real danger in falling from an
+      elevation of 75 or 100 feet than there is from 1,000 feet, as in the
+      former case there is no chance for the machine to serve as a parachute—its
+      contact with the ground comes too quickly.
+    
+
+      Lesson in Recent Accidents.
+    
+
+      Among the more recent fatalities in aviation are the deaths of Antonio
+      Fernandez and Leon Delagrange. The former was thrown to the ground by a
+      sudden stoppage of his motor, the entire machine seeming to collapse. It
+      is evident there were radical defects, not only in the motor, but in the
+      aeroplane framework as well. At the time of the stoppage it is estimated
+      that Fernandez was up about 1,500 feet, but the machine got no opportunity
+      to exert a parachute effect, as it broke up immediately. This would
+      indicate a fatal weakness in the structure which, under proper testing,
+      could probably have been detected before it was used in flight.
+    
+
+      It is hard to say it, but Delagrange appears to have been culpable to
+      great degree in overloading his machine with a motor equipment much
+      heavier than it was designed to sustain. He was 65 feet up in the air when
+      the collapse occurred, resulting in his death. As in the case of Fernandez
+      common-sense precaution would doubtless have prevented the fatality.
+    
+
+      Aviation Not Extra Hazardous.
+    
+
+      All told there have been, up to the time of this writing (April, 1910),
+      just five fatalities in the history of power-driven aviation. This is
+      surprisingly low when the nature of the experiments, and the fact that
+      most of the operators were far from having extended experience, is taken
+      into consideration. Men like the Wrights, Curtiss, Bleriot, Farman,
+      Paulhan and others, are now experts, but there was a time, and it was not
+      long ago, when they were unskilled. That they, with numerous others less
+      widely known, should have come safely through their many experiments would
+      seem to disprove the prevailing idea that aviation is an extra hazardous
+      pursuit.
+    
+
+      In the hands of careful, quick-witted, nervy men the sailing of an airship
+      should be no more hazardous than the sailing of a yacht. A vessel captain
+      with common sense will not go to sea in a storm, or navigate a weak,
+      unseaworthy craft. Neither should an aviator attempt to sail when the wind
+      is high and gusty, nor with a machine which has not been thoroughly tested
+      and found to be strong and safe.
+    
+
+      Safer Than Railroading.
+    
+
+      Statistics show that some 12,000 people are killed and 72,000 injured
+      every year on the railroads of the United States. Come to think it over it
+      is small wonder that the list of fatalities is so large. Trains are run at
+      high speeds, dashing over crossings at which collisions are liable to
+      occur, and over bridges which often collapse or are swept away by floods.
+      Still, while the number of casualties is large, the actual percentage is
+      small considering the immense number of people involved.
+    
+
+      It is so in aviation. The number of casualties is remarkably small in
+      comparison with the number of flights made. In the hands of competent men
+      the sailing of an airship should be, and is, freer from risk of accident
+      than the running of a railway train. There are no rails to spread or
+      break, no bridges to collapse, no crossings at which collisions may occur,
+      no chance for some sleepy or overworked employee to misunderstand the
+      dispatcher's orders and cause a wreck.
+    
+
+      Two Main Causes of Trouble.
+    
+
+      The two main causes of trouble in an airship leading to disaster may be
+      attributed to the stoppage of the motor, and the aviator becoming rattled
+      so that he loses control of his machine. Modern ingenuity is fast
+      developing motors that almost daily become more and more reliable, and
+      experience is making aviators more and more self-confident in their
+      ability to act wisely and promptly in cases of emergency. Besides this a
+      satisfactory system of automatic control is in a fair way of being
+      perfected.
+    
+
+      Occasionally even the most experienced and competent of men in all
+      callings become careless and by foolish action invite disaster. This is
+      true of aviators the same as it is of railroaders, men who work in
+      dynamite mills, etc. But in nearly every instance the responsibility rests
+      with the individual; not with the system. There are some men unfitted by
+      nature for aviation, just as there are others unfitted to be railway
+      engineers.
+    
+
+
+ 
+
+
+
+
+
+
+
+
+      CHAPTER XVI. RADICAL CHANGES BEING MADE.
+    
+
+      Changes, many of them extremely radical in their nature, are continually
+      being made by prominent aviators, and particularly those who have won the
+      greatest amount of success. Wonderful as the results have been few of the
+      aviators are really satisfied. Their successes have merely spurred them on
+      to new endeavors, the ultimate end being the development of an absolutely
+      perfect aircraft.
+    
+
+      Among the men who have been thus experimenting are the Wright Brothers,
+      who last year (1909) brought out a craft totally different as regards
+      proportions and weight from the one used the preceding year. One marked
+      result was a gain of about 3 1/2 miles an hour in speed.
+    
+
+      Dimensions of 1908 Machine.
+    
+
+      The 1908 model aeroplane was 40 by 29 feet over all. The carrying
+      surfaces, that is, the two aerocurves, were 40 by 6 feet, having a
+      parabolical curve of one in twelve. With about 70 square feet of surface
+      in the rudders, the total surface given was about 550 square feet. The
+      engine, which is the invention of the Wright brothers, weighed,
+      approximately, 200 pounds, and gave about 25 horsepower at 1,400
+      revolutions per minute. The total weight of the aeroplane, exclusive of
+      passenger, but inclusive of engine, was about 1,150 pounds. This result
+      showed a lift of a fraction over 2 1/4 pounds to the square foot of
+      carrying surface. The speed desired was 40 miles an hour, but the machine
+      was found to make only a scant 39 miles an hour. The upright struts were
+      about 7/8-inch thick, the skids, 2 1/2 by 1 1/4 inches thick.
+    
+
+      Dimensions of 1909 Machine.
+    
+
+      The 1909 aeroplane was built primarily for greater speed, and relatively
+      heavier; to be less at the mercy of the wind. This result was obtained as
+      follows: The aerocurves, or carrying surfaces, were reduced in dimensions
+      from 40 by 6 feet to 36 by 5 1/2 feet, the curve remaining the same, one
+      in twelve. The upright struts were cut from seven-eighths inch to
+      five-eighths inch, and the skids from two and one-half by one and
+      one-quarter to two and one-quarter by one and three-eighths inches. This
+      result shows that there were some 81 square feet of carrying surface
+      missing over that of last year's model. and some 25 pounds loss of weight.
+      Relatively, though, the 1909 model aeroplane, while actually 25 pounds
+      lighter, is really some 150 pounds heavier in the air than the 1908 model,
+      owing to the lesser square feet of carrying surface.
+    
+
+      Some of the Results Obtained.
+    
+
+      Reducing the carrying surfaces from 6 to 5 1/2 feet gave two results—first,
+      less carrying capacity; and, second, less head-on resistance, owing to the
+      fact that the extent of the parabolic curve in the carrying surfaces was
+      shortened. The "head-on" resistance is the retardance the aeroplane meets
+      in passing through the air, and is counted in square feet. In the 1908
+      model the curve being one in twelve and 6 feet deep, gave 6 inches of
+      head-on resistance. The plane being 40 feet spread, gave 6 inches by 40
+      feet, or 20 square feet of head-on resistance. Increasing this figure by a
+      like amount for each plane, and adding approximately 10 square feet for
+      struts, skids and wiring, we have a total of approximately, 50 square feet
+      of surface for "head-on" resistance.
+    
+
+      In the 1909 aeroplane, shortening the curve 6 inches at the parabolic end
+      of the curve took off 1 inch of head-on resistance. Shortening the spread
+      of the planes took off between 3 and 4 square feet of head-on resistance.
+      Add to this the total of 7 square feet, less curve surface and about 1
+      square foot, less wire and woodwork resistance, and we have a grand total
+      of, approximately, 12 square feet of less "head-on" resistance over the
+      1908 model.
+    
+
+      Changes in Engine Action.
+    
+
+      The engine used in 1909 was the same one used in 1908, though some minor
+      changes were made as improvements; for instance, a make and break spark
+      was used, and a nine-tooth, instead of a ten-tooth magneto gear-wheel was
+      used. This increased the engine revolutions per minute from 1,200 to
+      1,400, and the propeller revolutions per minute from 350 to 371, giving a
+      propeller thrust of, approximately, 170 foot pounds instead of 153, as was
+      had last year.
+    
+
+      More Speed and Same Capacity.
+    
+
+      One unsatisfactory feature of the 1909 model over that of 1908,
+      apparently, was the lack of inherent lateral stability. This was caused by
+      the lesser surface and lesser extent of curvatures at the portions of the
+      aeroplane which were warped. This defect did not show so plainly after Mr.
+      Orville Wright had become fully proficient in the handling of the new
+      machine, and with skillful management, the 1909 model aeroplane will be
+      just as safe and secure as the other though it will take a little more
+      practice to get that same degree of skill.
+    
+
+      To sum up: The aeroplane used in 1909 was 25 pounds lighter, but really
+      about 150 pounds heavier in the air, had less head-on resistance, and
+      greater propeller thrust. The speed was increased from about 39 miles per
+      hour to 42 1/2 miles per hour. The lifting capacity remained about the
+      same, about 450 pounds capacity passenger-weight, with the 1908 machine.
+      In this respect, the loss of carrying surface was compensated for by the
+      increased speed.
+    
+
+      During the first few flights it was plainly demonstrated that it would
+      need the highest skill to properly handle the aeroplane, as first one end
+      and then the other would dip and strike the ground, and either tear the
+      canvas or slew the aeroplane around and break a skid.
+    
+
+      Wrights Adopt Wheeled Gears.
+    
+
+      In still another important respect the Wrights, so far as the output of
+      one of their companies goes, have made a radical change. All the
+      aeroplanes turned out by the Deutsch Wright Gesellschaft, according to the
+      German publication, Automobil-Welt, will hereafter be equipped with
+      wheeled running gears and tails. The plan of this new machine is shown in
+      the illustration on page 145. The wheels are three in number, and are
+      attached one to each of the two skids, just under the front edge of the
+      planes, and one forward of these, attached to a cross-member. It is
+      asserted that with these wheels the teaching of purchasers to operate the
+      machines is much simplified, as the beginners can make short flights on
+      their own account without using the starting derrick.
+    
+
+      This is a big concession for the Wrights to make, as they have hitherto
+      adhered stoutly to the skid gear. While it is true they do not control the
+      German company producing their aeroplanes, yet the nature of their
+      connection with the enterprise is such that it may be taken for granted no
+      radical changes in construction would be made without their approval and
+      consent.
+    
+
+      Only Three Dangerous Rivals.
+    
+
+      Official trials with the 1909 model smashed many records and leave the
+      Wright brothers with only three dangerous rivals in the field, and with
+      basic patents which cover the curve, warp and wing-tip devices found on
+      all the other makes of aeroplanes. These three rivals are the Curtiss and
+      Voisin biplane type and the Bleriot monoplane pattern.
+    
+
+      The Bleriot monoplane is probably the most dangerous rival, as this make
+      of machine has a record of 54 miles per hour, has crossed the English
+      channel, and has lifted two passengers besides the operator. The latest
+      type of this machine only weighs 771.61 pounds complete, without
+      passengers, and will lift a total passenger weight of 462.97 pounds, which
+      is a lift of 5.21 pounds to the square foot. This is a better result than
+      those published by the Wright brothers, the best noted being 4.25 pounds
+      per square foot.
+    
+
+      Other Aviators at Work.
+    
+
+      The Wrights, however, are not alone in their efforts to promote the
+      efficiency of the flying machine. Other competent inventive aviators,
+      notably Curtiss, Voisin, Bleriot and Farman, are close after them. The
+      Wrights, as stated, have a marked advantage in the possession of patents
+      covering surface plane devices which have thus far been found
+      indispensable in flying machine construction. Numerous law suits growing
+      out of alleged infringements of these patents have been started, and
+      others are threatened. What effect these actions will have in deterring
+      aviators in general from proceeding with their experiments remains to be
+      seen.
+    
+
+      In the meantime the four men named—Curtiss, Voisin, Bleriot and
+      Farman—are going ahead regardless of consequences, and the inventive
+      genius of each is so strong that it is reasonable to expect some
+      remarkable developments in the near future.
+    
+
+      Smallest of Flying Machines.
+    
+
+      To Santos Dumont must be given the credit of producing the smallest
+      practical flying machine yet constructed. True, he has done nothing
+      remarkable with it in the line of speed, but he has demonstrated the fact
+      that a large supporting surface is not an essential feature.
+    
+
+      This machine is named "La Demoiselle." It is a monoplane of the dihedral
+      type, with a main plane on each side of the center. These main planes are
+      of 18 foot spread, and nearly 6 1/2 feet in depth, giving approximately
+      115 feet of surface area. The total weight is 242 pounds, which is 358
+      pounds less than any other machine which has been successfully used. The
+      total depth from front to rear is 26 feet.
+    
+
+      The framework is of bamboo, strengthened and held taut with wire guys.
+    
+
+      Have One Rule in Mind.
+    
+
+      In this struggle for mastery in flying machine efficiency all the
+      contestants keep one rule in mind, and this is:
+    
+
+      "The carrying capacity of an aeroplane is governed by the peripheral curve
+      of its carrying surfaces, plus the speed; and the speed is governed by the
+      thrust of the propellers, less the 'head-on' resistance."
+    
+
+      Their ideas as to the proper means of approaching the proposition may, and
+      undoubtedly are, at variance, but the one rule in solving the problem of
+      obtaining the greatest carrying capacity combined with the greatest speed,
+      obtains in all instances.
+    
+
+
+ 
+
+
+
+
+
+
+
+
+      CHAPTER XVII. SOME OF THE NEW DESIGNS.
+    
+
+      Spurred on by the success attained by the more experienced and better
+      known aviators numerous inventors of lesser fame are almost daily
+      producing practical flying machines varying radically in construction from
+      those now in general use.
+    
+
+      One of these comparatively new designs is the Van Anden biplane, made by
+      Frank Van Anden of Islip, Long Island, a member of the New York Aeronautic
+      Society. While his machine is wholly experimental, many successful short
+      flights were made with it last fall (1909). One flight, made October 19th,
+      1909, is of particular interest as showing the practicability of an
+      automatic stabilizing device installed by the inventor. The machine was
+      caught in a sudden severe gust of wind and keeled over, but almost
+      immediately righted itself, thus demonstrating in a most satisfactory
+      manner the value of one new attachment.
+    
+
+      Features of Van Anden Model.
+    
+
+      In size the surfaces of the main biplane are 26 feet in spread, and 4 feet
+      in depth from front to rear. The upper and lower planes are 4 feet apart.
+      Silkolene coated with varnish is used for the coverings. Ribs (spruce) are
+      curved one inch to the foot, the deepest part of the curve (4 inches)
+      being one foot back from the front edge of the horizontal beam. Struts
+      (also of spruce, as is all the framework) are elliptical in shape. The
+      main beams are in three sections, nearly half round in form, and joined by
+      metal sleeves.
+    
+
+      There is a two-surface horizontal rudder, 2x2x4 feet, in front. This is
+      pivoted at its lateral center 8 feet from the front edge of the main
+      planes. In the rear is another two-surface horizontal rudder 2x2x2 1/2
+      feet, pivoted in the same manner as the front one, 15 feet from the rear
+      edges of the main planes.
+    
+
+      Hinged to the rear central strut of the rear rudder is a vertical rudder 2
+      feet high by 3 feet in length.
+    
+
+      The Method of Control.
+    
+
+      In the operation of these rudders—both front and rear—and the
+      elevation and depression of the main planes, the Curtiss system is
+      employed. Pushing the steering-wheel post outward depresses the front
+      edges of the planes, and brings the machine downward; pulling the
+      steering-wheel post inward elevates the front edges of the planes and
+      causes the machine to ascend.
+    
+
+      Turning the steering wheel itself to the right swings the tail rudder to
+      the left, and the machine, obeying this like a boat, turns in the same
+      direction as the wheel is turned. By like cause turning the wheel to the
+      left turns the machine to the left.
+    
+
+      Automatic Control of Wings.
+    
+
+      There are two wing tips, each of 6 feet spread (length) and 2 feet from
+      front to rear. These are hinged half way between the main surfaces to the
+      two outermost rear struts. Cables run from these to an automatic device
+      working with power from the engine, which automatically operates the tips
+      with the tilting of the machine. Normally the wing tips are held
+      horizontal by stiff springs introduced in the cables outside of the
+      device.
+    
+
+      It was the successful working of this device which righted the Van Anden
+      craft when it was overturned in the squall of October 19th, 1909. Previous
+      to that occurrence Mr. Van Anden had looked upon the device as purely
+      experimental, and had admitted that he had grave uncertainty as to how it
+      would operate in time of emergency. He is now quoted as being thoroughly
+      satisfied with its practicability. It is this automatic device which gives
+      the Van Anden machine at least one distinctively new feature.
+    
+
+      While on this subject it will not be amiss to add that Mr. Curtiss does
+      not look kindly on automatic control. "I would rather trust to my own
+      action than that of a machine," he says. This is undoubtedly good logic so
+      far as Mr. Curtiss is concerned, but all aviators are not so cool-headed
+      and resourceful.
+    
+
+      Motive Power of Van Anden.
+    
+
+      A 50-horsepower "H-F" water cooled motor drives a laminated wood propeller
+      6 feet in diameter, with a 17 degree pitch at the extremities, increasing
+      toward the hub. The rear end of the motor is about 6 inches back from the
+      rear transverse beam and the engine shaft is in a direct line with the
+      axes of the two horizontal rudders. An R. I. V. ball bearing carries the
+      shaft at this point. Flying, the motor turns at about 800 revolutions per
+      minute, delivering 180 pounds pull. A test of the motor running at 1,200
+      showed a pull of 250 pounds on the scales.
+    
+
+      Still Another New Aeroplane.
+    
+
+      Another new aeroplane is that produced by A. M. Herring (an old-timer) and
+      W. S. Burgess, under the name of the Herring-Burgess. This is also
+      equipped with an automatic stability device for maintaining the balance
+      transversely. The curvature of the planes is also laid out on new lines.
+      That this new plan is effective is evidenced by the fact that the machine
+      has been elevated to an altitude of 40 feet by using one-half the power of
+      the 30-horsepower motor.
+    
+
+      The system of rudder and elevation control is very simple. The aviator
+      sits in front of the lower plane, and extending his arms, grasps two
+      supports which extend down diagonally in front. On the under side of these
+      supports just beneath his fingers are the controls which operate the
+      vertical rudder, in the rear. Thus, if he wishes to turn to the right, he
+      presses the control under the fingers of his right hand; if to the left,
+      that under the fingers of his left hand. The elevating rudder is operated
+      by the aviator's right foot, the control being placed on a foot-rest.
+    
+
+      Motor Is Extremely Light.
+    
+
+      Not the least notable feature of the craft is its motor. Although
+      developing, under load, 30-horsepower, or that of an ordinary automobile,
+      it weighs, complete, hardly 100 pounds. Having occasion to move it a
+      little distance for inspection, Mr. Burgess picked it up and walked off
+      with it—cylinders, pistons, crankcase and all, even the magneto,
+      being attached. There are not many 30-horsepower engines which can be so
+      handled. Everything about it is reduced to its lowest terms of simplicity,
+      and hence, of weight. A single camshaft operates not only all of the inlet
+      and exhaust valves, but the magneto and gear water pump, as well. The
+      motor is placed directly behind the operator, and the propeller is
+      directly mounted on the crankshaft.
+    
+
+      This weight of less than 100 pounds, it must be remembered, is not for the
+      motor alone; it includes the entire power plant equipment.
+    
+
+      The "thrust" of the propeller is also extraordinary, being between 250 and
+      260 pounds. The force of the wind displacement is strong enough to knock
+      down a good-sized boy as one youngster ascertained when he got behind the
+      propeller as it was being tested. He was not only knocked down but driven
+      for some distance away from the machine. The propeller has four blades
+      which are but little wider than a lath.
+    
+
+      Machine Built by Students.
+    
+
+      Students at the University of Pennsylvania, headed by Laurence J. Lesh, a
+      protege of Octave Chanute, have constructed a practical aeroplane of
+      ordinary maximum size, in which is incorporated many new ideas. The most
+      unique of these is to be found in the steering gear, and the provision
+      made for the accommodation of a pupil while taking lessons under an
+      experienced aviator.
+    
+
+      Immediately back of the aviator is an extra seat and an extra steering
+      wheel which works in tandem style with the front wheel. By this
+      arrangement a beginner may be easily and quickly taught to have perfect
+      control of the machine. These tandem wheels are also handy for passengers
+      who may wish to operate the car independently of one another, it being
+      understood, of course, that there will be no conflict of action.
+    
+
+      Frame Size and Engine Power.
+    
+
+      The frame has 36 feet spread and measures 35 feet from the front edge to
+      the end of the tail in the rear. It is equipped with two rear propellers
+      operated by a Ramsey 8-cylinder motor of 50 horsepower, placed
+      horizontally across the lower plane, with the crank shaft running clear
+      through the engine.
+    
+
+      The "Pennsylvania I" is the first two-propeller biplane chainless car,
+      this scheme having been adopted in order to avoid the crossing of chains.
+      The lateral control is by a new invention by Octave Chanute and Laurence
+      J. Lesh, for which Lesh is now applying for a patent. The device was
+      worked out before the Wright brothers' suit was begun, and is said to be
+      superior to the Wright warping or the Curtiss ailerons. The landing device
+      is also new in design. This aeroplane will weigh about 1,500 pounds, and
+      will carry fuel for a flight of 150 miles, and it is expected to attain a
+      speed of at least 45 miles an hour.
+    
+
+      There are others, lots of them, too numerous in fact to admit of mention
+      in a book of this size.
+    
+
+
+ 
+
+
+
+
+
+
+
+
+      CHAPTER XVIII. DEMAND FOR FLYING MACHINES.
+    
+
+      As a commercial proposition the manufacture and sale of motor-equipped
+      aeroplanes is making much more rapid advance than at first obtained in the
+      similar handling of the automobile. Great, and even phenomenal, as was the
+      commercial development of the motor car, that of the flying machine is
+      even greater. This is a startling statement, but it is fully warranted by
+      the facts.
+    
+
+      It is barely more than a year ago (1909) that attention was seriously
+      attracted to the motor-equipped aeroplane as a vehicle possible of
+      manipulation by others than professional aviators. Up to that time such
+      actual flights as were made were almost exclusively with the sole purpose
+      of demonstrating the practicability of the machine, and the merits of the
+      ideas as to shape, engine power, etc., of the various producers.
+    
+
+      Results of Bleriot's Daring.
+    
+
+      It was not until Bleriot flew across the straits of Dover on July 25th,
+      1909, that the general public awoke to a full realization of the fact that
+      it was possible for others than professional aviators to indulge in
+      aviation. Bleriot's feat was accepted as proof that at last an absolutely
+      new means of sport, pleasure and research, had been practically developed,
+      and was within the reach of all who had the inclination, nerve and
+      financial means to adopt it.
+    
+
+      From this event may be dated the birth of the modern flying machine into
+      the world of business. The automobile was taken up by the general public
+      from the very start because it was a proposition comparatively easy of
+      demonstration. There was nothing mysterious or uncanny in the fact that a
+      wheeled vehicle could be propelled on solid, substantial roads by means of
+      engine power. And yet it took (comparatively speaking) a long time to
+      really popularize the motor car.
+    
+
+      Wonderful Results in a Year.
+    
+
+      Men of large financial means engaged in the manufacture of automobiles,
+      and expended fortunes in attracting public attention to them through the
+      medium of advertisements, speed and road contests, etc. By these means a
+      mammoth business has been built up, but bringing this business to its
+      present proportions required years of patient industry and indomitable
+      pluck.
+    
+
+      At this writing, less than a year from the day when Bleriot crossed the
+      channel, the actual sales of flying machines outnumber the actual sales of
+      automobiles in the first year of their commercial development. This may
+      appear incredible, but it is a fact as statistics will show.
+    
+
+      In this connection we should take into consideration the fact that up to a
+      year ago there was no serious intention of putting flying machines on the
+      market; no preparations had been made to produce them on a commercial
+      scale; no money had been expended in advertisements with a view to selling
+      them.
+    
+
+      Some of the Actual Results.
+    
+
+      Today flying machines are being produced on a commercial basis, and there
+      is a big demand for them. The people making them are overcrowded with
+      orders. Some of the producers are already making arrangements to enlarge
+      their plants and advertise their product for sale the same as is being
+      done with automobiles, while a number of flying machine motor makers are
+      already promoting the sale of their wares in this way.
+    
+
+      Here are a few actual figures of flying machine sales made by the more
+      prominent producers since July 25th, 1909.
+    
+
+      Santos Dumont, 90 machines; Bleriot, 200; Farman, 130; Clemenceau-Wright,
+      80; Voisin, 100; Antoinette, 100. Many of these orders have been filled by
+      delivery of the machines, and in others the construction work is under
+      way.
+    
+
+      The foregoing are all of foreign make. In this country Curtiss and the
+      Wrights are engaged in similar work, but no actual figures of their output
+      are obtainable.
+    
+
+      Larger Plants Are Necessary.
+    
+
+      And this situation exists despite the fact that none of the producers are
+      really equipped with adequate plants for turning out their machines on a
+      modern, business-like basis. The demand was so sudden and unexpected that
+      it found them poorly prepared to meet it. This, however, is now being
+      remedied by the erection of special plants, the enlargement of others, and
+      the introduction of new machinery and other labor-saving conveniences.
+    
+
+      Companies, with large capitalization, to engage in the exclusive
+      production of airships are being organized in many parts of the world. One
+      notable instance of this nature is worth quoting as illustrative of the
+      manner in which the production of flying machines is being commercialized.
+      This is the formation at Frankfort, Germany, of the Flugmaschine Wright,
+      G. m. b. H., with a capital of $119,000, the Krupps, of Essen, being
+      interested.
+    
+
+      Prices at Which Machines Sell.
+    
+
+      This wonderful demand from the public has come notwithstanding the fact
+      that the machines, owing to lack of facilities for wholesale production,
+      are far from being cheap. Such definite quotations as are made are on the
+      following basis:
+    
+
+      Santos Dumont—List price $1,000, but owing to the rush of orders
+      agents are readily getting from $1,300 to $1,500. This is the smallest
+      machine made.
+    
+
+      Bleriot—List price $2,500. This is for the cross-channel type, with
+      Anzani motor.
+    
+
+      Antoinette—List price from $4,000 to $5,000, according to size.
+    
+
+      Wright—List price $5,600.
+    
+
+      Curtiss—List price $5,000.
+    
+
+      There is, however, no stability in prices as purchasers are almost
+      invariably ready to pay a considerable premium to facilitate delivery.
+    
+
+      The motor is the most expensive part of the flying machine. Motor prices
+      range from $500 to $2,000, this latter amount being asked for the Curtiss
+      engine.
+    
+
+      Systematic Instruction of Amateurs.
+    
+
+      In addition to the production of flying machines many of the experienced
+      aviators are making a business of the instruction of amateurs. Curtiss and
+      the Wrights in this country have a number of pupils, as have also the
+      prominent foreigners. Schools of instruction are being opened in various
+      parts of the world, not alone as private money-making ventures, but in
+      connection with public educational institutions. One of these latter is to
+      be found at the University of Barcelona, Spain.
+    
+
+      The flying machine agent, the man who handles the machines on a
+      commission, has also become a known quantity, and will soon be as numerous
+      as his brother of the automobile. The sign "John Bird, agent for Skimmer's
+      Flying Machine," is no longer a curiosity.
+    
+
+      Yes, the Airship Is Here.
+    
+
+      From all of which we may well infer that the flying machine in practical
+      form has arrived, and that it is here to stay. It is no exaggeration to
+      say that the time is close at hand when people will keep flying machines
+      just as they now keep automobiles, and that pleasure jaunts will be fully
+      as numerous and popular. With the important item of practicability fully
+      demonstrated, "Come, take a trip in my airship," will have more real
+      significance than now attaches to the vapid warblings of the vaudeville
+      vocalist.
+    
+
+      As a further evidence that the airship is really here, and that its
+      presence is recognized in a business way, the action of life and accident
+      insurance companies is interesting. Some of them are reconstructing their
+      policies so as to include a special waiver of insurance by aviators.
+      Anything which compels these great corporations to modify their policies
+      cannot be looked upon as a mere curiosity or toy.
+    
+
+      It is some consolation to know that the movement in this direction is not
+      thus far widespread. Moreover it is more than probable that the
+      competition for business will eventually induce the companies to act more
+      liberally toward aviators, especially as the art of aviation advances.
+    
+
+
+ 
+
+
+
+
+
+
+
+
+      CHAPTER XIX. LAW OF THE AIRSHIP.
+    
+
+      Successful aviation has evoked some peculiar things in the way of legal
+      action and interpretation of the law.
+    
+
+      It is well understood that a man's property cannot be used without his
+      consent. This is an old established principle in common law which holds
+      good today.
+    
+
+      The limits of a man's property lines, however, have not been so well
+      understood by laymen. According to eminent legal authorities such as
+      Blackstone, Littleton and Coke, the "fathers of the law," the owner of
+      realty also holds title above and below the surface, and this theory is
+      generally accepted without question by the courts.
+    
+
+      Rights of Property Owners.
+    
+
+      In other words the owner of realty also owns the sky above it without
+      limit as to distance. He can dig as deep into his land, or go as high into
+      the air as he desires, provided he does not trespass upon or injure
+      similar rights of others.
+    
+
+      The owner of realty may resist by force, all other means having failed,
+      any trespass upon, or invasion of his property. Other people, for
+      instance, may not enter upon it, or over or under it, without his express
+      permission and consent. There is only one exception, and this is in the
+      case of public utility corporations such as railways which, under the law
+      of eminent domain, may condemn a right of way across the property of an
+      obstinate owner who declines to accept a fair price for the privilege.
+    
+
+      Privilege Sharply Confined.
+    
+
+      The law of eminent domain may be taken advantage of only by corporations
+      which are engaged in serving the public. It is based upon the principle
+      that the advancement and improvement of a community is of more importance
+      and carries with it more rights than the interests of the individual
+      owner. But even in cases where the right of eminent domain is exercised
+      there can be no confiscation of the individual's property.
+    
+
+      Exercising the right of eminent domain is merely obtaining by public
+      purchase what is held to be essential to the public good, and which cannot
+      be secured by private purchase. When eminent domain proceedings are
+      resorted to the court appoints appraisers who determine upon the value of
+      the property wanted, and this value (in money) is paid to the owner.
+    
+
+      How It Affects Aviation.
+    
+
+      It should be kept in mind that this privilege of the "right of eminent
+      domain" is accorded only to corporations which are engaged in serving the
+      public. Individuals cannot take advantage of it. Thus far all aviation has
+      been conducted by individuals; there are no flying machine or airship
+      corporations regularly engaged in the transportation of passengers, mails
+      or freight.
+    
+
+      This leads up to the question "What would happen if realty owners
+      generally, or in any considerable numbers, should prohibit the navigation
+      of the air above their holdings?" It is idle to say such a possibility is
+      ridiculous—it is already an actuality in a few individual instances.
+    
+
+      One property owner in New Jersey, a justice of the peace, maintains a
+      large sign on the roof of his house warning aviators that they must not
+      trespass upon his domain. That he is acting well within his rights in
+      doing this is conceded by legal authorities.
+    
+
+      Hard to Catch Offenders.
+    
+
+      But, suppose the alleged trespass is committed, what is the property owner
+      going to do about it? He must first catch the trespasser and this would be
+      a pretty hard job. He certainly could not overtake him, unless he kept a
+      racing aeroplane for this special purpose. It would be equally difficult
+      to identify the offender after the offense had been committed, even if he
+      were located, as aeroplanes carry no license numbers.
+    
+
+      Allowing that the offender should be caught the only recourse of the
+      realty owner is an action for damages. He may prevent the commission of
+      the offense by force if necessary, but after it is committed he can only
+      sue for damages. And in doing this he would have a lot of trouble.
+    
+
+      Points to Be Proven.
+    
+
+      One of the first things the plaintiff would be called upon to prove would
+      be the elevation of the machine. If it were reasonably close to the ground
+      there would, of course, be grave risk of damage to fences, shrubbery, and
+      other property, and the court would be justified in holding it to be a
+      nuisance that should be suppressed.
+    
+
+      If, on the other hand; the machine was well up in the air, but going
+      slowly, or hovering over the plaintiff's property, the court might be
+      inclined to rule that it could not possibly be a nuisance, but right here
+      the court would be in serious embarrassment. By deciding that it was not a
+      nuisance he would virtually override the law against invasion of a man's
+      property without his consent regardless of the nature of the invasion. By
+      the same decision he would also say in effect that, if one flying machine
+      could do this a dozen or more would have equal right to do the same thing.
+      While one machine hovering over a certain piece of property may be no
+      actual nuisance a dozen or more in the same position could hardly be
+      excused.
+    
+
+      Difficult to Fix Damages.
+    
+
+      Such a condition would tend to greatly increase the risk of accident,
+      either through collision, or by the carelessness of the aviators in
+      dropping articles which might cause damages to the people or property
+      below. In such a case it would undoubtedly be a nuisance, and in addition
+      to a fine, the offender would also be liable for the damages.
+    
+
+      Taking it for granted that no actual damage is done, and the owner merely
+      sues on account of the invasion of his property, how is the amount of
+      compensation to be fixed upon? The owner has lost nothing; no part of his
+      possessions has been taken away; nothing has been injured or destroyed;
+      everything is left in exactly the same condition as before the invasion.
+      And yet, if the law is strictly interpreted, the offender is liable.
+    
+
+      Right of Way for Airships.
+    
+
+      Somebody has suggested the organization of flying-machine corporations as
+      common carriers, which would give them the right of eminent domain with
+      power to condemn a right of way. But what would they condemn? There is
+      nothing tangible in the air. Railways in condemning a right of way specify
+      tangible property (realty) within certain limits. How would an aviator
+      designate any particular right of way through the air a certain number of
+      feet in width, and a certain distance from the ground?
+    
+
+      And yet, should the higher courts hold to the letter of the law and decide
+      that aviators have no right to navigate their craft over private property,
+      something will have to be done to get them out of the dilemma, as aviation
+      is too far advanced to be discarded. Fortunately there is little prospect
+      of any widespread antagonism among property owners so long as aviators
+      refrain from making nuisances of themselves.
+    
+
+      Possible Solution Offered.
+    
+
+      One possible solution is offered and that is to confine the path of
+      airships to the public highways so that nobody's property rights would be
+      invaded. In addition, as a matter of promoting safety for both operators
+      and those who may happen to be beneath the airships as they pass over a
+      course, adoption of the French rules are suggested. These are as follows:
+    
+
+      Aeroplanes, when passing, must keep to the right, and pass at a distance
+      of at least 150 feet. They are free from this rule when flying at
+      altitudes of more than 100 feet. Every machine when flying at night or
+      during foggy weather must carry a green light on the right, and a red
+      light on the left, and a white headlight on the front.
+    
+
+      These are sensible rules, but may be improved upon by the addition of a
+      signal system of some kind, either horn, whistle or bell.
+    
+
+      Responsibility of Aviators.
+    
+
+      Mr. Jay Carver Bossard, in recent numbers of Fly, brings out some
+      curious and interesting legal points in connection with aviation, among
+      which are the following:
+    
+
+      "Private parties who possess aerial craft, and desire to operate the same
+      in aerial territory other than their own, must obtain from land owners
+      special permission to do so, such permission to be granted only by
+      agreement, founded upon a valid consideration. Otherwise, passing over
+      another's land will in each instance amount to a trespass.
+    
+
+      "Leaving this highly technical side of the question, let us turn to
+      another view: the criminal and tort liability of owners and operators to
+      airship passengers. If A invites B to make an ascension with him in his
+      machine, and B, knowing that A is merely an enthusiastic amateur and far
+      from being an expert, accepts and is through A's innocent negligence
+      injured, he has no grounds for recovery. But if A contracts with B, to
+      transport him from one place to another, for a consideration, and B is
+      injured by the poor piloting of A, A would be liable to B for damages
+      which would result. Now in order to safeguard such people as B, curious to
+      the point of recklessness, the law will have to require all airship
+      operators to have a license, and to secure this license airship pilots
+      will have to meet certain requirements. Here again is a question. Who is
+      going to say whether an applicant is competent to pilot a balloon or
+      airship?
+    
+
+      Fine for an Aeronaut.
+    
+
+      "An aeroplane while maneuvering is suddenly caught by a treacherous gale
+      and swept to the ground. A crowd of people hasten over to see if the
+      aeronaut is injured, and in doing so trample over Tax-payer Smith's
+      garden, much to the detriment of his growing vegetables and flowers. Who
+      is liable for the damages? Queer as it may seem, a case very similar to
+      this was decided in 1823, in the New York supreme court, and it was held
+      that the aeronaut was liable upon the following grounds: 'To render one
+      man liable in trespass for the acts of others, it must appear either that
+      they acted in concert, or that the act of the one, ordinarily and
+      naturally produced the acts of the others, Ascending in a balloon is not
+      an unlawful act, but it is certain that the aeronaut has no control over
+      its motion horizontally, but is at the sport of the wind, and is to
+      descend when and how he can. His reaching the earth is a matter of hazard.
+      If his descent would according to the circumstances draw a crowd of people
+      around him, either out of curiosity, or for the purpose of rescuing him
+      from a perilous situation, all this he ought to have foreseen, and must be
+      responsible for.'
+    
+
+      Air Not Really Free.
+    
+
+      "The general belief among people is, that the air is free. Not only free
+      to breathe and enjoy, but free to travel in, and that no one has any
+      definite jurisdiction over, or in any part of it. Now suppose this were
+      made a legal doctrine. Would a murder perpetrated above the clouds have to
+      go unpunished? Undoubtedly. For felonies committed upon the high seas
+      ample provision is made for their punishment, but new provisions will have
+      to be made for crimes committed in the air.
+    
+
+      Relations of Owner and Employee.
+    
+
+      "It is a general rule of law that a master is bound to provide reasonably
+      safe tools, appliances and machines for his servant. How this rule is
+      going to be applied in cases of aeroplanes, remains to be seen. The
+      aeroplane owner who hires a professional aeronaut, that is, one who has
+      qualified as an expert, owes him very little legal duty to supply him with
+      a perfect aeroplane. The expert is supposed to know as much regarding the
+      machine as the owner, if not more, and his acceptance of his position
+      relieves the owner from liability. When the owner hires an amateur
+      aeronaut to run the aeroplane, and teaches him how to manipulate it, even
+      though the prescribed manner of manipulation will make flight safe,
+      nevertheless if the machine is visibly defective, or known to be so, any
+      injury which results to the aeronaut the owner is liable for.
+    
+
+      As to Aeroplane Contracts.
+    
+
+      "At the present time there are many orders being placed with aeroplane
+      manufacturing companies. There are some unique questions to be raised here
+      under the law of contract. It is an elementary principle of law that no
+      one can be compelled to complete a contract which in itself is impossible
+      to perform. For instance, a contract to row a boat across the Atlantic in
+      two weeks, for a consideration, could never be enforced because it is
+      within judicial knowledge that such an undertaking is beyond human power.
+      Again, contracts formed for the doing of acts contrary to nature are never
+      enforcible, and here is where our difficulty comes in. Is it possible to
+      build a machine or species of craft which will transport a person or goods
+      through the air? The courts know that balloons are practical; that is,
+      they know that a bag filled with gas has a lifting power and can move
+      through the air at an appreciable height. Therefore, a contract to
+      transport a person in such manner is a good contract, and the conditions
+      being favorable could undoubtedly be enforced. But the passengers' right
+      of action for injury would be very limited.
+    
+
+      No Redress for Purchasers.
+    
+
+      "In the case of giving warranties on aeroplanes, we have yet to see just
+      what a court is going to say. It is easy enough for a manufacturer to
+      guarantee to build a machine of certain dimensions and according to
+      certain specifications, but when he inserts a clause in the contract to
+      the effect that the machine will raise itself from the surface of the
+      earth, defy the laws of gravity, and soar in the heavens at the will of
+      the aviator, he is to say the least contracting to perform a miracle.
+    
+
+      "Until aeroplanes have been made and accepted as practical, no court will
+      force a manufacturer to turn out a machine guaranteed to fly. So
+      purchasers can well remember that if their machines refuse to fly they
+      have no redress against the maker, for he can always say, 'The industry is
+      still in its experimental stage.' In contracting for an engine no builder
+      will guarantee that the particular engine will successfully operate the
+      aeroplane. In fact he could never be forced to live up to such an
+      agreement, should he agree to a stipulation of that sort. The best any
+      engine maker will guarantee is to build an engine according to
+      specifications."
+    
+
+
+ 
+
+
+
+
+
+
+
+
+      CHAPTER XX. SOARING FLIGHT.
+    
+
+      By Octave Chanute.
+    
+
+5
+      There is a wonderful performance daily exhibited in southern climes and
+      occasionally seen in northerly latitudes in summer, which has never been
+      thoroughly explained. It is the soaring or sailing flight of certain
+      varieties of large birds who transport themselves on rigid, unflapping
+      wings in any desired direction; who in winds of 6 to 20 miles per hour,
+      circle, rise, advance, return and remain aloft for hours without a beat of
+      wing, save for getting under way or convenience in various maneuvers. They
+      appear to obtain from the wind alone all the necessary energy, even to
+      advancing dead against that wind. This feat is so much opposed to our
+      general ideas of physics that those who have not seen it sometimes deny
+      its actuality, and those who have only occasionally witnessed it
+      subsequently doubt the evidence of their own eyes. Others, who have seen
+      the exceptional performances, speculate on various explanations, but the
+      majority give it up as a sort of "negative gravity."
+    
+
+      Soaring Power of Birds.
+    
+
+      The writer of this paper published in the "Aeronautical Annual" for 1896
+      and 1897 an article upon the sailing flight of birds, in which he gave a
+      list of the authors who had described such flight or had advanced theories
+      for its explanation, and he passed these in review. He also described his
+      own observations and submitted some computations to account for the
+      observed facts. These computations were correct as far as they went, but
+      they were scanty. It was, for instance, shown convincingly by analysis
+      that a gull weighing 2.188 pounds, with a total supporting surface of
+      2.015 square feet, a maximum body cross-section of 0.126 square feet and a
+      maximum cross-section of wing edges of 0.098 square feet, patrolling on
+      rigid wings (soaring) on the weather side of a steamer and maintaining an
+      upward angle or attitude of 5 degrees to 7 degrees above the horizon, in a
+      wind blowing 12.78 miles an hour, which was deflected upward 10 degrees to
+      20 degrees by the side of the steamer (these all being carefully observed
+      facts), was perfectly sustained at its own "relative speed" of 17.88 miles
+      per hour and extracted from the upward trend of the wind sufficient energy
+      to overcome all the resistances, this energy amounting to 6.44 foot-pounds
+      per second.
+    
+
+      Great Power of Gulls.
+    
+
+      It was shown that the same bird in flapping flight in calm air, with an
+      attitude or incidence of 3 degrees to 5 degrees above the horizon and a
+      speed of 20.4 miles an hour was well sustained and expended 5.88
+      foot-pounds per second, this being at the rate of 204 pounds sustained per
+      horsepower. It was stated also that a gull in its observed maneuvers,
+      rising up from a pile head on unflapping wings, then plunging forward
+      against the wind and subsequently rising higher than his starting point,
+      must either time his ascents and descents exactly with the variations in
+      wind velocities, or must meet a wind billow rotating on a horizontal axis
+      and come to a poise on its crest, thus availing of an ascending trend.
+    
+
+      But the observations failed to demonstrate that the variations of the wind
+      gusts and the movements of the bird were absolutely synchronous, and it
+      was conjectured that the peculiar shape of the soaring wing of certain
+      birds, as differentiated from the flapping wing, might, when experimented
+      upon, hereafter account for the performance.
+    
+
+      Mystery to be Explained.
+    
+
+      These computations, however satisfactory they were for the speed of winds
+      observed, failed to account for the observed spiral soaring of buzzards in
+      very light winds and the writer was compelled to confess: "Now, this
+      spiral soaring in steady breezes of 5 to 10 miles per hour which are
+      apparently horizontal, and through which the bird maintains an average
+      speed of about 20 miles an hour, is the mystery to be explained. It is not
+      accounted for, quantitatively, by any of the theories which have been
+      advanced, and it is the one performance which has led some observers to
+      claim that it was done through 'aspiration.' i, e., that a bird acted upon
+      by a current, actually drew forward into that current against its exact
+      direction of motion."
+    
+
+      Buzzards Soar in Dead Calm.
+    
+
+      A still greater mystery was propounded by the few observers who asserted
+      that they had seen buzzards soaring in a dead calm, maintaining their
+      elevation and their speed. Among these observers was Mr. E. C. Huffaker,
+      at one time assistant experimenter for Professor Langley. The writer
+      believed and said then that he must in some way have been mistaken, yet,
+      to satisfy himself, he paid several visits to Mr. Huffaker, in Eastern
+      Tennessee and took along his anemometer. He saw quite a number of buzzards
+      sailing at a height of 75 to 100 feet in breezes measuring 5 or 6 miles an
+      hour at the surface of the ground, and once he saw one buzzard soaring
+      apparently in a dead calm.
+    
+
+      The writer was fairly baffled. The bird was not simply gliding, utilizing
+      gravity or acquired momentum, he was actually circling horizontally in
+      defiance of physics and mathematics. It took two years and a whole series
+      of further observations to bring those two sciences into accord with the
+      facts.
+    
+
+      Results of Close Observations.
+    
+
+      Curiously enough the key to the performance of circling in a light wind or
+      a dead calm was not found through the usual way of gathering human
+      knowledge, i. e., through observations and experiment. These had failed
+      because I did not know what to look for. The mystery was, in fact, solved
+      by an eclectic process of conjecture and computation, but once these
+      computations indicated what observations should be made, the results gave
+      at once the reasons for the circling of the birds, for their then observed
+      attitude, and for the necessity of an independent initial sustaining speed
+      before soaring began. Both Mr. Huffaker and myself verified the data many
+      times and I made the computations.
+    
+
+      These observations disclosed several facts:
+    
+
+      1st.—That winds blowing five to seventeen miles per hour frequently
+      had rising trends of 10 degrees to 15 degrees, and that upon occasions
+      when there seemed to be absolutely no wind, there was often nevertheless a
+      local rising of the air estimated at a rate of four to eight miles or more
+      per hour. This was ascertained by watching thistledown, and rising fogs
+      alongside of trees or hills of known height. Everyone will readily realize
+      that when walking at the rate of four to eight miles an hour in a dead
+      calm the "relative wind" is quite inappreciable to the senses and that
+      such a rising air would not be noticed.
+    
+
+      2nd.—That the buzzard, sailing in an apparently dead horizontal
+      calm, progressed at speeds of fifteen to eighteen miles per hour, as
+      measured by his shadow on the ground. It was thought that the air was then
+      possibly rising 8.8 feet per second, or six miles per hour.
+    
+
+      3rd.—That when soaring in very light winds the angle of incidence of
+      the buzzards was negative to the horizon—i. e., that when seen
+      coming toward the eye, the afternoon light shone on the back instead of on
+      the breast, as would have been the case had the angle been inclined above
+      the horizon.
+    
+
+      4th.—That the sailing performance only occurred after the bird had
+      acquired an initial velocity of at least fifteen or eighteen miles per
+      hour, either by industrious flapping or by descending from a perch.
+    
+
+      An Interesting Experiment.
+    
+
+      5th.—That the whole resistance of a stuffed buzzard, at a negative
+      angle of 3 degrees in a current of air of 15.52 miles per hour, was 0.27
+      pounds. This test was kindly made for the writer by Professor A. F. Zahm
+      in the "wind tunnel" of the Catholic University at Washington, D. C., who,
+      moreover, stated that the resistance of a live bird might be less, as the
+      dried plumage could not be made to lie smooth.
+    
+
+      This particular buzzard weighed in life 4.25 pounds, the area of his wings
+      and body was 4.57 square feet, the maximum cross-section of his body was
+      0.110 square feet, and that of his wing edges when fully extended was
+      0.244 square feet.
+    
+
+      With these data, it became surprisingly easy to compute the performance
+      with the coefficients of Lilienthal for various angles of incidence and to
+      demonstrate how this buzzard could soar horizontally in a dead horizontal
+      calm, provided that it was not a vertical calm, and that the air was
+      rising at the rate of four or six miles per hour, the lowest observed, and
+      quite inappreciable without actual measuring.
+    
+
+      Some Data on Bird Power.
+    
+
+      The most difficult case is purposely selected. For if we assume that the
+      bird has previously acquired an initial minimum speed of seventeen miles
+      an hour (24.93 feet per second, nearly the lowest measured), and that the
+      air was rising vertically six miles an hour (8.80 feet per second), then
+      we have as the trend of the "relative wind" encountered:
+    
+
+      6
+      — = 0.353, or the tangent of 19 degrees 26'.
+      17
+
+
+      which brings the case into the category of rising wind effects. But the
+      bird was observed to have a negative angle to the horizon of about 3
+      degrees, as near as could be guessed, so that his angle of incidence to
+      the "relative wind" was reduced to 16 degrees 26'.
+    
+
+      The relative speed of his soaring was therefore:
+    
+
+      Velocity = square root of (17 squared + 6 squared) = 18.03 miles per hour.
+    
+
+      At this speed, using the Langley co-efficient recently practically
+      confirmed by the accurate experiments of Mr. Eiffel, the air pressure
+      would be:
+    
+
+      18.03 squared X 0.00327 = 1.063 pounds per square foot.
+    
+
+      If we apply Lilienthal's co-efficients for an angle of 6 degrees 26', we
+      have for the force in action:
+    
+
+   Normal: 4.57 X 1.063 X 0.912 = 4.42 pounds.
+
+   Tangential: 4.57 X 1.063 X 0.074 = - 0.359 pounds,
+   which latter, being negative, is a propelling force.
+
+
+      Results Astonish Scientists.
+    
+
+      Thus we have a bird weighing 4.25 pounds not only thoroughly supported,
+      but impelled forward by a force of 0.359 pounds, at seventeen miles per
+      hour, while the experiments of Professor A. F. Zahm showed that the
+      resistance at 15.52 miles per hour was only 0.27 pounds,
+    
+
+              17 squared
+   or 0.27 X ———- = 0.324 pounds, at seventeen miles an
+             15.52 squared
+   hour.
+
+
+      These are astonishing results from the data obtained, and they lead to the
+      inquiry whether the energy of the rising air is sufficient to make up the
+      losses which occur by reason of the resistance and friction of the bird's
+      body and wings, which, being rounded, do not encounter air pressures in
+      proportion to their maximum cross-section.
+    
+
+      We have no accurate data upon the co-efficients to apply and estimates
+      made by myself proved to be much smaller than the 0.27 pounds resistance
+      measured by Professor Zahm, so that we will figure with the latter as
+      modified. As the speed is seventeen miles per hour, or 24.93 feet per
+      second, we have for the work:
+    
+
+      Work done, 0.324 X 24.93 = 8.07 foot pounds per second.
+    
+
+      Endorsed by Prof. Marvin.
+    
+
+      Corresponding energy of rising air is not sufficient at four miles per
+      hour. This amounts to but 2.10 foot pounds per second, but if we assume
+      that the air was rising at the rate of seven miles per hour (10.26 feet
+      per second), at which the pressure with the Langley coefficient would be
+      0.16 pounds per square foot, we have on 4.57 square feet for energy of
+      rising air: 4.57 X 0.16 X 10.26 = 7.50 foot pounds per second, which is
+      seen to be still a little too small, but well within the limits of error,
+      in view of the hollow shape of the bird's wings, which receive greater
+      pressure than the flat planes experimented upon by Langley.
+    
+
+      These computations were chiefly made in January, 1899, and were
+      communicated to a few friends, who found no fallacy in them, but thought
+      that few aviators would understand them if published. They were then
+      submitted to Professor C. F. Marvin of the Weather Bureau, who is well
+      known as a skillful physicist and mathematician. He wrote that they were,
+      theoretically, entirely sound and quantitatively, probably, as accurate as
+      the present state of the measurements of wind pressures permitted. The
+      writer determined, however, to withhold publication until the feat of
+      soaring flight had been performed by man, partly because he believed that,
+      to ensure safety, it would be necessary that the machine should be
+      equipped with a motor in order to supplement any deficiency in wind force.
+    
+
+      Conditions Unfavorable for Wrights.
+    
+
+      The feat would have been attempted in 1902 by Wright brothers if the local
+      circumstances had been more favorable. They were experimenting on "Kill
+      Devil Hill," near Kitty Hawk, N. C. This sand hill, about 100 feet high,
+      is bordered by a smooth beach on the side whence come the sea breezes, but
+      has marshy ground at the back. Wright brothers were apprehensive that if
+      they rose on the ascending current of air at the front and began to circle
+      like the birds, they might be carried by the descending current past the
+      back of the hill and land in the marsh. Their gliding machine offered no
+      greater head resistance in proportion than the buzzard, and their gliding
+      angles of descent are practically as favorable, but the birds performed
+      higher up in the air than they.
+    
+
+      Langley's Idea of Aviation.
+    
+
+      Professor Langley said in concluding his paper upon "The Internal Work of
+      the Wind":
+    
+
+      "The final application of these principles to the art of aerodromics
+      seems, then, to be, that while it is not likely that the perfected
+      aerodrome will ever be able to dispense altogether with the ability to
+      rely at intervals on some internal source of power, it will not be
+      indispensable that this aerodrome of the future shall, in order to go any
+      distance—even to circumnavigate the globe without alighting—need
+      to carry a weight of fuel which would enable it to perform this journey
+      under conditions analogous to those of a steamship, but that the fuel and
+      weight need only be such as to enable it to take care of itself in
+      exceptional moments of calm."
+    
+
+      Now that dynamic flying machines have been evolved and are being brought
+      under control, it seems to be worth while to make these computations and
+      the succeeding explanations known, so that some bold man will attempt the
+      feat of soaring like a bird. The theory underlying the performance in a
+      rising wind is not new, it has been suggested by Penaud and others, but it
+      has attracted little attention because the exact data and the maneuvers
+      required were not known and the feat had not yet been performed by a man.
+      The puzzle has always been to account for the observed act in very light
+      winds, and it is hoped that by the present selection of the most difficult
+      case to explain—i. e., the soaring in a dead horizontal calm—somebody
+      will attempt the exploit.
+    
+
+      Requisites for Soaring Flights.
+    
+
+      The following are deemed to be the requisites and maneuvers to master the
+      secrets of soaring flight:
+    
+
+      1st—Develop a dynamic flying machine weighing about one pound per
+      square foot of area, with stable equilibrium and under perfect control,
+      capable of gliding by gravity at angles of one in ten (5 3/4 degrees) in
+      still air.
+    
+
+      2nd.—Select locations where soaring birds abound and occasions where
+      rising trends of gentle winds are frequent and to be relied on.
+    
+
+      3rd.—Obtain an initial velocity of at least 25 feet per second
+      before attempting to soar.
+    
+
+      4th.—So locate the center of gravity that the apparatus shall assume
+      a negative angle, fore and aft, of about 3 degrees.
+    
+
+      Calculations show, however, that sufficient propelling force may still
+      exist at 0 degrees, but disappears entirely at +4 degrees.
+    
+
+      5th.—Circle like the bird. Simultaneously with the steering, incline
+      the apparatus to the side toward which it is desired to turn, so that the
+      centrifugal force shall be balanced by the centripetal force. The amount
+      of the required inclination depends upon the speed and on the radius of
+      the circle swept over.
+    
+
+      6th.—Rise spirally like the bird. Steer with the horizontal rudder,
+      so as to descend slightly when going with the wind and to ascend when
+      going against the wind. The bird circles over one spot because the rising
+      trends of wind are generally confined to small areas or local chimneys, as
+      pointed out by Sir H. Maxim and others.
+    
+
+      7th.—Once altitude is gained, progress may be made in any direction
+      by gliding downward by gravity.
+    
+
+      The bird's flying apparatus and skill are as yet infinitely superior to
+      those of man, but there are indications that within a few years the latter
+      may evolve more accurately proportioned apparatus and obtain absolute
+      control over it.
+    
+
+      It is hoped, therefore, that if there be found no radical error in the
+      above computations, they will carry the conviction that soaring flight is
+      not inaccessible to man, as it promises great economies of motive power in
+      favorable localities of rising winds.
+    
+
+      The writer will be grateful to experts who may point out any mistake
+      committed in data or calculations, and will furnish additional information
+      to any aviator who may wish to attempt the feat of soaring.
+    
+
+
+ 
+
+
+
+
+
+
+
+
+      CHAPTER XXI. FLYING MACHINES VS. BALLOONS.
+    
+
+      While wonderful success has attended the development of the dirigible
+      (steerable) balloon the most ardent advocates of this form of aerial
+      navigation admit that it has serious drawbacks. Some of these may be
+      described as follows:
+    
+
+      Expense and Other Items.
+    
+
+      Great Initial Expense.—The modern dirigible balloon costs a fortune.
+      The Zeppelin, for instance, costs more than $100,000 (these are official
+      figures).
+    
+
+      Expense of Inflation.—Gas evaporates rapidly, and a balloon must be
+      re-inflated, or partially re-inflated, every time it is used. The Zeppelin
+      holds 460,000 cubic feet of gas which, even at $1 per thousand, would cost
+      $460.
+    
+
+      Difficulty of Obtaining Gas.—If a balloon suddenly becomes deflated,
+      by accident or atmospheric conditions, far from a source of gas supply, it
+      is practically worthless. Gas must be piped to it, or the balloon carted
+      to the gas house—an expensive proceeding in either event.
+    
+
+      Lack of Speed and Control.
+    
+
+      Lack of Speed.—Under the most favorable conditions the maximum speed
+      of a balloon is 30 miles an hour. Its great bulk makes the high speed
+      attained by flying machines impossible.
+    
+
+      Difficulty of Control.—While the modern dirigible balloon is readily
+      handled in calm or light winds, its bulk makes it difficult to control in
+      heavy winds.
+    
+
+      The Element of Danger.—Numerous balloons have been destroyed by
+      lightning and similar causes. One of the largest of the Zeppelins was thus
+      lost at Stuttgart in 1908.
+    
+
+      Some Balloon Performances.
+    
+
+      It is only a matter of fairness to state that, under favorable conditions,
+      some very creditable records have been made with modern balloons, viz:
+    
+
+      November 23d, 1907, the French dirigible Patrie, travelled 187 miles in 6
+      hours and 45 minutes against a light wind. This was a little over 28 miles
+      an hour.
+    
+
+      The Clement-Bayard, another French machine, sold to the Russian
+      government, made a trip of 125 miles at a rate of 27 miles an hour.
+    
+
+      Zeppelin No. 3, carrying eight passengers, and having a total lifting
+      capacity of 5,500 pounds of ballast in addition to passengers, weight of
+      equipment, etc., was tested in October, 1906, and made 67 miles in 2 hours
+      and 17 minutes, about 30 miles an hour.
+    
+
+      These are the best balloon trips on record, and show forcefully the
+      limitations of speed, the greatest being not over 30 miles an hour.
+    
+
+      Speed of Flying Machines.
+    
+
+      Opposed to the balloon performances we have flying machine trips (of
+      authentic records) as follows:
+    
+
+      Bleriot—monoplane—in 1908—52 miles an hour.
+    
+
+      Delagrange—June 22, 1908—10 1/2 miles in 16 minutes,
+      approximately 42 miles an hour.
+    
+
+      Wrights—October, 1905—the machine was then in its infancy—24
+      miles in 38 minutes, approximately 44 miles an hour. On December 31, 1908,
+      the Wrights made 77 miles in 2 hours and 20 minutes.
+    
+
+      Lambert, a pupil of the Wrights, and using a Wright biplane, on October
+      18, 1909, covered 29.82 miles in 49 minutes and 39 seconds, being at the
+      rate of 36 miles an hour. This flight was made at a height of 1,312 feet.
+    
+
+      Latham—October 21, 1909—made a short flight, about 11 minutes,
+      in the teeth of a 40 mile gale, at Blackpool, Eng. He used an Antoniette
+      monoplane, and the official report says: "This exhibition of nerve, daring
+      and ability is unparalled in the history of aviation."
+    
+
+      Farman—October 20, 1909—was in the air for 1 hour, 32 min., 16
+      seconds, travelling 47 miles, 1,184 yards, a duration record for England.
+    
+
+      Paulhan—January 18, 1901—47 1/2 miles at the rate of 45 miles
+      an hour, maintaining an altitude of from 1,000 to 2,000 feet.
+    
+
+      Expense of Producing Gas.
+    
+
+      Gas is indispensable in the operation of dirigible balloons, and gas is
+      expensive. Besides this it is not always possible to obtain it in
+      sufficient quantities even in large cities, as the supply on hand is
+      generally needed for regular customers. Such as can be had is either water
+      or coal gas, neither of which is as efficient in lifting power as
+      hydrogen.
+    
+
+      Hydrogen is the lightest and consequently the most buoyant of all known
+      gases. It is secured commercially by treating zinc or iron with dilute
+      sulphuric or hydrochloric acid. The average cost may be safely placed at
+      $10 per 1,000 feet so that, to inflate a balloon of the size of the
+      Zeppelin, holding 460,000 cubic feet, would cost $4,600.
+    
+
+      Proportions of Materials Required.
+    
+
+      In making hydrogen gas it is customary to allow 20 per cent for loss
+      between the generation and the introduction of the gas into the balloon.
+      Thus, while the formula calls for iron 28 times heavier than the weight of
+      the hydrogen required, and acid 49 times heavier, the real quantities are
+      20 per cent greater. Hydrogen weighs about 0.09 ounce to the cubic foot.
+      Consequently if we need say 450,000 cubic feet of gas we must have
+      2,531.25 pounds in weight. To produce this, allowing for the 20 percent
+      loss, we must have 35 times its weight in iron, or over 44 tons. Of acid
+      it would take 60 times the weight of the gas, or nearly 76 tons.
+    
+
+      In Time of Emergency.
+    
+
+      These figures are appalling, and under ordinary conditions would be
+      prohibitive, but there are times when the balloon operator, unable to
+      obtain water or coal gas, must foot the bills. In military maneuvers,
+      where the field of operation is fixed, it is possible to furnish supplies
+      of hydrogen gas in portable cylinders, but on long trips where sudden
+      leakage or other cause makes descent in an unexpected spot unavoidable, it
+      becomes a question of making your own hydrogen gas or deserting the
+      balloon. And when this occurs the balloonist is up against another serious
+      proposition—can he find the necessary zinc or iron? Can he get the
+      acid?
+    
+
+      Balloons for Commercial Use.
+    
+
+      Despite all this the balloon has its uses. If there is to be such a thing
+      as aerial navigation in a commercial way—the carrying of freight and
+      passengers—it will come through the employment of such monster
+      balloons as Count Zeppelin is building. But even then the carrying
+      capacity must of necessity be limited. The latest Zeppelin creation, a
+      monster in size, is 450 feet long, and 42 1/2 feet in diameter. The
+      dimensions are such as to make all other balloons look like pigmies; even
+      many ocean-going steamers are much smaller, and yet its passenger capacity
+      is very small. On its 36-hour flight in May, 1909, the Zeppelin, carried
+      only eight passengers. The speed, however, was quite respectable, 850
+      miles being covered in the 36 hours, a trifle over 23 miles an hour. The
+      reserve buoyancy, that is the total lifting capacity aside from the weight
+      of the airship and its equipment, is estimated at three tons.
+    
+
+
+ 
+
+
+
+
+
+
+
+
+      CHAPTER XXII. PROBLEMS OF AERIAL FLIGHT.
+    
+
+      In a lecture before the Royal Society of Arts, reported in Engineering, F.
+      W. Lanchester took the position that practical flight was not the abstract
+      question which some apparently considered it to be, but a problem in
+      locomotive engineering. The flying machine was a locomotive appliance,
+      designed not merely to lift a weight, but to transport it elsewhere, a
+      fact which should be sufficiently obvious. Nevertheless one of the leading
+      scientific men of the day advocated a type in which this, the main
+      function of the flying machine, was overlooked. When the machine was
+      considered as a method of transport, the vertical screw type, or
+      helicopter, became at once ridiculous. It had, nevertheless, many
+      advocates who had some vague and ill-defined notion of subsequent motion
+      through the air after the weight was raised.
+    
+
+      Helicopter Type Useless.
+    
+
+      When efficiency of transport was demanded, the helicopter type was
+      entirely out of court. Almost all of its advocates neglected the effect of
+      the motion of the machine through the air on the efficiency of the
+      vertical screws. They either assumed that the motion was so slow as not to
+      matter, or that a patch of still air accompanied the machine in its
+      flight. Only one form of this type had any possibility of success. In this
+      there were two screws running on inclined axles—one on each side of
+      the weight to be lifted. The action of such inclined screw was curious,
+      and in a previous lecture he had pointed out that it was almost exactly
+      the same as that of a bird's wing. In high-speed racing craft such
+      inclined screws were of necessity often used, but it was at a sacrifice of
+      their efficiency. In any case the efficiency of the inclined-screw
+      helicopter could not compare with that of an aeroplane, and that type
+      might be dismissed from consideration so soon as efficiency became the
+      ruling factor of the design.
+    
+
+      Must Compete With Locomotive.
+    
+
+      To justify itself the aeroplane must compete, in some regard or other,
+      with other locomotive appliances, performing one or more of the purposes
+      of locomotion more efficiently than existing systems. It would be no use
+      unless able to stem air currents, so that its velocity must be greater
+      than that of the worst winds liable to be encountered. To illustrate the
+      limitations imposed on the motion of an aeroplane by wind velocity, Mr.
+      Lanchester gave the diagrams shown in Figs. 1 to 4. The circle in each
+      case was, he said, described with a radius equal to the speed of the
+      aeroplane in still air, from a center placed "down-wind" from the
+      aeroplane by an amount equal to the velocity of the wind.
+    
+
+      Fig. 1 therefore represented the case in which the air was still, and in
+      this case the aeroplane represented by A had perfect liberty of
+      movement in any direction
+    
+
+      In Fig. 2 the velocity of the wind was half that of the aeroplane, and the
+      latter could still navigate in any direction, but its speed against the
+      wind was only one-third of its speed with the wind.
+    
+
+      In Fig. 3 the velocity of the wind was equal to that of the aeroplane, and
+      then motion against the wind was impossible; but it could move to any
+      point of the circle, but not to any point lying to the left of the tangent
+      A B. Finally, when the wind had a greater speed than the
+      aeroplane, as in Fig. 4, the machine could move only in directions limited
+      by the tangents A C and A D.
+    
+
+      Matter of Fuel Consumption.
+    
+
+      Taking the case in which the wind had a speed equal to half that of the
+      aeroplane, Mr. Lanchester said that for a given journey out and home, down
+      wind and back, the aeroplane would require 30 per cent more fuel than if
+      the trip were made in still air; while if the journey was made at right
+      angles to the direction of the wind the fuel needed would be 15 per cent
+      more than in a calm. This 30 per cent extra was quite a heavy enough
+      addition to the fuel; and to secure even this figure it was necessary that
+      the aeroplane should have a speed of twice that of the maximum wind in
+      which it was desired to operate the machine. Again, as stated in the last
+      lecture, to insure the automatic stability of the machine it was necessary
+      that the aeroplane speed should be largely in excess of that of the gusts
+      of wind liable to be encountered.
+    
+
+      Eccentricities of the Wind.
+    
+
+      There was, Mr. Lanchester said, a loose connection between the average
+      velocity of the wind and the maximum speed of the gusts. When the average
+      speed of the wind was 40 miles per hour, that of the gusts might be equal
+      or more. At one moment there might be a calm or the direction of the wind
+      even reversed, followed, the next moment, by a violent gust. About the
+      same minimum speed was desirable for security against gusts as was
+      demanded by other considerations. Sixty miles an hour was the least figure
+      desirable in an aeroplane, and this should be exceeded as much as
+      possible. Actually, the Wright machine had a speed of 38 miles per hour,
+      while Farman's Voisin machine flew at 45 miles per hour.
+    
+
+      Both machines were extremely sensitive to high winds, and the speaker, in
+      spite of newspaper reports to the contrary, had never seen either flown in
+      more than a gentle breeze. The damping out of the oscillations of the
+      flight path, discussed in the last lecture, increased with the fourth
+      power of the natural velocity of flight, and rapid damping formed the
+      easiest, and sometimes the only, defense against dangerous oscillations. A
+      machine just stable at 35 miles per hour would have reasonably rapid
+      damping if its speed were increased to 60 miles per hour.
+    
+
+      Thinks Use Is Limited.
+    
+
+      It was, the lecturer proceeded, inconceivable that any very extended use
+      should be made of the aeroplane unless the speed was much greater than
+      that of the motor car. It might in special cases be of service, apart from
+      this increase of speed, as in the exploration of countries destitute of
+      roads, but it would have no general utility. With an automobile averaging
+      25 to 35 miles per hour, almost any part of Europe, Russia excepted, was
+      attainable in a day's journey. A flying machine of but equal speed would
+      have no advantages, but if the speed could be raised to 90 or 100 miles
+      per hour, the whole continent of Europe would become a playground, every
+      part being within a daylight flight of Berlin. Further, some marine craft
+      now had speeds of 40 miles per hour, and efficiently to follow up and
+      report movements of such vessels an aeroplane should travel at 60 miles
+      per hour at least. Hence from all points of view appeared the imperative
+      desirability of very high velocities of flight. The difficulties of
+      achievement were, however, great.
+    
+
+      Weight of Lightest Motors.
+    
+
+      As shown in the first lecture of his course, the resistance to motion was
+      nearly independent of the velocity, so that the total work done in
+      transporting a given weight was nearly constant. Hence the question of
+      fuel economy was not a bar to high velocities of flight, though should
+      these become excessive, the body resistance might constitute a large
+      proportion of the total. The horsepower required varied as the velocity,
+      so the factor governing the maximum velocity of flight was the horsepower
+      that could be developed on a given weight. At present the weight per
+      horsepower of feather-weight motors appeared to range from 2 1/4 pounds up
+      to 7 pounds per brake horsepower, some actual figures being as follows:
+    
+
+         Antoinette........ 5 lbs.
+         Fiat.............. 3 lbs.
+         Gnome....... Under 3 lbs.
+         Metallurgic....... 8 lbs.
+         Renault........... 7 lbs.
+         Wright.............6 lbs.
+
+
+      Automobile engines, on the other hand, commonly weighed 12 pounds to 13
+      pounds per brake horsepower.
+    
+
+      For short flights fuel economy was of less importance than a saving in the
+      weight of the engine. For long flights, however, the case was different.
+      Thus, if the gasolene consumption was 1/2 pound per horsepower hour, and
+      the engine weighed 3 pounds per brake horsepower, the fuel needed for a
+      six-hour flight would weigh as much as the engine, but for half an hour's
+      flight its weight would be unimportant.
+    
+
+      Best Means of Propulsion.
+    
+
+      The best method of propulsion was by the screw, which acting in air was
+      subject to much the same conditions as obtained in marine work. Its
+      efficiency depended on its diameter and pitch and on its position, whether
+      in front of or behind the body propelled. From this theory of dynamic
+      support, Mr. Lanchester proceeded, the efficiency of each element of a
+      screw propeller could be represented by curves such as were given in his
+      first lecture before the society, and from these curves the over-all
+      efficiency of any proposed propeller could be computed, by mere
+      inspection, with a fair degree of accuracy. These curves showed that the
+      tips of long-bladed propellers were inefficient, as was also the portion
+      of the blade near the root. In actual marine practice the blade from boss
+      to tip was commonly of such a length that the over-all efficiency was 95
+      per cent of that of the most efficient element of it.
+    
+
+      Advocates Propellers in Rear.
+    
+
+      From these curves the diameter and appropriate pitch of a screw could be
+      calculated, and the number of revolutions was then fixed. Thus, for a
+      speed of 80 feet per second the pitch might come out as 8 feet, in which
+      case the revolutions would be 600 per minute, which might, however, be too
+      low for the motor. It was then necessary either to gear down the
+      propeller, as was done in the Wright machine, or, if it was decided to
+      drive it direct, to sacrifice some of the efficiency of the propeller. An
+      analogous case arose in the application of the steam turbine to the
+      propulsion of cargo boats, a problem as yet unsolved. The propeller should
+      always be aft, so that it could abstract energy from the wake current, and
+      also so that its wash was clear of the body propelled. The best possible
+      efficiency was about 70 per cent, and it was safe to rely upon 66 per
+      cent.
+    
+
+      Benefits of Soaring Flight.
+    
+
+      There was, Mr. Lanchester proceeded, some possibility of the aeronaut
+      reducing the power needed for transport by his adopting the principle of
+      soaring flight, as exemplified by some birds. There were, he continued,
+      two different modes of soaring flight. In the one the bird made use of the
+      upward current of air often to be found in the neighborhood of steep
+      vertical cliffs. These cliffs deflected the air upward long before it
+      actually reached the cliff, a whole region below being thus the seat of an
+      upward current. Darwin has noted that the condor was only to be found in
+      the neighborhood of such cliffs. Along the south coast also the gulls made
+      frequent use of the up currents due to the nearly perpendicular chalk
+      cliffs along the shore.
+    
+
+      In the tropics up currents were also caused by temperature differences.
+      Cumulus clouds, moreover, were nearly always the terminations of such up
+      currents of heated air, which, on cooling by expansion in the upper
+      regions, deposited their moisture as fog. These clouds might, perhaps,
+      prove useful in the future in showing the aeronaut where up currents were
+      to be found. Another mode of soaring flight was that adopted by the
+      albatross, which took advantage of the fact that the air moved in
+      pulsations, into which the bird fitted itself, being thus able to extract
+      energy from the wind. Whether it would be possible for the aeronaut to
+      employ a similar method must be left to the future to decide.
+    
+
+      Main Difficulties in Aviation.
+    
+
+      In practical flight difficulties arose in starting and in alighting. There
+      was a lower limit to the speed at which the machine was stable, and it was
+      inadvisable to leave the ground till this limit was attained. Similarly,
+      in alighting it was inexpedient to reduce the speed below the limit of
+      stability. This fact constituted a difficulty in the adoption of high
+      speeds, since the length of run needed increased in proportion to the
+      square of the velocity. This drawback could, however, be surmounted by
+      forming starting and alighting grounds of ample size. He thought it quite
+      likely in the future that such grounds would be considered as essential to
+      the flying machine as a seaport was to an ocean-going steamer or as a road
+      was to the automobile.
+    
+
+      Requisites of Flying Machine.
+    
+
+      Flying machines were commonly divided into monoplanes and biplanes,
+      according as they had one or two supporting surfaces. The distinction was
+      not, however, fundamental. To get the requisite strength some form of
+      girder framework was necessary, and it was a mere question of convenience
+      whether the supporting surface was arranged along both the top and the
+      bottom of this girder, or along the bottom only. The framework adopted
+      universally was of wood braced by ties of pianoforte wire, an arrangement
+      giving the stiffness desired with the least possible weight. Some kind of
+      chassis was also necessary.
+    
+
+
+ 
+
+
+
+
+
+
+
+
+      CHAPTER XXIII. AMATEURS MAY USE WRIGHT PATENTS.
+    
+
+      Owing to the fact that the Wright brothers have enjoined a number of
+      professional aviators from using their system of control, amateurs have
+      been slow to adopt it. They recognize its merits, and would like to use
+      the system, but have been apprehensive that it might involve them in
+      litigation. There is no danger of this, as will be seen by the following
+      statement made by the Wrights:
+    
+
+      What Wright Brothers Say.
+    
+
+      "Any amateur, any professional who is not exhibiting for money, is at
+      liberty to use our patented devices. We shall be glad to have them do so,
+      and there will be no interference on our part, by legal action, or
+      otherwise. The only men we proceed against are those who, without our
+      permission, without even asking our consent, coolly appropriate the
+      results of our labors and use them for the purpose of making money.
+      Curtiss, Delagrange, Voisin, and all the rest of them who have used our
+      devices have done so in money-making exhibitions. So long as there is any
+      money to be made by the use of the products of our brains, we propose to
+      have it ourselves. It is the only way in which we can get any return for
+      the years of patient work we have given to the problem of aviation. On the
+      other hand, any man who wants to use these devices for the purpose of
+      pleasure, or the advancement of science, is welcome to do so, without
+      money and without price. This is fair enough, is it not?"
+    
+
+      Basis of the Wright Patents.
+    
+
+      In a flying machine a normally flat aeroplane having lateral marginal
+      portions capable of movement to different positions above or below the
+      normal plane of the body of the aeroplane, such movement being about an
+      axis transverse to the line of flight, whereby said lateral marginal
+      portions may be moved to different angles relatively to the normal plane
+      of the body of the aeroplane, so as to present to the atmosphere different
+      angles of incidence, and means for so moving said lateral marginal
+      portions, substantially as described.
+    
+
+      Application of vertical struts near the ends having flexible joints.
+    
+
+      Means for simultaneously imparting such movement to said lateral portions
+      to different angles relatively to each other.
+    
+
+      Refers to the movement of the lateral portions on the same side to the
+      same angle.
+    
+
+      Means for simultaneously moving vertical rudder so as to present to the
+      wind that side thereof nearest the side of the aeroplane having the
+      smallest angle of incidence.
+    
+
+      Lateral stability is obtained by warping the end wings by moving the lever
+      at the right hand of the operator, connection being made by wires from the
+      lever to the wing tips. The rudder may also be curved or warped in similar
+      manner by lever action.
+    
+
+      Wrights Obtain an Injunction.
+    
+
+      In January, 1910, Judge Hazel, of the United States Circuit Court, granted
+      a preliminary injunction restraining the Herring-Curtiss Co., and Glenn H.
+      Curtiss, from manufacturing, selling, or using for exhibition purposes the
+      machine known as the Curtiss aeroplane. The injunction was obtained on the
+      ground that the Curtiss machine is an infringement upon the Wright patents
+      in the matter of wing warping and rudder control.
+    
+
+      It is not the purpose of the authors to discuss the subject pro or con.
+      Such discussion would have no proper place in a volume of this kind. It is
+      enough to say that Curtiss stoutly insists that his machine is not an
+      infringement of the Wright patents, although Judge Hazel evidently thinks
+      differently.
+    
+
+      What the Judge Said.
+    
+
+      In granting the preliminary injunction the judge said:
+    
+
+      "Defendants claim generally that the difference in construction of their
+      apparatus causes the equilibrium or lateral balance to be maintained and
+      its aerial movement secured upon an entirely different principle from that
+      of complainant; the defendants' aeroplanes are curved, firmly attached to
+      the stanchions and hence are incapable of twisting or turning in any
+      direction; that the supplementary planes or so-called rudders are secured
+      to the forward stanchion at the extreme lateral ends of the planes and are
+      adjusted midway between the upper and lower planes with the margins
+      extending beyond the edges; that in moving the supplementary planes equal
+      and uniform angles of incidence are presented as distinguished from
+      fluctuating angles of incidence. Such claimed functional effects, however,
+      are strongly contradicted by the expert witness for complainant.
+    
+
+      Similar to Plan of Wrights.
+    
+
+      "Upon this contention it is sufficient to say that the affidavits for the
+      complainant so clearly define the principle of operation of the flying
+      machines in question that I am reasonably satisfied that there is a
+      variableness of the angle of incidence in the machine of defendants which
+      is produced when a supplementary plane on one side is tilted or raised and
+      the other stimultaneously tilted or lowered. I am also satisfied that the
+      rear rudder is turned by the operator to the side having the least angle
+      of incidence and that such turning is done at the time the supplementary
+      planes are raised or depressed to prevent tilting or upsetting the
+      machine. On the papers presented I incline to the view, as already
+      indicated, that the claims of the patent in suit should be broadly
+      construed; and when given such construction, the elements of the Wright
+      machine are found in defendants' machine performing the same functional
+      result. There are dissimilarities in the defendants' structure—changes
+      of form and strengthening of parts—which may be improvements, but
+      such dissimilarities seem to me to have no bearing upon the means adopted
+      to preserve the equilibrium, which means are the equivalent of the claims
+      in suit and attain an identical result.
+    
+
+      Variance From Patent Immaterial.
+    
+
+      "Defendants further contend that the curved or arched surfaces of the
+      Wright aeroplanes in commercial use are departures from the patent, which
+      describes 'substantially flat surfaces,' and that such a construction
+      would be wholly impracticable. The drawing, Fig. 3, however, attached to
+      the specification, shows a curved line inward of the aeroplane with
+      straight lateral edges, and considering such drawing with the terminology
+      of the specification, the slight arching of the surface is not thought a
+      material departure; at any rate, the patent in issue does not belong to
+      the class of patents which requires narrowing to the details of
+      construction."
+    
+
+      "June Bug" First Infringement.
+    
+
+      Referring to the matter of priority, the judge said:
+    
+
+      "Indeed, no one interfered with the rights of the patentees by
+      constructing machines similar to theirs until in July, 1908, when Curtiss
+      exhibited a flying machine which he called the 'June Bug.' He was
+      immediately notified by the patentees that such machine with its movable
+      surfaces at the tips of wings infringed the patent in suit, and he replied
+      that he did not intend to publicly exhibit the machine for profit, but
+      merely was engaged in exhibiting it for scientific purposes as a member of
+      the Aerial Experiment Association. To this the patentees did not object.
+      Subsequently, however, the machine, with supplementary planes placed
+      midway between the upper and lower aeroplanes, was publicly exhibited by
+      the defendant corporation and used by Curtiss in aerial flights for prizes
+      and emoluments. It further appears that the defendants now threaten to
+      continue such use for gain and profit, and to engage in the manufacture
+      and sale of such infringing machines, thereby becoming an active rival of
+      complainant in the business of constructing flying machines embodying the
+      claims in suit, but such use of the infringing machines it is the duty of
+      this court, on the papers presented, to enjoin.
+    
+
+      "The requirements in patent causes for the issuance of an injunction
+      pendente lite—the validity of the patent, general acquiescence by
+      the public and infringement by the defendants—are so reasonably
+      clear that I believe if not probable the complainant may succeed at final
+      hearing, and therefore, status quo should be preserved and a preliminary
+      injunction granted.
+    
+
+      "So ordered."
+    
+
+      Points Claimed By Curtiss.
+    
+
+      That the Herring-Curtiss Co. will appeal is a certainty. Mr. Emerson R.
+      Newell, counsel for the company, states its case as follows:
+    
+
+      "The Curtiss machine has two main supporting surfaces, both of which are
+      curved * * * and are absolutely rigid at all times and cannot be moved,
+      warped or distorted in any manner. The front horizontal rudder is used for
+      the steering up or down, and the rear vertical rudder is used only for
+      steering to the right or left, in the same manner as a boat is steered by
+      its rudder. The machine is provided at the rear with a fixed horizontal
+      surface, which is not present in the machine of the patent, and which has
+      a distinct advantage in the operation of defendants' machine, as will be
+      hereafter discussed.
+    
+
+      Does Not Warp Main Surface.
+    
+
+      "Defendants' machine does not use the warping of the main supporting
+      surfaces in restoring the lateral equilibrium, but has two comparatively
+      small pivoted balancing surfaces or rudders. When one end of the machine
+      is tipped up or down from the normal, these planes may be thrown in
+      opposite directions by the operator, and so steer each end of the machine
+      up or down to its normal level, at which time tension upon them is
+      released and they are moved back by the pressure of the wind to their
+      normal position.
+    
+
+      Rudder Used Only For Steering.
+    
+
+      "When defendants' balancing surfaces are moved they present equal angles
+      of incidence to the normal rush of air and equal resistances, at each side
+      of the machine, and there is therefore no tendency to turn around a
+      vertical axis as is the case of the machine of the patent, consequently no
+      reason or necessity for turning the vertical rear rudder in defendants'
+      machine to counteract any such turning tendency. At any rate, whatever may
+      be the theories in regard to this matter, the fact is that the operator of
+      defendants' machine does not at any time turn his vertical rudder to
+      counteract any turning tendency clue to the side balancing surfaces, but
+      only uses it to steer the machine the same as a boat is steered."
+    
+
+      Aero Club Recognizes Wrights.
+    
+
+      The Aero Club of America has officially recognized the Wright patents.
+      This course was taken following a conference held April 9th, 1910,
+      participated in by William Wright and Andrew Freedman, representing the
+      Wright Co., and the Aero Club's committee, of Philip T. Dodge, W. W.
+      Miller, L. L. Gillespie, Wm. H. Page and Cortlandt F. Bishop.
+    
+
+      At this meeting arrangements were made by which the Aero Club recognizes
+      the Wright patents and will not give its section to any open meet where
+      the promoters thereof have not secured a license from the Wright Company.
+    
+
+      The substance of the agreement was that the Aero Club of America
+      recognizes the rights of the owners of the Wright patents under the
+      decisions of the Federal courts and refuses to countenance the
+      infringement of those patents as long as these decisions remain in force.
+    
+
+      In the meantime, in order to encourage aviation, both at home and abroad,
+      and in order to permit foreign aviators to take part in aviation contests
+      in this country it was agreed that the Aero Club of America, as the
+      American representative of the International Aeronautic Federation, should
+      approve only such public contests as may be licensed by the Wright Company
+      and that the Wright Company, on the other hand, should encourage the
+      holding of open meets or contests where ever approved as aforesaid by the
+      Aero Club of America by granting licenses to promoters who make
+      satisfactory arrangements with the company for its compensation for the
+      use of its patents. At such licensed meet any machine of any make may
+      participate freely without securing any further license or permit. The
+      details and terms of all meets will be arranged by the committee having in
+      charge the interests of both organizations.

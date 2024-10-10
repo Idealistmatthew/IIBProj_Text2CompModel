@@ -1,0 +1,204 @@
+CHAPTER XXII. PROBLEMS OF AERIAL FLIGHT.
+In a lecture before the Royal Society of Arts, reported in Engineering, F.
+      W. Lanchester took the position that practical flight was not the abstract
+      question which some apparently considered it to be, but a problem in
+      locomotive engineering. The flying machine was a locomotive appliance,
+      designed not merely to lift a weight, but to transport it elsewhere, a
+      fact which should be sufficiently obvious. Nevertheless one of the leading
+      scientific men of the day advocated a type in which this, the main
+      function of the flying machine, was overlooked. When the machine was
+      considered as a method of transport, the vertical screw type, or
+      helicopter, became at once ridiculous. It had, nevertheless, many
+      advocates who had some vague and ill-defined notion of subsequent motion
+      through the air after the weight was raised.
+Helicopter Type Useless.
+When efficiency of transport was demanded, the helicopter type was
+      entirely out of court. Almost all of its advocates neglected the effect of
+      the motion of the machine through the air on the efficiency of the
+      vertical screws. They either assumed that the motion was so slow as not to
+      matter, or that a patch of still air accompanied the machine in its
+      flight. Only one form of this type had any possibility of success. In this
+      there were two screws running on inclined axles—one on each side of
+      the weight to be lifted. The action of such inclined screw was curious,
+      and in a previous lecture he had pointed out that it was almost exactly
+      the same as that of a bird's wing. In high-speed racing craft such
+      inclined screws were of necessity often used, but it was at a sacrifice of
+      their efficiency. In any case the efficiency of the inclined-screw
+      helicopter could not compare with that of an aeroplane, and that type
+      might be dismissed from consideration so soon as efficiency became the
+      ruling factor of the design.
+Must Compete With Locomotive.
+To justify itself the aeroplane must compete, in some regard or other,
+      with other locomotive appliances, performing one or more of the purposes
+      of locomotion more efficiently than existing systems. It would be no use
+      unless able to stem air currents, so that its velocity must be greater
+      than that of the worst winds liable to be encountered. To illustrate the
+      limitations imposed on the motion of an aeroplane by wind velocity, Mr.
+      Lanchester gave the diagrams shown in Figs. 1 to 4. The circle in each
+      case was, he said, described with a radius equal to the speed of the
+      aeroplane in still air, from a center placed "down-wind" from the
+      aeroplane by an amount equal to the velocity of the wind.
+Fig. 1 therefore represented the case in which the air was still, and in
+      this case the aeroplane represented by A had perfect liberty of
+      movement in any direction
+A
+In Fig. 2 the velocity of the wind was half that of the aeroplane, and the
+      latter could still navigate in any direction, but its speed against the
+      wind was only one-third of its speed with the wind.
+In Fig. 3 the velocity of the wind was equal to that of the aeroplane, and
+      then motion against the wind was impossible; but it could move to any
+      point of the circle, but not to any point lying to the left of the tangent
+      A B. Finally, when the wind had a greater speed than the
+      aeroplane, as in Fig. 4, the machine could move only in directions limited
+      by the tangents A C and A D.
+A
+B
+A
+C
+A
+D
+Matter of Fuel Consumption.
+Taking the case in which the wind had a speed equal to half that of the
+      aeroplane, Mr. Lanchester said that for a given journey out and home, down
+      wind and back, the aeroplane would require 30 per cent more fuel than if
+      the trip were made in still air; while if the journey was made at right
+      angles to the direction of the wind the fuel needed would be 15 per cent
+      more than in a calm. This 30 per cent extra was quite a heavy enough
+      addition to the fuel; and to secure even this figure it was necessary that
+      the aeroplane should have a speed of twice that of the maximum wind in
+      which it was desired to operate the machine. Again, as stated in the last
+      lecture, to insure the automatic stability of the machine it was necessary
+      that the aeroplane speed should be largely in excess of that of the gusts
+      of wind liable to be encountered.
+Eccentricities of the Wind.
+There was, Mr. Lanchester said, a loose connection between the average
+      velocity of the wind and the maximum speed of the gusts. When the average
+      speed of the wind was 40 miles per hour, that of the gusts might be equal
+      or more. At one moment there might be a calm or the direction of the wind
+      even reversed, followed, the next moment, by a violent gust. About the
+      same minimum speed was desirable for security against gusts as was
+      demanded by other considerations. Sixty miles an hour was the least figure
+      desirable in an aeroplane, and this should be exceeded as much as
+      possible. Actually, the Wright machine had a speed of 38 miles per hour,
+      while Farman's Voisin machine flew at 45 miles per hour.
+Both machines were extremely sensitive to high winds, and the speaker, in
+      spite of newspaper reports to the contrary, had never seen either flown in
+      more than a gentle breeze. The damping out of the oscillations of the
+      flight path, discussed in the last lecture, increased with the fourth
+      power of the natural velocity of flight, and rapid damping formed the
+      easiest, and sometimes the only, defense against dangerous oscillations. A
+      machine just stable at 35 miles per hour would have reasonably rapid
+      damping if its speed were increased to 60 miles per hour.
+Thinks Use Is Limited.
+It was, the lecturer proceeded, inconceivable that any very extended use
+      should be made of the aeroplane unless the speed was much greater than
+      that of the motor car. It might in special cases be of service, apart from
+      this increase of speed, as in the exploration of countries destitute of
+      roads, but it would have no general utility. With an automobile averaging
+      25 to 35 miles per hour, almost any part of Europe, Russia excepted, was
+      attainable in a day's journey. A flying machine of but equal speed would
+      have no advantages, but if the speed could be raised to 90 or 100 miles
+      per hour, the whole continent of Europe would become a playground, every
+      part being within a daylight flight of Berlin. Further, some marine craft
+      now had speeds of 40 miles per hour, and efficiently to follow up and
+      report movements of such vessels an aeroplane should travel at 60 miles
+      per hour at least. Hence from all points of view appeared the imperative
+      desirability of very high velocities of flight. The difficulties of
+      achievement were, however, great.
+Weight of Lightest Motors.
+As shown in the first lecture of his course, the resistance to motion was
+      nearly independent of the velocity, so that the total work done in
+      transporting a given weight was nearly constant. Hence the question of
+      fuel economy was not a bar to high velocities of flight, though should
+      these become excessive, the body resistance might constitute a large
+      proportion of the total. The horsepower required varied as the velocity,
+      so the factor governing the maximum velocity of flight was the horsepower
+      that could be developed on a given weight. At present the weight per
+      horsepower of feather-weight motors appeared to range from 2 1/4 pounds up
+      to 7 pounds per brake horsepower, some actual figures being as follows:
+Antoinette........ 5 lbs.
+         Fiat.............. 3 lbs.
+         Gnome....... Under 3 lbs.
+         Metallurgic....... 8 lbs.
+         Renault........... 7 lbs.
+         Wright.............6 lbs.
+Automobile engines, on the other hand, commonly weighed 12 pounds to 13
+      pounds per brake horsepower.
+For short flights fuel economy was of less importance than a saving in the
+      weight of the engine. For long flights, however, the case was different.
+      Thus, if the gasolene consumption was 1/2 pound per horsepower hour, and
+      the engine weighed 3 pounds per brake horsepower, the fuel needed for a
+      six-hour flight would weigh as much as the engine, but for half an hour's
+      flight its weight would be unimportant.
+Best Means of Propulsion.
+The best method of propulsion was by the screw, which acting in air was
+      subject to much the same conditions as obtained in marine work. Its
+      efficiency depended on its diameter and pitch and on its position, whether
+      in front of or behind the body propelled. From this theory of dynamic
+      support, Mr. Lanchester proceeded, the efficiency of each element of a
+      screw propeller could be represented by curves such as were given in his
+      first lecture before the society, and from these curves the over-all
+      efficiency of any proposed propeller could be computed, by mere
+      inspection, with a fair degree of accuracy. These curves showed that the
+      tips of long-bladed propellers were inefficient, as was also the portion
+      of the blade near the root. In actual marine practice the blade from boss
+      to tip was commonly of such a length that the over-all efficiency was 95
+      per cent of that of the most efficient element of it.
+Advocates Propellers in Rear.
+From these curves the diameter and appropriate pitch of a screw could be
+      calculated, and the number of revolutions was then fixed. Thus, for a
+      speed of 80 feet per second the pitch might come out as 8 feet, in which
+      case the revolutions would be 600 per minute, which might, however, be too
+      low for the motor. It was then necessary either to gear down the
+      propeller, as was done in the Wright machine, or, if it was decided to
+      drive it direct, to sacrifice some of the efficiency of the propeller. An
+      analogous case arose in the application of the steam turbine to the
+      propulsion of cargo boats, a problem as yet unsolved. The propeller should
+      always be aft, so that it could abstract energy from the wake current, and
+      also so that its wash was clear of the body propelled. The best possible
+      efficiency was about 70 per cent, and it was safe to rely upon 66 per
+      cent.
+Benefits of Soaring Flight.
+There was, Mr. Lanchester proceeded, some possibility of the aeronaut
+      reducing the power needed for transport by his adopting the principle of
+      soaring flight, as exemplified by some birds. There were, he continued,
+      two different modes of soaring flight. In the one the bird made use of the
+      upward current of air often to be found in the neighborhood of steep
+      vertical cliffs. These cliffs deflected the air upward long before it
+      actually reached the cliff, a whole region below being thus the seat of an
+      upward current. Darwin has noted that the condor was only to be found in
+      the neighborhood of such cliffs. Along the south coast also the gulls made
+      frequent use of the up currents due to the nearly perpendicular chalk
+      cliffs along the shore.
+In the tropics up currents were also caused by temperature differences.
+      Cumulus clouds, moreover, were nearly always the terminations of such up
+      currents of heated air, which, on cooling by expansion in the upper
+      regions, deposited their moisture as fog. These clouds might, perhaps,
+      prove useful in the future in showing the aeronaut where up currents were
+      to be found. Another mode of soaring flight was that adopted by the
+      albatross, which took advantage of the fact that the air moved in
+      pulsations, into which the bird fitted itself, being thus able to extract
+      energy from the wind. Whether it would be possible for the aeronaut to
+      employ a similar method must be left to the future to decide.
+Main Difficulties in Aviation.
+In practical flight difficulties arose in starting and in alighting. There
+      was a lower limit to the speed at which the machine was stable, and it was
+      inadvisable to leave the ground till this limit was attained. Similarly,
+      in alighting it was inexpedient to reduce the speed below the limit of
+      stability. This fact constituted a difficulty in the adoption of high
+      speeds, since the length of run needed increased in proportion to the
+      square of the velocity. This drawback could, however, be surmounted by
+      forming starting and alighting grounds of ample size. He thought it quite
+      likely in the future that such grounds would be considered as essential to
+      the flying machine as a seaport was to an ocean-going steamer or as a road
+      was to the automobile.
+Requisites of Flying Machine.
+Flying machines were commonly divided into monoplanes and biplanes,
+      according as they had one or two supporting surfaces. The distinction was
+      not, however, fundamental. To get the requisite strength some form of
+      girder framework was necessary, and it was a mere question of convenience
+      whether the supporting surface was arranged along both the top and the
+      bottom of this girder, or along the bottom only. The framework adopted
+      universally was of wood braced by ties of pianoforte wire, an arrangement
+      giving the stiffness desired with the least possible weight. Some kind of
+      chassis was also necessary.
