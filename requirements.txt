@@ -1,3 +1,5 @@
 ebooklib
 bs4
 ipykernel
+nltk
+numpy
