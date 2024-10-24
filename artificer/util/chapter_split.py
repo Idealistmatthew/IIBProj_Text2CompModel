@@ -67,3 +67,7 @@ def extract_chapters(chapter_dir):
                 chapter_text = f.read()
                 chapters.append(chapter_text)
     return chapters
+
+def get_chapter(chapter_dir, chapter_num):
+    """Extract chapter from text files in a directory."""
+    return extract_chapters(chapter_dir)[chapter_num]

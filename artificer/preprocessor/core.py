@@ -22,6 +22,7 @@ class Preprocessor:
 
         # The following assignments hold a lot of intermediate data, we should remove this if memory becomes an issue and it isn't used elsewhere
         self.tokenized_chapters: list[list[str]] = self.tokenize_chapters()
+        self.sentence_tokenize_chapters: list[list[str]] = self.sentence_tokenize_chapters()
         print("[STATUS] Tokenization complete")
         self.filtered_chapter_tokens: list[list[str]] = self.filter_tokens()
         print("[STATUS] Filtering complete")
@@ -37,6 +38,11 @@ class Preprocessor:
         """Perform word tokenization on the chapters."""
         tokenized_chapters = [nltk.word_tokenize(chapter) for chapter in self.chapters]
         return tokenized_chapters
+    
+    def sentence_tokenize_chapters(self) -> list[list[str]]:
+        """Perform sentence tokenization on the chapters."""
+        sentence_tokenized_chapters = [nltk.sent_tokenize(chapter) for chapter in self.chapters]
+        return sentence_tokenized_chapters
 
     def filter_tokens(self) -> list[list[str]]:
         """Reomve stop words and lemmatiize the tokens."""
