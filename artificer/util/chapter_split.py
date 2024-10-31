@@ -12,7 +12,7 @@ def split_chapters(book_dir: str, epub_dir: str):
     print(book)
 
     # Output Directory for chapter text files
-    output_dir = os.path.join(book_dir, 'chapters')
+    output_dir = os.path.join(book_dir, 'uncleaned_chapters')
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
 
@@ -60,13 +60,17 @@ def split_chapters(book_dir: str, epub_dir: str):
 def extract_chapters(chapter_dir):
     """Extract chapters from text files in a directory."""
     chapters = []
-    chapter_file_pattern = r'^chapter_\d+\.txt$'
+    document_dict = {}
+    # chapter_file_pattern = r'^chapter_\d+\.txt$'
+    i = 0
     for file in os.listdir(chapter_dir):
-        if re.match(chapter_file_pattern, os.path.basename(file)):
-            with open(os.path.join(chapter_dir, file), 'r', encoding='utf-8') as f:
-                chapter_text = f.read()
-                chapters.append(chapter_text)
-    return chapters
+        # if re.match(chapter_file_pattern, os.path.basename(file)):
+        with open(os.path.join(chapter_dir, file), 'r', encoding='utf-8') as f:
+            chapter_text = f.read()
+            chapters.append(chapter_text)
+            document_dict[os.path.basename(file)] = i
+            i += 1
+    return chapters, document_dict
 
 def get_chapter(chapter_dir, chapter_num):
     """Extract chapter from text files in a directory."""

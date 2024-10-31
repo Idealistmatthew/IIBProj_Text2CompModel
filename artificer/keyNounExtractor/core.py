@@ -23,7 +23,9 @@ class KeyNounExtractor:
         self.noun_counter: list[Counter] = [Counter(chapter) for chapter in self.chapter_nouns]
         self.document_frequency = self.calculate_document_frequency(self.noun_counter[chosen_chapter])
         self.chosen_chapter_tf_idf: dict[str, float] = self.calculate_tf_idf(self.noun_counter[chosen_chapter])
-        print(self.chosen_chapter_tf_idf)
+        # print(self.chosen_chapter_tf_idf)
+        self.sorted_tf_idf = dict(sorted(self.chosen_chapter_tf_idf.items(), key=lambda item: item[1], reverse=True))
+        self.pretty_print_top_n(self.sorted_tf_idf, 30)
         self.show_word_cloud()
     
     def calculate_tf_idf(self, chapter_noun_counter: Counter) -> dict[str, float]:
@@ -34,6 +36,13 @@ class KeyNounExtractor:
             idf = np.log(self.num_chapters/(self.document_frequency[word] + 1)) + 1
             tf_idf[word] = tf * idf
         return tf_idf
+    
+    def pretty_print_top_n(self, data: dict[str, float], n: int):
+        """Pretty print the top n entries of a dictionary."""
+        for i, (key, value) in enumerate(data.items()):
+            if i >= n:
+                break
+            print(f"{key}: {value:.4f}")
     
     def calculate_document_frequency(self, chapter_noun_counter: Counter) -> dict[str, int]:
         """Calculate the document frequency for the chosen chapter."""

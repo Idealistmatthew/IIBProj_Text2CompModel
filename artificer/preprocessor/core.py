@@ -18,30 +18,56 @@ class Preprocessor:
         """
         self.chapters_dir: str = chapters_dir
         self.lemmatizer = nltk.stem.WordNetLemmatizer()
-        self.chapters: list = extract_chapters(chapters_dir)
+        extracted_chapters = extract_chapters(chapters_dir)
+        self.chapters: list[str] = extracted_chapters[0]
+        self.document_dict: dict[str, int] = extracted_chapters[1]
+        self.tokenized_chapters: list[list[str]] = [[]]
+        self.sentence_tokenized_chapters: list[list[str]] = [[]]
+        self.filtered_chapter_tokens: list[list[str]] = [[]]
+        self.pos_tagged_chapters: list[list[tuple[str, str]] | list] = [[]]
+        self.named_entities: list[nltk.Tree] = []
+        self.nouns: list[list[str]] = [[]]
+
 
         # The following assignments hold a lot of intermediate data, we should remove this if memory becomes an issue and it isn't used elsewhere
-        self.tokenized_chapters: list[list[str]] = self.tokenize_chapters()
-        self.sentence_tokenize_chapters: list[list[str]] = self.sentence_tokenize_chapters()
-        print("[STATUS] Tokenization complete")
-        self.filtered_chapter_tokens: list[list[str]] = self.filter_tokens()
-        print("[STATUS] Filtering complete")
-        self.pos_tagged_chapters: list[list[tuple[str, str]] | list] = self.pos_tag_chapters()
-        print("[STATUS] POS tagging complete")
-        self.named_entities: list[nltk.Tree] = self.named_entity_recognition()
-        print("[STATUS] Named entity recognition complete")
-        self.nouns: list[list[str]] = self.noun_extraction()
+        # self.tokenized_chapters: list[list[str]] = self.tokenize_chapters()
+        # self.sentence_tokenized_chapters: list[list[str]] = self.sentence_tokenize_chapters()
+        # print("[STATUS] Tokenization complete")
+        # self.filtered_chapter_tokens: list[list[str]] = self.filter_tokens()
+        # print("[STATUS] Filtering complete")
+        # self.pos_tagged_chapters: list[list[tuple[str, str]] | list] = self.pos_tag_chapters()
+        # print("[STATUS] POS tagging complete")
+        # # self.named_entities: list[nltk.Tree] = self.named_entity_recognition()
+        # # print("[STATUS] Named entity recognition complete")
+        # self.nouns: list[list[str]] = self.noun_extraction()
         print("[STATUS] Noun extraction complete") 
+    
+    def preprocess(self):
+        """Preprocess the chapters."""
+        self.tokenize_chapters()
+        self.sentence_tokenize_chapters()
+        self.filter_tokens()
+        self.pos_tag_chapters()
+        self.noun_extraction()
+        return None
+
+    def get_chapter_dict(self) -> dict[str, int]:
+        """Return the dictionary of chapters."""
+        return self.document_dict
 
     
     def tokenize_chapters(self) -> list[list[str]]:
         """Perform word tokenization on the chapters."""
         tokenized_chapters = [nltk.word_tokenize(chapter) for chapter in self.chapters]
+        print("[STATUS] Tokenization complete")
+        self.tokenized_chapters = tokenized_chapters
         return tokenized_chapters
     
     def sentence_tokenize_chapters(self) -> list[list[str]]:
         """Perform sentence tokenization on the chapters."""
         sentence_tokenized_chapters = [nltk.sent_tokenize(chapter) for chapter in self.chapters]
+        print("[STATUS] Sentence tokenization complete")
+        self.sentence_tokenized_chapters = sentence_tokenized_chapters
         return sentence_tokenized_chapters
 
     def filter_tokens(self) -> list[list[str]]:
@@ -51,11 +77,15 @@ class Preprocessor:
         for tokenized_chapter in self.tokenized_chapters:
             filtered_chapter = [self.lemmatizer.lemmatize(token.lower()) for token in tokenized_chapter if token.lower() not in stop_words]
             filtered_chapter_tokens.append(filtered_chapter)
+        self.filtered_chapter_tokens = filtered_chapter_tokens
+        print("[STATUS] Filtering complete")
         return filtered_chapter_tokens
     
     def pos_tag_chapters(self) -> list[list[tuple[str, str]] | list]:
         """Perform POS tagging on the chapters."""
         pos_tagged_chapters = [nltk.pos_tag(chapter) for chapter in self.filtered_chapter_tokens]
+        self.pos_tagged_chapters = pos_tagged_chapters
+        print("[STATUS] POS tagging complete")
         return pos_tagged_chapters
     
     def named_entity_recognition(self) -> list[nltk.Tree]:
@@ -63,16 +93,14 @@ class Preprocessor:
         named_entities = []
         for chapter in self.pos_tagged_chapters:
             named_entities.append(nltk.ne_chunk(chapter))
+        self.named_entities = named_entities
+        print("[STATUS] Named entity recognition complete")
         return named_entities
     
     def noun_extraction(self):
         """Extract nouns from the chapters."""
-        return [[word for word, tag in chapter if tag in ['NN', 'NNS', 'NNP', 'NNPS']] for chapter in self.pos_tagged_chapters]
-    
-
-
-    
-
+        self.nouns = [[word for word, tag in chapter if tag in ['NN', 'NNS', 'NNP', 'NNPS']] for chapter in self.pos_tagged_chapters]
+        return self.nouns
 
 if __name__ == "__main__":
     # Load the chapters
