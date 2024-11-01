@@ -21,26 +21,15 @@ class Preprocessor:
         extracted_chapters = extract_chapters(chapters_dir)
         self.chapters: list[str] = extracted_chapters[0]
         self.document_dict: dict[str, int] = extracted_chapters[1]
+
+        self.stop_words = set(nltk.corpus.stopwords.words('english')) 
+
         self.tokenized_chapters: list[list[str]] = [[]]
         self.sentence_tokenized_chapters: list[list[str]] = [[]]
         self.filtered_chapter_tokens: list[list[str]] = [[]]
         self.pos_tagged_chapters: list[list[tuple[str, str]] | list] = [[]]
         self.named_entities: list[nltk.Tree] = []
         self.nouns: list[list[str]] = [[]]
-
-
-        # The following assignments hold a lot of intermediate data, we should remove this if memory becomes an issue and it isn't used elsewhere
-        # self.tokenized_chapters: list[list[str]] = self.tokenize_chapters()
-        # self.sentence_tokenized_chapters: list[list[str]] = self.sentence_tokenize_chapters()
-        # print("[STATUS] Tokenization complete")
-        # self.filtered_chapter_tokens: list[list[str]] = self.filter_tokens()
-        # print("[STATUS] Filtering complete")
-        # self.pos_tagged_chapters: list[list[tuple[str, str]] | list] = self.pos_tag_chapters()
-        # print("[STATUS] POS tagging complete")
-        # # self.named_entities: list[nltk.Tree] = self.named_entity_recognition()
-        # # print("[STATUS] Named entity recognition complete")
-        # self.nouns: list[list[str]] = self.noun_extraction()
-        print("[STATUS] Noun extraction complete") 
     
     def preprocess(self):
         """Preprocess the chapters."""
@@ -72,14 +61,19 @@ class Preprocessor:
 
     def filter_tokens(self) -> list[list[str]]:
         """Reomve stop words and lemmatiize the tokens."""
-        stop_words = set(nltk.corpus.stopwords.words('english')) # Could be extracted into init if this is used again
         filtered_chapter_tokens = []
         for tokenized_chapter in self.tokenized_chapters:
-            filtered_chapter = [self.lemmatizer.lemmatize(token.lower()) for token in tokenized_chapter if token.lower() not in stop_words]
+            filtered_chapter = [self.lemmatizer.lemmatize(token.lower()) for token in tokenized_chapter if token.lower() not in self.stop_words]
             filtered_chapter_tokens.append(filtered_chapter)
         self.filtered_chapter_tokens = filtered_chapter_tokens
         print("[STATUS] Filtering complete")
         return filtered_chapter_tokens
+    
+    def process_phrase(self, phrase: str) -> list[str]:
+        """Process a phrase."""
+        tokens = nltk.word_tokenize(phrase)
+        filtered_tokens = [self.lemmatizer.lemmatize(token.lower()) for token in tokens if token.lower() not in self.stop_words]
+        return filtered_tokens
     
     def pos_tag_chapters(self) -> list[list[tuple[str, str]] | list]:
         """Perform POS tagging on the chapters."""

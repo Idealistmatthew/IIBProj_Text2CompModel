@@ -6,7 +6,7 @@ from artificer.cache.core import Cache
 from pathlib import Path
 from artificer.preprocessor.core import Preprocessor
 from artificer.keyNounExtractor.core import KeyNounExtractor
-from artificer.relationshipExtractor.core import RelationshipExtractor, RelationshipParser
+from artificer.relationshipExtractor.core import RelationshipExtractor, RelationshipParser, RelationshipSerialiser
 
 ASSET_DIR = './Assets'
 CACHE_DIR = './jsoncaches'
@@ -23,16 +23,7 @@ def try_cache(cache_name, dict, cache_dir='jsoncaches'):
     print(cache.get_value(cache_name, 'new_value'))
     return None
 
-
-if __name__ == "__main__":
-    cache = Cache(CACHE_DIR)
-
-    # Only run this script if it is a new document to partition
-
-    # book_dir = os.path.join(ASSET_DIR, 'FlyingMachines')
-    # epub_dir = os.path.join(book_dir, 'flying_machines.epub')
-    # split_chapters(book_dir, epub_dir)
-
+def main_loop(self):
     chapters_dir =  Path(__file__).resolve().parent / 'Assets' / 'FlyingMachines' / 'chapters'
     preprocessor = Preprocessor(chapters_dir=chapters_dir)
     preprocessor.preprocess()
@@ -55,18 +46,25 @@ if __name__ == "__main__":
     key_noun_extractor = KeyNounExtractor(cache.get_value(PREPROCESSED_NOUNS_CACHE, 'nouns' ), chosen_chapter=chosen_chapter_num)
     cache.set(f"Flying_Machines_{chosen_chapter_name}_key_nouns", {'tf_idf': key_noun_extractor.chosen_chapter_tf_idf})
 
-    
+if __name__ == "__main__":
+    cache = Cache(CACHE_DIR)
 
-    # try_cache('test_cache', {'value': 5, 'old_value': 10})
+    # Only run this script if it is a new document to partition
+
+    # book_dir = os.path.join(ASSET_DIR, 'FlyingMachines')
+    # epub_dir = os.path.join(book_dir, 'flying_machines.epub')
+    # split_chapters(book_dir, epub_dir)
 
     # relationshipExtractor = RelationshipExtractor(tokenized_sentences = cache.get_value('sentence_tokenized_chapters', 'sentence_tokenized_chapters'), chosen_chapter=4)
     # cache.set('Flying_Machines_Chapter4_relationships', {'relationships': relationshipExtractor.extraced_relationships})
 
-    # relationships = cache.get_value('Flying_Machines_Chapter4_relationships', 'relationships')
-    # # print(relationships)
-    # print("Type",type(relationships))
-    # relationshipParser = RelationshipParser(relationships)
-    # cache.set('Flying_Machines_Chapter4_parsed_relationships', {'parsed_relationships': relationshipParser.parsed_relationships})
+
+    chapters_dir =  Path(__file__).resolve().parent / 'Assets' / 'FlyingMachines' / 'chapters'
+    preprocessor = Preprocessor(chapters_dir=chapters_dir)
+    relationships = cache.get_value('Flying_Machines_Chapter4_relationships', 'relationships')
+    relationshipParser = RelationshipParser(relationships, preprocessor)
+    serialisable_relationships = [RelationshipSerialiser.toDict(relationship) for relationship in relationshipParser.processed_relationships]
+    cache.set('Flying_Machines_Chapter4_processed_relationships', {'processed_relationships': serialisable_relationships})
 
 
     pass
