@@ -4,9 +4,6 @@ from artificer.preprocessor.core import Preprocessor
 import matplotlib.pyplot as plt
 import networkx as nx
 
-
-
-
 class Relationship:
     def __init__(self, 
                  subject: str,
@@ -135,16 +132,11 @@ class RelationshipParser:
         parsed_relationships.sort(key=lambda x: x[1], reverse=True)
         return parsed_relationships
     
-    def plot_triplets(self, parsed_relationships: list[tuple[list[str], float]]):
+    def plot_triplets(self, processed_relationships: list[Relationship]):
         """Plot the extracted relationships."""
         G = nx.DiGraph()
-        for relationship in parsed_relationships:
-            entities = relationship[0]
-            subject = entities[0]
-            relation = entities[1]
-            for obj in entities[2:]:
-                print(subject)
-                G.add_edge(subject, obj, relationship=relation)
+        for rel in processed_relationships:
+            G.add_edge(rel.subject, rel.object, relationship = rel.relation)
         pos = nx.spring_layout(G)
 
         nx.draw_networkx_nodes(G, pos, node_size=700, node_color='skyblue')
