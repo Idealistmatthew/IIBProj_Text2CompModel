@@ -12,6 +12,12 @@ ASSET_DIR = './Assets'
 CACHE_DIR = './jsoncaches'
 PREPROCESSED_NOUNS_CACHE = 'preprocessed_nouns'
 
+HYPERPARAMS = {
+    'tf_idf': 1,
+    'relationship': 1, # not using this yet since the relationships extracted at the moment are still manageable
+    'phrase_length': 3,
+}
+
 def try_cache(cache_name, dict, cache_dir='jsoncaches'):
     cache = Cache(cache_dir)
     cache.set(cache_name, dict)
@@ -23,7 +29,8 @@ def try_cache(cache_name, dict, cache_dir='jsoncaches'):
     print(cache.get_value(cache_name, 'new_value'))
     return None
 
-def main_loop(self):
+def main_loop():
+    cache = Cache(CACHE_DIR)
     chapters_dir =  Path(__file__).resolve().parent / 'Assets' / 'FlyingMachines' / 'chapters'
     preprocessor = Preprocessor(chapters_dir=chapters_dir)
     preprocessor.preprocess()
@@ -43,11 +50,20 @@ def main_loop(self):
     # print(preprocessor.nouns)
     # print(len(preprocessor.nouns))
 
-    key_noun_extractor = KeyNounExtractor(cache.get_value(PREPROCESSED_NOUNS_CACHE, 'nouns' ), chosen_chapter=chosen_chapter_num)
-    cache.set(f"Flying_Machines_{chosen_chapter_name}_key_nouns", {'tf_idf': key_noun_extractor.chosen_chapter_tf_idf})
+    key_noun_extractor = KeyNounExtractor(
+        cache.get_value(PREPROCESSED_NOUNS_CACHE, 'nouns' ),
+                                           chosen_chapter=chosen_chapter_num,
+                                           tf_idf_limit=HYPERPARAMS['tf_idf'])
+    cache.set(f"Flying_Machines_{chosen_chapter_name}_key_nouns", {'tf_idf': key_noun_extractor.chosen_chapter_tf_idf
+                                                                   ,'key_nouns': key_noun_extractor.key_nouns})
+
+    # relationshipExtractor = RelationshipExtractor(tokenized_sentences = cache.get_value('sentence_tokenized_chapters', 'sentence_tokenized_chapters'), chosen_chapter=chosen_chapter_num)
+    # cache.set(f"Flying_Machines_{chosen_chapter_name}_raw_relationships", 
+    #           {'relationships': relationshipExtractor.extracted_relationships})
 
 if __name__ == "__main__":
     cache = Cache(CACHE_DIR)
+    # main_loop()
 
     # Only run this script if it is a new document to partition
 
@@ -61,10 +77,17 @@ if __name__ == "__main__":
 
     chapters_dir =  Path(__file__).resolve().parent / 'Assets' / 'FlyingMachines' / 'chapters'
     preprocessor = Preprocessor(chapters_dir=chapters_dir)
-    relationships = cache.get_value('Flying_Machines_Chapter4_relationships', 'relationships')
-    relationshipParser = RelationshipParser(relationships, preprocessor)
+    chapter_num_dict = preprocessor.get_chapter_dict()
+    chosen_chapter_name = "chapter_38.txt"
+    chosen_chapter_num = chapter_num_dict[chosen_chapter_name]
+    relationships = cache.get_value(f"Flying_Machines_{chosen_chapter_name}_raw_relationships", 'relationships')
+
+    key_nouns = cache.get_value(f"Flying_Machines_{chosen_chapter_name}_key_nouns", 'key_nouns')
+
+    relationshipParser = RelationshipParser(
+        relationships, preprocessor,key_nouns, phrase_length_limit=HYPERPARAMS['phrase_length'])
     serialisable_relationships = [RelationshipSerialiser.toDict(relationship) for relationship in relationshipParser.processed_relationships]
-    cache.set('Flying_Machines_Chapter4_processed_relationships', {'processed_relationships': serialisable_relationships})
+    cache.set(f"Flying_Machines_{chosen_chapter_name}_processed_relationships", {'processed_relationships': serialisable_relationships})
 
 
     pass

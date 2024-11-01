@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 class KeyNounExtractor:
     """KeyNounExtractor class for extracting key nouns from the data."""
-    def __init__(self, chapter_nouns: list[list[str]] ,chosen_chapter: int):
+    def __init__(self, chapter_nouns: list[list[str]] ,chosen_chapter: int, tf_idf_limit: float):
         """
         Inputs
         -------
@@ -25,6 +25,7 @@ class KeyNounExtractor:
         self.chosen_chapter_tf_idf: dict[str, float] = self.calculate_tf_idf(self.noun_counter[chosen_chapter])
         # print(self.chosen_chapter_tf_idf)
         self.sorted_tf_idf = dict(sorted(self.chosen_chapter_tf_idf.items(), key=lambda item: item[1], reverse=True))
+        self.key_nouns = {word: value for word, value in self.sorted_tf_idf.items() if value > tf_idf_limit}
         self.pretty_print_top_n(self.sorted_tf_idf, 30)
         self.show_word_cloud()
     

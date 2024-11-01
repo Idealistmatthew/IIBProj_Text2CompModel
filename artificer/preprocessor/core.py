@@ -73,7 +73,9 @@ class Preprocessor:
         """Process a phrase."""
         tokens = nltk.word_tokenize(phrase)
         filtered_tokens = [self.lemmatizer.lemmatize(token.lower()) for token in tokens if token.lower() not in self.stop_words]
-        return filtered_tokens
+        pos_tagged_tokens = nltk.pos_tag(filtered_tokens)
+        noun_tokens = [word for word, tag in pos_tagged_tokens if tag in ['NN', 'NNS', 'NNP', 'NNPS']]
+        return noun_tokens
     
     def pos_tag_chapters(self) -> list[list[tuple[str, str]] | list]:
         """Perform POS tagging on the chapters."""

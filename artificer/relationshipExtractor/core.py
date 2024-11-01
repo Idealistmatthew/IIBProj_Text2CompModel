@@ -73,9 +73,11 @@ class RelationshipExtractor:
         return relationships
 
 class RelationshipParser:
-    def __init__(self, sentence_relationships: list[Any], preprocesser: Preprocessor):
+    def __init__(self, sentence_relationships: list[Any], preprocesser: Preprocessor, key_nouns: dict[str, float], phrase_length_limit: int):
         # Initialize any necessary variables or models here
         self.sentence_relationships = sentence_relationships
+        self.key_nouns = key_nouns
+        self.phrase_length_limit = phrase_length_limit
         # self.parsed_relationships = self.parse_relationships()
         self.processed_relationships = []
         self.preprocessor = preprocesser
@@ -84,31 +86,70 @@ class RelationshipParser:
         # self.plot_triplets(self.parsed_relationships[1:100])
     
     def process_relationships(self):
-        """Process the relationships."""
+        """Process the relationships from the OpenIE output into nice Relationship objects."""
         for sentence_data in self.sentence_relationships:
             for relationship in sentence_data:
                 extraction = relationship["extraction"]
+                original_sentence=relationship["sentence"]
                 if "arg1" not in extraction:
                     continue
                 if "arg2s" not in extraction:
                     continue
                 arg1_text = extraction["arg1"]["text"]
+                processed_subject = self.process_phrase(arg1_text)
+                if not processed_subject or len(processed_subject) == 0:
+                    # Skip the relationship if the subject is empty
+                    continue
                 arg2s = extraction["arg2s"]
                 for arg2 in arg2s:
                     arg2_text = arg2["text"]
+                    processed_object = self.process_phrase(arg2_text)
+                    if not processed_object or len(processed_object) == 0:
+                        # Skip the relationship if the object is empty
+                        continue
                     self.processed_relationships.append(
                         Relationship(
                             subject=arg1_text,
-                            processed_subject=self.preprocessor.process_phrase(arg1_text),
+                            processed_subject=processed_subject,
+                            processed_subject_props = self.get_phrase_props(processed_subject, original_sentence ),
                             relation=extraction["rel"]["text"],
                             object=arg2_text,
-                            processed_object=self.preprocessor.process_phrase(arg2_text),
+                            processed_object=processed_object,
+                            processed_object_props = self.get_phrase_props(processed_object, original_sentence),
                             confidence=relationship["confidence"],
-                            original_sentence=relationship["sentence"]
+                            original_sentence=original_sentence
                         )
                     )
-        
     
+    def process_phrase(self, text: str) -> list[str]:
+        """Process a phrase via the preprocessing rules and limit the phrase length via the tfidfs."""
+        preprocessed_text = self.preprocessor.process_phrase(text)
+        # Filter out any words that are not key nouns
+        preprocessed_text = [word for word in preprocessed_text if word in self.key_nouns]
+        # Remove duplicates while preserving order
+        seen = set()
+        preprocessed_text = [x for x in preprocessed_text if not (x in seen or seen.add(x))]
+        if len(preprocessed_text) > self.phrase_length_limit:
+            print(f"Phrase too long: {preprocessed_text}")
+            tf_idf_list = [self.key_nouns[word] for word in preprocessed_text]
+            # Get the indices of the phrase_length_limit largest values in the tf_idf_list
+            largest_indices = sorted(range(len(tf_idf_list)), key=lambda i: tf_idf_list[i], reverse=True)[:self.phrase_length_limit]
+            largest_indices.sort()
+            # Use those indices to access the words in the preprocessed_text to form another list
+            preprocessed_text = [preprocessed_text[i] for i in largest_indices]
+            print(f"Shortened phrase: {preprocessed_text}")
+            return preprocessed_text
+    
+    def get_phrase_props(self, phrase: list[str], original_sentence: str) -> dict[str, list[float]]:
+        """Get the properties of a phrase. will give tf-idf and wordnet depth here but will add the the count later"""
+        tf_idf = [self.key_nouns[word] for word in phrase]
+        wordnet_depths = self.get_wordnet_depths(phrase, original_sentence)
+        return {"tf_idf": tf_idf}
+
+    def get_wordnet_depths(self, phrase: list[str], original_sentence: str) -> list[float]:
+        return [0.0] * len(phrase) # placeholder
+
+
     def parse_relationships(self) -> list[tuple[list[str], float]]:
         """Parse the relationships into a more structured format."""
         parsed_relationships = []
