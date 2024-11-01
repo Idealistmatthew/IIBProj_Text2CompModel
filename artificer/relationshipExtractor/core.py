@@ -3,21 +3,27 @@ from typing import Any
 from artificer.preprocessor.core import Preprocessor
 import matplotlib.pyplot as plt
 import networkx as nx
+from nltk.wsd import lesk
+from nltk.corpus import wordnet as wn
 
 class Relationship:
     def __init__(self, 
                  subject: str,
                  processed_subject: list[str],
+                 processed_subject_props: dict[str, list[float]],
                  relation: str, 
                  object: str, 
                  processed_object: str, 
+                 processed_object_props: dict[str, list[float]],
                  confidence: float, 
                  original_sentence: str):
         self.subject = subject
         self.processed_subject = processed_subject
+        self.processed_subject_props = processed_subject_props
         self.relation = relation
         self.object = object
         self.processed_object = processed_object
+        self.processed_object_props = processed_object_props
         self.confidence = confidence
         self.original_sentence = original_sentence
     
@@ -25,9 +31,11 @@ class Relationship:
         return (
             f"Subject: {self.subject}, \n"
             f"Processed Subject: {self.processed_subject}, \n"
+            f"Processed Subject Props: {self.processed_subject_props}, \n"
             f"Relation: {self.relation}, \n"
             f"Object: {self.object}, \n"
             f"Processed Object: {self.processed_object}, \n"
+            f"Processed Object Props: {self.processed_object_props}, \n"
             f"Confidence: {self.confidence}, \n"
             f"Original Sentence: {self.original_sentence}\n"
         )
@@ -39,9 +47,11 @@ class RelationshipSerialiser:
         return {
             "subject": relationship.subject,
             "processed_subject": relationship.processed_subject,
+            "processed_subject_props": relationship.processed_subject_props,
             "relation": relationship.relation,
             "object": relationship.object,
             "processed_object": relationship.processed_object,
+            "processed_object_props": relationship.processed_object_props,
             "confidence": relationship.confidence,
             "original_sentence": relationship.original_sentence
         }
@@ -50,9 +60,11 @@ class RelationshipSerialiser:
         return Relationship(
             subject=relationship_dict["subject"],
             processed_subject=relationship_dict["processed_subject"],
+            processed_subject_props=relationship_dict["processed_subject_props"],
             relation=relationship_dict["relation"],
             object=relationship_dict["object"],
             processed_object=relationship_dict["processed_object"],
+            processed_object_props=relationship_dict["processed_object_props"],
             confidence=relationship_dict["confidence"],
             original_sentence=relationship_dict["original_sentence"]
         )
@@ -63,7 +75,7 @@ class RelationshipExtractor:
         # Initialize any necessary variables or models here
         self.extractor = OpenIE5('http://localhost:8000')
         self.extracted_relationships = self.extract_relationships(tokenized_sentences[chosen_chapter])
-        print(self.extracted_relationships)
+        # print(self.extracted_relationships)
     
     def extract_relationships(self, sentences: list[str]) -> list[Any]:
         """Extract relationships from the given sentences."""
@@ -78,11 +90,12 @@ class RelationshipParser:
         self.sentence_relationships = sentence_relationships
         self.key_nouns = key_nouns
         self.phrase_length_limit = phrase_length_limit
+        self.wordnet_depth_memo = {}
         # self.parsed_relationships = self.parse_relationships()
         self.processed_relationships = []
         self.preprocessor = preprocesser
         self.process_relationships()
-        print(self.processed_relationships)
+        # print(self.processed_relationships)
         # self.plot_triplets(self.parsed_relationships[1:100])
     
     def process_relationships(self):
@@ -98,6 +111,8 @@ class RelationshipParser:
                 arg1_text = extraction["arg1"]["text"]
                 processed_subject = self.process_phrase(arg1_text)
                 if not processed_subject or len(processed_subject) == 0:
+                    # print("no subject")
+                    # print(arg1_text)
                     # Skip the relationship if the subject is empty
                     continue
                 arg2s = extraction["arg2s"]
@@ -106,6 +121,7 @@ class RelationshipParser:
                     processed_object = self.process_phrase(arg2_text)
                     if not processed_object or len(processed_object) == 0:
                         # Skip the relationship if the object is empty
+                        # print("no object")
                         continue
                     self.processed_relationships.append(
                         Relationship(
@@ -139,16 +155,53 @@ class RelationshipParser:
             preprocessed_text = [preprocessed_text[i] for i in largest_indices]
             print(f"Shortened phrase: {preprocessed_text}")
             return preprocessed_text
+        return preprocessed_text
     
     def get_phrase_props(self, phrase: list[str], original_sentence: str) -> dict[str, list[float]]:
-        """Get the properties of a phrase. will give tf-idf and wordnet depth here but will add the the count later"""
+        """
+        Get the properties of a phrase.
+        Will give tf-idf and wordnet depth (unnormalised yet) here
+        but will add the count later
+        """
         tf_idf = [self.key_nouns[word] for word in phrase]
         wordnet_depths = self.get_wordnet_depths(phrase, original_sentence)
-        return {"tf_idf": tf_idf}
+        return {"tf_idf": tf_idf, "wordnet_depths": wordnet_depths}
 
     def get_wordnet_depths(self, phrase: list[str], original_sentence: str) -> list[float]:
-        return [0.0] * len(phrase) # placeholder
+        depths = []
+        for i in range(len(phrase)):
+            if phrase[i] in self.wordnet_depth_memo:
+                return self.wordnet_depth_memo[phrase[i]]
+            synset = lesk(original_sentence, phrase[i])
+            if synset:
+                self.wordnet_depth_memo[phrase[i]] = synset.min_depth()
+                depths.append(synset.min_depth())
+            else:
+                print(f"Could not find synset for {phrase[i]}")
+                more_synsets = wn.synsets(phrase[i])
+                if len(more_synsets) == 0:
+                    "Might need to give an average depth score instead of 0"
+                    print(f"Could not find more synsets for {phrase[i]}")
+                    self.wordnet_depth_memo[phrase[i]] = 0
+                    depths.append(0)
+                    continue
 
+                max_depth = 0
+                for candidate_synset in more_synsets:
+                    for possible_synset in more_synsets:
+                        similarity = candidate_synset.path_similarity(possible_synset)
+                        if similarity:
+                            # Track the synset with the maximum depth
+                            print(f"Found backup similarity: {similarity}")
+                            max_depth = max(max_depth, candidate_synset.min_depth())
+                
+                # Fallback: if no similarity found, use the depth of the most common synset
+                if max_depth == 0:
+                    most_common_synset = more_synsets[0]  # First synset is typically the most common
+                    max_depth = most_common_synset.min_depth()
+                self.wordnet_depth_memo[phrase[i]] = max_depth
+                depths.append(max_depth)
+        return depths
 
     def parse_relationships(self) -> list[tuple[list[str], float]]:
         """Parse the relationships into a more structured format."""

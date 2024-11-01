@@ -13,7 +13,7 @@ CACHE_DIR = './jsoncaches'
 PREPROCESSED_NOUNS_CACHE = 'preprocessed_nouns'
 
 HYPERPARAMS = {
-    'tf_idf': 1,
+    'tf_idf': 0.3,
     'relationship': 1, # not using this yet since the relationships extracted at the moment are still manageable
     'phrase_length': 3,
 }

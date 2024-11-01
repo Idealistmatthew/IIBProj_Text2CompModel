@@ -25,6 +25,8 @@ class KeyNounExtractor:
         self.chosen_chapter_tf_idf: dict[str, float] = self.calculate_tf_idf(self.noun_counter[chosen_chapter])
         # print(self.chosen_chapter_tf_idf)
         self.sorted_tf_idf = dict(sorted(self.chosen_chapter_tf_idf.items(), key=lambda item: item[1], reverse=True))
+        max_tf_idf = max(self.sorted_tf_idf.values())
+        self.sorted_tf_idf = {word: value / max_tf_idf for word, value in self.sorted_tf_idf.items()}
         self.key_nouns = {word: value for word, value in self.sorted_tf_idf.items() if value > tf_idf_limit}
         self.pretty_print_top_n(self.sorted_tf_idf, 30)
         self.show_word_cloud()
