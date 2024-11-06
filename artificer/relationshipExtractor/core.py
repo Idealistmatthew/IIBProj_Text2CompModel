@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import networkx as nx
 from nltk.wsd import lesk
 from nltk.corpus import wordnet as wn
+import numpy as np
 
 class Relationship:
     def __init__(self, 
@@ -85,57 +86,115 @@ class RelationshipExtractor:
         return relationships
 
 class RelationshipParser:
-    def __init__(self, sentence_relationships: list[Any], preprocesser: Preprocessor, key_nouns: dict[str, float], phrase_length_limit: int):
+    def __init__(self, sentence_relationships: list[Any], 
+                 preprocesser: Preprocessor, 
+                 key_nouns: dict[str, float], 
+                 phrase_length_limit: int, 
+                 key_phrase_metric_tresh: float):
         # Initialize any necessary variables or models here
         self.sentence_relationships = sentence_relationships
         self.key_nouns = key_nouns
         self.phrase_length_limit = phrase_length_limit
+        self.key_phrase_metric_tresh = key_phrase_metric_tresh
+        self.phrase_count_dict = {}
         self.wordnet_depth_memo = {}
-        # self.parsed_relationships = self.parse_relationships()
         self.processed_relationships = []
         self.preprocessor = preprocesser
         self.process_relationships()
-        # print(self.processed_relationships)
-        # self.plot_triplets(self.parsed_relationships[1:100])
+        self.filtered_relationships: list[Relationship] = self.filter_relationships()
+
+        # print(self.filtered_relationships)
+        # print(len(self.filtered_relationships))
+        self.plot_triplets(self.filtered_relationships)
+    
+    def export_key_phrases(self, export_path: str):
+        """Export the key phrases to a text file."""
+        key_phrases = set()
+        for relationship in self.filtered_relationships:
+            key_phrases.add(relationship.subject)
+            key_phrases.add(relationship.object)
+
+        with open(export_path, 'w') as file:
+            for phrase in key_phrases:
+                file.write(f"{phrase}\n")
     
     def process_relationships(self):
         """Process the relationships from the OpenIE output into nice Relationship objects."""
         for sentence_data in self.sentence_relationships:
+            sentence_key_phrases = set()
             for relationship in sentence_data:
+
                 extraction = relationship["extraction"]
                 original_sentence=relationship["sentence"]
                 if "arg1" not in extraction:
                     continue
                 if "arg2s" not in extraction:
                     continue
+
                 arg1_text = extraction["arg1"]["text"]
                 processed_subject = self.process_phrase(arg1_text)
                 if not processed_subject or len(processed_subject) == 0:
-                    # print("no subject")
-                    # print(arg1_text)
                     # Skip the relationship if the subject is empty
                     continue
+                new_subject = " ".join(processed_subject)
+                if new_subject not in sentence_key_phrases:
+                    sentence_key_phrases.add(new_subject)
+
+
                 arg2s = extraction["arg2s"]
                 for arg2 in arg2s:
                     arg2_text = arg2["text"]
                     processed_object = self.process_phrase(arg2_text)
                     if not processed_object or len(processed_object) == 0:
                         # Skip the relationship if the object is empty
-                        # print("no object")
                         continue
+                    new_object = " ".join(processed_object)
+                    if new_object not in sentence_key_phrases:
+                        sentence_key_phrases.add(new_object)
                     self.processed_relationships.append(
                         Relationship(
-                            subject=arg1_text,
+                            subject=new_subject,
                             processed_subject=processed_subject,
                             processed_subject_props = self.get_phrase_props(processed_subject, original_sentence ),
                             relation=extraction["rel"]["text"],
-                            object=arg2_text,
+                            object=new_object,
                             processed_object=processed_object,
                             processed_object_props = self.get_phrase_props(processed_object, original_sentence),
                             confidence=relationship["confidence"],
                             original_sentence=original_sentence
                         )
                     )
+            for phrase in sentence_key_phrases:
+                if phrase in self.phrase_count_dict:
+                    self.phrase_count_dict[phrase] += 1
+                else:
+                    self.phrase_count_dict[phrase] = 1
+        max_depth = max(self.wordnet_depth_memo.values())
+        max_count = max(self.phrase_count_dict.values())
+        for phrase in self.phrase_count_dict:
+            self.phrase_count_dict[phrase] /= max_count
+        for relationship in self.processed_relationships:
+            for i in range(len(relationship.processed_subject)):
+                relationship.processed_subject_props["wordnet_depths"][i] /= max_depth
+            for i in range(len(relationship.processed_object)):
+                relationship.processed_object_props["wordnet_depths"][i] /= max_depth
+            relationship.processed_subject_props["count"] = self.phrase_count_dict[relationship.subject]
+            relationship.processed_object_props["count"] = self.phrase_count_dict[relationship.object]
+            relationship.processed_subject_props["key_phrase_metric"] = \
+            np.average(relationship.processed_subject_props["tf_idf"]) + relationship.processed_subject_props["count"] \
+            + np.average(relationship.processed_subject_props["wordnet_depths"])
+            relationship.processed_object_props["key_phrase_metric"] = \
+            np.average(relationship.processed_object_props["tf_idf"]) + relationship.processed_object_props["count"] \
+            + np.average(relationship.processed_object_props["wordnet_depths"])
+    
+    def filter_relationships(self) -> list[Relationship]:
+        """Filter the relationships based on the key phrase metric."""
+        filtered_relationships = []
+        for relationship in self.processed_relationships:
+            if (relationship.processed_subject_props["key_phrase_metric"] > self.key_phrase_metric_tresh and 
+                relationship.processed_object_props["key_phrase_metric"] > self.key_phrase_metric_tresh):
+                filtered_relationships.append(relationship)
+        return filtered_relationships
     
     def process_phrase(self, text: str) -> list[str]:
         """Process a phrase via the preprocessing rules and limit the phrase length via the tfidfs."""
@@ -164,14 +223,15 @@ class RelationshipParser:
         but will add the count later
         """
         tf_idf = [self.key_nouns[word] for word in phrase]
-        wordnet_depths = self.get_wordnet_depths(phrase, original_sentence)
+        wordnet_depths = self.get_wordnet_depths(phrase, original_sentence) 
         return {"tf_idf": tf_idf, "wordnet_depths": wordnet_depths}
 
     def get_wordnet_depths(self, phrase: list[str], original_sentence: str) -> list[float]:
         depths = []
         for i in range(len(phrase)):
             if phrase[i] in self.wordnet_depth_memo:
-                return self.wordnet_depth_memo[phrase[i]]
+                depths.append(self.wordnet_depth_memo[phrase[i]])
+                continue
             synset = lesk(original_sentence, phrase[i])
             if synset:
                 self.wordnet_depth_memo[phrase[i]] = synset.min_depth()
@@ -202,29 +262,6 @@ class RelationshipParser:
                 self.wordnet_depth_memo[phrase[i]] = max_depth
                 depths.append(max_depth)
         return depths
-
-    def parse_relationships(self) -> list[tuple[list[str], float]]:
-        """Parse the relationships into a more structured format."""
-        parsed_relationships = []
-        for sentence_relationships in self.sentence_relationships:
-            for relationship in sentence_relationships:
-                if len(relationship) == 0:
-                    continue
-                extraction = relationship["extraction"]
-                temp_list = []
-                if "arg1" not in extraction:
-                    continue
-                temp_list.append(extraction["arg1"]["text"])
-                if "rel" not in extraction:
-                    continue
-                temp_list.append(extraction["rel"]["text"])
-                if "arg2s" in extraction:
-                    for arg2 in extraction["arg2s"]:
-                        temp_list.append(arg2["text"])
-                parsed_relationships.append((temp_list, relationship["confidence"]))
-        # Sort the parsed relationships by the confidence score in descending order
-        parsed_relationships.sort(key=lambda x: x[1], reverse=True)
-        return parsed_relationships
     
     def plot_triplets(self, processed_relationships: list[Relationship]):
         """Plot the extracted relationships."""
@@ -241,7 +278,7 @@ class RelationshipParser:
         nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels)
         nx.draw_networkx_labels(G, pos, font_size=10, font_family='sans-serif')
 
-        plt.title("Unprioritized Relationships")
+        plt.title("Key Relationships")
         plt.axis('off')
         plt.show()
-        plt.savefig('Assets/KnowledgeGraphs/unprioritised_relationships.png')
+        plt.savefig('Assets/KnowledgeGraphs/key_relationships.png')

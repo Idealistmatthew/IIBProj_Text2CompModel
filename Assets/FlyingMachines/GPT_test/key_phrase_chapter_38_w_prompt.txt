@@ -1,0 +1,54 @@
+Monoplanes, Triplanes, Multiplanes
+American aviators
+International meet at Belmont Park, N.Y., 1910
+Moissant and Drexel
+Bleriot machines
+Antoinette machine
+Glenn Curtiss
+Single surface machine
+Dimensions of Monoplanes
+Plane length
+Surface area
+Gnome engine
+Curtiss 8-cylinder motor
+Chauviere propeller
+Santos-Dumont machine (La Demoiselle)
+Clement-Bayard motor
+Cash prizes in aviation
+Grahame-White
+Latham (Antoinette)
+Bleriot No. XI
+Santos-Dumont No. 20 Baby
+Bamboo construction
+Ash spars
+Dihedral angle
+Darracq motor
+Three bamboo poles
+Main plane ribs
+Wing tips
+Stebbins-Geynet Co.
+Combination triplane and biplane
+Oregon spruce frame
+Naiad aeroplane cloth
+Cameron motor
+Holmes rotary motor
+Auto-control system
+Cody biplane
+Automatic control
+Cross-shaped tail
+Pressey Automatic Control
+Vertical rudder
+Horizontal front control
+Supplemental planes
+Gravity-influenced weight
+Sellers' Multiplane
+Step aeroplane
+Vertical keel
+Wheels and runners combination
+Duthirt & Chalmers motor
+
+
+
+STOP
+Prompt: can you perform key phrase extraction from the following text?
+can you provide a full list of key phrases?

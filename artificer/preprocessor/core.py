@@ -18,9 +18,10 @@ class Preprocessor:
         """
         self.chapters_dir: str = chapters_dir
         self.lemmatizer = nltk.stem.WordNetLemmatizer()
-        extracted_chapters = extract_chapters(chapters_dir)
-        self.chapters: list[str] = extracted_chapters[0]
-        self.document_dict: dict[str, int] = extracted_chapters[1]
+        if chapters_dir:
+            extracted_chapters = extract_chapters(chapters_dir)
+            self.chapters: list[str] = extracted_chapters[0]
+            self.document_dict: dict[str, int] = extracted_chapters[1]
 
         self.stop_words = set(nltk.corpus.stopwords.words('english')) 
 
