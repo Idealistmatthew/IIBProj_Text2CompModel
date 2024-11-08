@@ -7,6 +7,7 @@ from pathlib import Path
 from artificer.preprocessor.core import Preprocessor
 from artificer.keyNounExtractor.core import KeyNounExtractor
 from artificer.relationshipExtractor.core import RelationshipExtractor, RelationshipParser, RelationshipSerialiser
+from artificer.relationshipExtractor.mapper import RelationshipMapper
 
 ASSET_DIR = './Assets'
 CACHE_DIR = './jsoncaches'
@@ -16,7 +17,8 @@ HYPERPARAMS = {
     'tf_idf': 0,
     'relationship': 0.5, # not using this yet since the relationships extracted at the moment are still manageable
     'phrase_length': 3,
-    'key_phrase_selection': 0.6
+    'key_phrase_selection': 0.6,
+    'relationship_score_diff_tresh': 0.5
 }
 
 def try_cache(cache_name, dict, cache_dir='jsoncaches'):
@@ -88,10 +90,11 @@ if __name__ == "__main__":
     relationshipParser = RelationshipParser(
         relationships, preprocessor,key_nouns, phrase_length_limit=HYPERPARAMS['phrase_length']
         , key_phrase_metric_tresh=HYPERPARAMS['key_phrase_selection'])
-    serialisable_relationships = [RelationshipSerialiser.toDict(relationship) for relationship in relationshipParser.processed_relationships]
-    cache.set(f"Flying_Machines_{chosen_chapter_name}_processed_relationships", {'processed_relationships': serialisable_relationships})
-    export_key_phrase_path = Path(chapters_dir).parent / "artificer_test" / f"key_phrase_{chosen_chapter_name}"
-    relationshipParser.export_key_phrases(export_key_phrase_path)
+    relationshipMapper = RelationshipMapper(relationshipParser.filtered_relationships)
+    # serialisable_relationships = [RelationshipSerialiser.toDict(relationship) for relationship in relationshipParser.processed_relationships]
+    # cache.set(f"Flying_Machines_{chosen_chapter_name}_processed_relationships", {'processed_relationships': serialisable_relationships})
+    # export_key_phrase_path = Path(chapters_dir).parent / "artificer_test" / f"key_phrase_{chosen_chapter_name}"
+    # relationshipParser.export_key_phrases(export_key_phrase_path)
 
 
     pass

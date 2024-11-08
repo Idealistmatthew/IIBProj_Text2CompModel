@@ -6,41 +6,7 @@ import networkx as nx
 from nltk.wsd import lesk
 from nltk.corpus import wordnet as wn
 import numpy as np
-
-class Relationship:
-    def __init__(self, 
-                 subject: str,
-                 processed_subject: list[str],
-                 processed_subject_props: dict[str, list[float]],
-                 relation: str, 
-                 object: str, 
-                 processed_object: str, 
-                 processed_object_props: dict[str, list[float]],
-                 confidence: float, 
-                 original_sentence: str):
-        self.subject = subject
-        self.processed_subject = processed_subject
-        self.processed_subject_props = processed_subject_props
-        self.relation = relation
-        self.object = object
-        self.processed_object = processed_object
-        self.processed_object_props = processed_object_props
-        self.confidence = confidence
-        self.original_sentence = original_sentence
-    
-    def __repr__(self):
-        return (
-            f"Subject: {self.subject}, \n"
-            f"Processed Subject: {self.processed_subject}, \n"
-            f"Processed Subject Props: {self.processed_subject_props}, \n"
-            f"Relation: {self.relation}, \n"
-            f"Object: {self.object}, \n"
-            f"Processed Object: {self.processed_object}, \n"
-            f"Processed Object Props: {self.processed_object_props}, \n"
-            f"Confidence: {self.confidence}, \n"
-            f"Original Sentence: {self.original_sentence}\n"
-        )
-
+from artificer.relationshipExtractor.types import Relationship, RelationshipType
 
 class RelationshipSerialiser:
 
@@ -54,7 +20,7 @@ class RelationshipSerialiser:
             "processed_object": relationship.processed_object,
             "processed_object_props": relationship.processed_object_props,
             "confidence": relationship.confidence,
-            "original_sentence": relationship.original_sentence
+            "original_sentence": relationship.original_sentence,
         }
     
     def fromDict(relationship_dict: dict) -> Relationship:
@@ -105,7 +71,7 @@ class RelationshipParser:
 
         # print(self.filtered_relationships)
         # print(len(self.filtered_relationships))
-        self.plot_triplets(self.filtered_relationships)
+        # self.plot_triplets(self.filtered_relationships)
     
     def export_key_phrases(self, export_path: str):
         """Export the key phrases to a text file."""
@@ -171,15 +137,29 @@ class RelationshipParser:
                     self.phrase_count_dict[phrase] = 1
         max_depth = max(self.wordnet_depth_memo.values())
         max_count = max(self.phrase_count_dict.values())
+
+
+        # Normalise the phrase counts
         for phrase in self.phrase_count_dict:
             self.phrase_count_dict[phrase] /= max_count
         for relationship in self.processed_relationships:
+            # Normalise the wordnet depths
             for i in range(len(relationship.processed_subject)):
                 relationship.processed_subject_props["wordnet_depths"][i] /= max_depth
             for i in range(len(relationship.processed_object)):
                 relationship.processed_object_props["wordnet_depths"][i] /= max_depth
+        
+        self.calc_key_phrase_metrics()
+        
+    
+    def calc_key_phrase_metrics(self):
+        """Calculate the key phrase metric for each relationship."""
+        for relationship in self.processed_relationships:
+            # Add the count to the processed props
             relationship.processed_subject_props["count"] = self.phrase_count_dict[relationship.subject]
             relationship.processed_object_props["count"] = self.phrase_count_dict[relationship.object]
+
+            # Calculate the key phrase metric for both the subject and object
             relationship.processed_subject_props["key_phrase_metric"] = \
             np.average(relationship.processed_subject_props["tf_idf"]) + relationship.processed_subject_props["count"] \
             + np.average(relationship.processed_subject_props["wordnet_depths"])

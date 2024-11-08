@@ -2,13 +2,9 @@ monoplanes
 triplanes
 multiplanes
 biplanes
-Americans
-Moissant
-Drexel,
 Bleriot machines
 Harkness an Antoinette
-Glenn Curtiss
-American Air sailors
+Curtiss
 single surface machine
 fixture
 Bleriot
@@ -23,7 +19,6 @@ Paragon propeller
 La Demoiselle
 Santos-Dumont
 Clement-Bayard
-Grahame-White
 Antoinette
 propeller
 engine
@@ -59,9 +54,6 @@ air-cooled engine
 engine speed
 fuel supply
 combined triplane and biplanes
-Norwich
-Conn.
-Stebbins-Geynet Co.
 center plane
 lifting capacity
 frame
@@ -87,8 +79,6 @@ stebbins-Geynet
 "auto-control" system
 foot leverage
 Cody biplanes
-Willard F. Cody
-London
 automatic control
 hand levers
 long lever
@@ -105,15 +95,12 @@ chain
 propeller shaft
 tail plane
 stream-line forms
-ribs
 inventor
 angle of incidence
 ribs
 Pegamoid fabric
 Pressy Automatic control
 automatic control
-Dr. J. Pressey
-Newport draw_networkx_edges
 strength
 supplemental planes
 even keel
@@ -133,9 +120,6 @@ radius of the curved
 aeroplane speed
 Seller's multiplane
 four-surfaced machine
-M.B. sellers
-Grahn, Ky.
-Norwood, Ga.
 sustaining surfaces
 efficiency
 quadruplane
@@ -144,10 +128,8 @@ rudder
 wheels
 runners
 skids
-wheels
-runners
 Duthirt & Chalmers
-brake h.p.
+brake h. p.
 poor grounds
 short flights
 aeroplane

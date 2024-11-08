@@ -43,10 +43,13 @@ class KeyPhraseTester:
         """Perform an exact match test between the ground truth and the test phrases."""
 
         matched_phrase_num = 0
-        for phrase in enumerate(self.test_phrases):
+        matched_phrases = []
+        for phrase in self.test_phrases:
             if phrase in self.ground_truth_phrases:
                 matched_phrase_num += 1
+                matched_phrases.append(phrase)
         
+        print("Matched Phrases: ", matched_phrases)
         exact_match_precision = matched_phrase_num / len(self.test_phrases)
         exact_match_recall = matched_phrase_num / len(self.ground_truth_phrases)
         return exact_match_precision, exact_match_recall
@@ -67,9 +70,16 @@ class KeyPhraseTester:
 
         #Recall Test
         matched_ground_truth_phrase = 0
+
+        unfuzzy_matched_ground_truth_phrases = []
         for ground_truth_phrase in self.ground_truth_phrases:
             if any(self.fuzzy_match(ground_truth_phrase, phrase) for phrase in self.test_phrases):
                 matched_ground_truth_phrase += 1
+            else:
+                unfuzzy_matched_ground_truth_phrases.append(ground_truth_phrase)
+
+        print("Unfuzzy Matched Phrases: ", unfuzzy_matched_ground_truth_phrases)
+        
         fuzzy_match_recall = matched_ground_truth_phrase / len(self.ground_truth_phrases)
         return fuzzy_match_precision, fuzzy_match_recall
 
@@ -88,6 +98,7 @@ class KeyPhraseTester:
         print(f"Exact Match Recall: {self.exact_match_recall}")
         print(f"Fuzzy Match Precision: {self.fuzzy_match_precision}")
         print(f"Fuzzy Match Recall: {self.fuzzy_match_recall}")
+
 
                 
 
