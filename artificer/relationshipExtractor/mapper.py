@@ -6,7 +6,6 @@ class RelationshipMapper:
         self.relationships = relationships
         self.relationship_score_diff_tresh = relationship_score_diff_tresh
         self.composite_keywords = ['comprise', 'partially', 'voice', 'break', 'involve', 'division', 'represent', 'constituent', 'unharmed', 'moderate', 'set_off', 'make_up', 'break_up', 'parting', 'let_in', 'unhurt', 'ask', 'whole', 'unscathed', 'postulate', 'take_off', 'stop', 'imply', 'lie', 'hold_back', 'separate', 'piece', 'be', 'hold', 'wholly', 'set_out', 'totally', 'all', 'bear', 'start_out', 'entirely', 'section', 'contribution', 'disunite', 'persona', 'require', 'check', 'hold_in', 'depart', 'call_for', 'unit', 'incorporate', 'carry', 'altogether', 'hale', 'part', 'turn_back', 'split_up', 'region', 'need', 'curb', 'arrest', 'admit', 'regard', 'affect', 'dwell', 'set_forth', 'office', 'lie_in', 'necessitate', 'solid', 'unanimous', 'contain', 'include', 'function', 'role', 'split', 'completely', 'theatrical_role', 'component_part', 'start', 'component', 'character', 'control', 'percentage', 'constitute', 'take', 'portion', 'partly', 'demand', 'consist', 'divide', 'share']
-        # print(self.composite_keywords)
         self.typed_relationships = []
         self.map_relationships()
     
@@ -44,7 +43,6 @@ class RelationshipMapper:
             lemma_names = syn.lemma_names()
             for lemma in lemma_names:
                 if lemma in self.composite_keywords:
-                    print(relation)
                     return True
 
     def overlap(self, subject: str, object: str):

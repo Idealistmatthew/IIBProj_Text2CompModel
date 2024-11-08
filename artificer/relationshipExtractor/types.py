@@ -54,19 +54,19 @@ class TypedRelationship(Relationship):
                  processed_object_props: dict[str, list[float]],
                  confidence: float, 
                  original_sentence: str,
-                 relType: list[RelationshipType]):
+                 relTypes: list[RelationshipType]):
         super().__init__(subject, processed_subject, processed_subject_props, relation, object, processed_object, processed_object_props, confidence, original_sentence)
-        self.relType = relType
+        self.relTypes = relTypes
     
     def __init__(self, relationship: Relationship, relType: list[RelationshipType]):
         super().__init__(relationship.subject, relationship.processed_subject, relationship.processed_subject_props, relationship.relation, relationship.object, relationship.processed_object, relationship.processed_object_props, relationship.confidence, relationship.original_sentence)
-        self.relType = relType
+        self.relTypes = relType
     def __repr__(self):
         return (
             f"Subject: {self.subject}, \n"
             f"Relation: {self.relation}, \n"
             f"Object: {self.object}, \n"
-            f"Relationship Type: {self.relType}, \n"
+            f"Relationship Type: {self.relTypes}, \n"
             f"Confidence: {self.confidence}, \n"
             f"Original Sentence: {self.original_sentence}\n"
         )

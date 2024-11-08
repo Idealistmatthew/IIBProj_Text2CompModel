@@ -8,6 +8,7 @@ from artificer.preprocessor.core import Preprocessor
 from artificer.keyNounExtractor.core import KeyNounExtractor
 from artificer.relationshipExtractor.core import RelationshipExtractor, RelationshipParser, RelationshipSerialiser
 from artificer.relationshipExtractor.mapper import RelationshipMapper
+from artificer.sysMLAugmenter.bddAug import BDDAugmenter
 
 ASSET_DIR = './Assets'
 CACHE_DIR = './jsoncaches'
@@ -91,6 +92,11 @@ if __name__ == "__main__":
         relationships, preprocessor,key_nouns, phrase_length_limit=HYPERPARAMS['phrase_length']
         , key_phrase_metric_tresh=HYPERPARAMS['key_phrase_selection'])
     relationshipMapper = RelationshipMapper(relationshipParser.filtered_relationships)
+    
+
+    bddAugmenter = BDDAugmenter(relationshipMapper.typed_relationships)
+
+
     # serialisable_relationships = [RelationshipSerialiser.toDict(relationship) for relationship in relationshipParser.processed_relationships]
     # cache.set(f"Flying_Machines_{chosen_chapter_name}_processed_relationships", {'processed_relationships': serialisable_relationships})
     # export_key_phrase_path = Path(chapters_dir).parent / "artificer_test" / f"key_phrase_{chosen_chapter_name}"

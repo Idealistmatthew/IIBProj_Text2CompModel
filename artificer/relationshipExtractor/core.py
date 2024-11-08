@@ -24,17 +24,7 @@ class RelationshipSerialiser:
         }
     
     def fromDict(relationship_dict: dict) -> Relationship:
-        return Relationship(
-            subject=relationship_dict["subject"],
-            processed_subject=relationship_dict["processed_subject"],
-            processed_subject_props=relationship_dict["processed_subject_props"],
-            relation=relationship_dict["relation"],
-            object=relationship_dict["object"],
-            processed_object=relationship_dict["processed_object"],
-            processed_object_props=relationship_dict["processed_object_props"],
-            confidence=relationship_dict["confidence"],
-            original_sentence=relationship_dict["original_sentence"]
-        )
+        return Relationship(**relationship_dict)
 
 
 class RelationshipExtractor:
@@ -42,7 +32,6 @@ class RelationshipExtractor:
         # Initialize any necessary variables or models here
         self.extractor = OpenIE5('http://localhost:8000')
         self.extracted_relationships = self.extract_relationships(tokenized_sentences[chosen_chapter])
-        # print(self.extracted_relationships)
     
     def extract_relationships(self, sentences: list[str]) -> list[Any]:
         """Extract relationships from the given sentences."""
@@ -68,10 +57,6 @@ class RelationshipParser:
         self.preprocessor = preprocesser
         self.process_relationships()
         self.filtered_relationships: list[Relationship] = self.filter_relationships()
-
-        # print(self.filtered_relationships)
-        # print(len(self.filtered_relationships))
-        # self.plot_triplets(self.filtered_relationships)
     
     def export_key_phrases(self, export_path: str):
         """Export the key phrases to a text file."""
@@ -185,14 +170,12 @@ class RelationshipParser:
         seen = set()
         preprocessed_text = [x for x in preprocessed_text if not (x in seen or seen.add(x))]
         if len(preprocessed_text) > self.phrase_length_limit:
-            print(f"Phrase too long: {preprocessed_text}")
             tf_idf_list = [self.key_nouns[word] for word in preprocessed_text]
             # Get the indices of the phrase_length_limit largest values in the tf_idf_list
             largest_indices = sorted(range(len(tf_idf_list)), key=lambda i: tf_idf_list[i], reverse=True)[:self.phrase_length_limit]
             largest_indices.sort()
             # Use those indices to access the words in the preprocessed_text to form another list
             preprocessed_text = [preprocessed_text[i] for i in largest_indices]
-            print(f"Shortened phrase: {preprocessed_text}")
             return preprocessed_text
         return preprocessed_text
     
@@ -217,11 +200,8 @@ class RelationshipParser:
                 self.wordnet_depth_memo[phrase[i]] = synset.min_depth()
                 depths.append(synset.min_depth())
             else:
-                print(f"Could not find synset for {phrase[i]}")
                 more_synsets = wn.synsets(phrase[i])
                 if len(more_synsets) == 0:
-                    "Might need to give an average depth score instead of 0"
-                    print(f"Could not find more synsets for {phrase[i]}")
                     self.wordnet_depth_memo[phrase[i]] = 0
                     depths.append(0)
                     continue
@@ -232,7 +212,6 @@ class RelationshipParser:
                         similarity = candidate_synset.path_similarity(possible_synset)
                         if similarity:
                             # Track the synset with the maximum depth
-                            print(f"Found backup similarity: {similarity}")
                             max_depth = max(max_depth, candidate_synset.min_depth())
                 
                 # Fallback: if no similarity found, use the depth of the most common synset
