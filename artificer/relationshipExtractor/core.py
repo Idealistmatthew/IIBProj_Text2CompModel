@@ -133,6 +133,9 @@ class RelationshipParser:
                 relationship.processed_subject_props["wordnet_depths"][i] /= max_depth
             for i in range(len(relationship.processed_object)):
                 relationship.processed_object_props["wordnet_depths"][i] /= max_depth
+
+        for word in self.wordnet_depth_memo:
+            self.wordnet_depth_memo[word] /= max_depth
         
         self.calc_key_phrase_metrics()
         

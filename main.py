@@ -86,15 +86,19 @@ if __name__ == "__main__":
     chosen_chapter_num = chapter_num_dict[chosen_chapter_name]
     relationships = cache.get_value(f"Flying_Machines_{chosen_chapter_name}_raw_relationships", 'relationships')
 
-    key_nouns = cache.get_value(f"Flying_Machines_{chosen_chapter_name}_key_nouns", 'key_nouns')
+    key_nouns: dict[str, float] = cache.get_value(f"Flying_Machines_{chosen_chapter_name}_key_nouns", 'key_nouns')
 
     relationshipParser = RelationshipParser(
         relationships, preprocessor,key_nouns, phrase_length_limit=HYPERPARAMS['phrase_length']
         , key_phrase_metric_tresh=HYPERPARAMS['key_phrase_selection'])
     relationshipMapper = RelationshipMapper(relationshipParser.filtered_relationships)
+
+    
     
 
-    bddAugmenter = BDDAugmenter(relationshipMapper.typed_relationships)
+    bddAugmenter = BDDAugmenter(relationshipMapper.typed_relationships,
+                                noun_tf_idf_scores=key_nouns,
+                                noun_wordnet_scores=relationshipParser.wordnet_depth_memo)
 
 
     # serialisable_relationships = [RelationshipSerialiser.toDict(relationship) for relationship in relationshipParser.processed_relationships]
