@@ -1,0 +1,34 @@
+digraph bdd {
+	node [fontsize=10 shape=record]
+	curtis [label="curtis | Parts:  
+front  
+rudder  
+| Operations:  
+places()  
+attaches()  
+is not()  
+has()  
+"]
+	front [label="front | Operations:  
+places()  
+attaches()  
+is not()  
+has()  
+"]
+	rudder [label="rudder | Operations:  
+places()  
+attaches()  
+is not()  
+has()  
+"]
+	person -> curtis [label=Generalization]
+	scientist -> curtis [label=Generalization]
+	entity -> curtis [label=Generalization]
+	whole -> curtis [label=Generalization]
+	physical_entity -> curtis [label=Generalization]
+	organism -> curtis [label=Generalization]
+	curtis -> front [label=Composite]
+	wright -> front [label=Composite]
+	curtis -> rudder [label=Composite]
+	wright -> rudder [label=Composite]
+}

@@ -1,21 +1,28 @@
 from artificer.relationshipExtractor.types import TypedRelationship, RelationshipType
 from enum import Enum
 from nltk.corpus import wordnet as wn
+from nltk.corpus.reader.wordnet import Synset
+from graphviz import Digraph
+import pandas as pd
 
 class BDDBlock:
     def __init__(self, block_name: str,
                   operations: set[str] = set(),
                     isAugmented: bool = False,
                     general_parents: set[str] = set(),
+                    special_children: set[str] = set(),
                     composite_parents: set[str] = set(),
                     reference_parents: set[str] = set(),
+                    reference_children: set[str] = set(),
                     parts: set[str] = set()):
         self.block_name = block_name
         self.isAugmented = isAugmented
         self.operations = operations
         self.general_parents = general_parents
+        self.special_children = special_children
         self.composite_parents = composite_parents
         self.reference_parents = reference_parents
+        self.reference_children = reference_children
         self.parts = parts
 
     def __repr__(self):
@@ -23,10 +30,25 @@ class BDDBlock:
             f"Block Name: {self.block_name}, \n"
             f"Operations: {self.operations}, \n"
             f"General Parents: {self.general_parents}, \n"
+            f"Special Children: {self.special_children}, \n"
             f"Composite Parents: {self.composite_parents}, \n"
             f"Reference Parents: {self.reference_parents}, \n"
+            f"Reference Children: {self.reference_children}, \n"
             f"Parts: {self.parts}\n"
         )
+
+    def to_label(self):
+        label_str = "{"+ f"{self.block_name} "
+        if self.parts:
+            label_str += "| Parts:  \\n"
+            for part in self.parts:
+                label_str += f"{part}  \\n"
+        if self.operations:
+            label_str += "| Operations:  \\n"
+            for operation in self.operations:
+                label_str += f"{operation}()  \\n"
+        label_str += "}"
+        return label_str
     
 class BDDRelations(Enum):
     COMPOSITE = 1
@@ -47,8 +69,10 @@ class BDDGraph:
     def update_block(self, old_block: BDDBlock, new_block: BDDBlock) -> BDDBlock:
         old_block.operations.update(new_block.operations)
         old_block.general_parents.update(new_block.general_parents)
+        old_block.special_children.update(new_block.special_children)
         old_block.composite_parents.update(new_block.composite_parents)
         old_block.reference_parents.update(new_block.reference_parents)
+        old_block.reference_children.update(new_block.reference_children)
         old_block.parts.update(new_block.parts)
         return old_block
     
@@ -60,10 +84,12 @@ class BDDGraph:
 class BDDAugmenter:
     def __init__(self, typed_relationships: list[TypedRelationship],
                  noun_tf_idf_scores: dict[str, float],
-                 noun_wordnet_scores: dict[str, float]):
+                 noun_wordnet_scores: dict[str, float],
+                 chapter_name: str = "chapter_13.txt"):
         self.typed_relationships = typed_relationships
         self.bdd_graph = BDDGraph()
         self.construct_bdd_graph()
+        self.bdd_plot_path = chapter_name
 
         # we need to pass in the wordnet and tf_idf scores of the nouns here
         self.noun_tf_idf_scores = noun_tf_idf_scores
@@ -79,30 +105,100 @@ class BDDAugmenter:
         self.top_level_phrases = self.identify_top_level_phrases()
         # print(self.top_level_phrases)
 
-        print("top_level_phrases before augmenting", self.top_level_phrases)
-
         self.augment_relationships()
-
         self.top_level_phrases = self.identify_top_level_phrases()
+        self.augment_phrases()
 
-        print("top_level_phrases after augmenting", self.top_level_phrases)
+        for name in self.get_all_block_names():
+            print(name, len(self.get_blocks_from_root(name)))
+        # print(len(self.bdd_graph.block_dict))
+        # print(self.get_all_block_names())
+        self.plot_bdd_with_root("helicopter")
+        # self.plot_full_bdd()
+    
 
-        # for block in self.bdd_graph.block_dict.values():
-        #     print(block)
+    def get_blocks_with_num_blocks_from_root(self) -> dict[str, int]:
+        blocks_with_num_blocks_from_root = {}
+        for block_name in self.get_all_block_names():
+            blocks_with_num_blocks_from_root[block_name] = len(self.get_blocks_from_root(block_name))
+        return blocks_with_num_blocks_from_root
+
+    def get_all_block_names(self) -> set[str]:
+        return set(self.bdd_graph.block_dict.keys())
+    
+    def plot_bdd_with_root(self, root: str) -> None:
+        if root not in self.bdd_graph.block_dict:
+            print("Root not found in the block dict")
+            print("Here are the available roots with the number of blocks from them")
+            print(pd.DataFrame(self.get_blocks_with_num_blocks_from_root()))
+            return
+        all_blocks_from_root = self.get_blocks_from_root(root)
+        print(len(all_blocks_from_root))
+        self.plot_full_bdd(all_blocks_from_root)
+
+    def get_blocks_from_root(self, root: str) -> set[BDDBlock]:
+        all_blocks_from_root = set()
+        block_names_from_root = set()
+        queue = [root]
+        while queue:
+            current_block_name = queue.pop(0)
+            current_block = self.bdd_graph.block_dict[current_block_name]
+            all_blocks_from_root.add(current_block)
+            if current_block.block_name in block_names_from_root:
+                continue
+            block_names_from_root.add(current_block.block_name)
+            for special_child in current_block.special_children:
+                queue.append(special_child)
+            for part in current_block.parts:
+                queue.append(part)
+            for reference_child in current_block.reference_children:
+                queue.append(reference_child)
+        return all_blocks_from_root
 
 
-        # self.augment_relationships()
-        # self.augment_phrases()
+
+    def plot_full_bdd(self, blocks: set[BDDBlock] = []) -> None:
+        """ this is often too large to work with """
+        if not blocks:
+            blocks = set(self.bdd_graph.block_dict.values())
+        block_names = [block.block_name for block in blocks]
+        bdd = Digraph('bdd', node_attr={'shape': 'record', 'fontsize': '10'}, format='png')
+
+        def addBlockAsNode(block: BDDBlock):
+            if block.isAugmented:
+                bdd.node(block.block_name, block.to_label(), style='dotted')
+            else:
+                bdd.node(block.block_name, block.to_label())
+
+        for block in blocks:
+            addBlockAsNode(block)
+        
+        for block in blocks:
+            for general_parent in block.general_parents:
+                bdd.edge(general_parent, block.block_name, label="Generalization", arrowhead="onormal")
+            for composite_parent in block.composite_parents:
+                bdd.edge(composite_parent, block.block_name, label="Composite", arrowhead="odiamond")
+            for reference_parent in block.reference_parents:
+                if reference_parent in block_names:
+                    bdd.edge(reference_parent, block.block_name, label="Reference", arrowhead="vee")
+
+        print("Rendering start")
+        bdd.render(f"bddDiagrams/{self.bdd_plot_path}", view=True)
+        print("Rendering end")
+
 
     def construct_bdd_graph(self) -> None:
         for relationship in self.typed_relationships:
 
             subject_operations = set()
             subject_general_parents = set()
+            subject_special_children = set()
             subject_composite_parents = set()
+            subject_reference_children = set()
             subject_parts = set()
 
             object_general_parents = set()
+            object_special_children = set()
             object_composite_parents = set()
             object_reference_parents = set()
             object_parts = set()
@@ -119,19 +215,25 @@ class BDDAugmenter:
                         subject_composite_parents.add(relationship.object)
                     case RelationshipType.GENERAL_SUBJECT_TO_SPECIAL_OBJECT:
                         object_general_parents.add(relationship.subject)
+                        subject_special_children.add(relationship.object)
                     case RelationshipType.SPECIAL_SUBJECT_TO_GENERAL_OBJECT:
                         subject_general_parents.add(relationship.object)
+                        object_special_children.add(relationship.subject)
                     case RelationshipType.REFERENCE_ASSOCIATION:
                         object_reference_parents.add(relationship.subject)
+                        subject_reference_children.add(relationship.object)
                 
             subject_block = BDDBlock(relationship.subject,
                                      operations=subject_operations,
                                      general_parents=subject_general_parents,
+                                    special_children=subject_special_children,
                                      composite_parents=subject_composite_parents,
+                                        reference_children=subject_reference_children,
                                      parts=subject_parts)
             self.bdd_graph.add_or_update_block(subject_block)
             object_block = BDDBlock(relationship.object,
                                      general_parents=object_general_parents,
+                                    special_children=object_special_children,
                                      composite_parents=object_composite_parents,
                                      reference_parents=object_reference_parents,
                                      parts=object_parts)
@@ -158,7 +260,7 @@ class BDDAugmenter:
     def abstract_phrases(self, phrases_to_abstract: list[list[str]]) -> list[list[str]]:
         new_phrases = []
         for phrase in phrases_to_abstract:
-            if not phrase:
+            if not phrase or len(phrase) == 1:
                 continue
             word_scores = [0 for _ in range(len(phrase))]
             for i in range(len(phrase)):
@@ -168,10 +270,12 @@ class BDDAugmenter:
                 new_phrase = phrase[:min_index]
             else:
                 new_phrase = phrase[:min_index] + phrase[min_index + 1:]
+            old_phrase = " ".join(phrase)
             stringified_new_phrase = " ".join(new_phrase)
-            self.bdd_graph.add_or_update_block(BDDBlock(" ".join(phrase),
+            print("Abstracting: ", old_phrase, " to ", stringified_new_phrase)
+            self.bdd_graph.add_or_update_block(BDDBlock(old_phrase,
                                                general_parents={stringified_new_phrase}))
-            self.bdd_graph.add_or_update_block(BDDBlock(stringified_new_phrase, isAugmented=True))
+            self.bdd_graph.add_or_update_block(BDDBlock(stringified_new_phrase, special_children={old_phrase}, isAugmented=True))
             new_phrases.append(new_phrase)
         return new_phrases
 
@@ -187,7 +291,9 @@ class BDDAugmenter:
                             # this means that the current phrase is specialised by this lemma
                             print(f"Hyponym Augmentation: Lemma {lemma} is a hyponym of {phrase}")
                             self.bdd_graph.add_or_update_block(BDDBlock(lemma,
-                                               general_parents=set(phrase)))
+                                               general_parents={phrase}))
+                            self.bdd_graph.add_or_update_block(BDDBlock(phrase,
+                                                    special_children={lemma}))
                 
                 for hypernyms in synset.hypernyms():
                     for lemma in hypernyms.lemma_names():
@@ -195,7 +301,9 @@ class BDDAugmenter:
                             # this means that the current phrase is generalised by this lemma
                             print(f"Hypernym Augmentation: Lemma {lemma} is a hypernym of {phrase}")
                             self.bdd_graph.add_or_update_block(BDDBlock(phrase,
-                                               general_parents=set(lemma)))
+                                               general_parents={lemma}))
+                            self.bdd_graph.add_or_update_block(BDDBlock(lemma,
+                                                    special_children={phrase}))
                 
                 for meronyms in synset.part_meronyms():
                     for lemma in meronyms.lemma_names():
@@ -203,9 +311,9 @@ class BDDAugmenter:
                             # this means that the current lemma is a part of the current phrase
                             print(f"Meronym Augmentation: Lemma {lemma} is a meronym of {phrase}")
                             self.bdd_graph.add_or_update_block(BDDBlock(phrase,
-                                               parts=set(lemma)))
+                                               parts={lemma}))
                             self.bdd_graph.add_or_update_block(BDDBlock(lemma,
-                                                  composite_parents=set(phrase)))
+                                                  composite_parents={phrase}))
                 
                 for holonyms in synset.part_holonyms():
                     for lemma in holonyms.lemma_names():
@@ -213,16 +321,31 @@ class BDDAugmenter:
                             # this means that the current phrase is a part of the current lemma
                             print(f"Holonym Augmentation: Lemma {lemma} is a holonym of {phrase}")
                             self.bdd_graph.add_or_update_block(BDDBlock(lemma,
-                                               parts=set(phrase)))
+                                               parts={phrase}))
                             self.bdd_graph.add_or_update_block(BDDBlock(phrase,
-                                                  composite_parents=set(lemma)))
+                                                  composite_parents={lemma}))
         pass
 
     def augment_phrases(self) -> None:
         # augment the phrases
-        for phrase in self.top_level_phrases:
-            phrase_synsets = wn.synsets(phrase)
-
-            # find lowest common hypernyms and apply a generalisation relationship
-            if not phrase_synsets:
-                continue
+        for i in range(len(self.top_level_phrases)):
+            for j in range(i + 1, len(self.top_level_phrases)):
+                phrase1 = self.top_level_phrases[i]
+                phrase2 = self.top_level_phrases[j]
+                # Synsets are ordered nouns first and by most frequent usage
+                phrase1_synsets : list[Synset] = wn.synsets(phrase1)
+                phrase2_synsets : list[Synset] = wn.synsets(phrase2)
+                if not phrase1_synsets or not phrase2_synsets:
+                    continue
+                lowest_common_hypernyms = phrase1_synsets[0].lowest_common_hypernyms(phrase2_synsets[0])
+                if not lowest_common_hypernyms:
+                    continue
+                lowest_common_hypernym = lowest_common_hypernyms[0]
+                new_general_lemma = lowest_common_hypernym.lemma_names()[0]
+                if new_general_lemma not in self.top_level_phrases:
+                    self.bdd_graph.add_or_update_block(BDDBlock(phrase1,
+                                               general_parents={new_general_lemma}))
+                    self.bdd_graph.add_or_update_block(BDDBlock(phrase2,
+                                               general_parents={new_general_lemma}))
+                    self.bdd_graph.add_or_update_block(BDDBlock(new_general_lemma, special_children= {phrase1, phrase2} ,isAugmented=True))
+                    print(f"Generalisation Augmentation: {phrase1} and {phrase2} are generalised by {new_general_lemma}")

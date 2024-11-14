@@ -37,7 +37,10 @@ class RelationshipExtractor:
         """Extract relationships from the given sentences."""
         relationships = []
         for sentence in sentences:
-            relationships.append(self.extractor.extract(sentence))
+            try:
+                relationships.append(self.extractor.extract(sentence))
+            except:
+                print(f"Failed to extract relationships from sentence: {sentence}")
         return relationships
 
 class RelationshipParser:
@@ -45,12 +48,14 @@ class RelationshipParser:
                  preprocesser: Preprocessor, 
                  key_nouns: dict[str, float], 
                  phrase_length_limit: int, 
-                 key_phrase_metric_tresh: float):
+                 key_phrase_metric_tresh: float,
+                 relationship_confidence_tresh: float = 0.5):
         # Initialize any necessary variables or models here
         self.sentence_relationships = sentence_relationships
         self.key_nouns = key_nouns
         self.phrase_length_limit = phrase_length_limit
         self.key_phrase_metric_tresh = key_phrase_metric_tresh
+        self.relationship_confidence_tresh = relationship_confidence_tresh
         self.phrase_count_dict = {}
         self.wordnet_depth_memo = {}
         self.processed_relationships = []
@@ -102,18 +107,19 @@ class RelationshipParser:
                     new_object = " ".join(processed_object)
                     if new_object not in sentence_key_phrases:
                         sentence_key_phrases.add(new_object)
-                    self.processed_relationships.append(
-                        Relationship(
-                            subject=new_subject,
-                            processed_subject=processed_subject,
-                            processed_subject_props = self.get_phrase_props(processed_subject, original_sentence ),
-                            relation=extraction["rel"]["text"],
-                            object=new_object,
-                            processed_object=processed_object,
-                            processed_object_props = self.get_phrase_props(processed_object, original_sentence),
-                            confidence=relationship["confidence"],
-                            original_sentence=original_sentence
-                        )
+                    if relationship['confidence'] > 0.5:
+                        self.processed_relationships.append(
+                            Relationship(
+                                subject=new_subject,
+                                processed_subject=processed_subject,
+                                processed_subject_props = self.get_phrase_props(processed_subject, original_sentence ),
+                                relation=extraction["rel"]["text"],
+                                object=new_object,
+                                processed_object=processed_object,
+                                processed_object_props = self.get_phrase_props(processed_object, original_sentence),
+                                confidence=relationship["confidence"],
+                                original_sentence=original_sentence
+                            )
                     )
             for phrase in sentence_key_phrases:
                 if phrase in self.phrase_count_dict:

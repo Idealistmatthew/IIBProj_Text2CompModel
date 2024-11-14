@@ -33,7 +33,7 @@ def try_cache(cache_name, dict, cache_dir='jsoncaches'):
     print(cache.get_value(cache_name, 'new_value'))
     return None
 
-def main_loop():
+def main_loop_to_rel_extraction():
     cache = Cache(CACHE_DIR)
     chapters_dir =  Path(__file__).resolve().parent / 'Assets' / 'FlyingMachines' / 'chapters'
     preprocessor = Preprocessor(chapters_dir=chapters_dir)
@@ -48,7 +48,7 @@ def main_loop():
 
     # print(chapter_num_dict)
 
-    chosen_chapter_name = "chapter_38.txt"
+    chosen_chapter_name = "chapter_13.txt"
     chosen_chapter_num = chapter_num_dict[chosen_chapter_name]
 
     # print(preprocessor.nouns)
@@ -61,19 +61,21 @@ def main_loop():
     cache.set(f"Flying_Machines_{chosen_chapter_name}_key_nouns", {'tf_idf': key_noun_extractor.chosen_chapter_tf_idf
                                                                    ,'key_nouns': key_noun_extractor.key_nouns})
 
-    # relationshipExtractor = RelationshipExtractor(tokenized_sentences = cache.get_value('sentence_tokenized_chapters', 'sentence_tokenized_chapters'), chosen_chapter=chosen_chapter_num)
-    # cache.set(f"Flying_Machines_{chosen_chapter_name}_raw_relationships", 
-    #           {'relationships': relationshipExtractor.extracted_relationships})
+    relationshipExtractor = RelationshipExtractor(tokenized_sentences = cache.get_value('sentence_tokenized_chapters', 'sentence_tokenized_chapters'), chosen_chapter=chosen_chapter_num)
+    cache.set(f"Flying_Machines_{chosen_chapter_name}_raw_relationships", 
+              {'relationships': relationshipExtractor.extracted_relationships})
+
+    def new_partition(self):
+        # Only run this script if it is a new document to partition
+
+        book_dir = os.path.join(ASSET_DIR, 'FlyingMachines')
+        epub_dir = os.path.join(book_dir, 'flying_machines.epub')
+        split_chapters(book_dir, epub_dir)
 
 if __name__ == "__main__":
     cache = Cache(CACHE_DIR)
-    # main_loop()
 
-    # Only run this script if it is a new document to partition
-
-    # book_dir = os.path.join(ASSET_DIR, 'FlyingMachines')
-    # epub_dir = os.path.join(book_dir, 'flying_machines.epub')
-    # split_chapters(book_dir, epub_dir)
+    
 
     # relationshipExtractor = RelationshipExtractor(tokenized_sentences = cache.get_value('sentence_tokenized_chapters', 'sentence_tokenized_chapters'), chosen_chapter=4)
     # cache.set('Flying_Machines_Chapter4_relationships', {'relationships': relationshipExtractor.extraced_relationships})
@@ -82,7 +84,7 @@ if __name__ == "__main__":
     chapters_dir =  Path(__file__).resolve().parent / 'Assets' / 'FlyingMachines' / 'chapters'
     preprocessor = Preprocessor(chapters_dir=chapters_dir)
     chapter_num_dict = preprocessor.get_chapter_dict()
-    chosen_chapter_name = "chapter_38.txt"
+    chosen_chapter_name = "chapter_13.txt"
     chosen_chapter_num = chapter_num_dict[chosen_chapter_name]
     relationships = cache.get_value(f"Flying_Machines_{chosen_chapter_name}_raw_relationships", 'relationships')
 
@@ -98,13 +100,14 @@ if __name__ == "__main__":
 
     bddAugmenter = BDDAugmenter(relationshipMapper.typed_relationships,
                                 noun_tf_idf_scores=key_nouns,
-                                noun_wordnet_scores=relationshipParser.wordnet_depth_memo)
+                                noun_wordnet_scores=relationshipParser.wordnet_depth_memo,
+                                chapter_name = chosen_chapter_name)
 
 
-    # serialisable_relationships = [RelationshipSerialiser.toDict(relationship) for relationship in relationshipParser.processed_relationships]
-    # cache.set(f"Flying_Machines_{chosen_chapter_name}_processed_relationships", {'processed_relationships': serialisable_relationships})
-    # export_key_phrase_path = Path(chapters_dir).parent / "artificer_test" / f"key_phrase_{chosen_chapter_name}"
-    # relationshipParser.export_key_phrases(export_key_phrase_path)
+    serialisable_relationships = [RelationshipSerialiser.toDict(relationship) for relationship in relationshipParser.processed_relationships]
+    cache.set(f"Flying_Machines_{chosen_chapter_name}_processed_relationships", {'processed_relationships': serialisable_relationships})
+    export_key_phrase_path = Path(chapters_dir).parent / "artificer_test" / f"key_phrase_{chosen_chapter_name}"
+    relationshipParser.export_key_phrases(export_key_phrase_path)
 
 
     pass
