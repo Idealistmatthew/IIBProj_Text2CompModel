@@ -57,7 +57,7 @@ def split_chapters(book_dir: str, epub_dir: str):
 
     print('All chapters extracted and saved!')
 
-def extract_chapters(chapter_dir):
+def extract_documents(chapter_dir):
     """Extract chapters from text files in a directory."""
     chapters = []
     document_dict = {}
@@ -74,4 +74,4 @@ def extract_chapters(chapter_dir):
 
 def get_chapter(chapter_dir, chapter_num):
     """Extract chapter from text files in a directory."""
-    return extract_chapters(chapter_dir)[chapter_num]
+    return extract_documents(chapter_dir)[chapter_num]

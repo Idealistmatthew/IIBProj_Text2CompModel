@@ -4,77 +4,9 @@ from nltk.corpus import wordnet as wn
 from nltk.corpus.reader.wordnet import Synset
 from graphviz import Digraph
 import pandas as pd
+from artificer.sysMLAugmenter.types import BDDBlock, BDDRelations, BDDGraph
+from artificer.sysMLAugmenter.util import generate_digraph
 
-class BDDBlock:
-    def __init__(self, block_name: str,
-                  operations: set[str] = set(),
-                    isAugmented: bool = False,
-                    general_parents: set[str] = set(),
-                    special_children: set[str] = set(),
-                    composite_parents: set[str] = set(),
-                    reference_parents: set[str] = set(),
-                    reference_children: set[str] = set(),
-                    parts: set[str] = set()):
-        self.block_name = block_name
-        self.isAugmented = isAugmented
-        self.operations = operations
-        self.general_parents = general_parents
-        self.special_children = special_children
-        self.composite_parents = composite_parents
-        self.reference_parents = reference_parents
-        self.reference_children = reference_children
-        self.parts = parts
-
-    def __repr__(self):
-        return (
-            f"Block Name: {self.block_name}, \n"
-            f"Operations: {self.operations}, \n"
-            f"General Parents: {self.general_parents}, \n"
-            f"Special Children: {self.special_children}, \n"
-            f"Composite Parents: {self.composite_parents}, \n"
-            f"Reference Parents: {self.reference_parents}, \n"
-            f"Reference Children: {self.reference_children}, \n"
-            f"Parts: {self.parts}\n"
-        )
-
-    def to_label(self):
-        label_str = "{"+ f"{self.block_name} "
-        if self.parts:
-            label_str += "| Parts:  \\n"
-            for part in self.parts:
-                label_str += f"{part}  \\n"
-        if self.operations:
-            label_str += "| Operations:  \\n"
-            for operation in self.operations:
-                label_str += f"{operation}()  \\n"
-        label_str += "}"
-        return label_str
-    
-class BDDRelations(Enum):
-    COMPOSITE = 1
-    GENERALIZATION = 2
-    AUGMENTED_GENERALIZATION = 3
-
-class BDDGraph:
-    def __init__(self):
-        self.block_dict: dict[str, BDDBlock] = {}
-        # self.directed_edges: dict[str, list[tuple[str, BDDRelations]]] = {}
-    
-    def add_or_update_block(self, block: BDDBlock):
-        if block.block_name not in self.block_dict:
-            self.block_dict[block.block_name] = block
-        else:
-            self.block_dict[block.block_name] = self.update_block(self.block_dict[block.block_name], block)
-    
-    def update_block(self, old_block: BDDBlock, new_block: BDDBlock) -> BDDBlock:
-        old_block.operations.update(new_block.operations)
-        old_block.general_parents.update(new_block.general_parents)
-        old_block.special_children.update(new_block.special_children)
-        old_block.composite_parents.update(new_block.composite_parents)
-        old_block.reference_parents.update(new_block.reference_parents)
-        old_block.reference_children.update(new_block.reference_children)
-        old_block.parts.update(new_block.parts)
-        return old_block
     
     # def add_directed_edge(self, from_block: str, to_block: str, relation: BDDRelations):
     #     if from_block not in self.directed_edges:
@@ -85,11 +17,13 @@ class BDDAugmenter:
     def __init__(self, typed_relationships: list[TypedRelationship],
                  noun_tf_idf_scores: dict[str, float],
                  noun_wordnet_scores: dict[str, float],
-                 chapter_name: str = "chapter_13.txt"):
+                 bdd_plot_word: str,
+                 bdd_plot_path: str = "chapter_13.txt"):
         self.typed_relationships = typed_relationships
         self.bdd_graph = BDDGraph()
         self.construct_bdd_graph()
-        self.bdd_plot_path = chapter_name
+        self.bdd_plot_word = bdd_plot_word
+        self.bdd_plot_path = bdd_plot_path
 
         # we need to pass in the wordnet and tf_idf scores of the nouns here
         self.noun_tf_idf_scores = noun_tf_idf_scores
@@ -113,7 +47,7 @@ class BDDAugmenter:
             print(name, len(self.get_blocks_from_root(name)))
         # print(len(self.bdd_graph.block_dict))
         # print(self.get_all_block_names())
-        self.plot_bdd_with_root("helicopter")
+        self.plot_bdd_with_root(bdd_plot_word)
         # self.plot_full_bdd()
     
 
@@ -151,8 +85,8 @@ class BDDAugmenter:
                 queue.append(special_child)
             for part in current_block.parts:
                 queue.append(part)
-            for reference_child in current_block.reference_children:
-                queue.append(reference_child)
+            # for reference_child in current_block.reference_children:
+            #     queue.append(reference_child)
         return all_blocks_from_root
 
 
@@ -161,31 +95,11 @@ class BDDAugmenter:
         """ this is often too large to work with """
         if not blocks:
             blocks = set(self.bdd_graph.block_dict.values())
-        block_names = [block.block_name for block in blocks]
-        bdd = Digraph('bdd', node_attr={'shape': 'record', 'fontsize': '10'}, format='png')
-
-        def addBlockAsNode(block: BDDBlock):
-            if block.isAugmented:
-                bdd.node(block.block_name, block.to_label(), style='dotted')
-            else:
-                bdd.node(block.block_name, block.to_label())
-
-        for block in blocks:
-            addBlockAsNode(block)
-        
-        for block in blocks:
-            for general_parent in block.general_parents:
-                bdd.edge(general_parent, block.block_name, label="Generalization", arrowhead="onormal")
-            for composite_parent in block.composite_parents:
-                bdd.edge(composite_parent, block.block_name, label="Composite", arrowhead="odiamond")
-            for reference_parent in block.reference_parents:
-                if reference_parent in block_names:
-                    bdd.edge(reference_parent, block.block_name, label="Reference", arrowhead="vee")
+        bdd = generate_digraph(blocks)
 
         print("Rendering start")
-        bdd.render(f"bddDiagrams/{self.bdd_plot_path}", view=True)
+        bdd.render(f"Assets/bddDiagrams/{self.bdd_plot_path}", view=True)
         print("Rendering end")
-
 
     def construct_bdd_graph(self) -> None:
         for relationship in self.typed_relationships:
@@ -275,7 +189,10 @@ class BDDAugmenter:
             print("Abstracting: ", old_phrase, " to ", stringified_new_phrase)
             self.bdd_graph.add_or_update_block(BDDBlock(old_phrase,
                                                general_parents={stringified_new_phrase}))
+            print("Abstracted: ", old_phrase, " to ", stringified_new_phrase)
             self.bdd_graph.add_or_update_block(BDDBlock(stringified_new_phrase, special_children={old_phrase}, isAugmented=True))
+            print("new block: ", BDDBlock(stringified_new_phrase, special_children={old_phrase}, isAugmented=True))
+            print(self.bdd_graph.block_dict[stringified_new_phrase])
             new_phrases.append(new_phrase)
         return new_phrases
 

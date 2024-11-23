@@ -1,0 +1,13 @@
+digraph bdd {
+	node [fontsize=10 shape=record]
+	use [label="{use }"]
+	"play game style" [label="{play game style | Parts:  \nuse  \n| Operations:  \nis()  \n}"]
+	"video game" [label="{video game }"]
+	"game style" [label="{game style }" style=dotted]
+	game [label="{game }" style=dotted]
+	use -> "play game style" [label=Composite arrowhead=odiamond]
+	"play game style" -> "game style" [label=Generalization arrowhead=onormal]
+	"video game" -> game [label=Generalization arrowhead=onormal]
+	"game style" -> game [label=Generalization arrowhead=onormal]
+	game -> game [label=Generalization arrowhead=onormal]
+}

@@ -1,0 +1,151 @@
+2. Deindustrialisation 
+In the course of economic development most countries follow a broadly similar trajectory. As development gets under way, the share of agriculture in national employment falls and there is a rapid increase in the share of manufacturing. This process is known as &lsquo;industrialisation&rsquo;. At a certain point, however, the share of manufacturing stabilises and then starts to fall back again. There is a corresponding increase in the share of services in national employment. By analogy with the preceding phase, this falling share of manufacturing is often described as &lsquo;de-industrialisation&rsquo;. Note that we are talking here about relative shares. If total employment is growing fast enough, then the share of manufacturing may decline even though the absolute number of people working in this sector is actually rising. Note also that employment is not the same thing as production. In many advanced economies, manufacturing productivity is increasing rapidly with the result that this sector is producing more output with fewer workers. De-industrialisation in employment terms does not as a rule imply falling production.  
+ 
+Chart 1 provides information about the manufacturing sector in the G7 countries. There has been a dramatic fall in the share of this sector in national employment in all of the countries shown. This has been matched by a similar decline in the share of manufacturing in GDP or value-added measured at current prices1. As can be seen from Chart 2, the employment share of manufacturing has also fallen in the newly industrialised countries of East and South East Asia. 
+ 
+Figure showing employment share of manufacturing in the G& countries 1962-2008
+ 
+1 Gross domestic product = gross value added + taxes on products &ndash; subsidies on products 
+2 See Rowthorn and Wells (1987) for an extensive discussion of this and related issues.  
+3 This point is explored at length below. 
+4 This argument was first advanced systematically byLengell (1966), Baumol (1967) and Fuchs (1968) and was developed at length in Baumol, Blackman and Wolff (1989). Oulton (2001) presents a more optimistic view of the potential for productivity growth in services. 
+5 Table 1 of Triplett and Bosworth (2003) indicates that the annual growth rate of labour productivity in 27 service industries (employment weighted) was on average 1.5% over the period 1987-95 and 2.6% over the period 1995-2000. According to BLS statistics for output per worker hour, manufacturing productivity grew by 2.9% and 4.0% per year respectively. Thus, in each period manufacturing productivity growth was around 1.3% a year faster in manufacturing. 
+6 Chart 4 shows what happened to output per person employed in the manufacturing sector, but the picture is similar for output per worker hour.  
+Figure showing manufacturing employment share: selected East Asian economies 1966-2008
+ 
+ 
+The causes and significance of de-industrialisation have been debated with fluctuating intensity since the process first began. Some commentators regard declining manufacturing employment as a symptom of economic failure and a harbinger of impending impoverishment. For them the primary objective of public policy should be to halt or reverse this process. Others regard declining manufacturing employment as a normal feature of economic growth in advanced economies. They see it as an inevitable feature of structural change that may create serious problems in the short and medium run, but is potentially beneficial in the longer run. For these commentators, the primary aim of public policy should be to facilitate change and smooth the transition to a new economic structure. In reality, the choice is never quite as stark as this and most commentators take an intermediate position. They recognise the inevitability and potential benefits of structural change, but they also believe that some of the developments in manufacturing may be both undesirable and avoidable. Such developments may reflect the failings of specific industries or firms that would have a viable future if their failings could be overcome2.  
+ 
+A variety of reasons have been put forward to explain why the employment share of manufacturing should fall in advanced economies. These include the following: 
+ 
+Classification. Certain activities, such as design, catering and transport that were previously performed in-house by manufacturing firms are increasingly performed by specialist service providers. This represents a re-classification rather than a genuine shrinkage in the manufacturing sector. A wider definition of the manufacturing sector would include all of the service inputs that are embodied in the final output of this sector. If this were done, the manufacturing sector would appear larger than it is in official statistics and employment in this broadly defined sector would have declined less than these statistics imply. Thus, part of the decline in manufacturing employment may be a statistical artefact caused by shifting classification.   
+  
+Many modern manufacturing firms provide services as well as physical products to their customers. These include design and development, installation and implementation, leasing, maintenance and support, systems and solutions, and many other services. Neely et al (2011) estimate that around 30% of manufacturers with over 100 employees offer services globally. The proportion is higher than average in the USA (55% in 2011) and although the proportion is much lower in China (20%) it is increasing rapidly.  
+ 
+As manufacturing firms provide new services to their customers or outsource previously in-house activities to specialist service providers, it becomes increasingly difficult to delineate the boundaries of the manufacturing sector and hence to determine the true scale of employment decline in this sector. However, it seems implausible that such changes account for more than a modest fraction of the huge recorded fall in the share of manufacturing employment in advanced economies over the past thirty years.  
+ 
+Consumption. As incomes rise in poorer countries during the course of industrialisation, the proportion of expenditure devoted to food declines, and consumers purchase more manufactured goods. This is known as Engel&rsquo;s Law. The sociologist Daniel Bell (1976) in his theory of post-industrial society predicted that the pattern of consumer demand would eventually shift away from manufactures towards services. The evidence for &ldquo;Bell&rsquo;s Law&rdquo;, as it might be called, is mixed. It is true that the share of monetary income spent on manufactured goods is now falling. However, this is not because the real quantity of manufactured goods consumed in rich countries is stagnating. On the contrary, as everyone knows from personal experience, the amount of electronic and mechanical goods consumed by the average citizen of these countries is mushrooming. The falling share of monetary income spent on such goods is not due to the saturation of demand for manufactures, as Bell&rsquo;s Law would imply. What it mainly reflects is a rapid fall in the relative price of manufactures. Rising imports from low wage countries, together with rising productivity at home, mean that manufactured goods in the advanced economies are now so cheap that consumers can buy a lot more of these goods whilst spending a smaller fraction of their income on them. 
+ 
+International Trade. International trade affects manufacturing employment in a variety of ways. It may increase productivity in the manufacturing sector by stimulating competition and encouraging domestic firms to produce more efficiently. Competition from imports may also increase productivity by eliminating low value-added activities or inefficient firms. To pay for manufactured imports a country may export other types of manufactured goods or items such as food or services, it may use its income from foreign investments, or it may borrow. These responses have diverse implications for the domestic manufacturing sector. 
+ 
+Of particular interest for the structure of employment in advanced economies (the &ldquo;North&rdquo;) is trade with low-wage, developing countries (the &ldquo;South&rdquo;). To the extent that the purchase of manufactured goods from low-wage countries is financed by the export of manufactured goods from the advanced economies this will generate new manufacturing jobs in the exporting countries. For example, in return for clothes from Bangladesh the advanced economies may export sophisticated equipment. This exchange will eliminate jobs in the clothing industry of the advanced economies but create new jobs in their equipment-producing industries. However, the number of jobs lost in the low value-added clothing sector will be much greater than the new jobs created in the high value-added equipment industries3. As a result, there will be a net loss of jobs in the manufacturing sector as a whole even though the value of manufactured goods exported is equal to the value of manufactured goods imported.  
+ 
+Investment. Expenditure on fixed capital has a large manufacturing component in the form of equipment, construction materials and the like. An increase in the rate of investment will therefore increase the share of manufactured goods in total demand, and thereby raise the share of manufacturing in real output and employment.  
+ 
+Labour Productivity. By definition, the growth rate of output per worker is equal to the growth rate of output minus the growth rate of employment. Thus, if output in two sectors is increasing at the same rate, the sector with the faster productivity growth will have the slower employment growth and vice-versa. The employment share of the most dynamic sector will decline. This is simply a matter of arithmetic. Official statistics indicate that, prior to the recent crisis, the real output of manufactured goods in the average advanced economy was growing at about the same rate as the economy as a whole (table 1). Since the non-manufacturing part of a modern economy consists mainly of services, this implies that the real output of services and manufactures were on average growing at about the same rate. One notable exception was the UK where manufacturing output grew much slower than the output of services. We shall return to this point below. 
+ 
+Table 1. Manufacturing Output and GDP compared 
+ 
+Annual percentage growth rates 1980-2007 
+ 
+ 
+ Manufacturing 
+ Whole Economy (GDP) 
+ Difference 
+ 
+ 
+ col (1) 
+ col (2) 
+ col (1)-col (2) 
+ 
+United States 
+ 3.43 
+ 3.07 
+ 0.36 
+ 
+Belgium 
+ 1.69 
+ 2.16 
+ -0.46 
+ 
+Canada 
+ 2.19 
+ 2.78 
+ -0.59 
+ 
+Denmark 
+ 1.21 
+ 2.15 
+ -0.93 
+ 
+Finland 
+ 4.78 
+ 2.74 
+ 2.04 
+ 
+France 
+ 1.37 
+ 2.09 
+ -0.72 
+ 
+Germany 
+ 1.40 
+ 1.93 
+ -0.53 
+ 
+Italy 
+ 1.39 
+ 1.80 
+ -0.41 
+ 
+Japan 
+ 2.67 
+ 2.49 
+ 0.19 
+ 
+Korea 
+ 9.38 
+ 7.21 
+ 2.17 
+ 
+Netherlands 
+ 2.49 
+ 2.51 
+ -0.02 
+ 
+Norway 
+ 0.91 
+ 2.90 
+ -1.99 
+ 
+Spain 
+ 2.20 
+ 3.05 
+ -0.85 
+ 
+Sweden 
+ 4.07 
+ 2.39 
+ 1.68 
+ 
+Taiwan 
+ 6.40 
+ 6.21 
+ 0.18 
+ 
+United Kingdom 
+ 1.04 
+ 2.74 
+ -1.70 
+ 
+Sources: Manufacturing output from BLS, GDP from IMF 
+ 
+
+ 
+The statistics also indicate that in most countries the growth rate of labour productivity in the manufacturing sector has been faster than in services and in the economy as a whole. To maintain its share of real output, the manufacturing sector has required a decreasing share of total employment.  
+ 
+Conversely, to maintain its share of real output, the service sector has required an ever-increasing share of employment, which it has acquired mainly at the expense of manufacturing4. 
+ 
+This arithmetic suggests that the relative decline of manufacturing employment has been mainly the result of rapid productivity growth in this sector. In their paper on the United States, Triplett and Bosworth (2003) show that productivity growth in the service sector has accelerated markedly in recent times. However, manufacturing industry has experienced a similar acceleration, so the gap between productivity growth in manufacturing and services remains significant5. Chart 3 to 5 show what has happened to manufacturing output, productivity and employment in the G7 countries since 1950. Prior to the climacteric in 1973 manufacturing output grew strongly in all of these countries. In most of them the growth of output has slowed down since then, although over the period 1973-2010 as a whole most of them experienced a substantial increase in production (chart 3). The UK is an exception in this respect and, following the recent crisis, aggregate output in the manufacturing sector is now much the same as it was in 1973.  
+ 
+Figure showing manufacturing output: G7 countries 1950-2010
+ 
+Figure showing manufacturing output per person employed: G7 countries 1950-2010
+ 
+ 
+Figure showing manufacturing employment: G7 countries 1950-2010
+ 
+ 
+In all of the countries shown, labour productivity increased rapidly, if irregularly, throughout the entire sixty year period (chart 4). 6 Prior to the climacteric in 1973, manufacturing output increased so fast that manufacturing employment rose in absolute terms despite the fact that less labour was required to produce each unit of output. The situation altered when output growth slowed down after 1973. From then onwards, manufacturing employment began to fall as output growth was no longer fast enough to keep up with rising labour productivity, so that more output was being produced using fewer workers (chart 5). In the UK, this turning point was reached in 1966, whereas in Japan it was delayed until 1992. Of all the major advanced economies, the UK has experienced by far the largest proportionate fall in the number of people employed in manufacturing and in the share of this sector in total employment. 
+
+

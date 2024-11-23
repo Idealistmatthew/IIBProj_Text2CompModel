@@ -1,0 +1,14 @@
+digraph bdd {
+	node [fontsize=10 shape=record]
+	pound [label="{pound }"]
+	"weight aeroplane engine" [label="{weight aeroplane engine | Parts:  \npound  \n| Operations:  \nis()  \nhas now of()  \n}"]
+	"aeroplane engine" [label="{aeroplane engine | Operations:  \nhas The weight of()  \nweighed()  \n}"]
+	"pound darracq motor" [label="{pound darracq motor }"]
+	"pound motor" [label="{pound motor }" style=dotted]
+	pound -> "weight aeroplane engine" [label=Composite arrowhead=odiamond]
+	pound -> "aeroplane engine" [label=Reference arrowhead=vee]
+	pound -> "weight aeroplane engine" [label=Reference arrowhead=vee]
+	"weight aeroplane engine" -> "aeroplane engine" [label=Generalization arrowhead=onormal]
+	"pound darracq motor" -> "pound motor" [label=Generalization arrowhead=onormal]
+	"pound motor" -> pound [label=Generalization arrowhead=onormal]
+}

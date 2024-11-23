@@ -1,0 +1,233 @@
+Proceedings of the 2016 IEEE/SICE International Symposium on WeP1A.4 System Integration, Sapporo Convention Center, Sapporo, Japan, December 13-15, 2016 
+Design of a Weight-compensated and Coupled Tendon-driven Articulated Long-reach Manipulator 
+Atsushi Horigome1 , Gen Endo2 , Koichi Suzumori2 and Hiroyuki Nabae2 
+Abstract&mdash; A weight-compensated and coupled tendon-driven mechanism which is a combination of the existing two mechanisms is proposed and its static control is discussed. This mechanism allows the long-reach manipulator with very small actuators by applying one thick tendon to a coupled tendon-driven mechanism. Static control of tension was investigated and the solution which derives the tension of the joint controlling tendons and the weight-compensating tendon from the arm posture was proposed. Moreover, tendon tension on three types of the proposed mechanism is simulated in six postures. The weight-compensation sometimes requires large tension of the joint controlling tendons, however, it reduces tendons tension under around 2 kN basically. 
+I. INTRODUCTION 
+A tendon-driven manipulator which installs actuators in the base unit has many advantages compared with a manipulator which equips actuators in its joints. For instance, it can reduce the total weight of the arm since it does not have heavy actuators in the arm part, consequently make the actuators small and the arm slim. In this paper, taking advantages of the above, we propose a long-reach tendon-driven 3D multi-joint manipulator with a length of over 10 meters as a &#64257;rst step of the manipulator of 15 m length which meets the requirement for a survey of the inside of a primary containment vessel and so forth. 
+One of the existing methods to construct a tendon-driven slim multi-joint robot arm is to arrange tendons radially and winding and paying out the tendons[1][2][3][4]. Many tendons reach from the base unit to the arm joint and three (or four) tendons which are attached at equal intervals drive one joint. Although such constructions are very simple and can construct the light-weight arm part, there is the large friction between a tendon and structural parts. Each driving tendon goes through many arm segments and generates slide motions. When the arm becomes longer and/or the arm bends sharply, the friction increases ultimately and we have to control by large actuators and thick tendons. Therefore, it might be dif&#64257;cult for such construction to make a long-reach slim manipulator. 
+Now, we focus on the robot arm which consists of rigid links, pulleys and tendons. Transmitting all tendons via pulleys can greatly reduce friction between the tendons and the 
+1A.Horigome is with the Department of Mechanical and Aerospace Engineering, Tokyo Institute of Technology, 2-12-1 Ookayama, Meguroku, Tokyo, 152-8552, Japanhorigome@robotics.mes.titech.ac.jp
+2G.Endo, K.Suzumori and H.Nabae are with the Department of School of Engineering, Tokyo Institute of Technology, 2-12-1 Ookayama, Meguroku, Tokyo, 152-8552, Japangendo,suzumori,nabae@mes.titech.ac.jp 
+structural parts. Moreover, tendons and pulleys can construct a coupled tendon-driven mechanism which generates large torque in the proximal joint by coupling tendons traction force[5]. In our existing work, we proposed a coupled tendon-driven three-dimensional multi-joint manipulator and carried out experiments with a preliminary prototype model whose arm is 2.4 m length and consisted of 6 joints (4 pitches and 2 yaws) as shown in Fig. 1[6]. This manipulator moved in the space freely and showed the possibility to develop a long-reach manipulator by using a coupled tendon-driven mechanism. However, some tendons which drive proximal joints still need generating large tension and it shows that some large actuators and thick tendons are required. 
+Therefore, we focused on a weight-compensation mechanism[7]. This mechanism consists of one thick tendon which generates large torque in all joints to support the arm weight and the other small actuators which control the position of each joint. In this paper, we propose introducing a weight-compensation mechanism into a coupled tendon-driven mechanism to reduce tendon tension considerably. By introducing a weight-compensation mechanism, we develop a coupled tendon-driven manipulator with only one large actuators and some small actuators. 
+The organization of this paper is as follows. In section II, we discuss required tendon tension for long-reach multi-joint manipulator with/without a coupled tendon-driven mechanism. Moreover, we propose a weight-compensated and coupled tendon-driven mechanism which is a combination of the existing two mechanisms to reduce required tendon tension. In section III, we investigated the control system based on static balance by describing the relation between the tendon tension and the joint torque. In section IV, we simulate required tendon tension on three types of the weight-compensated and coupled tendon-driven manipulators in the case of six postures. In section V, we discuss a realistic 
+
+Fig. 1: The preliminary prototype model of a coupled tendon-driven three-dimensional multi-joint manipulator 
+978-1-5090-3329-4/16/$31.00 2016 IEEE 
+
+design of actuators from the result of section IV. In section VI, a summary is given. 
+II. MECHANICAL DESIGN OF A WEIGHT-COMPENSATED AND COUPLED TENDON-DRIVEN MANIPULATOR 
+A. A coupled tendon-driven mechanism 
+Fig. 2 shows the basic principle of a large torque generation on the proximal joint by a coupled tendon-driven mechanism. Three tendons are &#64257;xed to the three joints respectively. The tendon passes via free rotating pulleys at each of the joints between the joint which the tendon is &#64257;xed to and the actuated part in the base. When the tendon has tension, torque is generated in all joints which the tendon passes through. Therefore, when the three tendons have tension F in Fig. 2, torque which is generated in three joints is 3&tau;, 2&tau; and &tau; respectively. This means the proximal joints which are passed by many tendons get larger torque than the distal joints. Using this principle, the manipulator can generate large torque at the proximal joints by small tension. 
+In order to assess tendon tension of a coupled tendon-driven mechanism, we set an over 10 m length multi-joint manipulator model as shown in Fig. 3. This model is also used in section 4 to assess a weight-compensated and coupled tendon-driven mechanism. The model has 7 links, each of the proximal 4 links has a pitch joint (1 DOF) and each of the distal 3 links has pitch and yaw joints (2 DOF). We decided a link mass m, the length of 1 DOF link l1, the length between pitch and yaw joints in 2 DOF link l2, the length to the center of gravity of 1 DOF link lg1 and 2 DOF 
+Free rotating pulleys 
+=Fr 
+
+link lg2 and all pulleys diameters D as follows: 
+m= 8 [kg],l1 =1.43 [m],l2 =0.4 [m], 
+lg1 =0.35 [m],lg2 =0.5125 [m] and D = 150 [mm]. 
+A part of these values are based on the long-reach arm that we are currently designing. Actually, tendons cannot be arranged without using pulleys of various diameters, we uni&#64257;ed the pulley diameters to solve the problem easily. Fig. 3 also shows tendon arrangement of a coupled tendon-driven mechanism. 
+Now, we lead required tendon tension with this model. When the required joint torque &tau; = {&tau;i}&isin;R10�1 is described as 
+&tau; = &tau;(&theta;) (1) 
+at joint angles &theta; = {&theta;i}&isin;R101 , the following static relation between joint torque and tendon tension F = {Fj }&isin;R20�1 is established: 
+D 
+&tau; = &delta;F (2)
+2 
+where &delta; is a coef&#64257;cient matrix to represent tendons and pulleys arrangement. In the case of a decoupled tendon-driven mechanism, &delta; is expressed as follows: 
+&#9121; &minus;1  1  0  0  ...  0  0  0  &#9124; 0  
+&#9122; 0  0  &minus;11  ...  0  0  0  0&#9125;  
+&#9122;  &#9125;  
+&delta; =  &#9122; . &#9122; . .  . . .  . . .  . . .  ...  . . .  . . .  . . .  . &#9125; 10�20 . &#9125; &isin;R,.  
+&#9122;  &#9125;  
+&#9123; 0  0  0  0  ...  &minus;1  1  0  &#9126;0  
+0  0  0  0  ...  0  0  &minus;11  
+
+(3) 
+and in the case of a coupled tendon-driven mechanism, &delta; is expressed as follows: 
+&#9121;&#9124; 
+&minus;11 &minus;11 ... &minus;11 &minus;1 &minus;1 
+&#9122;&#9125;
+00 &minus;11 ... &minus;11 &minus;1 &minus;1 
+&#9122;&#9125; 
+&#9122; ..... ... . &#9125; 10�20
+&delta; = &#9122; ......... . &#9125; &isin;R .
+.... ... . 
+&#9122;&#9125; 
+
+Fig. 2: The principle of a coupled tendon-driven mechanism. &#9123; 0000 ... &minus;11 &minus;1 &minus;1&#9126; Tendons generate torque in the all joints which they pass via 0000 ... 00 &minus;11 a free rotating pulley. (4) 
+F
+1 When the manipulator extends in the horizontal direction F2 as shown in Fig. 3, the tension is simulated as shown in
+F3
+
+Fig. 4 by using the way to &#64257;nd F from (2) which was 
+F17 
+&hellip;
+z 
+
+
+already studied[5]. Now, F2j&minus;1 and &minus;F2j are plotted at the 
+&#16; 
+&#7; &#2; &#7; &#2; &#7; &#2; &#7; &#2; 
+
+Fig. 4: Comparison of tendon tension in each joint between models with (yellow bars) and without (black bars) a coupled tendon-driven mechanism. 
+B. Introduction of a weight-compensation mechanism 
+Fig. 5a shows the three joints model with a coupled tendon-driven mechanism and Fig. 5b shows the same model with a weight-compensation mechanism which we propose. Stretching one thick tendon, weight-compensating tendon, from the proximal joint to the distal joint, the manipulator can get large torque which supports the greater part of the manipulator weight. The other thin tendons support the rest torque and control the manipulator posture. We call the former thick tendon a weight-compensating tendon and the latter thin tendons joint controlling tendons in this paper. 
+The required torque to support the manipulator weight is different in each joint as shown in Fig. 4. In order to generate such torque by a weight-compensating tendon, the method of using double pulley which has different radii between the inlet side and the outlet side has been proposed[7]. For example, a weight-compensating tendon of the three pitch axes model is described as shown in Fig. 6a. In this model, 
+
+(a) A coupled tendon-driven mechanism model 
+
+
+(b) Pitch and yaw axes model. Tendons on both sides cancel torque in the yaw axes. 
+Fig. 6: Tendons and pulleys arrangements of a coupled tendon-driven weight-compensation mechanism. The difference in diameter between the inlet side and the outlet side of the pulley reduces the torque generated in the pitch axes toward the distal end. 
+generated torque &tau;wj in the jth joint is derived as 
+1 12
+&tau;w1 = r1Fw,&tau;w2 = rr2Fw and &tau;w3 = r rr3FwR1 R1 R2 
+(5) 
+respectively when the tendon tension is Fw. The relation of &tau;w1 &ge;&tau;w2 &ge;&tau;w3 is established when r1 &le; R1, r2 &le;R2 and max{rj}&le;min{Rj}are set. In the case of pitch and yaw axes model such as a distal part of the model in Fig. 3, tendon arrangement should be described as shown in Fig. 6b. This model has two weight-compensating tendons in order to cancel the torque at yaw joints. Generated torque values in all joints are 
+12
+&tau;w1 = r1Fw,&tau;w2 =0,&tau;w3 = r rr3Fw and &tau;w4 =0R1 R2 
+(6) 
+respectively. &tau;w2 and &tau;w4 are zero because two tendons cancel each torque. &tau;w1 &ge;&tau;w3 is established when r1 &le;R1, r2 &le;R2, r3 &le;R3 and max{rj}&le;min{Rj}are set. 
+The advantages of the weight-compensated and coupled mechanism are follows. 
+&bull; 
+It makes the force of actuators which control the joint controlling tendons smaller. 
+
+&bull; 
+It can unify all joint controlling tendons and all joint controlling actuators. 
+
+&bull; 
+Since the maximum tension is in proportion to a square of a pulley radius, the structure of one very thick tendon and some thin tendons has higher volumetric ef&#64257;ciency than the structure of some thick tendons. It contributes to making a slim manipulator. 
+
+
+
+The point to be noted is that one actuator is required to put out large force for the weight-compensating tendon such as a high torque motor, a pneumatic cylinder or a hydraulic cylinder. 
+III. TENDON TENSION CONTROL BASED ON STATIC BALANCE 
+In order to apply the weight-compensated and coupled tendon-driven mechanism, &#64257;rst of all, we need to decide the standard weight-compensating tendon tension and the radii rwj of pulleys which the weight-compensating tendon is wound around. In this paper, we set them according to following procedures. 
+1) The standard posture &theta; = &theta;std is set. 
+2) The standard tension F = Fstd of the joint controlling tendons at the standard posture is set. 
+3) The required weight-compensating torque at the standard posture is derived as 
+D 
+&tau;w = &tau; &minus; &delta;F (7)
+2 
+where &theta; = &theta;std and F = Fstd. 
+4) The standard weight-compensating tendon tension and the radius of pulleys for the weight-compensation which satisfy (7) is derived. 
+In real-time controlling, we have to calculate the tendon tension according to the manipulator posture. Since we are planning to control a long-reach manipulator slowly, the tendon tension is set on the basis of static balance. Procedures to derive tendon tension based on static balance are summarized as follows. 
+1) Required torque &tau; at the joints is derived from the manipulator posture &theta; by (1). 
+2) The tension of the joint controlling tendons F and the 
+weight-compensating tendon Fw is derived from D 
+&tau; = &delta;F + &tau;w(Fw) (8)
+2 
+where &tau;w = {&tau;wj}&isin;R101 is torque by the weight-
+compensating tendon tension Fw and pulleys rwj. 
+We can calculate the procedure of 1) simply from the mass and the center of gravity of links. In order to solve the procedure of 2), &tau;w needs to be de&#64257;ned. In this paper, we adjust &tau;w to minimize the maximum of the tension of the joint controlling tendons Fmax = max{F}. Moreover, the tendon tension must be positive at all postures because the tendon cannot generate negative force. Therefore, we set the tendons tension as 
+Fw &ge;Fwmin &ge;0 [N] (9) Fi &ge;Fimin &ge;0 [N] (i =1, 2, ..., 20) (10) 
+where Fwmin and Fimin(i =1, 2, ..., 20) is the minimum tendon tension in order to prevent the tendons slack. 
+Since such a long-reach manipulator does not require being controlled quickly, we can search for &tau;w and F from simple algorithm to solve the non-linear programming problem under the conditions of (9) and (10). In the section IV, we used steepest descent method as a function Fmax of tendon tension {F,Fw}and the longest time expended for a solution was only 23 ms. 
+IV. TENSION SIMULATION OF THREE MODELS 
+A. Model setting 
+In order to assess the weight-compensated and coupled tendon-driven mechanism, we simulate the joint controlling tension at various postures with the model which is described in Fig. 3. Since the distal 2 DOF links require smaller tension than the proximal 1 DOF links as shown in Fig. 4, we applied a weight-compensation mechanism to only distal 4 pitch axes like Fig. 6a. 
+We set the standard posture of the manipulator to the horizontal direction as shown in Fig. 3 because the required torque at the &#64257;rst joint is the largest at that posture. We de&#64257;ne the joints angles &theta; as 
+&theta; = 0 [rad] (11) 
+at the standard posture. In this simulation, we consider the three cases of the standard tension Fstd of the joint controlling tendons as follows: 
+case (a) Fi = 10 [N] (i =1, 3, 5, 7, 9), (12) case (b) Fi = 1000 [N] (i =1, 3, 5, 7, 9) (13) and case (c) Fi = 2000 [N] (i =1, 3, 5, 7, 9). (14) 
+The tension of the proximal joint controlling tendons which competes the above tension (F2,4,6,8,10) is set to Fmin. The tension of the distal joint controlling tendons F11 to 20 is calculated regardless of the weight-compensation. We set Fwmin = Fmin =10N as the minimum tension. 
+Table I shows the radii of the weight-compensation pulleys rwj of the inlet part and the standard weight-compensating tendon tension which are derived from (7). The radii of the outlet part pulleys are set to 75 mm, same as the joint controlling pulleys. The standard weight-compensating tendon tension Fwstd is 31.1 kN, 26.2 kN and 21.2 kN respectively. These values are possible when we use a &phi; 8 mm stainless steel wire rope[8] driven by a &phi; 250 mm pneumatic cylinder at 0.7 MPa, a &phi; 40 mm hydraulic cylinder at 25 MPa or a large motor reducer[9] with a &phi; 80 mm reel. 
+Fig. 7 shows the tension of the joint controlling tendons at the standard posture. F2j&minus;1 and &minus;F2j are plotted at the joint number j by yellow bars as a coupled tendon-driven mechanism and red, green and blue bars as the weight-compensated and coupled tendon-driven mechanisms of the cases (a), (b) and (c) respectively. In the distal part, there is no difference 
+TABLE I: The radius of the weight-compensation pulleys in the cases of the three standard tension 
+Case  Fstd  Fwstd  rw1  rw2  rw3  rw4  rw5  
+[N]  [kN]  [mm]  
+(a)  10  31.1  75  52.5  48.0  40.9  27.1  
+(b)  1000  26.2  75  51.1  46.2  38.4  23.5  
+(c)  2000  21.2  75  50.0  43.3  34.0  15.7  
+
+
+&#8; &#6; 
+
+
+&#4; 
+&#3; 
+
+&#2; 
+
+&#16; 
+
+
+
+&#2; &#2; 
+&#24; 
+Fig. 7: Comparison of tendon tension of a coupled tendon-driven model in each joint among a model without a weight-compensation and models with a weight-compensation. Yellow bars show tension without weight-compensation. Red bars, green bars and blue bars show tension with a weight-compensation of 31.1 kN (case (a)), 26.2 kN (case (b)) and 
+
+21.2 kN (case (c)) respectively. 
+of tension due to the case because it does not have weight-compensation mechanism there. In the proximal part, the weight-compensation mechanism considerably reduces the joint controlling tension to the standard tension which is 10 
+N in the case (a), 1000 N in the case (b) and 2000 N in the 
+case (c). 
+B. Simulation in various postures 
+We simulated the required joint controlling tendons tension in six kinds manipulator postures. For each posture, we optimised the weight-compensating tendon tension Fw under 
+Fwstd &ge; Fw &ge; Fwmin = 10 [N]. (15) 
+Since the tension of the distal &#64257;ve joints which do not have a weight-compensation mechanism is the same in all the cases, we show six kinds postures and the tension of the proximal &#64257;ve joints at that postures in Fig. 8. 
+&#3; &#4; 
+&#3; 
+(a) &theta; =[ 20, 20, 20, 30, (b) &theta;k = 45 [deg] (k =1) 30, 90, 0, 45, 0, 45] [deg] 0 [deg] (otherwise) 
+
+&#6; &#5; &#4; &#3; &#5; 
+
+&#4; &#6; 
+(c) &theta;k = 30 [deg] (k =6, 8, 10)(d) &theta;k = 90 [deg] (k =6) 0 [deg] (otherwise) 0 [deg] (otherwise) 
+
+
+&#16;	&#12; 
+&#16;	&#12; 
+&#4; 
+&#3; 
+&#2; 
+&#3; 
+&#4; &#7; &#7; &#20; &#20; 
+(e) &theta;k = 30 [deg] (k =3, 4, 5) (f) &theta;k = 90 [deg] (k =5) 0 [deg] (otherwise) 0 [deg] (otherwise) 
+Fig. 8: Tendon tension in proximal 5 joints of various arm postures among three models with weight-compensations. Red bars, green bars and blue bars show tension with a weight-compensation of 31.1 kN (case (a)), 26.2 kN (case (b)) and 21.2 kN (case (c)) respectively. 
+
+&#2; &#3; 
+&#4; &#2; 
+
+&#3; 
+Fig. 8a shows the non-special posture. In the cases of 
+
+(a) and (b), the weight-compensating tendon tension Fw is &#4; limited under Fwstd. This is because both F1 and F10 are the 
+&#3; 
+largest values in F .If Fw becomes larger or smaller, neither 
+F1 or F10 becomes larger. This applies to many other cases. 
+In the case of (c), Fw is Fwstd. 
+In Fig. 8b and Fig. 8c, the case (c) shows the largest tension in contrast with that the case (a) shows the largest tension in Fig. 8a, Fig. 8d, Fig. 8e and Fig. 8f. This is because the weight-compensating tendon tension Fw can be set to the large value when the tension magnitude relationship between the joints is similar to the tension in the standard posture. 
+Fig. 8d shows the largest tension. This is because the required joint torque is very different between the &#64257;rst joint and the &#64257;fth joint. In such postures, a weight-compensation mechanism is not very effective. 
+Fig. 8f and Fig. 8e show the joint controlling tendons tension at the posture that the proximal part is horizontal and the distal part turns to the z-axis. The maximum value of F is the same between Fig. 8f and Fig. 8e in all cases, however, the sum total of F is smaller in Fig. 8e than that in Fig. 8f. This is because the shape in Fig. 8e is blunter than that in Fig. 8f. 
+
+In summary, the joint controlling tendons tension is under around 2 kN except for Fig. 8d. Although the joint controlling tendons tension is very small in the case (a) of Fig. 8a, the weight-compensation sometimes requires large tension in such as Fig. 8d. This means that the large standard weight-compensating tendon tension does not always reduce the joint controlling tendons tension. Moreover, the joint controlling tendons are required over 2 kN tension, which is the standard tension of the case (c), in some postures. Therefore, the case (c) is the best standard weight-compensating tendon tension in this simulation. 
+V. DISCUSSION In this section, we discuss a realistic design of actuators which drive the joint controlling tendons. Since the long-reach manipulator moves slowly, the discussion focuses on static motion. In the case of a coupled tendon-driven model without a weight-compensation, the maximum tension is 9.4 kN at the &#64257;rst joint as shown in Fig. 7. When a safety factor is 2, around &phi; 5.3 mm stainless steel wire rope[8] is required. According to the study on the strength reduction of a tendon[10], the large diameter of a tendon d requires the large diameter of a pulley D in order to prevent the tensile strength from decreasing. A pulley of around 80 mm diameters is required at D/d =15. The driving torque is calculated as 9.4 � 2 � 80/2 = 752 [Nm]. This torque can be realized by using CSF50[11] and GP52C reducers and RE50 motor[12] at 1.8 rpm. These devices weigh 4.92 kg. In the similar way, &#64257;ve actuators which drive the proximal &#64257;ve joints weigh 15.3 kg. On the other hand, in the case of a weight-compensated 
+and coupled tendon-driven model, the manipulator can take most postures under 2 kN tension of tendons as shown in Fig. 
+8. An actuator which generate 2 kN tension with &phi; 2.4 mm stainless steel wire rope and &phi; 36 mm reel can be realized by using CSF25 and GP32C reducers and RE25 motor. Same ten actuators which are required to drive the proximal &#64257;ve joints weigh 7.1 kg. 
+In summary, our investigation of the actuators in a realistic design revealed that a weight-compensated and coupled tendon-driven mechanism reduces the total weight of actuators less than half of a non weight-compensated model. 
+VI. CONCLUSIONS In this paper, we proposed a weight-compensated and coupled tendon-driven mechanism which is the combination of two existing mechanisms for making joint controlling actuators smaller. This mechanism allows the long-reach manipulator with very small actuators by applying one thick 
+tendon. It can make all joint controlling tendons and all joint controlling actuators uniform. 
+Moreover, static control of tension was investigated. We discussed the solution to derive the tension of the joint controlling tendons and the weight-compensating tendon from the arm posture. 
+We also simulated required tendon tension on three types of the weight-compensated and coupled tendon-driven manipulators in six postures. We showed that the weight-compensation sometimes requires large tension, however, it reduce tendons tension under around 2 kN basically. 
+Finally, we discussed a realistic design of actuators which drive joint controlling tendons and showed that a weight-compensation mechanism reduces the total weight of actuators by half. 
+In future work, we plan to make coordinated tension control between the weight-compensating tendon and the joint controlling tendon withs small joint model. This investigation contributes to develop a very long-reach manipulator. 
+ACKNOWLEDGEMENT 
+This paper is based on results obtained from a project commissioned by the New Energy and Industrial Technology Development Organization (NEDO). This work is also supported in part by Program for Leading Graduate Schools &ldquo;Academy for Co-creative Education of Environment and Energy Science&rdquo;, MEXT, Japan. 
+REFERENCES 
+[1] S. Hirose, T. Kado, and Y. Umetani. Tensor actuated elastic manipulator. In Proceedings of the 6th world congress on The Theory of Machines and Mechanisms, pp. 978&ndash;981, Dec 1983. 
+[2] G. Robinson and J. B. C. Daview. Continuum Robots -A State of the Art. In Robotics and Automation, 1999. Proceedings. ICRA. IEEE International Conference on, pp. 2849&ndash;2854, 1999. 
+[3] D. B. Camarillo, C. R. Carlson, and J. K. Salisbury. Con&#64257;guration Tracking for Continuum Manipulators With Coupled Tendon Drive. IEEE Transactions on Robotics, Vol. 25, No. 4, pp. 798&ndash;808, Aug 2009. 
+[4] R. O. Buckingham and A. C. Graham. Dexterous manipulators for nuclear inspection and maintenance -case study. 2010 1st International Conference on Applied Robotics for the Power Industry(CARPI 2010), Vol. 2010, , October 2010. 
+[5] S. Ma, H. Yoshinada, and S. Hirose. CT ARM-I: Coupled Tendon-driven Manipulator Model I -Design and Basic Experiments. In 
+Robotics and Automation, 1992. Proceedings., 1992 IEEE International Conference on, Vol. 3, pp. 2094&ndash;2100, May 1992. 
+[6] A. Horigome, H. Yamada, G. Endo, S. Sen, S. Hirose, and E.F. Fukushima. Development of a Coupled Tendon-Driven 3D Multi-joint Manipulator. In Robotics and Automation, 2014. Proceedings. ICRA &rsquo;14. IEEE International Conference on, pp. 5915&ndash;5920, Jun 2014. 
+[7] S. Hirose, T. Ishii, and A. Haishi. Float Arm V: Hyper-Redundant Manipulator With Wire-Driven Weight-Compensation Mechanism. In 
+Robotics and Automation, 2003. Proceedings. ICRA &rsquo;03. IEEE International Conference on, Vol. 1, pp. 368&ndash;373, Sept 2003. 
+[8] Sinyo co., ltd. wire speci&#64257;cations. http://www.shinyo-h.co. jp/en/technology/standard/index.html. 
+[9] Matex co., ltd. product catalog lgu200. http://www.matex-japan.com/e/catalog/lgu200-m.php. 
+[10] Atsushi Horigome and Gen Endo. Basic study for drive mechanism with synthetic &#64257;ber rope -investigation of strength reduction by bending and terminal &#64257;xation method. Advanced Robotics, Vol. 30, No. 3, pp. 206&ndash;217, 2016. 
+[11] Harmonic drive systems inc. product information csf series component type. https://www.hds.co.jp/english/products/lineup/hd/01sr01_csf_2a/. 
+[12] maxon motor ag product overview. http://www.maxonmotor. com/maxon/view/catalog/. 
+
+
+

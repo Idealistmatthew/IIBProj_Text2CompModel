@@ -1,0 +1,10 @@
+digraph bdd {
+	node [fontsize=10 shape=record]
+	helicopter [label="{helicopter | Parts:  \ndeficient capacity  \n| Operations:  \nhas()  \nin sustaining()  \ngets()  \nis()  \nhaving been tried()  \n}"]
+	"deficient capacity" [label="{deficient capacity | Operations:  \nhas()  \nis not()  \nplaces()  \nattaches()  \n}"]
+	"respect helicopter advantage" [label="{respect helicopter advantage | Operations:  \nhas()  \nis not()  \nplaces()  \nattaches()  \n}"]
+	propeller [label="{propeller | Parts:  \nhelicopter  \n| Operations:  \nhas()  \nis not()  \nplaces()  \nattaches()  \n}"]
+	propeller -> helicopter [label=Composite arrowhead=odiamond]
+	helicopter -> "deficient capacity" [label=Composite arrowhead=odiamond]
+	helicopter -> "respect helicopter advantage" [label=Generalization arrowhead=onormal]
+}

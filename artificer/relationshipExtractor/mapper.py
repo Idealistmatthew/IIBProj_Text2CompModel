@@ -5,7 +5,7 @@ class RelationshipMapper:
     def __init__(self, relationships: list[Relationship], relationship_score_diff_tresh: float = 0.5):
         self.relationships = relationships
         self.relationship_score_diff_tresh = relationship_score_diff_tresh
-        self.composite_keywords = ['comprise', 'partially', 'voice', 'break', 'involve', 'division', 'represent', 'constituent', 'unharmed', 'moderate', 'set_off', 'make_up', 'break_up', 'parting', 'let_in', 'unhurt', 'ask', 'whole', 'unscathed', 'postulate', 'take_off', 'stop', 'imply', 'lie', 'hold_back', 'separate', 'piece', 'be', 'hold', 'wholly', 'set_out', 'totally', 'all', 'bear', 'start_out', 'entirely', 'section', 'contribution', 'disunite', 'persona', 'require', 'check', 'hold_in', 'depart', 'call_for', 'unit', 'incorporate', 'carry', 'altogether', 'hale', 'part', 'turn_back', 'split_up', 'region', 'need', 'curb', 'arrest', 'admit', 'regard', 'affect', 'dwell', 'set_forth', 'office', 'lie_in', 'necessitate', 'solid', 'unanimous', 'contain', 'include', 'function', 'role', 'split', 'completely', 'theatrical_role', 'component_part', 'start', 'component', 'character', 'control', 'percentage', 'constitute', 'take', 'portion', 'partly', 'demand', 'consist', 'divide', 'share']
+        self.composite_synsets = self.get_composite_synsets()
         self.typed_relationships = []
         self.map_relationships()
     
@@ -40,10 +40,9 @@ class RelationshipMapper:
         # check using Wordnet for words like include that define composite relationships
         relation_synsets = wn.synsets(relation)
         for syn in relation_synsets:
-            lemma_names = syn.lemma_names()
-            for lemma in lemma_names:
-                if lemma in self.composite_keywords:
-                    return True
+            if syn in self.composite_synsets:
+                return True
+        return False
 
     def overlap(self, subject: str, object: str):
         # check if the subject and object overlap
@@ -71,7 +70,7 @@ class RelationshipMapper:
     
 
     # Only used this to get the keywords the first time, so I could hardcode them in the composite_keywords list
-    def get_composite_keywords(self):
+    def get_composite_synsets(self):
         """
         Generate a list of composite keywords by extracting synonyms from WordNet for each base word.
         
@@ -81,8 +80,8 @@ class RelationshipMapper:
         Returns:
         set: A set of words suggesting composite relationships.
         """
-        base_words = ["part", "whole", "include", "contain", "consist", "comprise", "involve"]
-        composite_keywords = set()
+        base_words = ["include", "contain", "consist", "comprise"]
+        composite_synsets = set()
         
         for word in base_words:
             # Get synsets for each word
@@ -91,9 +90,7 @@ class RelationshipMapper:
 
                 word_synsets = wn.synsets(word)
                 for syn in word_synsets:
-                    lemma_names = syn.lemma_names()
-                    for lemma in lemma_names:
-                        composite_keywords.add(lemma)
+                    composite_synsets.add(syn)
                 # Optionally, explore hypernyms and hyponyms for more related terms
                 # for hypernym in synset.hypernyms():
                 #     for lemma in hypernym.lemmas():
@@ -102,7 +99,7 @@ class RelationshipMapper:
                 #     for lemma in hyponym.lemmas():
                 #         composite_keywords.add(lemma.name())
         # Filter duplicates and return as a set
-        return composite_keywords
+        return composite_synsets
 
 if __name__ == "__main__":
     relationshipMapper = RelationshipMapper([])

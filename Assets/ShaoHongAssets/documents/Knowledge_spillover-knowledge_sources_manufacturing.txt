@@ -1,0 +1,177 @@
+2. Internal knowledge assets 
+Tangible assets, such as capital and labour, are no longer the generating factors of competitive advantage as they are easily available. Intangible assets have been receiving increasing attention as a key input in firms&rsquo; performance (Goodridge, Haskel, and Wallis 2012; Awano et al. 2010; Borgo et al. 2012; Corrado, Hulten, and Sichel 2009; Harris and Moffat 2012a).  
+ 
+Within the formal intangible assets, investment in in-house R&D and the share of R&D personnel have been considered as the main input to explain firms (sectors, countries)&rsquo; innovative performance (Griliches 1986; Griliches 1979). However, R&D spending is highly skewed; only a very small number of firms report investing in in-house R&D. Bloom and van Reenen (2002) show that 12 largest UK firms account for 80% of R&D expenditures between 1968 and 1996. Similarly, Criscuolo and Haskel (2003) report that the median firm in the two UK waves of Community Innovation Survey (UKIS) 1994-1996 and 1998-2000 spends nothing on R&D. These numbers are confirmed at the aggregate level by a recent survey on the conduct of R&D in the UK by business, government and higher education sectors (Hughes and Mina 2012). Hughes and Mina (2012) report that the largest 10 business R&D spenders account for  34% of all UK R&D in 2009, and the largest 50 spenders for 56%. They also show that business and government expenditures on R&D (as a percent of GDP) have been decreasing whereas the share of higher education is increasing since 1990s.  
+ 
+Other formal intangible assets include factors over which legal rights have been assigned, such as patents, marks and copyrights. UK firms&rsquo; patenting behaviour also follows the trends in R&D spending. Bloom and van Reenen (2002) show that most of their sample (firms who had at least one patent during 1968-1996) involved in very small amount of patenting activity, with half the sample receiving more than 25 patents. This finding has been confirmed for a more recent period of analysis (1996-2008); only 1.7 % of all registered firms in the UK patent (Hall et al. 2012). The distribution of trademarks seem more homogenous; in a sample of 1600 large UK firms Greenhalgh and Rogers (2007) report that the average propensity to apply for a  UK trademark is around 42% in manufacturing.   
+ 
+Overall, intangible investment is reported to have risen sharply in the UK, especially in the areas of computerised information, design, training and business process re-organisation (Marrano, Haskel, and Wallis 2009). A recent survey aiming to measure the investments of UK firms in intangible assets find that the incidence of non&ndash;R&D intangible spending is much more widespread than R&D spending; 50% of UK firms spend on non-R&D intangible assets, whereas only 8 % spend on R&D (Awano et al. 2010). The overall level of intangible spending is considerable, around �39bn in this survey, distributed between software (�11bn), branding (�10bn), R&D (�10bn), training (�7bn) and design and business process improvement (�1bn each) (Awano et al. 2010). 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Table 1: Intangible Investment in the UK per category as a share of total intangible investments 
+ 
+ 1990 
+ 1995 
+ 2000 
+ 
+ 
+ 
+Software development 
+ 6bn 
+ 11% 
+ 10bn
+ 14% 
+ 16bn
+ 17% 
+ 22bn 
+ 
+R&D 
+ 8bn 
+ 14% 
+ 9bn 
+ 13% 
+ 12bn
+ 13% 
+ 16bn 
+ 
+Design 
+ 13bn 
+ 23% 
+ 13bn
+ 19% 
+ 15bn
+ 16% 
+ 23bn 
+ 
+Mineral exploitation/Copyrights 
+ 3bn 
+ 5% 
+ 3bn 
+ 4% 
+ 2bn 
+ 2% 
+ 4bn 
+ 
+Branding 
+ 5bn 
+ 9% 
+ 7bn 
+ 10% 
+ 12bn
+ 13% 
+ 15bn 
+ 
+Training 
+ 12bn 
+ 21% 
+ 15bn
+ 22% 
+ 21bn
+ 22% 
+ 27bn 
+ 
+Organisational Capital 
+ 9bn 
+ 16% 
+ 12bn
+ 17% 
+ 17bn
+ 18% 
+ 31bn 
+ 
+All intangibles 
+ 56bn 
+ 
+ 69bn
+ 
+ 95bn
+ 
+ 138bn 
+ 
+All tangibles 
+ 67bn 
+ 
+ 62bn
+ 
+ 87bn
+ 
+ 104bn 
+ 
+
+2008 
+% 
+16% 
+12% 
+17% 
+3% 
+11% 
+20% 
+22% 
+
+
+Source: London Economics&rsquo; adaptation from Haskel et al. (2011) (Conlon et al. 2012) 
+ 
+These findings confirm that firms can gain access to knowledge elsewhere, and that formal intangible assets are not the only source of knowledge creation. Other types of investments not counted as R&D are also important such as organisational, network or human capital. For example, Corrado et al. (2005) categorize investments in intangible capital into three broad categories; computerised information, innovative property and economic competencies. Computerised information includes knowledge embedded in computer software programs and computerised databases. Innovative property corresponds to knowledge acquired through scientific R&D and non-scientific inventive and creative activities. Economic competencies relate to the value of firm-specific human and structural resources. Having assessed the extent of intangible assets, we will now review the studies evaluating the impact of different intangible assets.  
+ 
+In one of the first studies evaluating the impact of R&D on UK productivity, Wakelin (2001) estimates that every additional pound spend on R&D will increase the output by 1.27, for the 1988-1992 period. However, the rate of return on R&D (estimated around 29%) varies considerably following firms&rsquo; innovation history and sectoral characteristics. Innovative firms spent more on R&D expenditure relative to sales than non-innovating firms (2.3% against 0.8%) and have a higher rate of return than the R&D expenditure of non-innovating firms, particularly in sectors which are net users of innovations (Wakelin 2001, 1089). Griffith et al. (2006) calculate a rate of return for the R&D of 14% for the mean firm in the sample, Bond et al. (2003) estimate the R&D rate of return to 38%, and Rogers (2009) find that it ranges between 40% to  58% in the manufacturing sector (See also Table A1 in the Annex). Positive effect of in-house R&D expenditure on firm productivity via higher innovative sales have been confirmed by other studies based on the UK wave of the Community Innovation Survey (Frenz and Ietto-Gillies 2009). 
+  
+Galindo-Rueda and Haskel (2005) combine the data from Annual Business Inquiry (ABI) and National Employer Skills Survey for England, and explore the effects of workplace skills on firm productivity. They show that one percentage point increase in high skilled employees leads to 0.30% increase in firm-level productivity in manufacturing. Riley and Robinson (2011) combine individual occupation and wage data from the Annual Survey of Hours and Earnings (ASHE) and the labour Force Survey with data from Business Structure Database (BSD) and Annual Business Inquiry (ABI). Following Corrado et al. (2005)&rsquo;s categorisation of intangible investments, authors use employees&rsquo; occupations and earnings to estimate the impact of intangibles on labour productivity growth during 1998-2006. They find that organisational capital and investments in R&D contributed an equal share of 0.13% - 0.17% to productivity growth, while the contribution of the ICT capital was estimated between 0.08% - 0.13%.  
+ 
+Regarding the impact of patent activities, both Bloom and van Reenen (2002) and Hall et al. (2012) point to positive effects of patenting on firm performance. Equally, using trademarks as a form of formal intangible assets, Greenhalgh and Rogers (2007) show that stock market values are positively associated with firms&rsquo; trade mark activities, and that manufacturing firms with a trademark both at UK and European level has a performance premium of 16%. Similarly, holding a design registered in the UK in the late 1990s and early 2000s is found to be associated on average with a performance premium of 17%, although this positive effect has disappeared for the most recent years (Bascavusoglu-Moreau and Tether 2011).  
+ 
+At a cross-country level, recent evidence shows a correlation between total factor productivity growth and intangible investments (Ark et al. 2009; Corrado, Haskel, and Jona-Lasinio 2011). At the macro level, intangible investments are reported to be as important as tangible investments, or even more important in case of US and UK. Corrado et al. (2005) capitalise intangibles and expand the traditional growth model to include intangible input and output. Authors&rsquo; findings show that the exclusion of intangibles assets in national accounts entails underestimation of labour productivity growth by 10-20 % in the US (Corrado, Hulten, and Sichel 2009). With the same methodology, Marrano, Haskel and Wallis (2009) find that 15% of labour productivity growth is accounted for intangible capital deepening in 1979-2005 and 20% in 1995-2003.  
+ 
+Another concept that is very closely linked to intangible assets and tacit knowledge is the notion absorptive capacity (For an extensive review of intangible assets and absorptive capacity, see Harris & Moffat (2012)). Cohen & Levinthal (1990, 569&ndash;570) first coined the term &lsquo;absorptive capacity&rsquo;, defining it as: &lsquo;the firm&rsquo;s ability to identify, assimilate and exploit knowledge from the environment&rsquo;. Subsequently they adopted a slightly wider view as: &lsquo;&hellip; an ability to recognize the value of new information, assimilate it, and apply it to commercial ends&rsquo; (Cohen 1989, 128). Putting the two together provides a &lsquo;classical&rsquo; view of absorptive capacity: the identification and recognition of new information, both internal and external, and its assimilation, application and exploitation for commercial ends.  
+ 
+The concept of absorptive capacity emphasises on the fact that the external knowledge is not automatically and effortlessly absorbed by the firm, and therefore, is not equally absorbed by all  firms (Fabrizio 2009). Existing literature has considered various activities that can contribute and proxy firms&rsquo; absorptive capacity, such as investments in R&D (Wesley Cohen and Levin 1989), firms&rsquo; basic research (Rosenberg 1990; Dyer and Singh 1998), routines (Zahra and George 2002), technological overlap  (Mowery, Oxley, and Silverman 1996) and collaborations with universities (Cockburn and Henderson 1998). 
+Although the theoretical definitions and discussions on the notion of absorptive capacity are numerous, the empirical estimation of the concept itself is very scarce. Most of the empirical studies proxy absorptive capacity with the in-house R&D investments or the share of the R&D personnel. These proxies fail to capture the realisation and accumulation of the absorptive capacity (Harris and Moffat 2012a).  The most comprehensive set of empirical measure of absorptive capacity for the UK to our knowledge is estimated by Harris and Li (2009). Based on the 3 waves of the UK Innovation survey, the authors use factor analysis to group firms regarding the following capabilities: exploitation of external sources of knowledge, networking with external bodies at the national level, implementation of new organisational structures and acquisition/absorption of codified scientific knowledge. Firms that use greater external knowledge, cooperate with national partners, and that have a higher quality of corporate strategy and management techniques are found to be more likely to undertake R&D and to innovate (Harris and Moffat 2012b). Among the different aspects of absorptive capacity, acquiring external knowledge seems to be the most important, with a standard deviation increase in this variable increasing the likelihood of innovating by 17%, followed by national cooperation (6%) and corporate strategy and management techniques (5%) (Harris and Moffat 2012b). 
+ 
+Overall, this brief survey of firms&rsquo; internal knowledge assets suggests that there is still need to develop concept and measures to assess the various dimensions of intangible assets. Existing empirical research shows that intangible assets account for 0.1-0.2% of the labour productivity growth at the firm level (Riley and Robinson 2011). Firms with patents have growth rates that are on average 10 per cent (in level) above those without patents, although this correlation is not statistically significant (Hall et al. 2012), however; holding a trademark or a design right is associated with a performance premium of 16-17% (Greenhalgh and Rogers 2007; Bascavusoglu-Moreau and Tether 2011). At the national level, intangible capital accounted for 15-20% of labour productivity growth (Marrano, Haskel, and Wallis 2009). Different aspects of absorptive capacity are found to increase the likelihood of innovation at the firm level and innovation raised growth in output per person-hour in the UK by almost 2% p.a. in the 2000s, which is 73% of labour productivity growth (Haskel et al. 2009).  
+ 
+Although firms can develop and acquire knowledge internally, few possess all the inputs needed for successful and sustainable technological development, therefore firms need to use external sources to acquire and internalize  knowledge (Almeida, Dokko, and Rosenkopf 2003; Harris 2011). The recent empirical studies also point to the importance of external knowledge sources and how internal and external knowledge is intertwined and crucial for firm performance. In the following section, we will overview the literature on these external sources of knowledge.  
+ 
+Summary of the findings: 
+ 
+
+&#61623;
+ Intangible assets have been receiving increasing attention as the key input in firms&rsquo; performance.  
+
+
+&#61623;
+ Within the formal intangible assets, the distributions of R&D spending, patents and trademarks are found to be highly skewed both at firm and the aggregate level. 
+
+
+&#61623;
+ Non-R&D intangible spending is more widespread than R&D spending, highlighting the importance of informal intangible assets such as organisational, network or human capital. 
+
+
+&#61623;
+ The contribution of ICT capital on UK productivity growth is estimated to range between 0.08%-0.13%, and organisational capital and R&D have an equal share of 0.13%-0.17%. 
+
+
+&#61623;
+ Holding a design right or a trademark has a performance premium of 16-17%. Although patenting firms seem to perform better than non-patenting firms, this positive effect is not statistically significant.  
+
+
+&#61623;
+ At the aggregate level, 20% (15%) of the UK&rsquo;s labour productivity growth between 1995-2003 (1979-2005) is accounted for by the intangible capital deepening.  
+
+
+&#61623;
+ At the cross-country level, evidence shows a correlation between total factor productivity growth and intangible investments.  
+
+
+&#61623;
+ Absorptive capacity, i.e. firm&rsquo;s ability to identify, assimilate and exploit knowledge from the environment is identified as a crucial factor.  
+
+
+
+&#61623; Among the different aspects of absorptive capacity (other than in-house R&D and share of R&D personnel), acquiring external knowledge seems to be the most important factor to increase the likelihood of innovation.  
+ 
+
+

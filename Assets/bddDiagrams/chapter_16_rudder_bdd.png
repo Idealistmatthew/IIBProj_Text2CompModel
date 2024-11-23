@@ -1,0 +1,17 @@
+digraph bdd {
+	node [fontsize=10 shape=record]
+	"frame rudder" [label="{frame rudder }"]
+	"bottom frame rudder" [label="{bottom frame rudder | Parts:  \nrudder beam  \n}"]
+	"rudder wire cable" [label="{rudder wire cable }"]
+	rudder [label="{rudder | Operations:  \nmanipulated()  \n}"]
+	"foot inch" [label="{foot inch }"]
+	"rudder wire" [label="{rudder wire }" style=dotted]
+	"rudder beam" [label="{rudder beam | Parts:  \nfoot inch  \n| Operations:  \nis()  \nis clamped()  \nform()  \nis bolted()  \n}"]
+	"frame rudder" -> rudder [label=Generalization arrowhead=onormal]
+	"frame rudder" -> "rudder beam" [label=Reference arrowhead=vee]
+	"bottom frame rudder" -> "frame rudder" [label=Generalization arrowhead=onormal]
+	"rudder wire cable" -> "rudder wire" [label=Generalization arrowhead=onormal]
+	"foot inch" -> "rudder beam" [label=Composite arrowhead=odiamond]
+	"rudder wire" -> rudder [label=Generalization arrowhead=onormal]
+	"rudder beam" -> "bottom frame rudder" [label=Composite arrowhead=odiamond]
+}

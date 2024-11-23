@@ -1,0 +1,16 @@
+digraph bdd {
+	node [fontsize=10 shape=record]
+	reign [label="{reign }"]
+	entertainment [label="{entertainment | Operations:  \ns()  \n}"]
+	abstraction [label="{abstraction }" style=dotted]
+	price [label="{price }"]
+	environment [label="{environment | Operations:  \ndynamically change()  \n}"]
+	journey [label="{journey | Operations:  \nleads()  \n}"]
+	technology [label="{technology }"]
+	reign -> abstraction [label=Generalization arrowhead=onormal]
+	entertainment -> abstraction [label=Generalization arrowhead=onormal]
+	price -> abstraction [label=Generalization arrowhead=onormal]
+	environment -> abstraction [label=Generalization arrowhead=onormal]
+	journey -> abstraction [label=Generalization arrowhead=onormal]
+	technology -> abstraction [label=Generalization arrowhead=onormal]
+}

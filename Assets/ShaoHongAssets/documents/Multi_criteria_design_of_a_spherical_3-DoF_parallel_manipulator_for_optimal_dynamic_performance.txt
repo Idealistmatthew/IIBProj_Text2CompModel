@@ -1,0 +1,255 @@
+
+Multi Criteria Design of a Spherical 3-DoF Parallel Manipulator for Optimal Dynamic Performance 
+R. Khezrian, E. Abedloo, M. Farhadmanesh, S. A. A. Moosavian Department of mechanical Engineering K.N.Toosi University of Technology 
+Tehran, Iran Moosavian@kntu.ac.ir 
+Abstract. Since rapid positioning and high accuracy is an important characteristic of closed-chain manipulators, the design of parallel manipulator should satisfy this performance. Dynamic analysis and optimization problem of a Spherical 3-DoF Parallel Manipulator (SPM) is the main subject of this paper. Based on Lagrange method, the closed-form dynamic formulation of the mechanism is investigated. Using jacobian and generalized inertia matrix, Global Dynamic Conditioning Index (GDCI) is proposed to evaluate the manipulator behavior in task space. Optimization procedure is formulated as maximization of GDCI, applying a simple genetic algorithm subjected to a set of appropriate constraints. So, a multi-criteria optimization analysis including both kinematics and dynamics behavior is considered on which achieving the largest workspace, fewest singularities and appropriate dynamic performance are available. Optimization results are used to have an optimum design of Agile-wrist mechanism that is represented in relevant tables and graphs. 
+Keywords: Spherical Parallel Manipulator; Global Dynamic Conditioning Index (GDCI); dynamic optimization; Generalized Inertia Matrix; Genetic Algorithm 
+I. INTRODUCTION 
+Parallel robots are preferred in some applications where a high speed orientation movement is desired. Agile wrist is a well-known spherical parallel manipulator with 3RRR degrees of freedom. The name owes to agile eye designed by Gosselin et al. Later Angeles et al. developed a manipulator based on the Agile-Eye mechanism with lighter weight and less collision called Agile Wrist. 
+In addition to general advantages of parallel manipulators such as high motion accuracy and high rigidity, this manipulator has special features while the most important one is achieving high speed and accelerations [1]. 
+Gosselin developed the Agile-Eye for rapid orientation of a camera [1]. Later more applications such as a module of multi modular manipulators for surgery robots [2] and foot rehabilitation [3] have been presented. 
+978-1-4799-6743-8/14/$31.00 2014 IEEE 
+Cited features and applications highlight the importance of an accurate and optimum design of the manipulator under study. 
+There are many performance indices developed for parallel manipulators. Yushikawa [4] developed manipulability index based on jacobian matrix. Later the dexterity index was presented by Salisbury and craig [5] as kinematic accuracy. They defined dexterity as the condition number of the Jacobian matrix of the robot. Gosselin [6] distributed the dexterity index over the whole workspace and presented global conditioning index (GCI). Later, Cardou [7] presented kinematic sensitivity index. 
+All cited indices are based on kinematic behavior of robot. However, the dynamic performance is an important issue for manipulators with fast and accurate motion. So, several dynamic performance indices have been developed for optimizing of manipulators. Asada [8] used generalized inertia ellipsoid (GIE) as a criterion of velocity change of the end-effector. The drawback of this index was its incapability to relate end-effector acceleration and actuating forces and torques. Based on kinematic manipulability, Yoshikawa [9] proposed the concept of dynamic manipulability ellipsoid (DME) for the relation between actuators forces and end-effector acceleration. Khatib and Burdick [10] introduced isotropic acceleration. Ding et al. [11] defined comprehensive dynamic performance index (CDPI). Ma and Angeles [12] proposed dynamic isotropy and condition index based on generalized inertia matrix. 
+The kinematic optimization provides the largest dexterous workspace, the fewest singularities and high stiffness [13]. The dynamic optimization leads to apply less actuating forces and torques to reach a specific acceleration of end-effector [14]. 
+The dynamic performance index used in this paper causes the isotropy in accelerating of the moving platform. Obviously, this issue is very important in Agile Wrist because of its special features (high velocities and accelerations). 
+The 3-DoF spherical parallel manipulator, investigated in this paper, is shown in Fig.1. According to Gosselin and Angeles 1998, this mechanism can experience a maximum of orienting workspace when the angles of the link are equal to 90. But this maximizing may reduce the kinematic and When there is a symmetric structure for position of each dynamic performance of the agile wrist. Therefore, it is three actuator, the parameter , the angle between reference important to attend significant performance criteria coordinate system and each actuator , is defined as: simultaneously. 
+
+
+2(1)
+L (2)
+3 
+
+Fig. 1. The 3-DoF spherical parallel manipulator, Agile Wrist 
+In this paper a Global Dynamic Conditioning Index (GDCI) will be defined and used for dynamic optimization of robot. The index demonstrates an average dynamic performance of the manipulator over the whole prescribed workspace. 
+Firstly the description of mechanism and its geometry is represented. Then, the kinematics and dynamics analysis are performed and Jacobian and mass matrices have been derived. In the following, deriving of generalized inertia matrix, and the global dynamic conditioning index based on this matrix will be represented. The optimizing of index is performed using Genetic-Algorithm subjected to geometric and task constraints. Finally the results of optimization for geometric design parameters are depicted in different tables and a new structure design is proposed for Agile Wrist mechanism. 
+II. STRUCTURAL DESCRIPTION OF THE MECHANISM 
+The 3-DoF spherical parallel manipulator, which has been studied in this paper, consists of a moving platform connected to a fixed base via three serial RRR symmetric kinematic chains, each containing a proximal link and a distal link coupled with each other by a revolute joint (see [15] for details). Since Bonev [16] demonstrated that using azimuthtilt-torsion angles is an appropriate selection for describing task space of a spherical parallel manipulator, T&T angles are applied to show the task space in this paper. 
+As it is depicted in Fig.2, The links are assumed to be circle arcs with ,6 angles respectively. The revolute joints connecting each of the three chains to the base are actuated by the three fixed motors of the manipulator. The axes of all nine revolute joints intersect at one specific fixed point which named as the center of rotation of the device and the moving platform has an arbitrary rotation with respect to this point 
+The actuator angles denoted by 4 
+ are manipulator joint variables which belong to each actuator i and are measured along the fixed axes defined by , 1,2,3, with respect to fixed reference frame, 
+ , , 
+
+Fig. 2. Parameters of the agile wrist involved in optimization problem 
+As shown in the Fig.2, it is obviously clear that  is related to direction of axes of the intermediate joints. After using some rotation matrices and simplifying the equations, the unit vector � for each chain can be written as: 
+4 5 
+4 
+f 4 5 (3) 
+4 j 
+ 5 
+Moreover, the unit vectors  defined along the axes of the revolute joints on the end-effector is only related to the moving platform orientation and denoted as: 
+4 
+
+
+(4) 
+,,
+Where  is used for expressing the unit vector of the end-effector revolute joint axis in the moving reference frame attached to its body. In above equation, matrix Q is the rotation matrix representing the orientation of end-effector with respect to fixed coordinate frame, namely, 
+()() ()()  L ()() ()() (5) () ()  
+Where , are rotational angles along the axes of z and x in reference plane, respectively, and is the torsion angle. So, the kinematic jacobian matrix of the Agile-wrist mechanism would be obtained as following: 
+; ;  .  (6) # 
+According to Eq. (6) Jacobian matrix is function of parameters &beta;,, and , using in optimization problem. The parameter 6 will be added to these parameters by: 
+. () (7) 
+
+
+III. DYNAMIC ANALYSIS 
+The dynamics modeling of the manipulator has a very tangible impact on determining the forces and moments which should be applied by actuators to establish the required torques in order to create a desired trajectory. 
+A. General Dynamic Equations 
+Using Lagrangian formulation, the system&rsquo;s dynamics equations obtained in general closed form as follows: 
+
+)6 ,6 (
+()7 
+()( 
+(8) 
+36  (15)  
+The matrices C2 and C3 are defined as:  
+3225 2 ?  (16)  
+2g  (17)  
+We  can  obtain  the  expression  for  absolute  angular  
+
+velocities of the distal links with respect to T&T angles through this relation: 
+()() ()() &omega;() 
+
+&omega;4 5 
+(18) 
+Where represents the generalized force. M and C are 3x3 symmetric matrices for inertia and Centrifugal-Coriolis forces, respectively, and G is matrix of gravity terms as a 31 vector. The mass matrix of the system can be derived from the total kinetic energy equation for all the components of the robot as following: 
+1 () 
+
+
+(9) 
+L (6 )
+2 
+implemented. Based on the pure orientation of moving Substituting Eq. (6) and (15) into Eq. (16), we obtain 
+L 4() () (19) 
+Which [C4] can be defined such as below equation; Note that we should use the first three rows of matrix C3 that would be a 3�3 matrix. 
+43() (20) 
+Finally, velocity Analysis for moving platform should be 
+The gravity matrix can be calculated from the potential platform about center of mechanism, O,,, we should compute its absolute angular velocity with respect to reference energy as a function of the generalized coordinates: 
+
+()F (10) 
+M 
+The matrix of Centrifugal and Coriolis, C, is also as Eq. (11): 
+(,)()1  ()6 (11) 
+2M 
+B. Derivation of the Angular Velocities 
+The time derivative of kinematic equations, combined with the cross product propriety of rotation matrix, may lead to a relation that expresses the linear and angular velocities of the frames attached to the robot links 
+General formulation of dynamics equations is addressed before in [15]. In this paper, using T&T angles, ,, as the generalized coordinates, the equations are reviewed and dynamic modeling is simulated. It should be noticed that the angular velocity of the platform is not equal to the rate of change of the T&T angles and the rotation matrix (,,)which is function of T&T angles, should be used, as 
+written below,  
+&omega;n  6 E(,,)6 6 Therefore,  Efor  6 the  Lagrangian  formulation,  (12) all  the  
+
+coordinates of the system should be represented as a function of the generalized coordinates. 
+The absolute angular velocity for proximal links, using Eq. 
+(12) and Eq. (6) can be expressed as 
+() 1
+? (13) 
+4 
+To simplify the above equation, the 33 matrix C1 is defined as 
+C1UJE? (14) 
+The relative angular velocity of the moving platform and distal links in all three legs can be calculated as following: 
+frame as function of T&T angles.  
+According to Eq. (12), the moving platform angular velocity is simply determined. 
+C. Derivation of the Mass Matrix 
+Agile wrist mechanism consists of a moving platform and several limbs. In order to derive the kinetic energy of the whole system, the kinetic energy of the robot components should be computed. We pay no attention to the actuators dynamics in our formulation. Therefore, the kinetic energy of the limbs and end-effector can be written as following: 
+111
+E 
+     (21) 
+L 5 
+222 
+Where I5 g are the moments of inertia of the proximal 
+g and I6 and distal links about axes  and . Substituting angular velocities from Eq. (12), Eq. (13), Eq. (19) into Eq. (21) and rearranging the equation terms leads to the usual format of the total kinetic energy for all the components of the robot as following, 
+1 
+2(()) (22) 
+So, the mass matrix of the whole dynamic system has been derived as: 
+()114 4 () (23) 
+Having access to kinematic jacobian and mass matrices would be helpful in calculating the generalized inertia matrix for optimization targets. 
+IV. DESIGN OPTIMIZATION OF AGILE WRIST MECHANISM 
+Many indices have been offered for the design optimization of parallel manipulators. Some of them, such as manipulability, only consider kinematics behavior based on Jacobian matrix. However, dynamic performance is so important for SPMs as well as said before. We will use a multi-criteria analysis including both kinematics and dynamics behavior. 
+
+
+The general closed-form dynamics of the Agile-wrist can whole workspace as Global Dynamic Conditioning Index be written in a standard form: (GDCI): 
+)6 ,6 (? 
+(),  (24) JT&tau; signifies applied torques, transferring from actuators 
+()7 
+ L 
+(32) 
+motors to the joints, and qFis the term of forces/torques acting 
+ S 
+
+directly on moving platform. We can derivate the applied And the simplified form: torques: 
+1 
+
+)6 ,6 (
+(()7 
+
+()F M ) (25) L 
+ vd  (33) 
+  , 
+
+The dynamic performance of a parallel manipulator is strongly dependent on the inertial and acceleration characteristics of the mechanism. Since both GIE and DME are based on the relationship between the accelerations of the end-effector in the task workspace and the generalized input forces/torques in the joint space, the input torque of the linear motors in Equations can be simplified by neglecting the nonlinear inertial, Gravitational and Coriolis forces,
+   ()7 (26) Where  () is the generalized inertia matrix (GIM) of the manipulator. Gosselin defined Euclidean norm as: 
+||  || (1 ) (27) 
+J 
+Local dexterity index for a specific configuration defined: 
+1
+L (28) 
+||||.||||
+The value of this index is between 0 and 1. Higher values represent more accuracy of mechanism. Whereas, equality to 1 signifies an isotropic condition and 0 shows a singular configuration. 
+Gosselin defined Global Conditioning Index (GCI) as a general kinematic performance over the whole workspace as bellow: 
+  S L (29)  
+ 
+where S denotes integration over the workspace. Since calculating the integrals is so complicated for parallel mechanisms in practice, we can use an average value with summation through discrete approach: 
+
+1
+L (30) 
+ v 
+5 
+Where n is number of meshed workspace points. In this paper, we develop this formulation for reaching a dynamic performance index: 
+1
+L (31) 
+||||.||()|| 
+Ref. [17] used this equation by neglecting the jacobian matrix. However as seen in Eq. (31), the effect of jacobian matrix cannot be neglected and GIM should be used for more efficient results considering better manipulator dynamics model. 
+Similarly, the vd value is between 0 and 1 for GIM, while the higher values show better dynamic performance. We can extend this local index, which is configuration based, over the 
+5 
+There are several parameters for complete dynamics model of Agile-wrist robot structure, seen in Fig. 2. 
+Because of closed chains in Parallel robots structure, there are several singular conditions in these manipulators. In this situation the jacobian matrix inverse is infinite and does not exist. 
+Generally singularities will cause a bad behavior in robot performance. Furthermore, positioning of the manipulator in a singular -or near singular-conditions should be obviously avoided. Therefore, these conditions will be omitted from workspace. Likewise, singular conditions have harmful effects on optimization and would make unreal and irrational results on optimization. 
+In this section, we describe an algorithm for minimizing these points -and maximizing reachable workspace-in addition to optimum designing. 
+Whole prescribed workspace will be firstly considered. 
+It is A pointing cone of 120 opening angle and 30 Torsion. Then, it will be used for generating a mesh as seen in Fig. 3. There are 6084 discrete points in the meshed workspace. 
+
+Fig. 3. The prescribed workspace (hollow points) and OK points 
+The parameters, obtaining from the optimization algorithm, are expected to provide a structure in which the robot would be capable of a maximum coverage in the prescribed task workspace. 
+The formulated optimization problem is solved by Genetic Algorithm with Matlab software, of which the algorithm parameters are given beforehand. The overall procedure in each GA algorithm step is as following: 
+
+
+An initial guess is suggested for optimization parameters. One of the possible structures is determined for Agile-wrist mechanism. After that, all points which belong to the prescribed workspace are investigated for the current robot structure and final acceptable task workspace is presented in which the inverse kinematic solution is reachable. It&rsquo;s noted that the number of these points should be maximum. Then, the cost function will be obtained for current mechanism structure. Based on this computed value, the algorithm will regenerate new parameters for less cost value. The procedure will be continued until the optimized parameters for least cost would be found.   
+There are some points near the singularity zone over the computed workspace. Therefore, the points in which the jacobian determinant is less than a particular prescribed value are eliminated and remaining points are named O.P, or Ok Points. After computing jacobian and inertia matrix, the GDCI is calculated for all O.Ps and, as a result, the defined cost function for GA algorithm is given by, 
+( ) P L (1&ndash; ()) (34) 
+The above process would be continued if the function output has no optimized value. Thus, final structure of the mechanism would be optimized based on both GDCI factor and workspace. 
+A. Optimization constraints 
+Since we faced on a multi-criteria optimization problem, paying attention to physical concept of design parameters decreases the possibility of run stop in algorithm loop run stop over the local optimized points and, moreover, avoids untrue values for parameters and guarantees the system feasibility. Kinematic constraints defined for optimization are as follows: 
+0 < &gamma; < 90 30 < &beta; < 90 35 <  ,  < 135 (35) 10 < R2 < R1 < 30 cm 
+
+1.5 < a <3.5cm 
+Two important issues should be noticed as our minimum expects from the mechanism. Optimizing the robot dynamic behavior does not caused considerable bad effects on kinematic behavior. Also, as explained before, the number of 
+O.P should be remarkable to use workspace properly. Therefore, these two constraints are added to optimization constraints: 
+0.5  . 2 (36) 
+0.9O 
+J 
+As a case study, kinematic parameters and GDCI are shown in table.1 for Agile-wrist robot, manufactured as a prototype for experimental study [15]. 
+TABLE I. Initial values for prototype optimization parameters 
+
+    1  2  1  2  =  GDCI  
+54.73  90  90  90  21cm  19cm  2cm  0.0615  
+
+The optimization process with GA is shown in Fig.4. In which the optimized values for ,,,6 and ,,are presented in radians and meters respectively. Through the GA optimization, the optimized value shown in table.2 can be got to have an acceptable dynamic performance. 
+As it is seen in table2, the system dynamic performance index has been improved sufficiently (nearly 6 times greater). The kinematic performance index also stands on an acceptable value (0.87). As shown in Fig. 3, the parameters obtained from optimization will expand the OK points all over the workspace.  
+
+Fig. 4. GA based GDCI optimization results TABLE II. GA-based optimization results 
+
+    1  2  1  2  =  
+70.84  31.455  84.86  87.53  19.03 cm  11.54 cm  1.9cm  
+GDCI  GCI  
+0.3552  0.87  
+
+The optimal design of the mechanism is illustrated in Fig.5, based on optimization results for geometric parameters of Agile-wrist mechanism. 
+
+
+
+Fig. 5. The optimum design of spherical 3-DoF parallel manipulator, Agile wrist. 
+It is considerable that the main property of optimization is the ratio of parameters. Therefore, if we enlarge the mechanism dimensions by a specific factor based on required application, no remarkable changes are expected for behavior and performance of the mechanism. 
+For example, considering no changes in the angle parameters, and scale the radiuses and cross section to 5 times larger than initial values, the results will be as below: 
+TABLE III. Performance parameters of the scaled mechanism 
+
+   1  2  1  R2  a  
+70.84  31.455  84.86  87.53  95.15 cm  57.7 cm  9.5cm  
+GDCI  GCI  
+0.355  0.87  
+
+As it&rsquo;s seen in table 3, there is no noticeable difference in kinematic and dynamic performance of the scaled mechanism compared to the original one. So, optimization results represented in table2 are optimum design of Agile-wrist manipulator and we can scale the dimensions for a specific application and still approximate it as an optimum design. 
+V. CONCLUSION 
+In this paper, the dynamics analysis and optimization of a spherical 3-DoF parallel manipulator was discussed. Based on geometric analysis and Lagrangian method, closed-form dynamics equations of motion for the Agile-wrist mechanism was derived. A Global Dynamic Conditioning Index (GDCI) was proposed and the multi criteria optimization problem was solved using a simple genetic algorithm (SGA) while the objective functions were defined on the basis of the criteria of both kinematic and dynamic performances. Simulation results reported new values for kinematic parameters and a new structure of the Agile-wrist robot was represented considering structural and operational constraints. The optimized model is proposed as a best model by relative comparison of them on the basis of the pre-existing model. Also, the results showed that there is no notable difference in kinematic and dynamic performance of scaled mechanism compared to original one. Maximizing the orientation workspace and more rapid motion capability of this mechanism is proposed for the future works. 
+ACKNOWLEDGMENT 
+The authors would like to acknowledge the support of the Center of Excellence in Robotics and Control, Advanced Robotics and Automated Systems Lab in the Department of Mechanical Engineering at K. N. Toosi University of Technology. 
+REFERENCES 
+[1] C. Gosselin, et al. "The Agile Eye: a High-Performance Three-Degreeof-Freedom Camera-Orienting Device", Proc. of IEEE Int. Conference on Robotics and Automation, pp. 781-786, 1994. 
+[2] Chablat D., Wenger P. &ldquo;A New Six Degree-of-Freedom Haptic Device based on the Orthoglide and the Agile Eye&rdquo; Proceedings of Virtual Concept 2005. 
+[3] Malosio, M.; Negri, S.P.; Pedrocchi, N.; Vicentini, F.; Caimmi, M.; Molinari Tosatti, L., "A spherical parallel three degrees-of-freedom robot for ankle-foot neuro-rehabilitation," Engineering in Medicine and Biology Society (EMBC), 2012 Annual International Conference of the IEEE , vol., no., pp.3356,3359, Aug. 28 2012-Sept. 1 2012. 
+[4] Yoshikawa,T. &ldquo;Manipulability of Robotic Mechanisms&rdquo; The International Journal of Robotics Research, Vol. 4, No. 2, 3-9. 1985. 
+[5] J.K. Salisbury and J.J. Craig, &ldquo;Articulated hands: force control and kinematic issues&rdquo;, The International Journal of Robotics Research, Vol.1, NO.1, pp.4-17, 1982. 
+[6] C. Gosselin and J. Angeles, &ldquo;A global performance index for the kinematic optimization of robotic manipulators&rdquo;, ASME Journal of Mechanical Design, Vol. 113, No. 3, pp. 220-226, 1991. 
+[7] P. Cardou, S. Bouchard, and C. Gosselin. &ldquo;Kinematic-Sensitivity Indices for Dimensionally on homogeneous Jacobian Matrices&rdquo;, IEEE Transactions on Robotics, 26(1):166&ndash;173, 2010. 
+[8] Asada, H.&rdquo; Geometrical Representation of Manipulator Dynamics and Its Application to Arm Design&rdquo; Journal of Dynamic Systems, Measurement and Control, Transactions of the ASME 105(3), 131&ndash;135, 1983. 
+[9] Yoshikawa, T. &ldquo;Dynamic Manipulability of Robot Manipulators&rdquo; Journal of Robotic Systems 2(1), 113&ndash;124, 1985. 
+[10] A. Bowling and O. Khatib, &ldquo;The dynamic capability equations: a new tool for analyzing robotic manipulator,&rdquo; IEEE T ROBOTIC, vol. 21(1), pp. 115-123, 2005. 
+[11] Ding, H., Li, Y.F., Tso, S.K &ldquo;Dynamic optimization of redundant manipulators in worst case using recurrent neural networks.&rdquo; Mechanism and Machine Theory 35(1), 55&ndash;70, 2000 
+[12] Ma, O.; Angeles, J., "The concept of dynamic isotropy and its applications to inverse kinematics and trajectory planning," Robotics and Automation, 1990. Proceedings, 1990 IEEE International Conference on , vol., no., pp.481,486 vol.1, 13-18 May 1990. 
+[13] Serdar Kucuka, Zafer Bingul &ldquo;Comparative study of performance indices for fundamental robot manipulators&rdquo; Robotics and Autonomous Systems Vol.54, 567&ndash;573, 2006. 
+[14] Gang Zhang,et al. &ldquo;Dynamic Optimization with a New Performance Index for a 2-DoF Translational Parallel Manipulator&rdquo; pp. 103&ndash;115, 2012� Springer-Verlag Berlin Heidelberg 2012 
+[15] Moosavian, S.A.A. and Farhadmanesh, M., &ldquo;Dynamics Formulation of a Three-Degree of Freedom Parallel Manipulator&rdquo;, International Conference on Mechanical Engineering-ISME, 2013. 
+[16] ILIAN A. BONEV AND CL�MENT M. GOSSELIN &ldquo;ANALYTICAL DETERMINATION OF THE WORKSPACE OF SYMMETRICAL SPHERICAL PARALLEL MECHANISMS&rdquo; IEEE TRANSACTIONS ON ROBOTICS, VOL. 22, NO. 5 2006 
+[17] Guanglei Wu: Multi objective &ldquo;Optimum design of a 3-RRR spherical parallel manipulator with kinematic and dynamic dexterities.&rdquo; Modeling, Identification and Control, Vol. 33, No. 3, pp. 111-122, 2012. 
+
+
+
+
