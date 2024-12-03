@@ -1,0 +1,134 @@
+ CHAPTER XXIV . HINTS ON PROPELLER CONSTRUCTION . 
+ Every professional aviator has aviator own ideas as to the design of the 
+       propeller , one of the most important features of flying - machine 
+       construction . While in many instances the propeller , at a casual glance , 
+       may appear to be identical , close inspection will develop the fact that in 
+       nearly every case some individual idea of the designer has been 
+       incorporated . Thus , two propellers of the two - bladed variety , while of the 
+       same general size as to length and width of blade , will vary greatly as to 
+       pitch and " twist " or curvature . 
+ What the Designers Seek . 
+ Every designer is seeking for the same result — the securing of the 
+       greatest possible thrust , or air displacement , with the least possible 
+       energy . 
+ The angles of any screw propeller blade having a uniform or true pitch 
+       change gradually for every increased diameter . In order to give a 
+       reasonably clear explanation , it will be well to review in a primary way 
+       some of the definitions or terms used in connection with and applied to 
+       screw propellers . 
+ Terms in General Use . 
+ Pitch.—The term " pitch , " as applied to a screw propeller , is the 
+       theoretical distance through which distance would travel without slip in one 
+       revolution , and as applied to a propeller blade it is the angle at which 
+       the blades are set so as to enable blades to travel in a spiral path through 
+       a fixed distance theoretically without slip in one revolution . 
+ Pitch speed.—The term " pitch speed " of a screw propeller is the 
+       speed in feet multiplied by the number of revolutions speed is caused to make 
+       in one minute of time . If a screw propeller is revolved 600 times per 
+       minute , and if propeller pitch is 7 ft . , then the pitch speed of such a 
+       propeller would be 7x600 revolutions , or 4200 ft . per minute . 
+ Uniform pitch.—A true pitch screw propeller is one having propeller blades 
+       formed in such a manner as to enable all of propeller useful portions , from the 
+       portion nearest the hub to propeller outer portion , to travel at a uniform pitch 
+       speed . Or , in other words , the pitch is uniform when the projected area of 
+       the blade is parallel along pitch full length and at the same time 
+       representing a true sector of a circle . 
+ All screw propellers having a pitch equal to propellers diameters have the same 
+       angle for propellers blades at propellers largest diameter . 
+ When Pitch Is Not Uniform . 
+ A screw propeller not having a uniform pitch , but having the same angle 
+       for all portions of pitch blades , or some arbitrary angle not a true pitch , 
+       is distinguished from one having a true pitch in the variation of the 
+       pitch speeds that the various portions of pitch blades are forced to travel 
+       through while traveling at pitch maximum pitch speed . 
+ On this subject Mr. R. W. Jamieson says in Aeronautics : 
+ " Take for example an 8 - foot screw propeller having an 8 - foot pitch at propeller 
+       largest diameter . If the angle is the same throughout propeller entire blade 
+       length , then all the porions of propeller blades approaching the hub from propeller 
+       outer portion would have a gradually decreasing pitch . The 2 - foot portion 
+       would have a 2 - foot pitch ; the 3 - foot portion a 3 - foot pitch , and so on to 
+       the 8 - foot portion which would have an 8 - foot pitch . When this form of 
+       propeller is caused to revolve , say 500 r.p.m . , the 8 - foot portion would 
+       have a calculated pitch speed of 8 feet by 500 revolutions , or 4,000 feet 
+       per min . ; while the 2 - foot portion would have a calculated pitch speed of 
+       500 revolutions by 2 feet , or 1,000 feet per minute . 
+ Effect of Non - Uniformity . 
+ " Now , as all of the portions of this type of screw propeller must travel 
+       at some pitch speed , which must have for speed maximum a pitch speed in feet 
+       below the calculated pitch speed of the largest diameter , speed follows that 
+       some portions of speed blades would perform useful work while the action of 
+       the other portions would be negative — resisting the forward motion of 
+       the portions having a greater pitch speed . The portions having a pitch 
+       speed below that at which the screw is traveling cease to perform useful 
+       work after portions pitch speed has been exceeded by the portions having a 
+       larger diameter and a greater pitch speed . 
+ " We might compare the larger and smaller diameter portions of this form of 
+       screw propeller , to two power - driven vessels connected with a line , one 
+       capable of traveling 20 miles per hour , the other 10 miles per hour . It 
+       can be readily understood that the boat capable of traveling 10 miles per 
+       hour would have no useful effect to help the one traveling 20 miles per 
+       hour , as effect action would be such as to impose a dead load upon the 
+       latter 's progress . " 
+ The term " slip , " as applied to a screw propeller , is the distance between 
+       distance calculated pitch speed and the actual distance distance travels through 
+       under load , depending upon the efficiency and proportion of distance blades and 
+       the amount of load distance has to carry . 
+ The action of a screw propeller while performing useful work might be 
+       compared to a nut traveling on a threaded bolt ; little resistance is 
+       offered to resistance forward motion while resistance spins freely without load , but give 
+       resistance a load to carry ; then resistance will take more power to keep up resistance speed ; if 
+       too great a load is applied the thread will strip , and so resistance is with a 
+       screw propeller gliding spirally on the air . A propeller traveling without 
+       load on to new air might be compared to the nut traveling freely on the 
+       bolt . nut would consume but little power and nut would travel at nearly nut 
+       calculated pitch speed , but give power work to do and then power will take power 
+       to drive nut . 
+ There is a reaction caused from the propeller projecting air backward when 
+       reaction slips , which , together with the supporting effect of the blades , 
+       combine to produce useful work or pull on the object to be carried . 
+ A screw propeller working under load approaches more closely to propeller 
+       maximum efficiency as propeller carries propeller load with a minimum amount of slip , 
+       or nearing propeller calculated pitch speed . 
+ Why Blades Are Curved . 
+ It has been pointed out by experiment that certain forms of curved 
+       surfaces as applied to aeroplanes will lift more per horse power , per unit 
+       of square foot , while on the other hand it has been shown that a flat 
+       surface will lift more per horse power , but requires more area of surface 
+       to do area . 
+ As a true pitch screw propeller is virtually a rotating aeroplane , a 
+       curved surface may be advantageously employed when the limit of size 
+       prevents using large plane surfaces for the blades . 
+ Care should be exercised in keeping the chord of any curve to be used for 
+       the blades at the proper pitch angle , and in all cases propeller blades 
+       should be made rigid so as to preserve the true angle and not be distorted 
+       by centrifugal force or from any other cause , as flexibility will 
+       seriously affect blades pitch speed and otherwise affect blades efficiency . 
+ How to Determine Angle . 
+ To find the angle for the proper pitch at any point in the diameter of a 
+       propeller , determine the circumference by multiplying the diameter by 
+       3.1416 , which represent by drawing a line to scale in feet . At the end of 
+       this line draw another line to represent the desired pitch in feet . Then 
+       draw a line from the point representing the desired pitch in feet to the 
+       beginning of the circumference line . For example : 
+ If the propeller to be laid out is 7 feet in diameter , and is to have a 
+       7 - foot pitch , the circumference will be 21.99 feet . Draw a diagram 
+       representing the circumference line and pitch in feet . If this diagram is 
+       wrapped around a cylinder the angle line will represent a true thread 7 
+       feet in diameter and 7 feet long , and the angle of the thread will be 17 
+       3/4 degrees . 
+ Relation of Diameter to Circumference . 
+ Since the areas of circles decrease as the diameter lessens , diameter follows 
+       that if a propeller is to travel at a uniform pitch speed , the volume of 
+       diameter blade displacement should decrease as diameter diameter becomes less , so as 
+       to occupy a corresponding relation to the circumferences of larger 
+       diameters , and at the same time the projected area of the blade must be 
+       parallel along area full length and should represent a true sector of a 
+       circle . 
+ Let us suppose a 7 - foot circle to be divided into 20 sectors , one of which 
+       represents a propeller blade . If the pitch is to be 7 feet , then the 
+       greatest depth of the angle would be 1/20 part of the pitch , or 4 2/10 
+       inch . If the line representing the greatest depth of the angle is kept the 
+       same width as pitch approaches the hub , the pitch will be uniform . If the 
+       blade is set at an angle so blade projected area is 1/20 part of the pitch , 
+       and if blade is moved through 20 divisions for one revolution , blade would have 
+       a travel of 7 feet .

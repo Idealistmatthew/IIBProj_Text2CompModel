@@ -2,7 +2,7 @@ ebooklib
 bs4
 ipykernel
 nltk
-numpy
+numpy==1.26.4
 wordcloud
 pyopenie
 networkx
@@ -10,3 +10,7 @@ jsons
 typing
 graphviz
 pandas
+openai
+transformers
+spaCy
+coreferee
