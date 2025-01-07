@@ -1,0 +1,46 @@
+. The simplest form
+of periodic motion is represented by an object oscillating on the end of a uniform
+coil spring. Because many other types of oscillatory motion closely resemble this
+system, we will look at it in detail. We assume that the mass of the spring can be
+ignored, and that the spring is mounted horizontally, as shown in Fig. 1a, so that
+the object of mass m slides without friction on the horizontal surface. Any spring
+has a natural length at which it exerts no force on the mass m. The position of the
+mass at this point is called the equilibrium position. If the mass is moved either to
+the left, which compresses the spring, or to the right, which stretches it, the spring
+exerts a force on the mass that acts in the direction of returning the mass to the
+equilibrium position; hence it is called a restoring force. We consider the common
+situation where we can assume the restoring force F is directly proportional to the
+displacement x the spring has been stretched (Fig. 1b) or compressed (Fig. 1c)
+from the equilibrium position: F= -kx.
+[force exerted by spring] (1)
+Note that the equilibrium position has been chosen at and the minus sign
+in Eq. 1 indicates that the restoring force is always in the direction opposite to the
+displacement x. For example, if we choose the positive direction to the right in
+Fig. 1, x is positive when the spring is stretched (Fig. 1b), but the direction of the
+restoring force is to the left (negative direction). If the spring is compressed, x is
+negative (to the left) but the force F acts toward the right (Fig. 1c).
+Equation 1 is often referred to as Hooke’s law, and is accurate only if the spring
+is not compressed to where the coils are close to touching, or stretched beyond the
+elastic region. Hooke’s law works not only for springs but for other oscillating solids
+as well; it thus has wide applicability, even though it is valid only over a certain range
+of F and x values.
+The proportionality constant k in Eq. 1 is called the spring constant for that
+particular spring, or its spring stiffness constant. To stretch the spring a distance x, one
+has to exert an (external) force on the free end of the spring with a magnitude at least
+equal to F_ext = +kx.
+[external force on spring]
+The greater the value of k, the greater the force needed to stretch a spring a given
+distance. That is, the stiffer the spring, the greater the spring constant k.
+Note that the force F in Eq. 1 is not a constant, but varies with position. There-
+fore the acceleration of the mass m is not constant, so we cannot use the equations
+for constant acceleration.
+Let us examine what happens when our uniform spring is initially compressed a
+distance as shown in Fig. 2a, and then released on the frictionless surface.
+The spring exerts a force on the mass that pushes it toward the equilibrium position.
+But because the mass has inertia, it passes the equilibrium position with considerable
+speed. Indeed, as the mass reaches the equilibrium position, the force on it decreases
+to zero, but its speed at this point is a maximum, (Fig. 2b). As the mass moves x=A
+farther to the right, the force on it acts to slow it down, and it stops for an instant at 
+(Fig. 2c). It then begins moving back in the opposite direction, accelerating
+until it passes the equilibrium point (Fig. 2d), and then slows down until it reaches
+zero speed at the original starting point, (Fig. 2e). It then repeats the motion, moving back and forth symmetrically between x=A and x=-A

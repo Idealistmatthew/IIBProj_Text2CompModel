@@ -1,0 +1,4 @@
+ The simple pendulum shown in 
+Fig. 14 consists of a small bob of mass m suspended by a massless cord of
+length The bob is released (without a push) at where the cord makes 
+an angle to the vertical.

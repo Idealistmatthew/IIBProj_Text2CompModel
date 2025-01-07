@@ -8,7 +8,7 @@ document_dir_id = "chapters"
 corpus_dir = Path(__file__).resolve().parent.parent.parent / 'Assets' / corpus_id
 documents_dir =  Path(__file__).resolve().parent.parent.parent / 'Assets' / corpus_id / document_dir_id
 
-chosen_document_name = "chapter_14.txt"
+chosen_document_name = "chapter_36.txt"
 chosen_doc_name_wo_ext = chosen_document_name.split(".")[0]
 
 extracted_documents = extract_documents(documents_dir)
@@ -27,9 +27,15 @@ resolved_text = ""
 for token in doc:
     repres = doc._.coref_chains.resolve(token)
     if repres:
+        print("Original Text", token.text, "coreferenced" , repres)
         resolved_text += " " + " and ".join([t.text for t in repres])
     else:
-        resolved_text += " " + token.text
+        if "—" in token.text:
+            print("Detected", token.text)
+            new_text = token.text.replace("—", "-")
+            resolved_text += " " + new_text
+        else:
+            resolved_text += " " + token.text
 
 resolved_text_path = Path(corpus_dir)/ "resolved_chapters" / f"{chosen_doc_name_wo_ext}_resolved.txt"
 

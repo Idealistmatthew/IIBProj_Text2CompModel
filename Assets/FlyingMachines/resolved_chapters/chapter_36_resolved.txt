@@ -8,7 +8,7 @@
        same general size as to length and width of blade , will vary greatly as to 
        pitch and " twist " or curvature . 
  What the Designers Seek . 
- Every designer is seeking for the same result — the securing of the 
+ Every designer is seeking for the same result - the securing of the 
        greatest possible thrust , or air displacement , with the least possible 
        energy . 
  The angles of any screw propeller blade having a uniform or true pitch 
@@ -17,17 +17,17 @@
        some of the definitions or terms used in connection with and applied to 
        screw propellers . 
  Terms in General Use . 
- Pitch.—The term " pitch , " as applied to a screw propeller , is the 
+ Pitch.-The term " pitch , " as applied to a screw propeller , is the 
        theoretical distance through which distance would travel without slip in one 
        revolution , and as applied to a propeller blade it is the angle at which 
        the blades are set so as to enable blades to travel in a spiral path through 
        a fixed distance theoretically without slip in one revolution . 
- Pitch speed.—The term " pitch speed " of a screw propeller is the 
+ Pitch speed.-The term " pitch speed " of a screw propeller is the 
        speed in feet multiplied by the number of revolutions speed is caused to make 
        in one minute of time . If a screw propeller is revolved 600 times per 
        minute , and if propeller pitch is 7 ft . , then the pitch speed of such a 
        propeller would be 7x600 revolutions , or 4200 ft . per minute . 
- Uniform pitch.—A true pitch screw propeller is one having propeller blades 
+ Uniform pitch.-A true pitch screw propeller is one having propeller blades 
        formed in such a manner as to enable all of propeller useful portions , from the 
        portion nearest the hub to propeller outer portion , to travel at a uniform pitch 
        speed . Or , in other words , the pitch is uniform when the projected area of 
@@ -57,7 +57,7 @@
        at some pitch speed , which must have for speed maximum a pitch speed in feet 
        below the calculated pitch speed of the largest diameter , speed follows that 
        some portions of speed blades would perform useful work while the action of 
-       the other portions would be negative — resisting the forward motion of 
+       the other portions would be negative - resisting the forward motion of 
        the portions having a greater pitch speed . The portions having a pitch 
        speed below that at which the screw is traveling cease to perform useful 
        work after portions pitch speed has been exceeded by the portions having a 

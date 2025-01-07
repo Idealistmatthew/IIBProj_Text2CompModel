@@ -1,0 +1,113 @@
+The present invention relates to a blow-by gas device provided with a blow-by gas flow path through which blow-by gas recirculates.
+
+Conventionally, in an engine blow-by gas device equipped with a supercharger, the blow-by gas discharged from the engine is returned to the upstream side of the compressor of the supercharger. In such a blow-by gas device, when the outside air temperature (intake) is as low as 0 ° C. or lower, the blow-by gas is cooled by the intake air, and the water vapor in the blow-by gas may freeze.
+
+Therefore, the compressor housing of the turbocharger made of a metal material is provided with an extension portion extending to the blow-by gas introduction opening where the blow-by gas returns toward the intake flow path, so that the intake air supercharged by the compressor is provided. A technique for transferring heat to a blow-by gas introduction opening via an extension to heat the blow-by gas introduction opening is disclosed (for example, Patent Document 1).
+
+Japanese Unexamined Patent Publication No. 2016-23630
+
+However, in the technique of Patent Document 1, since it is necessary to provide the extension portion of the metal material in the compressor housing, there is a problem that the configuration becomes complicated and the weight becomes heavy.
+
+An object of the present invention is to provide a blow-by gas device capable of preventing freezing of blow-by gas and reducing the weight of the blow-by gas with a simple configuration.
+
+To solve the above SL problem, the blow-by gas apparatus of the present invention, an intake passage intake air flows, a resin duct having an opening that blow-by gas flows back toward the intake passage, wherein It has a heating part that transfers heat from the outside to the opening and a connecting member that receives heat from the high heat part forming the exhaust system and transfers heat to the heating part, and is composed of a member having a higher thermal conductivity than the duct. A heating device is provided, and the opening is connected so as to be inserted into a hose through which the blow-by gas flows. Heat is transferred to the opening.
+
+Further, the connecting member may be connected to the turbine housing of the turbocharger, which is the high heat portion.
+
+According to the present invention, it is possible to prevent the blow-by gas from freezing and to reduce the weight with a simple configuration.
+
+It is the schematic which shows the structure of the blow-by gas apparatus in 1st Embodiment. It is a figure explaining the structure of the heating apparatus in 1st Embodiment. It is a figure explaining the structure of the heating apparatus in 2nd Embodiment.
+
+Preferred embodiments of the present invention will be described in detail below with reference to the accompanying drawings. The dimensions, materials, other specific numerical values, etc. shown in the embodiment are merely examples for facilitating the understanding of the invention, and do not limit the present invention unless otherwise specified. In the present specification and drawings, elements having substantially the same function and configuration are designated by the same reference numerals to omit duplicate description, and elements not directly related to the present invention are not shown. To do.
+
+<First embodiment>
+FIG. 1 is a schematic view showing the configuration of the blow-by gas device 1 according to the first embodiment. As shown in FIG. 1, the blow-by gas device 1 is provided with an engine 10. The engine 10 includes a cylinder block 12, a crankcase 14, a cylinder head 16, a head cover 18, and an oil pan 20. The crankcase 14 is integrally formed with the cylinder block 12. The cylinder head 16 is connected to the cylinder block 12. The head cover 18 is connected to the cylinder head 16. The oil pan 20 is connected to the crankcase 14.
+
+A plurality of cylinder bores 22 are formed in the cylinder block 12, and a piston 24 is slidably supported by a connecting rod 26 in each of the plurality of cylinder bores 22. Then, in the engine 10, a space surrounded by the cylinder bore 22, the cylinder head 16, and the crown surface of the piston 24 is formed as a combustion chamber 28.
+
+Further, in the engine 10, a space surrounded by the crankcase 14 and the oil pan 20 is formed as the crank chamber 30. A crankshaft 32 is rotatably supported in the crank chamber 30, and a piston 24 is connected to the crankshaft 32 via a connecting rod 26.
+
+The cylinder head 16 is provided with an intake port 34 and an exhaust port 36 so as to communicate with the combustion chamber 28. The tip of the intake valve 38 is located between the intake port 34 and the combustion chamber 28, and the tip of the exhaust valve 40 is located between the exhaust port 36 and the combustion chamber 28.
+
+Further, in the engine 10, a space surrounded by the cylinder head 16 and the head cover 18 is formed as a cam chamber 42. An intake camshaft 44 and an exhaust camshaft 46 are rotatably supported in the cam chamber 42.
+
+A plurality of intake valve cams 44a are fixed to the intake camshaft 44. The intake valve cam 44a is in contact with the end of the intake valve 38, and rotates with the rotation of the intake cam shaft 44 to move the intake valve 38 in the axial direction. As a result, the intake valve 38 opens and closes between the intake port 34 and the combustion chamber 28.
+
+A plurality of exhaust valve cams 46a are fixed to the exhaust camshaft 46. The exhaust valve cam 46a is in contact with the end of the exhaust valve 40, and rotates with the rotation of the exhaust cam shaft 46 to move the exhaust valve 40 in the axial direction. As a result, the exhaust valve 40 opens and closes between the exhaust port 36 and the combustion chamber 28.
+
+Further, the cylinder head 16 is provided with an injector and a spark plug (not shown). The fuel injected from the injector into the combustion chamber 28 mixes with the air supplied to the combustion chamber 28 via the intake port 34 to form an air-fuel mixture. Then, the spark plug is ignited at a predetermined timing, and the air-fuel mixture generated in the combustion chamber 28 is burned. Due to such combustion, the piston 24 reciprocates, and the reciprocating motion is converted into the rotational motion of the crankshaft 32 through the connecting rod 26.
+
+An intake flow path 48 including an intake manifold is communicated with the upstream side of the intake port 34. In the intake flow path 48, an air cleaner 50, a compressor 82 of the supercharger 80, an intercooler 52, and a throttle valve 54 are provided in this order from the upstream side. The intake air purified by the air cleaner 50 is introduced into the combustion chamber 28 through the intake air flow path 48 and the intake port 34. The intake flow path 48 is mainly made of a resin front duct (duct) 48a on the upstream side of the compressor 82, a compressor housing 82a of the compressor 82, and a resin on the downstream side of the compressor 82. It is formed by a duct 48b after the compressor.
+
+An exhaust flow path 56 including an exhaust manifold is communicated with the downstream side of the exhaust port 36. The turbine 84 of the supercharger 80, the catalyst 58, and the muffler 60 are provided in the exhaust flow path 56 in this order from the upstream side, and the exhaust gas after combustion generated in the combustion chamber 28 passes through the exhaust flow path 56. Then, it is purified by the catalyst 58 and discharged to the outside through the muffler 60.
+
+The turbocharger 80 includes a compressor 82, a turbine 84, a rotor shaft 86, and a housing 88.
+
+The compressor 82 is composed of a compressor housing 82a in which the internal space also functions as a part of the intake flow path 48, and a compressor impeller 82b housed in the compressor housing 82a. The compressor impeller 82b is connected to the turbine impeller 84b via a rotor shaft 86, and rotates integrally with the turbine impeller 84b. The compressor impeller 82b is rotated by the rotational power of the turbine impeller 84b to compress the intake air.
+
+The turbine 84 is provided in the exhaust flow path 56, and is provided by a turbine housing (high heat portion) 84a in which the internal space also functions as a part of the exhaust flow path 56, and a turbine impeller 84b housed in the turbine housing 84a. It is configured. The turbine impeller 84b is rotated by the exhaust gas discharged from the combustion chamber 28.
+
+The housing 88 is provided between the compressor housing 82a and the turbine housing 84a and rotatably supports the rotor shaft 86.
+
+The crankcase 14 is provided with oil separators 62a and 62b that communicate with the crankcase 30. The oil separators 62a and 62b separate the mixed oil from the blow-by gas that has flowed into the crank chamber 30 through the gap between the cylinder bore 22 and the piston 24.
+
+The oil separator 62a is connected to the first blow-by gas flow path 64. The first blow-by gas flow path 64 is a flow path that communicates between the oil separator 62a and the intake port 34 and the throttle valve 54 in the intake flow path 48. The first blow-by gas flow path 64 returns the blow-by gas to the intake flow path 48. In addition. A check valve (PCV valve) 66 is provided in the first blow-by gas flow path 64 to prevent the backflow of intake air from the intake flow path 48 to the oil separator 62a.
+
+A second blow-by gas flow path 68 is connected to the oil separator 62b. The second blow-by gas flow path 68 is a flow path that communicates between the oil separator 62b and the air cleaner 50 and the compressor 82 in the intake flow path 48. The second blow-by gas flow path 68 returns the blow-by gas to the intake flow path 48.
+
+Further, the blow-by gas device 1 is provided with a scavenging flow path 70 that communicates between the cam chamber 42 and the intercooler 52 and the throttle valve 54 in the intake flow path 48. Further, the cylinder block 12 and the cylinder head 16 are formed with a ventilation hole 72 for communicating the crank chamber 30 and the cam chamber 42.
+
+In the blow-by gas device 1, when the supercharger 80 is not substantially supercharged, the downstream side of the throttle valve 54 in the intake flow path 48 becomes a negative pressure. Therefore, intake air is supplied to the crank chamber 30 through the scavenging flow path 70, the cam chamber 42, and the ventilation hole 72, and the blow-by gas in the crank chamber 30 passes through the oil separator 62a and the first blow-by gas flow path 64. It will be returned to the intake flow path 48.
+
+On the other hand, when the supercharger 80 is supercharged, the pressure on the upstream side of the compressor 82 becomes negative. Therefore, intake air is supplied to the crank chamber 30 through the scavenging flow path 70, the cam chamber 42, and the ventilation hole 72, and the blow-by gas in the crank chamber 30 passes through the oil separator 62b and the second blow-by gas flow path 68. It will be returned to the intake flow path 48.
+
+FIG. 2 is a diagram illustrating the configuration of the heating device 100 according to the first embodiment. By the way, since blow-by gas is a semi-combustion gas, it contains water vapor. Therefore, when the outside air temperature becomes 0 ° C. or lower, the blow-by gas returned to the intake flow path 48 is cooled by the intake air, and the water vapor contained in the blow-by gas may freeze to generate ice (frost). In particular, since the temperature of the intake air before being compressed by the supercharger 80 is low, the blow-by gas returned from the second blow-by gas flow path 68 is likely to freeze.
+
+If the generated ice is mixed into the compressor 82, there is a possibility that the compressor 82 may be damaged or otherwise malfunction. Further, since the duct 48a in front of the compressor is made of resin, the thermal conductivity is low, and it is difficult to transfer the heat of the compressor 82 to the opening 48c (see FIG. 2).
+
+Therefore, in the blow-by gas device 1 of the present embodiment, the portion of the second blow-by gas flow path 68 where the blow-by gas may be cooled to generate ice is heated by the heating device 100, and the water vapor in the blow-by gas causes the ice to form. Prevent it from being generated. Hereinafter, the heating device 100 will be described.
+
+As shown in FIG. 2, an opening 48c for connecting a rubber hose 68a forming the second blow-by gas flow path 68 is integrally formed in the compressor front duct 48a so as to project outward in the radial direction. There is. Then, the hose 68a is fastened to the opening 48c by, for example, a metal fastening clamp 110.
+
+The heating device 100 is composed of a heating unit 102, a connecting member 104, and a fastening member 106. The heating unit 102 and the connecting member 104 are, for example, metal (copper) members having a higher thermal conductivity than the resin (duct 48a in front of the compressor), and are integrally formed thereof.
+
+The heating unit 102 is formed in a cylindrical shape. The heating portion 102 is arranged so that the inner peripheral surface is in contact with the opening 48c on the side of the compressor front duct 48a (intake flow path 48) with respect to the portion of the opening 48c to which the hose 68a is fastened.
+
+The heating unit 102 is connected to one end of the connecting member 104, and the other end is fastened (contacted) with the turbine housing 84a of the turbocharger 80 by the fastening member 106. A through hole for inserting the fastening member 106 is formed on the other end side of the connecting member 104.
+
+The connecting member 104 is formed in a plate shape, and is arranged along the outer surface of the compressor front duct 48a and the supercharger 80 from one end to the other end.
+
+Since the exhaust gas flows through the turbine housing 84a, the turbine housing 84a is heated by the exhaust gas and maintained at a high temperature. Since the other end of the connecting member 104 is in contact with the turbine housing 84a, the connecting member 104 receives the heat of the turbine housing 84a and transfers the heat to the heating unit 102. The heating unit 102 transfers heat to the opening 48c from the outside by the heat transferred from the connecting member 104, and heats the opening 48c.
+
+When the water vapor in the blow-by gas freezes, the water vapor in the blow-by gas flowing through the opening 48c via the hose 68a is cooled by the intake air flowing in the duct in front of the compressor 48a, so that the duct in front of the compressor is cooled. The water vapor in the blow-by gas freezes at the connection portion between the 48a and the opening 48c.
+
+Then, the heating device 100 heats a place where the water vapor in the blow-by gas may freeze, that is, a connecting part between the compressor front duct 48a and the opening 48c by the heating unit 102. As a result, the heating device 100 can prevent ice from being generated on the inner surface of the opening 48c.
+
+As described above, the blow-by gas device 1 can prevent the water vapor in the blow-by gas from freezing with a simple configuration such as providing the heating device 100. Further, by preventing the water vapor in the blow-by gas from freezing, it is possible to prevent ice from being mixed into the compressor 82 and causing a problem in the compressor 82. Further, since the blow-by gas device 1 only needs to be provided with the heating device 100, the weight can be reduced as compared with the case where the compressor front duct 48a is made of metal, for example. That is, the blow-by gas device 1 can achieve both weight reduction by the resin-made compressor front duct 48a and freezing prevention by the heating device 100 with a simple configuration.
+
+<Second embodiment>
+FIG. 3 is a diagram illustrating the configuration of the heating device 200 according to the second embodiment. As shown in FIG. 3, the heating device 200 is composed of a fastening clamp (heating portion) 202, a connecting member 104, and a fastening member 106. The fastening clamp 202 and the connecting member 104 are integrally formed of, for example, copper having high thermal conductivity.
+
+The fastening clamp 202 fastens the hose 68a to the opening 48c. Further, since the fastening clamp 202 is connected to the connecting member 104, the heat of the turbine housing 84a is transferred.
+
+Therefore, the fastening clamp 202 heats the opening 48c via the hose 68a by the transferred heat. This makes it possible to prevent ice from being formed on the inner surface of the opening 48c.
+
+In the heating device 200 of the second embodiment, since the fastening clamp 202 has both the function of the fastening clamp 110 and the function of the heating unit 102 in the first embodiment, the heating in the first embodiment is performed. The configuration can be further simplified as compared with the device 100.
+
+However, in the heating device 100 of the first embodiment, the heating unit 102 can directly transfer (heat) heat to the opening 48c, whereas in the heating device 200 of the second embodiment, the fastening clamp 202 However, heat is transferred (heated) to the opening 48c via the hose 68a. Therefore, from the viewpoint of preventing the freezing of water vapor in the blow-by gas, it can be said that the heating device 100 in the first embodiment is more effective than the heating device 200 in the second embodiment.
+
+Although the preferred embodiment of the present invention has been described above with reference to the accompanying drawings, it goes without saying that the present invention is not limited to such an embodiment. It is clear that a person skilled in the art can come up with various modifications or modifications within the scope of the claims, and it is understood that these also naturally belong to the technical scope of the present invention. Will be done.
+
+In the above embodiment, the case where the heating portion 102 or the fastening clamp 202 is integrally formed with the connecting member 104 has been described, but even if the heating portion 102 or the fastening clamp 202 is not integrally formed with the connecting member 104. Good.
+
+Further, in the above embodiment, the connecting member 104 is fastened to the turbine housing 84a by the fastening member 106. However, if the connecting member 104 is always in contact with the turbine housing 84a, the method of fastening the connecting member 104 is not limited to this.
+
+Further, in the above embodiment, the case where the heating portion 102 or the fastening clamp 202 is formed in a cylindrical shape has been described, but if the heating portion 102 or the fastening clamp 202 is in contact with the opening 48c, the shape thereof. Does not matter.
+
+Further, in the above embodiment, the other end of the connecting member 104 is brought into contact with the turbine housing 84a. However, the connecting member 104 may be brought into contact with a high heat portion which is another component of the exhaust system forming the exhaust flow path 56 through which the exhaust gas flows.
+
+The present invention can be used for a blow-by gas device provided with a blow-by gas flow path through which blow-by gas recirculates.
+
+48a Duct in front of compressor (duct)
+48c Opening 68a Hose 80 Supercharger 84a Turbine housing (high heat part)
+100, 200 Heating device 102 Heating unit 104 Connecting member 202 Fastening clamp (heating unit)
