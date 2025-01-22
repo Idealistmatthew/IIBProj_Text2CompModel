@@ -43,3 +43,4 @@ pipe(messages)
 
 
 
+"jinja2.exceptions.TemplateError: Conversation roles must alternate user/assistant/user/assistant/..."

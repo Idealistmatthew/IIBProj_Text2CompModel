@@ -10,7 +10,6 @@ jsons
 typing
 graphviz
 pandas
-openai
 transformers
-spaCy
+spaCy==3.5.4
 coreferee

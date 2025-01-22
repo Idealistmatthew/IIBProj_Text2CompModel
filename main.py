@@ -107,6 +107,6 @@ if __name__ == "__main__":
     document_dir_id = "chapters"
     chosen_document_name = "chapter_16.txt"
 
-    # main_loop_to_rel_extraction(corpus_id=corpus_id, document_dir_id=document_dir_id, chosen_document_name=chosen_document_name)
-    from_cache_to_Bdd_Diagram(corpus_id=corpus_id, document_dir_id=document_dir_id, chosen_document_name=chosen_document_name, bdd_plot_chosen_word="glider")
+    main_loop_to_rel_extraction(corpus_id=corpus_id, document_dir_id=document_dir_id, chosen_document_name=chosen_document_name)
+    # from_cache_to_Bdd_Diagram(corpus_id=corpus_id, document_dir_id=document_dir_id, chosen_document_name=chosen_document_name, bdd_plot_chosen_word="glider")
     pass
