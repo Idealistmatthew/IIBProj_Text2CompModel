@@ -72,6 +72,6 @@ def extract_documents(chapter_dir):
             i += 1
     return chapters, document_dict
 
-def get_chapter(chapter_dir, chapter_num):
-    """Extract chapter from text files in a directory."""
-    return extract_documents(chapter_dir)[chapter_num]
+def extract_document(doc_path):
+    with open(doc_path, 'r', encoding="utf-8") as f:
+        return f.read()

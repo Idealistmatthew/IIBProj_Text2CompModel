@@ -1,5 +1,5 @@
 from pathlib import Path
-from dynamo.util.chapter_split import extract_documents
+from dynamo.util.chapter_split import extract_corpus
 
 import spacy
 
@@ -11,7 +11,7 @@ documents_dir =  Path(__file__).resolve().parent.parent.parent / 'Assets' / corp
 chosen_document_name = "chapter_36.txt"
 chosen_doc_name_wo_ext = chosen_document_name.split(".")[0]
 
-extracted_documents = extract_documents(documents_dir)
+extracted_documents = extract_corpus(documents_dir)
 chapter_num_dict = extracted_documents[1]
 documents = extracted_documents[0]
 chosen_document_num = chapter_num_dict[chosen_document_name]

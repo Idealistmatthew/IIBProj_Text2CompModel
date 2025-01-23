@@ -22,20 +22,24 @@ HYPERPARAMS = {
     'relationship_score_diff_tresh': 0.5
 }
 
-def main_loop_to_rel_extraction(corpus_id = None, document_dir_id = None, chosen_document_name = None): 
+def main_loop_to_rel_extraction(corpus_id, corpus_dir_id, document_path): 
     cache = Cache(CACHE_DIR)
     if not corpus_id:
         corpus_id = "FlyingMachines"
-    if not document_dir_id:
-        document_dir_id = "chapters"
-    documents_dir =  Path(__file__).resolve().parent / 'Assets' / corpus_id / document_dir_id
-    preprocessor = Preprocessor(documents_dir=documents_dir)
-    preprocessor.preprocess()
-    chapter_num_dict = preprocessor.get_chapter_dict()
+    if not corpus_dir_id:
+        corpus_dir_id = "chapters"
+    corpus_dir =  Path(__file__).resolve().parent / 'Assets' / corpus_id / corpus_dir_id
+    preprocessor = Preprocessor(corpus_dir=corpus_dir)
+    
 
-    if not chosen_document_name:
-        chosen_document_name = "chapter_38.txt"
-    chosen_document_num = chapter_num_dict[chosen_document_name]
+    chosen_document_name = os.path.basename(document_path)
+    if corpus_dir != Path(document_path).parent:
+        preprocessor.add_chosen_document(document_path, chosen_document_name)
+
+    corpus_document_index_dict = preprocessor.get_chapter_dict()
+    print(corpus_document_index_dict)
+    chosen_document_num = corpus_document_index_dict[chosen_document_name]
+    preprocessor.preprocess()
 
     # print(preprocessor.nouns)
     # print(len(preprocessor.nouns))
@@ -64,7 +68,7 @@ def from_cache_to_Bdd_Diagram(corpus_id = None, document_dir_id = None, chosen_d
     if not document_dir_id:
         document_dir_id = "chapters"
     documents_dir =  Path(__file__).resolve().parent / 'Assets' / corpus_id / document_dir_id
-    preprocessor = Preprocessor(documents_dir=documents_dir)
+    preprocessor = Preprocessor(corpus_dir=documents_dir)
     chapter_num_dict = preprocessor.get_chapter_dict()
     if not chosen_document_name:
         chosen_document_name = "chapter_38.txt"
@@ -104,9 +108,13 @@ if __name__ == "__main__":
     # chosen_document_name = "Devices.txt"
 
     corpus_id = "FlyingMachines"
-    document_dir_id = "chapters"
+    corpus_dir_id = "chapters"
+    corpus_path = Path(__file__).resolve().parent / 'Assets' / corpus_id / "chapters"
+    chosen_document_path = Path(__file__).resolve().parent / 'Assets' / corpus_id / "resolved_chapters" / "chapter_36_resolved.txt"
+    
+
     chosen_document_name = "chapter_16.txt"
 
-    main_loop_to_rel_extraction(corpus_id=corpus_id, document_dir_id=document_dir_id, chosen_document_name=chosen_document_name)
+    # main_loop_to_rel_extraction(corpus_id=corpus_id, corpus_dir_id=corpus_dir_id, chosen_document_name=chosen_document_name)
     # from_cache_to_Bdd_Diagram(corpus_id=corpus_id, document_dir_id=document_dir_id, chosen_document_name=chosen_document_name, bdd_plot_chosen_word="glider")
     pass

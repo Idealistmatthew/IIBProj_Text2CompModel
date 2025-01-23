@@ -16,7 +16,7 @@ class KeyPhraseTester:
         self.corpus_dir: str = corpus_dir
         self.ground_truth_path: str = ground_truth_path
         self.test_phrase_path: str = test_phrase_path
-        self.preprocessor: Preprocessor = Preprocessor(documents_dir=None)
+        self.preprocessor: Preprocessor = Preprocessor(corpus_dir=None)
 
         self.ground_truth_phrases: list[str] = self.extract_and_process_phrases(ground_truth_path)
         self.test_phrases: list[str] = self.extract_and_process_phrases(test_phrase_path)

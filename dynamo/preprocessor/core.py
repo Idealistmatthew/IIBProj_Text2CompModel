@@ -1,12 +1,12 @@
 from typing import Any
 import nltk
-from dynamo.util.chapter_split import extract_documents
+from dynamo.util.chapter_split import extract_corpus, extract_document
 from pathlib import Path
 from dynamo.sysMLAugmenter.types import BDDAttribute
 
 class Preprocessor:
     """Preprocessor class for preprocessing the data."""
-    def __init__(self, documents_dir: str):
+    def __init__(self, corpus_dir: str):
         """
         Inputs
         -------
@@ -17,10 +17,10 @@ class Preprocessor:
         -------
         None
         """
-        self.chapters_dir: str = documents_dir
+        self.chapters_dir: str = corpus_dir
         self.lemmatizer = nltk.stem.WordNetLemmatizer()
-        if documents_dir:
-            extracted_documents = extract_documents(documents_dir)
+        if corpus_dir:
+            extracted_documents = extract_corpus(corpus_dir)
             self.documents: list[str] = extracted_documents[0]
             self.document_dict: dict[str, int] = extracted_documents[1]
 
@@ -32,6 +32,11 @@ class Preprocessor:
         self.pos_tagged_documents: list[list[tuple[str, str]] | list] = [[]]
         self.named_entities: list[nltk.Tree] = []
         self.nouns: list[list[str]] = [[]]
+    
+    def add_chosen_document(self, document_path, chosen_document_name):
+        chosen_doc = extract_document(document_path)
+        self.documents.append(chosen_doc)
+        self.document_dict[chosen_document_name] = len(self.documents) - 1
     
     def preprocess(self):
         """Preprocess the chapters."""

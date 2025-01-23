@@ -13,3 +13,6 @@ pandas
 transformers
 spaCy==3.5.4
 coreferee
+langchain
+langchain-community
+langchain-huggingface
