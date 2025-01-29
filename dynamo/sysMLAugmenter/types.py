@@ -1,15 +1,28 @@
 from enum import Enum
+import json
+import jsonpickle
 
 class BDDAttribute:
-    def __init__(self, name: str, value: str):
-        self.name = name
+    def __init__(self, subject: str, category: str, value: str, unit: str):
+        self.subject = subject
+        self.category = category
         self.value = value
+        self.unit = unit
     
     def __repr__(self):
         return (
-            f"Attribute Name: {self.name}, \n"
+            f"Attribute Name: {self.subject}, \n"
+            f"Attribute Category: {self.category}, \n"
             f"Attribute Value: {self.value}\n"
+            f"Attribute Unit: {self.unit}\n"
         )
+
+    def toJSON(self):
+        return json.dumps(self, default=lambda o: o.__dict__)
+    
+    def fromJSON(json_str):
+        json_obj = json.loads(json_str)
+        return BDDAttribute(json_obj['subject'], json_obj['category'], json_obj['value'], json_obj['unit'])
 
 class BDDBlock:
     def __init__(self, block_name: str,
@@ -58,6 +71,7 @@ class BDDBlock:
             f"Composite Parents: {self.composite_parents}, \n"
             f"Reference Parents: {self.reference_parents}, \n"
             f"Reference Children: {self.reference_children}, \n"
+            f"attributes: {self.attributes}, \n"
             f"Parts: {self.parts}\n"
         )
 
@@ -66,7 +80,7 @@ class BDDBlock:
         if self.attributes:
             label_str += "| Attributes:  \\n"
             for attribute in self.attributes:
-                label_str += f"{attribute.name}: {attribute.value}  \\n"
+                label_str += f"{attribute.category}: {attribute.value} {attribute.unit} \\n"
         if self.parts:
             label_str += "| Parts:  \\n"
             for part in self.parts:
@@ -78,6 +92,13 @@ class BDDBlock:
         label_str += "}"
         return label_str
     
+    def toJSON(self):
+        return jsonpickle.encode(self)
+    
+    def fromJSON(json_str):
+        return jsonpickle.decode(json_str)
+
+    
 class BDDRelations(Enum):
     COMPOSITE = 1
     GENERALIZATION = 2
@@ -86,7 +107,9 @@ class BDDRelations(Enum):
 class BDDGraph:
     def __init__(self):
         self.block_dict: dict[str, BDDBlock] = {}
-        # self.directed_edges: dict[str, list[tuple[str, BDDRelations]]] = {}
+    
+    def update_block_dict(self, block_dict: dict[str, BDDBlock]):
+        self.block_dict = block_dict
     
     def add_or_update_block(self, block: BDDBlock):
         if block.block_name not in self.block_dict:

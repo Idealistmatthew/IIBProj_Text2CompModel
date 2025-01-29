@@ -66,7 +66,8 @@ class BDDAugmenter:
         if root not in self.bdd_graph.block_dict:
             print("Root not found in the block dict")
             print("Here are the available roots with the number of blocks from them")
-            print(pd.DataFrame(self.get_blocks_with_num_blocks_from_root()))
+            print(self.get_blocks_with_num_blocks_from_root())
+            # print(pd.DataFrame(self.get_blocks_with_num_blocks_from_root()))
             return
         all_blocks_from_root = self.get_blocks_from_root(root)
         print(len(all_blocks_from_root))
@@ -100,7 +101,7 @@ class BDDAugmenter:
         bdd = generate_digraph(blocks)
 
         print("Rendering start")
-        bdd.render(f"Assets/bddDiagrams/{self.bdd_plot_path}", view=True)
+        bdd.render(f"Assets/bddDiagrams/{self.bdd_plot_path}")
         print("Rendering end")
 
     def construct_bdd_graph(self) -> None:
@@ -158,8 +159,8 @@ class BDDAugmenter:
     
     def update_blocks_with_attributes(self) -> None:
         for attribute in self.bdd_attributes:
-            if attribute.name in self.bdd_graph.block_dict:
-                self.bdd_graph.block_dict[attribute.name].attributes.add(attribute)
+            if attribute.subject in self.bdd_graph.block_dict:
+                self.bdd_graph.block_dict[attribute.subject].attributes.add(attribute)
 
     def identify_top_level_phrases(self) -> list[str]:
         # identify the top level phrases

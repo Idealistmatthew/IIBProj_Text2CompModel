@@ -11,7 +11,7 @@ from artificer.relationshipExtractor.mapper import RelationshipMapper
 from artificer.sysMLAugmenter.bddAug import BDDAugmenter
 
 ASSET_DIR = './Assets'
-CACHE_DIR = './jsoncaches'
+CACHE_DIR = './artificerjsoncache'
 PREPROCESSED_NOUNS_CACHE = 'preprocessed_nouns'
 
 HYPERPARAMS = {

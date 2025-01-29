@@ -8,6 +8,7 @@ from nltk.corpus import wordnet as wn
 import numpy as np
 from dynamo.relationshipExtractor.types import Relationship, RelationshipType
 from dynamo.sysMLAugmenter.types import BDDAttribute
+from dynamo.attributeExtractor.core import AttributeExtractor
 
 class RelationshipSerialiser:
 
@@ -50,7 +51,8 @@ class RelationshipParser:
                  key_nouns: dict[str, float], 
                  phrase_length_limit: int, 
                  key_phrase_metric_tresh: float,
-                 relationship_confidence_tresh: float = 0.5):
+                 relationship_confidence_tresh: float = 0.5,
+                 should_extract_attributes=True):
         # Initialize any necessary variables or models here
         self.sentence_relationships = sentence_relationships
         self.key_nouns = key_nouns
@@ -62,10 +64,17 @@ class RelationshipParser:
         self.processed_relationships = []
         self.preprocessor = preprocesser
         self.bdd_attributes : list[BDDAttribute] = []
+        self.should_extract_attributes = should_extract_attributes
+
+        if should_extract_attributes:
+            self.attribute_extractor: AttributeExtractor = AttributeExtractor()
+
         self.process_relationships()
         self.filtered_relationships: list[Relationship] = self.filter_relationships()
         self.key_phrases = self.get_key_phrases()
         self.bdd_attributes = self.filter_bdd_attributes()
+        
+        
     
     def export_key_phrases(self, export_path: str):
         """Export the key phrases to a text file."""
@@ -104,13 +113,29 @@ class RelationshipParser:
                 arg2s = extraction["arg2s"]
                 for arg2 in arg2s:
                     arg2_text = arg2["text"]
-                    processed_attribute_value = self.preprocessor.attribute_value_extract_phrase(arg2_text)
-                    if processed_attribute_value:
-                        bddAttribute = BDDAttribute(name = new_subject, value=processed_attribute_value)
-                        self.bdd_attributes.append(bddAttribute)
-                        print("Attribute: ", bddAttribute)
-                        print("Original Sentence: ", original_sentence)
-                        print("Original Relationship", relationship)
+                    if self.should_extract_attributes:
+                        attribute_specs = self.attribute_extractor.extract_attributes(original_sentence)
+                        if "attributes" in attribute_specs:
+                            attributes = attribute_specs["attributes"]
+                            for attribute in attributes:
+                                if "unit" not in attribute:
+                                    attribute["unit"] = None
+                                if "value" not in attribute:
+                                    continue
+                                if "name" not in attribute:
+                                    continue
+                                bddAttribute = BDDAttribute(subject = new_subject,
+                                                            category=attribute["name"],
+                                                            value=attribute["value"],
+                                                            unit=attribute["unit"])
+                                self.bdd_attributes.append(bddAttribute)
+                    # processed_attribute_value = self.preprocessor.attribute_value_extract_phrase(arg2_text)
+                    # if processed_attribute_value:
+                    #     bddAttribute = BDDAttribute(name = new_subject, value=processed_attribute_value)
+                    #     self.bdd_attributes.append(bddAttribute)
+                    #     print("Attribute: ", bddAttribute)
+                    #     print("Original Sentence: ", original_sentence)
+                    #     print("Original Relationship", relationship)
                     processed_object = self.process_phrase_as_noun(arg2_text)
                     if not processed_object or len(processed_object) == 0:
                         # Skip the relationship if the object is empty
@@ -195,7 +220,7 @@ class RelationshipParser:
             return []
         filtered_bdd_attributes = []
         for bdd_attribute in self.bdd_attributes:
-            if bdd_attribute.name in self.key_phrases:
+            if bdd_attribute.subject in self.key_phrases:
                 filtered_bdd_attributes.append(bdd_attribute)
         return filtered_bdd_attributes
     

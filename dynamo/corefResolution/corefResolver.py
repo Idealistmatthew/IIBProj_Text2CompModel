@@ -8,7 +8,7 @@ document_dir_id = "chapters"
 corpus_dir = Path(__file__).resolve().parent.parent.parent / 'Assets' / corpus_id
 documents_dir =  Path(__file__).resolve().parent.parent.parent / 'Assets' / corpus_id / document_dir_id
 
-chosen_document_name = "chapter_36.txt"
+chosen_document_name = "chapter_38.txt"
 chosen_doc_name_wo_ext = chosen_document_name.split(".")[0]
 
 extracted_documents = extract_corpus(documents_dir)
@@ -18,6 +18,7 @@ chosen_document_num = chapter_num_dict[chosen_document_name]
 chosen_document = documents[chosen_document_num]
 # print(chosen_document)
 
+# please run python -m spacy download en_core_web_trf and en_core_web_lg and python -m coreferee download en before running this script
 nlp = spacy.load("en_core_web_trf")
 nlp.add_pipe("coreferee")
 doc = nlp(chosen_document)

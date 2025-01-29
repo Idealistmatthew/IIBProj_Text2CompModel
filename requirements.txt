@@ -10,9 +10,11 @@ jsons
 typing
 graphviz
 pandas
-transformers
+transformers==4.48.1
 spaCy==3.5.4
 coreferee
 langchain
 langchain-community
 langchain-huggingface
+guidance
+jsonpickle

@@ -106,8 +106,10 @@ if __name__ == "__main__":
     corpus_dir = Path(__file__).resolve().parent.parent.parent / 'Assets' / 'FlyingMachines'
     ground_truth_path = Path(__file__).resolve().parent.parent.parent / 'Assets' / 'FlyingMachines' / 'ground_truth' / 'key_phrase_chapter_38.txt'
     gpt_test_phrase_path = Path(__file__).resolve().parent.parent.parent / 'Assets' / 'FlyingMachines' / 'GPT_test' / 'key_phrase_chapter_38.txt'
+    coref_test_path = Path(__file__).resolve().parent.parent.parent / 'Assets' / 'FlyingMachines' / 'dynamo_test' / 'key_phrase_coref_chapter_38_resolved.txt'
 
     artificer_test_phrase_path = Path(__file__).resolve().parent.parent.parent / 'Assets' / 'FlyingMachines' / 'artificer_test' / 'key_phrase_chapter_38.txt'
 
     gptKeyPhraseTester = KeyPhraseTester(corpus_dir, ground_truth_path, gpt_test_phrase_path)
     artificerKeyPhraseTester = KeyPhraseTester(corpus_dir, ground_truth_path, artificer_test_phrase_path)
+    corefKeyPhraseTester = KeyPhraseTester(corpus_dir, ground_truth_path, coref_test_path)
