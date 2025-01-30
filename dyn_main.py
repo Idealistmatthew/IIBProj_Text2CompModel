@@ -10,7 +10,8 @@ from dynamo.relationshipExtractor.core import RelationshipExtractor, Relationshi
 from dynamo.relationshipExtractor.mapper import RelationshipMapper
 from dynamo.sysMLAugmenter.bddAug import BDDAugmenter
 from dynamo.cache.cacheComponents import getCacheName, CacheComponent
-from dynamo.sysMLAugmenter.types import BDDAttribute
+from dynamo.sysMLAugmenter.types import BDDAttribute, BDDBlock
+from dynamo.filegenerator.core import FileGenerator
 
 ASSET_DIR = './Assets'
 CACHE_DIR = './jsoncaches'
@@ -140,29 +141,37 @@ def from_cache_to_Bdd_Diagram(
         bdd_plot_word=bdd_plot_chosen_word,
         bdd_plot_path=f"{chosen_document_name_without_ext}_{bdd_plot_chosen_word}_with_attributes_bdd.png"
     )
+    block_dict = bddAugmenter.bdd_graph.block_dict
+    block_dict = {block_name: block.toJSON() for block_name, block in block_dict.items()}
     
-    cache.set(getCacheName(corpus_id, chosen_document_name, CacheComponent.BDD_BLOCK_DICT), {'bdd_block_dict': bddAugmenter.bdd_graph.block_dict})
+    cache.set(getCacheName(corpus_id, chosen_document_name, CacheComponent.BDD_BLOCK_DICT), {'bdd_block_dict': block_dict})
+
+def from_cache_to_code_gen(corpus_id, chosen_document_path):
+    chosen_document_name = os.path.basename(chosen_document_path)
+    block_dict = cache.get_value(getCacheName(corpus_id, chosen_document_name, CacheComponent.BDD_BLOCK_DICT), 'bdd_block_dict')
+    block_dict = {block_name: BDDBlock.fromJSON(block) for block_name, block in block_dict.items()}
+    print(block_dict)
+    target_dir = Path(__file__).resolve().parent / 'codegen'
+    system_name = corpus_id + "Chapter_16"
+    filegen = FileGenerator(block_dict, target_dir, system_name)
 
 
 if __name__ == "__main__":
     cache = Cache(CACHE_DIR)
 
-    # corpus_id = "ShaoHongAssets"
-    # document_dir_id = "documents"
-    # chosen_document_name = "Devices.txt"
-
     corpus_id = "FlyingMachines"
     corpus_dir_id = "chapters"
-    chosen_document_path = Path(__file__).resolve().parent / 'Assets' / corpus_id / "resolved_chapters" / "chapter_38_resolved.txt"
+    chosen_document_path = Path(__file__).resolve().parent / 'Assets' / corpus_id / "chapters" / "chapter_16.txt"
     chosen_document_name = os.path.basename(chosen_document_path)
     bdd_plot_chosen_word = "glider"
-    export_key_phrase_path = Path(__file__).resolve().parent / 'Assets' / corpus_id / "dynamo_test" / f"key_phrase_coref_{chosen_document_name}"
-
+    # export_key_phrase_path = Path(__file__).resolve().parent / 'Assets' / corpus_id / "dynamo_test" / f"key_phrase_coref_{chosen_document_name}"
+    export_key_phrase_path = None
     # main_loop_to_rel_extraction(corpus_id=corpus_id, corpus_dir_id=corpus_dir_id,document_path=chosen_document_path)
-    from_cache_to_Bdd_Diagram(corpus_id=corpus_id,
-                              corpus_dir_id=corpus_dir_id,
-                              chosen_document_path=chosen_document_path,
-                              chosen_document_name=chosen_document_name,
-                              bdd_plot_chosen_word=bdd_plot_chosen_word,
-                              export_key_phrase_path=export_key_phrase_path)
+    # from_cache_to_Bdd_Diagram(corpus_id=corpus_id,
+    #                           corpus_dir_id=corpus_dir_id,
+    #                           chosen_document_path=chosen_document_path,
+    #                           chosen_document_name=chosen_document_name,
+    #                           bdd_plot_chosen_word=bdd_plot_chosen_word,
+    #                           export_key_phrase_path=export_key_phrase_path)
+    from_cache_to_code_gen(corpus_id, chosen_document_path)
     pass
