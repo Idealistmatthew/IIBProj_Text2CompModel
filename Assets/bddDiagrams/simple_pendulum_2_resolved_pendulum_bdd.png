@@ -1,0 +1,8 @@
+digraph bdd {
+	node [fontsize=10 shape=record]
+	pendulum [label="{pendulum }" style=dotted]
+	"system motion" [label="{system motion }"]
+	"simple pendulum" [label="{simple pendulum | Parts:  \nsystem motion  \n| Operations:  \nis()  \n}"]
+	"system motion" -> "simple pendulum" [label=Composite arrowhead=odiamond]
+	"simple pendulum" -> pendulum [label=Generalization arrowhead=onormal]
+}

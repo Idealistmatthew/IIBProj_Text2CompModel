@@ -1,0 +1,38 @@
+
+
+class {{className}}:
+
+    def __init__(self):
+    {% if attributes %}
+    {% for attribute in attributes %}
+        {%if attribute.isNumeric %}
+        self.{{attribute.category}} = {{attribute.value}} # {{attribute.unit}}
+        {% else %}
+        self.{{attribute.category}} = "{{attribute.value}}"
+        {% endif %}
+    {% endfor %}
+    {% endif %}
+    {% if parts %}
+    {% for part in parts %}
+        self.{{part.name}} = {{part.classname}}()
+    {% endfor %}
+    {% endif %}
+    {% if not parts and not attributes%}
+        pass
+    {% endif %}
+
+    {% if methods %}
+    {% for method in methods %}
+    {%if method.parameters%}
+    def {{method.name}}(self, {{method.parameters}}):
+    {% else %}
+    def {{method.name}}(self):
+    {% endif %}
+    {% if method.body %}
+        {{method.body}}
+    {% else %}
+        pass
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+

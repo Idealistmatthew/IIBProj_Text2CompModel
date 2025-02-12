@@ -19,9 +19,9 @@ displacement x. For example, if we choose the positive direction to the right in
 Fig. 1, x is positive when the spring is stretched (Fig. 1b), but the direction of the
 restoring force is to the left (negative direction). If the spring is compressed, x is
 negative (to the left) but the force F acts toward the right (Fig. 1c).
-Equation 1 is often referred to as Hooke’s law, and is accurate only if the spring
+Equation 1 is often referred to as Hooke's law, and is accurate only if the spring
 is not compressed to where the coils are close to touching, or stretched beyond the
-elastic region. Hooke’s law works not only for springs but for other oscillating solids
+elastic region. Hooke's law works not only for springs but for other oscillating solids
 as well; it thus has wide applicability, even though it is valid only over a certain range
 of F and x values.
 The proportionality constant k in Eq. 1 is called the spring constant for that

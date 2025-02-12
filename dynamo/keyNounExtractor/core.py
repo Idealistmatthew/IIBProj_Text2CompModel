@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 class KeyNounExtractor:
     """KeyNounExtractor class for extracting key nouns from the data."""
-    def __init__(self, chapter_nouns: list[list[str]] ,chosen_chapter: int, tf_idf_limit: float):
+    def __init__(self, document_nouns: list[list[str]] ,chosen_chapter: int, tf_idf_limit: float):
         """
         Inputs
         -------
@@ -18,8 +18,8 @@ class KeyNounExtractor:
         -------
         None
         """
-        self.chapter_nouns = chapter_nouns
-        self.num_chapters = len(chapter_nouns)
+        self.chapter_nouns = document_nouns
+        self.num_chapters = len(document_nouns)
         self.noun_counter: list[Counter] = [Counter(chapter) for chapter in self.chapter_nouns]
         self.document_frequency = self.calculate_document_frequency(self.noun_counter[chosen_chapter])
         self.chosen_chapter_tf_idf: dict[str, float] = self.calculate_tf_idf(self.noun_counter[chosen_chapter])
@@ -29,7 +29,7 @@ class KeyNounExtractor:
         self.sorted_tf_idf = {word: value / max_tf_idf for word, value in self.sorted_tf_idf.items()}
         self.key_nouns = {word: value for word, value in self.sorted_tf_idf.items() if value > tf_idf_limit}
         self.pretty_print_top_n(self.sorted_tf_idf, 30)
-        self.show_word_cloud()
+        # self.show_word_cloud()
     
     def calculate_tf_idf(self, chapter_noun_counter: Counter) -> dict[str, float]:
         """Calculate the TF-IDF for the chosen chapter."""
@@ -62,3 +62,10 @@ class KeyNounExtractor:
         plt.imshow(wordcloud, interpolation='bilinear')
         plt.axis('off')  # Hide the axes
         plt.show()
+    
+    def save_word_cloud(self, path: str):
+        wordcloud = WordCloud(width = 800, height = 800, background_color=None, mode="RGBA").generate_from_frequencies(self.chosen_chapter_tf_idf)
+        fig = plt.figure(figsize=(10, 5))
+        plt.imshow(wordcloud, interpolation='bilinear')
+        plt.axis('off')  # Hide the axes
+        fig.savefig("wordcloud.png")

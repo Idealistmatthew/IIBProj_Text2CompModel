@@ -19,7 +19,8 @@ class BDDAugmenter:
                  noun_wordnet_scores: dict[str, float],
                  bdd_plot_word: str,
                  bdd_attributes: list[BDDAttribute] = {},
-                 bdd_plot_path: str = "chapter_13.txt"):
+                 bdd_plot_path: str = "chapter_13.txt",
+                 plot_full_bdd: bool = False):
         self.typed_relationships = typed_relationships
         self.bdd_attributes: list[BDDAttribute] = bdd_attributes
         self.bdd_graph = BDDGraph()
@@ -49,7 +50,10 @@ class BDDAugmenter:
             print(name, len(self.get_blocks_from_root(name)))
         # print(len(self.bdd_graph.block_dict))
         # print(self.get_all_block_names())
-        self.plot_bdd_with_root(bdd_plot_word)
+        if plot_full_bdd:
+            self.plot_full_bdd()
+        else:
+            self.plot_bdd_with_root(bdd_plot_word)
         # self.plot_full_bdd()
     
 

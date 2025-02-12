@@ -18,3 +18,5 @@ langchain-community
 langchain-huggingface
 guidance
 jsonpickle
+Jinja2
+autocorrect
