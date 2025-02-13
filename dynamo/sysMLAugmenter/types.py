@@ -9,12 +9,17 @@ class BDDAttribute:
         self.value = value
         self.unit = unit
     
+    # def __repr__(self):
+    #     return (
+    #         f"Attribute Name: {self.subject}, \n"
+    #         f"Attribute Category: {self.category}, \n"
+    #         f"Attribute Value: {self.value}\n"
+    #         f"Attribute Unit: {self.unit}\n"
+    #     )
+
     def __repr__(self):
         return (
-            f"Attribute Name: {self.subject}, \n"
-            f"Attribute Category: {self.category}, \n"
-            f"Attribute Value: {self.value}\n"
-            f"Attribute Unit: {self.unit}\n"
+            f"{self.category}: {self.value} {self.unit}"
         )
 
     def toJSON(self):
