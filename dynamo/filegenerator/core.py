@@ -63,6 +63,7 @@ class FileGenerator:
                                           methods = methods)
 
     def generate_block_code(self, block: BDDBlock, dir: Path):
+
         if block.parts:
             part_dir_name = space_str_to_camel_case(block.block_name) + "_parts"
             part_dir = dir / part_dir_name
@@ -78,5 +79,8 @@ class FileGenerator:
                     special_child_block = self.blocks[special_child]
                     self.generate_block_code(special_child_block, dir)
         block_file = dir / (space_str_to_camel_case(block.block_name) + ".py")
+        if block.isAugmented:
+            print("Block is augmented, skipping")
+            return
         with open(block_file, 'w') as f:
             f.write(self.get_rendered_text(block))

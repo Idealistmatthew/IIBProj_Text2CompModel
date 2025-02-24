@@ -1,4 +1,8 @@
-
+{% if parts %}
+{% for part in parts %}
+from {{className}}_parts import {{part.classname}}
+{% endfor %}
+{% endif %}
 
 class {{className}}:
 

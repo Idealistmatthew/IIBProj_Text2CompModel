@@ -178,7 +178,6 @@ def from_cache_to_code_gen(corpus_id, chosen_document_path):
     chosen_document_name = os.path.basename(chosen_document_path)
     block_dict = cache.get_value(getCacheName(corpus_id, chosen_document_name, CacheComponent.BDD_BLOCK_DICT), 'bdd_block_dict')
     block_dict = {block_name: BDDBlock.fromJSON(block) for block_name, block in block_dict.items()}
-    print(block_dict)
     target_dir = Path(__file__).resolve().parent / 'codegen'
     system_name = corpus_id + chosen_document_name.split('.')[0]
     filegen = FileGenerator(block_dict, target_dir, system_name)
@@ -197,14 +196,14 @@ if __name__ == "__main__":
     # FlyingMachine
     corpus_id = "FlyingMachines"
     corpus_dir_id = "chapters"
-    chosen_document_path = Path(__file__).resolve().parent / 'Assets' / corpus_id / "chapters" / "chapter_13.txt"
-    resolved_document_path = Path(__file__).resolve().parent / 'Assets' / corpus_id / "resolved_chapters" / "chapter_13_resolved.txt"
+    chosen_document_path = Path(__file__).resolve().parent / 'Assets' / corpus_id / "chapters" / "chapter_16.txt"
+    resolved_document_path = Path(__file__).resolve().parent / 'Assets' / corpus_id / "resolved_chapters" / "chapter_16_resolved.txt"
     chosen_document_name = os.path.basename(chosen_document_path)
     bdd_plot_chosen_word = "glider"
     # export_key_phrase_path = Path(__file__).resolve().parent / 'Assets' / corpus_id / "dynamo_test" / f"key_phrase_coref_{chosen_document_name}"
     export_key_phrase_path = None
-    doCoref = True
-    doTypoCorrect = True
+    # doCoref = True
+    # doTypoCorrect = True
 
     # Patents
     # corpus_id = "Patents"
@@ -234,10 +233,10 @@ if __name__ == "__main__":
         auto_correct_doc(chosen_document_path, resolved_document_path, default_domain_specific_words)
         chosen_document_path = resolved_document_path
 
-    generate_wordcloud(corpus_id=corpus_id, 
-                       corpus_dir_id=corpus_dir_id, 
-                       document_path=chosen_document_path, 
-                       wordcloud_path=None)
+    # generate_wordcloud(corpus_id=corpus_id, 
+    #                    corpus_dir_id=corpus_dir_id, 
+    #                    document_path=chosen_document_path, 
+    #                    wordcloud_path=None)
 
     # main_loop_to_rel_extraction(corpus_id=corpus_id, corpus_dir_id=corpus_dir_id,document_path=chosen_document_path)
     # from_cache_to_Bdd_Diagram(corpus_id=corpus_id,
@@ -247,5 +246,5 @@ if __name__ == "__main__":
     #                           bdd_plot_chosen_word=bdd_plot_chosen_word,
     #                           export_key_phrase_path=export_key_phrase_path,
     #                           plot_full_bdd=plot_full_bdd)
-    # from_cache_to_code_gen(corpus_id, chosen_document_path)
+    from_cache_to_code_gen(corpus_id, chosen_document_path)
     pass
