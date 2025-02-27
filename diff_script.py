@@ -1,6 +1,6 @@
 from dynamo.cache.core import Cache
 from dynamo.cache.cacheComponents import getCacheName, CacheComponent
-from dynamo.util.diff import list_diffable_blocks, diff_blocks
+from dynamo.util.diff import list_diffable_blocks, diff_blocks, compare_blocks_visually
 from dynamo.sysMLAugmenter.types import BDDBlock
 from dynamo.tester.attributeTester import AttributeTester
 
@@ -17,9 +17,9 @@ block_dict_2 = {block_name: BDDBlock.fromJSON(block) for block_name, block in bl
 # list_diffable_blocks(block_dict_1, block_dict_2)
 
 diff_blocks(block_dict_1['rudder'], block_dict_2['rudder'])
-
-attributeTester = AttributeTester()
-attribute_similarity = attributeTester.compare_attributes(block_dict_1['rudder'], block_dict_2['rudder'])
-print(f"Attribute Similarity: {attribute_similarity}")
-block_dict_recall = attributeTester.compare_block_dict(block_dict_1, block_dict_2)
-print(f"Block Dict Recall: {block_dict_recall}")
+compare_blocks_visually(block_dict_1['rudder'], block_dict_2['rudder'])
+# attributeTester = AttributeTester()
+# attribute_similarity = attributeTester.compare_attributes(block_dict_1['rudder'], block_dict_2['rudder'])
+# print(f"Attribute Similarity: {attribute_similarity}")
+# block_dict_recall = attributeTester.compare_block_dict(block_dict_1, block_dict_2)
+# print(f"Block Dict Recall: {block_dict_recall}")

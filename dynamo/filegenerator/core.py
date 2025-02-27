@@ -57,9 +57,16 @@ class FileGenerator:
                 'parameters': [],
                 'body': None
             })
+        general_parents = []
+        for general_parent in block.general_parents:
+            if general_parent in self.blocks:
+                general_block = self.blocks[general_parent]
+                if not general_block.isAugmented:
+                    general_parents.append(space_str_to_camel_case(general_parent))
         return self.class_template.render(className =className,
                                           attributes = attributes,
                                           parts = parts,
+                                          general_parents = general_parents,
                                           methods = methods)
 
     def generate_block_code(self, block: BDDBlock, dir: Path):

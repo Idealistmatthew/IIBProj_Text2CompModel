@@ -3,7 +3,7 @@ import json
 import jsonpickle
 
 class BDDAttribute:
-    def __init__(self, subject: str, category: str, value: str, unit: str):
+    def __init__(self, subject: str=None, category: str=None, value: str=None, unit: str=None):
         self.subject = subject
         self.category = category
         self.value = value
@@ -28,6 +28,14 @@ class BDDAttribute:
     def fromJSON(json_str):
         json_obj = json.loads(json_str)
         return BDDAttribute(json_obj['subject'], json_obj['category'], json_obj['value'], json_obj['unit'])
+    
+    def fromYAML(yaml_dict):
+        return BDDAttribute(
+            subject=yaml_dict.get('subject'),
+            category=yaml_dict.get('category'),
+            value=yaml_dict.get('value'),
+            unit=yaml_dict.get('unit')
+        )
 
 class BDDBlock:
     def __init__(self, block_name: str,
@@ -102,6 +110,20 @@ class BDDBlock:
     
     def fromJSON(json_str):
         return jsonpickle.decode(json_str)
+    
+    def fromYAML(yaml_dict):
+        return BDDBlock(
+            block_name=yaml_dict.get('block_name'),
+            operations=set(yaml_dict.get('operations', [])),
+            isAugmented=yaml_dict.get('isAugmented', False),
+            general_parents=set(yaml_dict.get('general_parents', [])),
+            special_children=set(yaml_dict.get('special_children', [])),
+            composite_parents=set(yaml_dict.get('composite_parents', [])),
+            reference_parents=set(yaml_dict.get('reference_parents', [])),
+            reference_children=set(yaml_dict.get('reference_children', [])),
+            attributes=set([BDDAttribute.fromYAML(attr) for attr in yaml_dict.get('attributes', [])]),
+            parts=yaml_dict.get('parts', [])
+        )
 
     
 class BDDRelations(Enum):

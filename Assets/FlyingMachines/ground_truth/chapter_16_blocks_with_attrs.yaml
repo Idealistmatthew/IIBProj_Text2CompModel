@@ -1,0 +1,52 @@
+blocks:
+  - block_name: glider
+    parts:
+      - rear rudder
+    attributes:
+      - category: example
+        value: 5
+        unit: m
+  - block_name: rudder
+    parts:
+      - rudder beam
+      - horizontal rudder section
+      - vertical rudder section
+    attributes:
+      - category: position
+        value: fixed and immovable
+      - category: staying
+        value: with guy wires
+  - block_name: rear rudder
+  - block_name: front rudder
+  - block_name: flying machine
+    parts:
+      - front rudder
+      - rear rudder
+    attributes:
+      - category: propulsion
+        value: motor
+  - block_name: rudder beam
+    parts:
+      - cross piece
+    attributes:
+      - category: length
+        value: 8.92
+        unit: ft
+    operations:
+      - clamped
+      - bolted
+  - block_name: cross piece
+    attributes:
+      - category: length
+        value: 2
+        unit: ft
+      - category: width
+        value: 0.25
+        unit: inch
+      - category: length
+        value: 0.75
+        unit: inch
+      - category: position
+        value: between the center struts
+  - block_name: horizontal rudder
+  - block_name: vertical rudder

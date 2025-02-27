@@ -3,8 +3,15 @@
 from {{className}}_parts import {{part.classname}}
 {% endfor %}
 {% endif %}
+{% if general_parents %}
+from {{general_parents[0]}} import {{general_parents[0]}}
+{% endif %}
 
+{% if general_parents %}
+class {{className}}({{general_parents[0]}}):
+{% else %}
 class {{className}}:
+{% endif %}
 
     def __init__(self):
     {% if attributes %}

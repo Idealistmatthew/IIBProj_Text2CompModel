@@ -16,7 +16,7 @@ def plot_flying_machine_chapter_16_rudder_digraph():
     rudder_beam = BDDBlock(
         block_name="rudder beam",
         composite_parents={"rudder"},
-        attributes={BDDAttribute("length", "8 ft 11 inches")}
+        attributes={BDDAttribute(category="length", value=8.92, unit="ft")}
     )
 
     blocks.add(rudder_beam)

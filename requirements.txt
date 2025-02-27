@@ -20,3 +20,4 @@ guidance
 jsonpickle
 Jinja2
 autocorrect
+prettytable

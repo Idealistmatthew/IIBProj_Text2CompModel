@@ -3,6 +3,14 @@ import spacy
 
 SIMILARITY_TRESHOLD = 0.7
 
+class ComparisonResults():
+    def __init__(self, normalised_matches: float, normalised_similarity: float):
+        self.normalised_matches = normalised_matches
+        self.normalised_similarity = normalised_similarity
+
+    def __repr__(self):
+        return f"Normalised Matches: {self.normalised_matches}, Normalised Similarity: {self.normalised_similarity}"
+
 class AttributeTester():
 
     def __init__(self):
@@ -14,11 +22,36 @@ class AttributeTester():
         and the precision can be calculated by swapping the arguments.
         """
         total_similarity = 0
+        matches = 0
         for block_id in block_dict_1.keys():
             if block_id in block_dict_2.keys():
                 total_similarity += self.compare_attributes(block_dict_1[block_id], block_dict_2[block_id])
+                matches += 1
+        normalised_matches = matches / len(block_dict_1)
         normalised_similarity = total_similarity / len(block_dict_1)
-        return normalised_similarity
+        return ComparisonResults(normalised_matches, normalised_similarity)
+
+    def compare_block_dict_nonexact(self, block_dict_1: dict[str, BDDBlock], block_dict_2: dict[str, BDDBlock]) -> float:
+        """
+        If block_dict_1 is the test_data and block_dict_2 is the model answer, this will return the recall,
+        and the precision can be calculated by swapping the arguments.
+        """
+        total_similarity = 0
+        total_matches = 0
+        for block_id in block_dict_1.keys():
+            nlp_1 = self.nlp(block_id)
+            current_similarity = 0
+            for block_id_2 in block_dict_2.keys():
+                nlp_2 = self.nlp(block_id_2)
+                sim = nlp_1.similarity(nlp_2)
+                if sim > SIMILARITY_TRESHOLD:
+                    current_similarity = max(current_similarity, self.compare_attributes(block_dict_1[block_id], block_dict_2[block_id_2]))
+            if current_similarity > 0:
+                total_matches += 1
+            total_similarity += current_similarity
+        normalised_matches = total_matches / len(block_dict_1)
+        normalised_similarity = total_similarity / len(block_dict_1)
+        return ComparisonResults(normalised_matches, normalised_similarity)
 
     def compare_attributes(self, block_1 : BDDBlock, block_2: BDDBlock) -> float:
         total_similarity = 0
