@@ -1,6 +1,7 @@
 import pathlib
 import yaml
 from dynamo.sysMLAugmenter.types import BDDBlock, BDDAttribute
+from dynamo.sysMLAugmenter.util import generate_digraph
 from dynamo.cache.core import Cache
 from dynamo.cache.cacheComponents import getCacheName, CacheComponent
 from dynamo.tester.attributeTester import AttributeTester
@@ -19,6 +20,12 @@ with open(yaml_path, 'r') as file:
 
 ground_truth_dict = { block.get('block_name'):BDDBlock.fromYAML(block) for block in ground_truth.get('blocks')}
 
+show_digraph = True
+if show_digraph:
+    digraph = generate_digraph(ground_truth_dict.values())
+    digraph.render(filename='flying_machine_chapter_16_ground_attr', format='png', cleanup=True)
+    extracted_digraph = generate_digraph(block_dict.values(), without_connections=True)
+    extracted_digraph.render(filename='flying_machine_chapter_16_extracted_attr', format='png', cleanup=True)
 
 attributeTester = AttributeTester()
 exact_compare_results = attributeTester.compare_block_dict(ground_truth_dict, block_dict)

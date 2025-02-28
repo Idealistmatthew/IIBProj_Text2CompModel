@@ -4,12 +4,21 @@ import spacy
 SIMILARITY_TRESHOLD = 0.7
 
 class ComparisonResults():
-    def __init__(self, normalised_matches: float, normalised_similarity: float):
+    def __init__(self, normalised_matches: float, normalised_similarity: float, match_dict: dict[tuple[str, str], float]):
         self.normalised_matches = normalised_matches
         self.normalised_similarity = normalised_similarity
+        self.match_dict = match_dict
 
     def __repr__(self):
-        return f"Normalised Matches: {self.normalised_matches}, Normalised Similarity: {self.normalised_similarity}"
+        table = "Comparison Results:\n"
+        table += f"{'Block Pair':<30} {'Similarity':<10}\n"
+        table += "-" * 40 + "\n"
+        for (block_1, block_2), similarity in self.match_dict.items():
+            table += f"{block_1 + ' - ' + block_2:<30} {similarity:<10.2f}\n"
+        table += "-" * 40 + "\n"
+        table += f"{'Normalised Matches':<30} {self.normalised_matches:<10.2f}\n"
+        table += f"{'Normalised Similarity':<30} {self.normalised_similarity:<10.2f}\n"
+        return table
 
 class AttributeTester():
 
@@ -23,13 +32,16 @@ class AttributeTester():
         """
         total_similarity = 0
         matches = 0
+        match_dict = {}
         for block_id in block_dict_1.keys():
             if block_id in block_dict_2.keys():
-                total_similarity += self.compare_attributes(block_dict_1[block_id], block_dict_2[block_id])
+                curr_similarity = self.compare_attributes(block_dict_1[block_id], block_dict_2[block_id])
+                total_similarity += curr_similarity
                 matches += 1
+                match_dict[(block_id, block_id)] = curr_similarity
         normalised_matches = matches / len(block_dict_1)
         normalised_similarity = total_similarity / len(block_dict_1)
-        return ComparisonResults(normalised_matches, normalised_similarity)
+        return ComparisonResults(normalised_matches, normalised_similarity, match_dict)
 
     def compare_block_dict_nonexact(self, block_dict_1: dict[str, BDDBlock], block_dict_2: dict[str, BDDBlock]) -> float:
         """
@@ -38,20 +50,33 @@ class AttributeTester():
         """
         total_similarity = 0
         total_matches = 0
+        match_dict = {}
         for block_id in block_dict_1.keys():
-            nlp_1 = self.nlp(block_id)
-            current_similarity = 0
-            for block_id_2 in block_dict_2.keys():
-                nlp_2 = self.nlp(block_id_2)
-                sim = nlp_1.similarity(nlp_2)
-                if sim > SIMILARITY_TRESHOLD:
-                    current_similarity = max(current_similarity, self.compare_attributes(block_dict_1[block_id], block_dict_2[block_id_2]))
-            if current_similarity > 0:
+            has_match = False
+            if block_id in block_dict_2.keys():
+                current_similarity = self.compare_attributes(block_dict_1[block_id], block_dict_2[block_id])
+                total_similarity += current_similarity
+                has_match = True
+                current_second_block = block_id
+            else:
+                nlp_1 = self.nlp(block_id)
+                current_similarity = 0
+                current_second_block = None
+                category_match = 0
+                for block_id_2 in block_dict_2.keys():
+                    nlp_2 = self.nlp(block_id_2)
+                    sim = nlp_1.similarity(nlp_2)
+                    if sim > max(SIMILARITY_TRESHOLD, category_match):
+                        has_match = True
+                        current_similarity = self.compare_attributes(block_dict_1[block_id], block_dict_2[block_id_2])
+                        current_second_block = block_id_2
+            if has_match:
                 total_matches += 1
+                match_dict[(block_id, current_second_block)] = current_similarity
             total_similarity += current_similarity
         normalised_matches = total_matches / len(block_dict_1)
         normalised_similarity = total_similarity / len(block_dict_1)
-        return ComparisonResults(normalised_matches, normalised_similarity)
+        return ComparisonResults(normalised_matches, normalised_similarity, match_dict)
 
     def compare_attributes(self, block_1 : BDDBlock, block_2: BDDBlock) -> float:
         total_similarity = 0
@@ -67,9 +92,12 @@ class AttributeTester():
                 sim_cat = cat_1.similarity(cat_2)
                 if sim_cat > SIMILARITY_TRESHOLD:
                     if str(attribute.value).isnumeric() and str(attribute_2.value).isnumeric():
-                        if attribute.value == attribute_2.value:
-                            if attribute.unit and attribute.unit == attribute_2.unit:
-                                curr_similarity = 1
+                        value_similarity = self.nlp(attribute.value).similarity(self.nlp(attribute_2.value))
+                        if attribute.unit:
+                            unit_similarity = self.nlp(attribute.unit).similarity(self.nlp(attribute_2.unit))
+                            curr_similarity = max(curr_similarity, value_similarity * 0.5 + unit_similarity * 0.5)
+                        else:
+                            curr_similarity = max(curr_similarity, value_similarity)
                     if not str(attribute.value).isnumeric() and not str(attribute_2.value).isnumeric():
                         val_1 = self.nlp(attribute.value)
                         val_2 = self.nlp(attribute_2.value)

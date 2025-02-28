@@ -2,18 +2,17 @@ blocks:
   - block_name: glider
     parts:
       - rear rudder
-    attributes:
-      - category: example
-        value: 5
-        unit: m
   - block_name: rudder
     parts:
       - rudder beam
       - horizontal rudder section
       - vertical rudder section
+      - rudder frame
     attributes:
       - category: position
         value: fixed and immovable
+      - category: manipulation
+        value: wire cables
       - category: staying
         value: with guy wires
   - block_name: rear rudder
@@ -31,7 +30,7 @@ blocks:
     attributes:
       - category: length
         value: 8.92
-        unit: ft
+        unit: feet
     operations:
       - clamped
       - bolted
@@ -50,3 +49,7 @@ blocks:
         value: between the center struts
   - block_name: horizontal rudder
   - block_name: vertical rudder
+  - block_name: rudder frame
+    parts:
+      - truss wires
+  - block_name: truss wires
