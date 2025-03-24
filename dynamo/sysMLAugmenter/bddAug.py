@@ -19,15 +19,25 @@ class BDDAugmenter:
                  noun_wordnet_scores: dict[str, float],
                  bdd_plot_word: str,
                  bdd_attributes: list[BDDAttribute] = {},
+                 tokenized_sentences: list[str] = [],
                  bdd_plot_path: str = "chapter_13.txt",
                  plot_full_bdd: bool = False):
         self.typed_relationships = typed_relationships
         self.bdd_attributes: list[BDDAttribute] = bdd_attributes
+
+        if tokenized_sentences:
+            enumerated_sentences = enumerate(tokenized_sentences)
+            self.from_sentence_to_number = {sentence: number for number, sentence in enumerated_sentences}
+        else:
+            self.from_sentence_to_number = {}
+
         self.bdd_graph = BDDGraph()
+        print("Constructing BDD Graph")
         self.construct_bdd_graph()
+        print("BDD Graph Constructed")
         self.bdd_plot_word = bdd_plot_word
         self.bdd_plot_path = bdd_plot_path
-
+        
         # we need to pass in the wordnet and tf_idf scores of the nouns here
         self.noun_tf_idf_scores = noun_tf_idf_scores
         self.noun_wordnet_scores = noun_wordnet_scores
@@ -37,14 +47,18 @@ class BDDAugmenter:
         # print(self.top_level_phrases)
 
         self.abstract_top_level_phrases()
+        print("Top Level Phrases Abstracted")
 
         # At this point all the top level phrases are unigrams
         self.top_level_phrases = self.identify_top_level_phrases()
         # print(self.top_level_phrases)
+        print("Begin Relationship Augmentation")
 
         self.augment_relationships()
+        print("Relationships Augmented")
         self.top_level_phrases = self.identify_top_level_phrases()
         self.augment_phrases()
+        print("Phrases Augmented")
 
         for name in self.get_all_block_names():
             print(name, len(self.get_blocks_from_root(name)))
@@ -117,12 +131,15 @@ class BDDAugmenter:
             subject_composite_parents = set()
             subject_reference_children = set()
             subject_parts = set()
+            subject_operation_sentences : dict[str, list[int]] = {}
+            subject_other_sentences = set()
 
             object_general_parents = set()
             object_special_children = set()
             object_composite_parents = set()
             object_reference_parents = set()
             object_parts = set()
+            object_other_sentences = set()
 
             for relationship_type in relationship.relTypes:
                 match relationship_type:
@@ -143,21 +160,32 @@ class BDDAugmenter:
                     case RelationshipType.REFERENCE_ASSOCIATION:
                         object_reference_parents.add(relationship.subject)
                         subject_reference_children.add(relationship.object)
+            if len(self.from_sentence_to_number):
+                if RelationshipType.OPERATION in relationship.relTypes:
+                    if relationship.relation in subject_operation_sentences:
+                        subject_operation_sentences[relationship.relation].append(relationship.original_sentence)
+                    else:
+                        subject_operation_sentences[relationship.relation] = [relationship.original_sentence]
+                subject_other_sentences.add(relationship.original_sentence)
+                object_other_sentences.add(relationship.original_sentence)
                 
             subject_block = BDDBlock(relationship.subject,
                                      operations=subject_operations,
                                      general_parents=subject_general_parents,
                                     special_children=subject_special_children,
                                      composite_parents=subject_composite_parents,
-                                        reference_children=subject_reference_children,
-                                     parts=subject_parts)
+                                    reference_children=subject_reference_children,
+                                     parts=subject_parts,
+                                     operation_sentences=subject_operation_sentences,
+                                     other_sentences=subject_other_sentences)
             self.bdd_graph.add_or_update_block(subject_block)
             object_block = BDDBlock(relationship.object,
                                      general_parents=object_general_parents,
                                     special_children=object_special_children,
                                      composite_parents=object_composite_parents,
                                      reference_parents=object_reference_parents,
-                                     parts=object_parts)
+                                     parts=object_parts,
+                                     other_sentences=object_other_sentences)
             self.bdd_graph.add_or_update_block(object_block)
         self.update_blocks_with_attributes()
     

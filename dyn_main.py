@@ -76,10 +76,14 @@ def main_loop_to_rel_extraction(corpus_id, corpus_dir_id, document_path):
     # cache.set(f"{corpus_id}_{chosen_document_name}_key_nouns", {'tf_idf': key_noun_extractor.chosen_chapter_tf_idf
     #                                                                ,'key_nouns': key_noun_extractor.key_nouns})
 
+    print("[STATUS] Relationship Extraction")
     relationshipExtractor = RelationshipExtractor(tokenized_sentences = preprocessor.sentence_tokenized_documents, chosen_chapter=chosen_document_num)
-    
+    print("[STATUS] Relationship Extraction Ended")
     cache.set(getCacheName(corpus_id, chosen_document_name, CacheComponent.RAW_RELATIONSHIPS),
                 {'relationships': relationshipExtractor.extracted_relationships})
+    
+    cache.set(getCacheName(corpus_id, chosen_document_name, CacheComponent.TOKENIZED_SENTENCES),
+                {'tokenized_sentences': preprocessor.sentence_tokenized_documents[chosen_document_num]})
 
     # cache.set(f"{corpus_id}_{chosen_document_name}_raw_relationships", 
     #           {'relationships': relationshipExtractor.extracted_relationships})
@@ -126,6 +130,7 @@ def from_cache_to_Bdd_Diagram(
     key_nouns: dict[str, float] = cache.get_value(getCacheName(corpus_id, chosen_document_name, CacheComponent.KEY_NOUNS), 'key_nouns')
     # key_nouns: dict[str, float] = cache.get_value(f"{corpus_id}_{chosen_document_name}_key_nouns", 'key_nouns')
 
+    print("[STATUS] Relationship Parsing")
     relationshipParser = RelationshipParser(
         relationships,
         preprocessor,
@@ -139,6 +144,7 @@ def from_cache_to_Bdd_Diagram(
     if export_key_phrase_path:
         relationshipParser.export_key_phrases(export_key_phrase_path)
 
+    print("[STATUS] Relationship Mapping")
     relationshipMapper = RelationshipMapper(
         relationshipParser.filtered_relationships,
         relationship_score_diff_tresh=HYPERPARAMS['relationship_score_diff_tresh']
@@ -160,18 +166,22 @@ def from_cache_to_Bdd_Diagram(
     if plot_full_bdd:
         bdd_plot_path = f"{chosen_document_name_without_ext}_full_bdd.png"
 
+    tokenized_sentences = cache.get_value(getCacheName(corpus_id, chosen_document_name, CacheComponent.TOKENIZED_SENTENCES), 'tokenized_sentences')
+
+    print("[STATUS] BDD Augmenting and Plotting")
     bddAugmenter = BDDAugmenter(
         relationshipMapper.typed_relationships,
         noun_tf_idf_scores=key_nouns,
         noun_wordnet_scores=relationshipParser.wordnet_depth_memo,
         bdd_attributes=relationshipParser.bdd_attributes,
+        tokenized_sentences=tokenized_sentences,
         bdd_plot_word=bdd_plot_chosen_word,
         bdd_plot_path= bdd_plot_path,
         plot_full_bdd=plot_full_bdd
     )
     block_dict = bddAugmenter.bdd_graph.block_dict
     block_dict = {block_name: block.toJSON() for block_name, block in block_dict.items()}
-    
+    print("[STATUS] BDD Augmenting and Plotting Ended")
     cache.set(getCacheName(corpus_id, chosen_document_name, CacheComponent.BDD_BLOCK_DICT), {'bdd_block_dict': block_dict})
 
 def from_cache_to_code_gen(corpus_id, chosen_document_path):
@@ -180,7 +190,11 @@ def from_cache_to_code_gen(corpus_id, chosen_document_path):
     block_dict = {block_name: BDDBlock.fromJSON(block) for block_name, block in block_dict.items()}
     target_dir = Path(__file__).resolve().parent / 'codegen'
     system_name = corpus_id + chosen_document_name.split('.')[0]
-    filegen = FileGenerator(block_dict, target_dir, system_name)
+
+    tokenized_sentences = cache.get_value(getCacheName(corpus_id, chosen_document_name, CacheComponent.TOKENIZED_SENTENCES), 'tokenized_sentences')
+
+    print("[STATUS] CodeGen")
+    filegen = FileGenerator(block_dict, target_dir, system_name, tokenized_sentences=tokenized_sentences)
 
 
 if __name__ == "__main__":
@@ -188,9 +202,11 @@ if __name__ == "__main__":
     doCoref = False
     doTypoCorrect = False
     plot_full_bdd = False
+    skip_attribute_extraction = False
     default_wordcloud_path = Path(__file__).resolve().parent / 'Assets' / "WordClouds" / "temp_wordcloud.png"
     default_domain_specific_words = {
         "ornithopter": 1,
+        "actuator": 1,
     }
 
     # FlyingMachine
@@ -200,10 +216,10 @@ if __name__ == "__main__":
     resolved_document_path = Path(__file__).resolve().parent / 'Assets' / corpus_id / "resolved_chapters" / "chapter_16_resolved.txt"
     chosen_document_name = os.path.basename(chosen_document_path)
     bdd_plot_chosen_word = "glider"
-    # export_key_phrase_path = Path(__file__).resolve().parent / 'Assets' / corpus_id / "dynamo_test" / f"key_phrase_coref_{chosen_document_name}"
+    export_key_phrase_path = Path(__file__).resolve().parent / 'Assets' / corpus_id / "dynamo_test" / f"key_phrase_coref_{chosen_document_name}"
     export_key_phrase_path = None
-    # doCoref = True
-    # doTypoCorrect = True
+    doCoref = True
+    doTypoCorrect = True
 
     # Patents
     # corpus_id = "Patents"
@@ -220,6 +236,18 @@ if __name__ == "__main__":
     # resolved_document_path = Path(__file__).resolve().parent / 'Assets' / "SimpleSystems" / "resolved_files" / "mass_spring_resolved.txt"
     # chosen_document_name = os.path.basename(chosen_document_path)
     # bdd_plot_chosen_word = "pendulum"
+    # export_key_phrase_path = None
+    # doCoref = True
+    # doTypoCorrect = True
+    # plot_full_bdd = True
+
+    # Water Filtration System
+    # corpus_id = "Patents" # use the patents as the corpus
+    # corpus_dir_id = "txt"
+    # chosen_document_path = Path(__file__).resolve().parent / 'Assets' / "test_systems" / "text_files" / "hydraulic.txt"
+    # resolved_document_path = Path(__file__).resolve().parent / 'Assets' / "test_systems" / "resolved_files" / "hydraulic_resolved.txt"
+    # chosen_document_name = os.path.basename(chosen_document_path)
+    # bdd_plot_chosen_word = "vibration"
     # export_key_phrase_path = None
     # doCoref = True
     # doTypoCorrect = True
@@ -245,6 +273,7 @@ if __name__ == "__main__":
     #                           chosen_document_name=chosen_document_name,
     #                           bdd_plot_chosen_word=bdd_plot_chosen_word,
     #                           export_key_phrase_path=export_key_phrase_path,
-    #                           plot_full_bdd=plot_full_bdd)
+    #                           plot_full_bdd=plot_full_bdd,
+    #                           skip_attribute_extraction=skip_attribute_extraction)
     from_cache_to_code_gen(corpus_id, chosen_document_path)
     pass

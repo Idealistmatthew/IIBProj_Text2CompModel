@@ -1,0 +1,82 @@
+blocks:
+  - block_name: base frame
+    attributes:
+      - category: Material
+        value: High-Strength Aluminum Alloy
+      - category: Load Capacity
+        value: 500
+        unit: kg
+      - category: Rotational Speed
+        value: 30
+        unit: degrees per second
+
+  - block_name: actuator system
+    attributes:
+      - category: Maximum Pressure
+        value: 200
+        unit: bar
+      - category: cylinder amount
+        value: 4
+
+  - block_name: cylinder
+    attributes:
+      - category: Type
+        value: Double-Acting Cylinders
+      - category: Quantity
+        value: 4
+      - category: Bore Diameter
+        value: 50
+        unit: mm
+      - category: Stroke Length
+        value: 300
+        unit: mm
+      - category: Lifting Force per Actuator
+        value: 5
+        unit: kN
+      - category: Hydraulic Pump Power
+        value: 2.2
+        unit: kW
+
+  - block_name: sensor network
+    attributes:
+      - category: Sensor Types
+        value: Rotary Encoders, Pressure Sensors
+      - category: Encoder Angular Resolution
+        value: 0.01
+        unit: degrees
+      - category: Pressure Sensor Sensitivity
+        value: +-0.5
+        unit: bar
+      - category: Sensor Quantity
+        value: 6
+
+  - block_name: control module
+    attributes:
+      - category: Processor
+        value: 32-bit ARM-based Microcontroller
+      - category: Clock Speed
+        value: 120
+        unit: MHz
+      - category: Control Loop Frequency
+        value: 1
+        unit: kHz
+      - category: Communication Protocol
+        value: CAN Bus
+
+  - block_name: power system
+    attributes:
+      - category: Power Supply
+        value: 24
+        unit: V DC
+      - category: Backup Battery Capacity
+        value: 48
+        unit: Ah
+      - category: Backup Operation Time
+        value: 3
+        unit: hours
+
+  - block_name: hydraulic pump
+    attributes:
+      - category: Power
+        value: 2.2
+        unit: kW

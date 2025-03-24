@@ -12,6 +12,11 @@ class {{className}}({{general_parents[0]}}):
 {% else %}
 class {{className}}:
 {% endif %}
+{% if class_comments %}
+    """
+    {{class_comments}}
+    """
+{% endif %}
 
     def __init__(self):
     {% if attributes %}
@@ -38,6 +43,11 @@ class {{className}}:
     def {{method.name}}(self, {{method.parameters}}):
     {% else %}
     def {{method.name}}(self):
+    {% endif %}
+    {% if method.comments %}
+        """
+        {{method.comments}}
+        """
     {% endif %}
     {% if method.body %}
         {{method.body}}

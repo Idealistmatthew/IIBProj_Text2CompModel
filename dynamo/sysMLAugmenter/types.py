@@ -6,6 +6,8 @@ class BDDAttribute:
     def __init__(self, subject: str=None, category: str=None, value: str=None, unit: str=None):
         self.subject = subject
         self.category = category
+        if type(value) == list:
+            value = ' '.join(value)
         self.value = value
         self.unit = unit
     
@@ -47,7 +49,10 @@ class BDDBlock:
                     reference_parents: set[str] = None,
                     reference_children: set[str] = None,
                     attributes: set[BDDAttribute] = None,
-                    parts: set[str] = None):
+                    parts: set[str] = None,
+                    operation_sentences: dict[str, list[str]]= {}, 
+                    # Sentences are stored based on sentence index because the memory usage is bearable this way
+                    other_sentences: set[str] = None):
         if not operations:
             operations = set()
         if not general_parents:
@@ -64,6 +69,8 @@ class BDDBlock:
             attributes = set()
         if not parts:
             parts = set()
+        if not other_sentences:
+            other_sentences = set()
         self.block_name = block_name
         self.isAugmented = isAugmented
         self.operations = operations
@@ -74,6 +81,8 @@ class BDDBlock:
         self.reference_children = reference_children
         self.attributes = attributes
         self.parts = parts
+        self.operation_sentences = operation_sentences
+        self.other_sentences = other_sentences
 
     def __repr__(self):
         return (
@@ -152,4 +161,11 @@ class BDDGraph:
         old_block.reference_parents.update(new_block.reference_parents)
         old_block.reference_children.update(new_block.reference_children)
         old_block.parts.update(new_block.parts)
+        # for rels in new_block.operation_sentences.keys():
+        #     if rels in old_block.operation_sentences.keys():
+        #         old_block.operation_sentences[rels].extend(new_block.operation_sentences[rels])
+        #     else:
+        #         old_block.operation_sentences[rels] = new_block.operation_sentences[rels]
+        old_block.operation_sentences.update(new_block.operation_sentences)
+        old_block.other_sentences.update(new_block.other_sentences)
         return old_block

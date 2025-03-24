@@ -5,6 +5,7 @@ class CacheComponent(Enum):
     KEY_NOUNS = 2
     BDD_ATTRIBUTES = 3
     BDD_BLOCK_DICT = 4
+    TOKENIZED_SENTENCES = 5
 
 def getCacheComponentName(component: CacheComponent):
     if component == CacheComponent.RAW_RELATIONSHIPS:
@@ -15,6 +16,8 @@ def getCacheComponentName(component: CacheComponent):
         return "bdd_attributes"
     elif component == CacheComponent.BDD_BLOCK_DICT:
         return "bdd_block_dict"
+    elif component == CacheComponent.TOKENIZED_SENTENCES:
+        return "tokenized_sentences"
     else:
         return "UNKNOWN"
 

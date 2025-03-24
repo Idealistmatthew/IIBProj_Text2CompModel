@@ -1,0 +1,13 @@
+The Hydraulic Robotic Arm System (HRAS) is designed for precision handling and heavy-duty industrial applications. It consists of several key components that enable smooth operation, high load capacity, and real-time control.
+
+The base frame is constructed from high-strength aluminum alloy, providing a structural foundation with a load capacity of 500 kg. It is mounted on a 360-degree rotating platform with a rotational speed of 30 degrees per second, allowing full-range motion.
+
+The hydraulic actuator system includes four double-acting cylinders with a maximum operating pressure of 200 bar, enabling precise force control. Each cylinder has a bore diameter of 50 mm and a stroke length of 300 mm, providing a lifting force of 5 kN per actuator. The system is powered by a 2.2 kW hydraulic pump, ensuring smooth and responsive motion.
+
+For real-time sensing, the sensor network includes six high-resolution rotary encoders with an angular resolution of 0.01 degrees, ensuring accurate joint positioning. Additionally, four pressure sensors with a sensitivity of +-0.5 bar monitor hydraulic pressure to prevent overload conditions.
+
+The control module is equipped with a 32-bit ARM-based microcontroller, running at 120 MHz with a control loop frequency of 1 kHz, ensuring rapid response times. It supports CAN bus communication for seamless integration with industrial automation systems.
+
+The power system consists of a 24V DC power supply, supplemented by a backup lithium-ion battery with a 48 Ah capacity, allowing up to 3 hours of operation in case of power loss.
+
+Designed for high precision, strength, and durability, the Hydraulic Robotic Arm System is ideal for manufacturing, assembly lines, and hazardous environment applications. 

@@ -21,3 +21,6 @@ jsonpickle
 Jinja2
 autocorrect
 prettytable
+pytextrank
+sentencepiece
+sumy

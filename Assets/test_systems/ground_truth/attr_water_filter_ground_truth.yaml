@@ -1,0 +1,19 @@
+blocks:
+  - block_name: intake pump
+    attributes:
+      - category: type
+        value: High efficiency and submersible
+      - category: Power
+        value: 24
+        unit: V
+      - category: Power Source
+        value: DC
+      - category: filt
+  - block_name: filtration unit
+    attributes:
+  - block_name: UV Sterilisation Chamber
+    attributes:
+  - block_name: Power Supply Unit
+    attributes:
+  - block_name: Control and Monitoring System
+    attributes:

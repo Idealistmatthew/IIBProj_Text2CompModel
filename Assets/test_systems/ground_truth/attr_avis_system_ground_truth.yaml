@@ -1,0 +1,41 @@
+blocks:
+  - block_name: base platform
+    attributes:
+      - category: Material
+        value: High-Strength Steel
+      - category: Coating
+        value: Anti-Corrosive
+      - category: Function
+        value: Provides structural stability
+
+  - block_name: passive damping unit
+    attributes:
+      - category: Type
+        value: Viscoelastic Material & Tuned Mass Dampers
+      - category: Function
+        value: Absorbs low-frequency vibrations, prevents resonance
+
+  - block_name: active control module
+    attributes:
+      - category: Actuation Mechanism
+        value: Electromechanical Actuators
+      - category: Control System
+        value: Embedded Microcontroller
+      - category: Function
+        value: Applies counteracting forces to mitigate oscillations
+
+  - block_name: sensor network
+    attributes:
+      - category: Sensors
+        value: Accelerometers, Gyroscopes
+      - category: Function
+        value: Measures vibration levels and angular displacements
+      - category: Connectivity
+        value: Cloud-Based Remote Monitoring
+
+  - block_name: power system
+    attributes:
+      - category: Energy Source
+        value: Hybrid (Grid Power + Lithium-Ion Battery)
+      - category: Function
+        value: Ensures uninterrupted operation during electrical failures

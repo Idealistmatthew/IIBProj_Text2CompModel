@@ -87,20 +87,22 @@ class AttributeTester():
         for attribute in block_1.attributes:
             curr_similarity = 0
             for attribute_2 in block_2.attributes:
-                cat_1 = self.nlp(attribute.category)
-                cat_2 = self.nlp(attribute_2.category)
+                attr_1_cat = attribute.category.replace("_", " ").lower()
+                attr_2_cat = attribute_2.category.replace("_", " ").lower()
+                cat_1 = self.nlp(attr_1_cat)
+                cat_2 = self.nlp(attr_2_cat)
                 sim_cat = cat_1.similarity(cat_2)
                 if sim_cat > SIMILARITY_TRESHOLD:
                     if str(attribute.value).isnumeric() and str(attribute_2.value).isnumeric():
-                        value_similarity = self.nlp(attribute.value).similarity(self.nlp(attribute_2.value))
+                        value_similarity = self.nlp(str(attribute.value)).similarity(self.nlp(str(attribute_2.value)))
                         if attribute.unit:
                             unit_similarity = self.nlp(attribute.unit).similarity(self.nlp(attribute_2.unit))
                             curr_similarity = max(curr_similarity, value_similarity * 0.5 + unit_similarity * 0.5)
                         else:
                             curr_similarity = max(curr_similarity, value_similarity)
                     if not str(attribute.value).isnumeric() and not str(attribute_2.value).isnumeric():
-                        val_1 = self.nlp(attribute.value)
-                        val_2 = self.nlp(attribute_2.value)
+                        val_1 = self.nlp(str(attribute.value))
+                        val_2 = self.nlp(str(attribute_2.value))
                         sim_val = val_1.similarity(val_2)
                         curr_similarity = max(curr_similarity, sim_val)
             total_similarity += curr_similarity
