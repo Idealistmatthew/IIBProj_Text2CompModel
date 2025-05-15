@@ -7,13 +7,15 @@ from dynamo.cache.core import Cache
 from dynamo.cache.cacheComponents import getCacheName, CacheComponent
 from dynamo.tester.attributeTester import AttributeTester
 
-# yaml_path = pathlib.Path(__file__).parent / 'Assets' / 'FlyingMachines' / 'ground_truth' / 'chapter_16_blocks_with_attrs.yaml'
-yaml_path = Path(__file__).parent / 'Assets' / 'test_systems' / 'ground_truth' / 'attr_hydraulic_ground_truth.yaml'
 CACHE_DIR = './jsoncaches'
 cache = Cache(CACHE_DIR)
-# corpus_id = "FlyingMachines"
-# corpus_dir_id = "chapters"
-# chosen_document_name = "chapter_16_resolved.txt"
+
+
+corpus_id = "FlyingMachines"
+corpus_dir_id = "chapters"
+chosen_document_name = "chapter_16_resolved.txt"
+yaml_path = Path(__file__).parent / 'Assets' / 'FlyingMachines' / 'ground_truth' / 'chapter_16_blocks_with_attrs.yaml'
+
 
 # corpus_id = "Patents" # use the patents as the corpus
 # corpus_dir_id = "txt"
@@ -21,11 +23,13 @@ cache = Cache(CACHE_DIR)
 # resolved_document_path = Path(__file__).resolve().parent / 'Assets' / "test_systems" / "resolved_files" / "avis_system_resolved.txt"
 # chosen_document_name = os.path.basename(resolved_document_path)
 
-corpus_id = "Patents" # use the patents as the corpus
-corpus_dir_id = "txt"
-chosen_document_path = Path(__file__).resolve().parent / 'Assets' / "test_systems" / "text_files" / "hydraulic.txt"
-resolved_document_path = Path(__file__).resolve().parent / 'Assets' / "test_systems" / "resolved_files" / "hydraulic_resolved.txt"
-chosen_document_name = os.path.basename(resolved_document_path)
+# corpus_id = "Patents" # use the patents as the corpus
+# corpus_dir_id = "txt"
+# chosen_document_path = Path(__file__).resolve().parent / 'Assets' / "test_systems" / "text_files" / "hydraulic.txt"
+# resolved_document_path = Path(__file__).resolve().parent / 'Assets' / "test_systems" / "resolved_files" / "hydraulic_resolved.txt"
+# chosen_document_name = os.path.basename(resolved_document_path)
+# yaml_path = Path(__file__).parent / 'Assets' / 'test_systems' / 'ground_truth' / 'attr_hydraulic_ground_truth.yaml'
+
 
 block_dict = cache.get_value(getCacheName(corpus_id, chosen_document_name, CacheComponent.BDD_BLOCK_DICT), 'bdd_block_dict')
 block_dict = {block_name: BDDBlock.fromJSON(block) for block_name, block in block_dict.items()}

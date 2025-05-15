@@ -207,19 +207,21 @@ if __name__ == "__main__":
     default_domain_specific_words = {
         "ornithopter": 1,
         "actuator": 1,
+        "oscillates": 1,
+        "oscillate": 1,
     }
 
     # FlyingMachine
-    corpus_id = "FlyingMachines"
-    corpus_dir_id = "chapters"
-    chosen_document_path = Path(__file__).resolve().parent / 'Assets' / corpus_id / "chapters" / "chapter_16.txt"
-    resolved_document_path = Path(__file__).resolve().parent / 'Assets' / corpus_id / "resolved_chapters" / "chapter_16_resolved.txt"
-    chosen_document_name = os.path.basename(chosen_document_path)
-    bdd_plot_chosen_word = "glider"
-    export_key_phrase_path = Path(__file__).resolve().parent / 'Assets' / corpus_id / "dynamo_test" / f"key_phrase_coref_{chosen_document_name}"
-    export_key_phrase_path = None
-    doCoref = True
-    doTypoCorrect = True
+    # corpus_id = "FlyingMachines"
+    # corpus_dir_id = "chapters"
+    # chosen_document_path = Path(__file__).resolve().parent / 'Assets' / corpus_id / "chapters" / "chapter_16.txt"
+    # resolved_document_path = Path(__file__).resolve().parent / 'Assets' / corpus_id / "resolved_chapters" / "chapter_16_resolved.txt"
+    # chosen_document_name = os.path.basename(chosen_document_path)
+    # bdd_plot_chosen_word = "glider"
+    # export_key_phrase_path = Path(__file__).resolve().parent / 'Assets' / corpus_id / "dynamo_test" / f"key_phrase_coref_{chosen_document_name}"
+    # export_key_phrase_path = None
+    # doCoref = True
+    # doTypoCorrect = True
 
     # Patents
     # corpus_id = "Patents"
@@ -230,16 +232,16 @@ if __name__ == "__main__":
     # export_key_phrase_path = None
 
     # Simple Systems
-    # corpus_id = "Patents" # use the patents as the corpus
-    # corpus_dir_id = "txt"
-    # chosen_document_path = Path(__file__).resolve().parent / 'Assets' / "SimpleSystems" / "text_files" / "mass_spring.txt"
-    # resolved_document_path = Path(__file__).resolve().parent / 'Assets' / "SimpleSystems" / "resolved_files" / "mass_spring_resolved.txt"
-    # chosen_document_name = os.path.basename(chosen_document_path)
-    # bdd_plot_chosen_word = "pendulum"
-    # export_key_phrase_path = None
-    # doCoref = True
-    # doTypoCorrect = True
-    # plot_full_bdd = True
+    corpus_id = "Patents" # use the patents as the corpus
+    corpus_dir_id = "txt"
+    chosen_document_path = Path(__file__).resolve().parent / 'Assets' / "SimpleSystems" / "text_files" / "write_pendulum.txt"
+    resolved_document_path = Path(__file__).resolve().parent / 'Assets' / "SimpleSystems" / "resolved_files" / "write_pendulum_resolved.txt"
+    chosen_document_name = os.path.basename(chosen_document_path)
+    bdd_plot_chosen_word = "pendulum"
+    export_key_phrase_path = None
+    doCoref = True
+    doTypoCorrect = True
+    plot_full_bdd = True
 
     # Water Filtration System
     # corpus_id = "Patents" # use the patents as the corpus

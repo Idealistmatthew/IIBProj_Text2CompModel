@@ -39,6 +39,17 @@ class BDDAttribute:
             unit=yaml_dict.get('unit')
         )
 
+    def __eq__(self, value):
+        if isinstance(value, BDDAttribute):
+            return (self.category == value.category and
+                    self.value == value.value and
+                    self.unit == value.unit
+                    and self.subject == value.subject)
+        return False
+
+    def __hash__(self):
+        return hash((self.category, self.value, self.unit, self.subject))
+
 class BDDBlock:
     def __init__(self, block_name: str,
                   operations: set[str] = None,
