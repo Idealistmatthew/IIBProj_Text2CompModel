@@ -1,6 +1,6 @@
 {% if parts %}
 {% for part in parts %}
-from {{className}}_parts import {{part.classname}}
+from {{className}}_parts.{{part.classname}} import {{part.classname}}
 {% endfor %}
 {% endif %}
 {% if general_parents %}
