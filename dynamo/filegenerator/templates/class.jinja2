@@ -6,6 +6,16 @@ from {{className}}_parts.{{part.classname}} import {{part.classname}}
 {% if general_parents %}
 from {{general_parents[0]}} import {{general_parents[0]}}
 {% endif %}
+{% if module_imports %}
+{% for module in module_imports %}
+{{module}}
+{% endfor %}
+{% endif %}
+{% if matched_system_components%}
+{% for matched_system_component in matched_system_components %}
+from {{matched_system_component}} import {{matched_system_component}}
+{% endfor %}
+{% endif %}
 
 {% if general_parents %}
 class {{className}}({{general_parents[0]}}):
@@ -17,8 +27,12 @@ class {{className}}:
     {{class_comments}}
     """
 {% endif %}
-
+    
+    {% if add_init_args%}
+    def __init__(self, {{add_init_args}}):
+    {% else %}
     def __init__(self):
+    {% endif %}
     {% if attributes %}
     {% for attribute in attributes %}
         {%if attribute.isNumeric %}
@@ -36,8 +50,10 @@ class {{className}}:
     {% if not parts and not attributes%}
         pass
     {% endif %}
-    {% if additional_init %}
-        {{additional_init}}
+    {% if function_states %}
+        {% for state in function_states%}
+        self.{{state}} = initial_{{state}}
+        {% endfor %}
     {% endif %}
 
     {% if methods %}

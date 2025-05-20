@@ -39,28 +39,61 @@ class FileGenerator:
         env = Environment(loader=loader, trim_blocks=True, lstrip_blocks=True)
         class_template = 'class.jinja2'
         self.class_template = env.get_template(class_template)
+        system_template = 'system.jinja2'
+        self.system_template = env.get_template(system_template)
         if not self.system_dir.exists():
             os.makedirs(self.system_dir)
         
         top_level_blocks = self.find_top_level_blocks()
 
         self.numeric_attribute_dict = self.get_numeric_attribute_dict(block_dict)
-        
-        pass
+        self.simulatable_blocks = {}
 
+        self.non_augmented_block_dict = self.make_non_augmented_block_dict(block_dict)
+        non_augmented_top_level_blocks = self.find_non_augmented_top_level_blocks()
+        
+        
         for block in top_level_blocks:
             self.generate_block_code(block, self.system_dir)
+
+        
+
+        self.top_level_block_names = []
+        self.non_simulatable_blocks = []
+        for block in non_augmented_top_level_blocks:
+            if block.block_name not in self.simulatable_blocks:
+                self.non_simulatable_blocks.append(block.block_name.title())
+            self.top_level_block_names.append(block.block_name.title())
+        
+        self.generate_system_code(self.system_dir)
     
     def get_numeric_attribute_dict(self, block_dict: dict[str, BDDBlock]) -> dict[str, list[dict[str, str]]]:
         numeric_attribute_dict = {}
         for block_name, block in block_dict.items():
             for attribute in block.attributes:
-                if str(attribute.value).isnumeric():
+                if str(attribute.value).replace(".","").isnumeric():
                     if block_name not in numeric_attribute_dict:
                         numeric_attribute_dict[block_name] = [space_str_to_camel_case(attribute.category)]
                     else:
                         numeric_attribute_dict[block_name].append(space_str_to_camel_case(attribute.category))
         return numeric_attribute_dict
+    
+    def make_non_augmented_block_dict(self, block_dict: dict[str, BDDBlock]) -> dict[str, BDDBlock]:
+        non_augmented_block_dict = {}
+        augmented_blocks = set()
+        for block_name, block in block_dict.items():
+            if not block.isAugmented:
+                non_augmented_block_dict[block_name] = block
+            else:
+                augmented_blocks.add(block_name)
+        for block_name, block in non_augmented_block_dict.items():
+            for general_parent in list(block.general_parents):
+                if general_parent in augmented_blocks:
+                    block.general_parents.remove(general_parent)
+            for composite_parent in list(block.composite_parents):
+                if composite_parent in augmented_blocks:
+                    block.composite_parents.remove(composite_parent)
+        return non_augmented_block_dict
     
     def find_top_level_blocks(self) -> list[BDDBlock]:
         top_level_blocks = []
@@ -68,6 +101,13 @@ class FileGenerator:
             if not block.general_parents and not block.composite_parents:
                 top_level_blocks.append(block)
         return top_level_blocks
+    
+    def find_non_augmented_top_level_blocks(self) -> list[BDDBlock]:
+        non_augmented_top_level_blocks = []
+        for block_name, block in self.non_augmented_block_dict.items():
+            if not block.isAugmented and not block.general_parents and not block.composite_parents:
+                non_augmented_top_level_blocks.append(block)
+        return non_augmented_top_level_blocks
 
     def summarize_text(self, text: str, num_sentences: int) -> str:
         text = text.replace(".", ". ")
@@ -120,17 +160,21 @@ class FileGenerator:
             })
         methods = []
         rendered_methods = []
+        function_states = []
+        module_imports = []
+        matched_system_components = []
         for operation in block.operations:
             operation_name = space_str_to_camel_case(operation)
             operation_prompt = "".join([self.give_contextual_sentences(sentence) for sentence in block.operation_sentences[operation]])
             attribute_dict = self.get_attribute_dictionary_from_attribute_set(block.attributes)
             guessed_function : GuessFunctionResult = self.codeGenerator.guess_function(operation_name, attribute_dict, surrounding_numeric_attributes, operation_prompt)
             if guessed_function:
-                print(f"Guessed function name: {guessed_function}")
-                print(f"Operation name: {operation_name}")
-                print(f"Block name: {block.block_name}")
                 rendered_methods.append(guessed_function.function_implementation)
-                pass
+                rendered_methods.append(guessed_function.simulate_function)
+                function_states.extend(guessed_function.function_states)
+                self.simulatable_blocks[className] = {"function_states": guessed_function.function_states}
+                module_imports.extend(guessed_function.required_imports)
+                matched_system_components.extend(guessed_function.matched_system_components)
             else:
                 methods.append({
                 'name': operation_name,
@@ -144,13 +188,22 @@ class FileGenerator:
                 general_block = self.blocks[general_parent]
                 if not general_block.isAugmented:
                     general_parents.append(space_str_to_camel_case(general_parent))
+        add_init_args = None
+        add_init_args_str = None
+        if function_states:
+            add_init_args = [f"initial_{state}" for state in function_states]
+            add_init_args_str = ", ".join(add_init_args)
         return self.class_template.render(className =className,
                                           class_comments = class_comments,
                                           attributes = attributes,
                                           parts = parts,
                                           general_parents = general_parents,
                                           methods = methods,
-                                          rendered_methods = rendered_methods)
+                                          rendered_methods = rendered_methods,
+                                          function_states = function_states,
+                                          add_init_args = add_init_args_str,
+                                          module_imports = module_imports,
+                                          matched_system_components = matched_system_components)
 
     def generate_block_code(self, block: BDDBlock, dir: Path) -> None:
         if block.block_name in self.generated:
@@ -188,4 +241,39 @@ class FileGenerator:
 
         except Exception as e:
             print(f"Error writing to file {block_file}")
+            print(e)
+
+
+    def get_system_rendered_text(self) -> str:
+        top_level_simulatable_components = []
+        function_states = []
+        for blockName, block in self.simulatable_blocks.items():
+            number_of_states = len(block["function_states"])
+            args = ",".join([f"0" for state in block["function_states"]])
+            block_res = {
+                'name': blockName,
+                'args': args,
+                'function_states': block["function_states"],
+            }
+            top_level_simulatable_components.append(block_res)
+            for state in block["function_states"]:
+                if state not in function_states:
+                    function_states.append(state)
+        res = self.system_template.render(
+            top_level_components=self.top_level_block_names,
+            top_level_non_simulatable_components=self.non_simulatable_blocks,
+            top_level_simulatable_components=top_level_simulatable_components,
+            function_states=function_states,
+        )
+        return res
+        
+    
+    def generate_system_code(self, dir: Path) -> None:
+        system_file = dir / ("System.py")
+        rendered_text = self.get_system_rendered_text()
+        try:
+            with open(system_file, 'w') as f:
+                f.write(rendered_text)
+        except Exception as e:
+            print(f"Error writing to file {system_file}")
             print(e)

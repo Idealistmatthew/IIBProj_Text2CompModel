@@ -1,0 +1,74 @@
+{% if top_level_components %}
+{% for top_level_component in top_level_components %}
+from {{top_level_component}} import {{top_level_component}}
+{% endfor %}
+{% endif %}
+import numpy as np
+
+
+class System:
+
+    def __init__(self):
+        {% if top_level_non_simulatable_components%}
+            {% for top_level_non_simulatable_component in top_level_non_simulatable_components%}
+        self.{{top_level_non_simulatable_component}} = {{top_level_non_simulatable_component}}()
+            {% endfor %}
+        {% endif %}
+        {% if top_level_simulatable_components %}
+            {% for top_level_simulatable_component in top_level_simulatable_components %}
+        self.{{top_level_simulatable_component.name}} = {{top_level_simulatable_component.name}}({{top_level_simulatable_component.args}})
+            {% endfor %}
+        {% endif %}
+        
+
+    def simulate(self, args):
+        """
+        Simulate the system with the given arguments.
+        """
+        time_step = args.get('time_step', 1)
+        total_time = args.get('total_time', 100)
+
+        {% if function_states%}
+        {% for state in function_states %}
+        initial_{{state}} = args.get('initial_{{state}}', 0)
+        {% endfor %}
+        {% endif %}
+
+        {% if top_level_simulatable_components%}
+        {% for top_level_simulatable_component in top_level_simulatable_components %}
+        {% for function_state in top_level_simulatable_component.function_states%}
+        self.{{top_level_simulatable_component.name}}.{{function_state}} = initial_{{function_state}}
+        {% endfor %}
+        {% endfor %}
+        {% endif %}
+        
+        time = []
+        {% if function_states %}
+        {% for state in function_states %}
+        {{state}} = []
+        {% endfor %}
+        {% endif %}
+        
+        for i in range(int(total_time / time_step)):
+            
+            time.append(i * time_step)
+            {% if top_level_simulatable_components%}
+                {% for top_level_simulatable_component in top_level_simulatable_components %}
+            {{top_level_simulatable_component.name}}_results = self.{{top_level_simulatable_component.name}}.simulate(time_step)
+                    {% if top_level_simulatable_component.function_states %}
+                        {% for function_state in top_level_simulatable_component.function_states %}
+            {{function_state}}.append({{top_level_simulatable_component.name}}_results['{{function_state}}'])
+                        {% endfor %}
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+
+            return {
+                'time': time,
+                {% if function_states %}
+                {% for state in function_states %}
+                '{{state}}': {{state}},
+                {% endfor %}
+                {% endif %}
+            }
+            

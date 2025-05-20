@@ -12,23 +12,31 @@ class DynamicalSystemFunction:
                  function_descriptors: list[str],
                  function_body_template: str,
                  function_states: list[str],
-                function_args: list[str]):
+                function_args: list[str],
+                required_imports: list[str]):
         self.function_name = function_name
         self.function_descriptors = function_descriptors
         self.function_body_template = function_body_template
         self.function_args = function_args
         self.function_states = function_states
+        self.required_imports = required_imports
         self.function_body = self.generate_function_body()
     
     def generate_function_body(self):
         pass
 
 class GuessFunctionResult:
-    def __init__(self, function_implementation: str, init_append: str, 
-                 new_init_interface: str):
+    def __init__(self, function_implementation: str, function_states: list[str], 
+                 new_init_interface: str,
+                 simulate_function: str,
+                 required_imports: list[str] = None,
+                 matched_system_components: list[str] = None):
         self.function_implementation = function_implementation
+        self.function_states = function_states
         self.new_init_interface = new_init_interface
-        self.init_append = init_append
+        self.simulate_function = simulate_function
+        self.required_imports = required_imports
+        self.matched_system_components = matched_system_components
 
     def __repr__(self):
         return f"GuessFunctionResult(function_implementation={self.function_implementation}, new_init_interface={self.new_init_interface}, init_append={self.init_append})"
@@ -58,7 +66,8 @@ class CodeGenerator:
                 ],
                 function_body_template="simple_pendulum_oscillation.jinja2",
                 function_states=["angle", "angular_velocity"],
-                function_args=["length", "gravity"]
+                function_args=["length", "gravity"],
+                required_imports=["import numpy as np"]
             ),
             "MassSpringOscillation" :
             DynamicalSystemFunction(
@@ -68,7 +77,8 @@ class CodeGenerator:
                 ],
                 function_body_template="mass_spring_oscillation.jinja2",
                 function_states=["displacement", "velocity"],
-                function_args=["mass", "spring_constant", "previous_displacement", "previous_velocity", "time_step"]
+                function_args=["mass", "spring_constant", "previous_displacement", "previous_velocity", "time_step"],
+                required_imports=["import numpy as np"]
             )
 
         }
@@ -97,8 +107,18 @@ class CodeGenerator:
             print("categories", categories)
             for category in categories:
                 if category.lower() == arg.lower():
+                    system_component = system_component.title()
                     return f"{system_component}.{category}"
         return 1 # default value
+
+    def generate_simulate_function(self, function_name: str, function_states: list[str]):
+        simulate_template = self.function_edit_env.get_template("simulate_template.jinja2")
+        function_arguments = [f"self.{state}" for state in function_states]
+        function_arguments_str = ", ".join(function_arguments)
+        return simulate_template.render({
+            "function_name": function_name,
+            "function_arguments": function_arguments_str,
+        })
 
 
 
@@ -111,6 +131,7 @@ class CodeGenerator:
         tokenized_function_prompt = self.nlp(function_prompt)
         current_max_similarity = 0
         current_guessed_function_name = None
+        matched_system_components = []
         for function_descriptor in function_descs_to_check:
             similarity_score = tokenized_function_prompt.similarity(self.nlp(function_descriptor))
             if similarity_score > current_max_similarity:
@@ -131,17 +152,22 @@ class CodeGenerator:
                 if arg in self.constant_dict:
                     render_dict[arg] = self.constant_dict[arg]
                 else:
-                    render_dict[arg] = self.match_args(arg, class_attributes, surrounding_numeric_attributes)
+                    matched_arg = self.match_args(arg, class_attributes, surrounding_numeric_attributes)
+                    render_dict[arg] = matched_arg
+                    matched_system_component = matched_arg.split(".")[0]
+                    if matched_system_component not in matched_system_components:
+                        matched_system_components.append(matched_system_component)
             function_implementation = function_template.render(render_dict)
 
-            init_append = self.function_edit_env.get_template("init_append_template.jinja2").render({
-                "function_states": dynamical_system_function.function_states,
-            })
             initial_states = [ f"initial_{state}" for state in dynamical_system_function.function_states]
             new_init_interface = f"def __init__(self, {', '.join(initial_states)}):\n"
             return GuessFunctionResult(function_implementation=function_implementation,
-                                    init_append=init_append,
-                                    new_init_interface=new_init_interface)
+                                    function_states=dynamical_system_function.function_states,
+                                    new_init_interface=new_init_interface,
+                                    simulate_function=self.generate_simulate_function(function_name, dynamical_system_function.function_states),
+                                    required_imports=dynamical_system_function.required_imports,
+                                    matched_system_components=matched_system_components,
+                                    )
         else:
             return None
                                    
