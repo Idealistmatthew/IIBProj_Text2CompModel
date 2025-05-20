@@ -36,6 +36,9 @@ class {{className}}:
     {% if not parts and not attributes%}
         pass
     {% endif %}
+    {% if additional_init %}
+        {{additional_init}}
+    {% endif %}
 
     {% if methods %}
     {% for method in methods %}
@@ -54,6 +57,12 @@ class {{className}}:
     {% else %}
         pass
     {% endif %}
+    {% endfor %}
+    {% endif %}
+
+    {% if rendered_methods %}
+    {% for method in rendered_methods %}
+    {{method}}
     {% endfor %}
     {% endif %}
 

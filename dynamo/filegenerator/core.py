@@ -1,4 +1,5 @@
-from dynamo.sysMLAugmenter.types import BDDBlock
+from dynamo.sysMLAugmenter.types import BDDBlock, BDDAttribute
+from dynamo.codeGenerator.core import CodeGenerator, GuessFunctionResult
 from pathlib import Path
 from jinja2 import FileSystemLoader, Environment
 import os
@@ -26,6 +27,7 @@ class FileGenerator:
         self.summarizer = TextRankSummarizer()
         self.max_class_sentences = 2
         self.generated = set()
+        self.codeGenerator = CodeGenerator()
 
         tokenized_sentence_enumerated = enumerate(tokenized_sentences)
         self.tokenized_sentence_to_sentence_num = {tokenized_sentence: sentence_num for sentence_num, tokenized_sentence in tokenized_sentence_enumerated}
@@ -41,8 +43,24 @@ class FileGenerator:
             os.makedirs(self.system_dir)
         
         top_level_blocks = self.find_top_level_blocks()
+
+        self.numeric_attribute_dict = self.get_numeric_attribute_dict(block_dict)
+        
+        pass
+
         for block in top_level_blocks:
             self.generate_block_code(block, self.system_dir)
+    
+    def get_numeric_attribute_dict(self, block_dict: dict[str, BDDBlock]) -> dict[str, list[dict[str, str]]]:
+        numeric_attribute_dict = {}
+        for block_name, block in block_dict.items():
+            for attribute in block.attributes:
+                if str(attribute.value).isnumeric():
+                    if block_name not in numeric_attribute_dict:
+                        numeric_attribute_dict[block_name] = [space_str_to_camel_case(attribute.category)]
+                    else:
+                        numeric_attribute_dict[block_name].append(space_str_to_camel_case(attribute.category))
+        return numeric_attribute_dict
     
     def find_top_level_blocks(self) -> list[BDDBlock]:
         top_level_blocks = []
@@ -68,6 +86,12 @@ class FileGenerator:
         # print(res)
         return res
     
+    def get_attribute_dictionary_from_attribute_set(self, attribute_set: set[BDDAttribute]) -> dict[str, str]:
+        attribute_dict = {}
+        for attribute in attribute_set:
+            attribute_dict[space_str_to_camel_case(attribute.category)] = attribute.value
+        return attribute_dict
+    
     def get_rendered_text(self, block: BDDBlock) -> str:
         className = space_str_to_camel_case(block.block_name)
         class_comments = "".join([sentence for sentence in block.other_sentences])
@@ -75,14 +99,18 @@ class FileGenerator:
             print(f"Warning: Too many sentences in class comments for {block.block_name}")
             class_comments = self.summarize_text(class_comments, self.max_class_sentences)
         attributes = []
-        if className == "RudderBeam":
-            print(class_comments)
+        surrounding_numeric_attributes = {}
+        for key, value in self.numeric_attribute_dict.items():
+            if key != block.block_name:
+                surrounding_numeric_attributes[key] = value
         for attribute in block.attributes:
+            if str(attribute.value).replace(".","").isnumeric():
+                attribute.value = float(attribute.value)
             attributes.append({
                 'category': space_str_to_camel_case(attribute.category),
                 'value': attribute.value,
                 'unit': attribute.unit,
-                'isNumeric': str(attribute.value).isnumeric()
+                'isNumeric': str(attribute.value).replace(".","").isnumeric()
             })
         parts = []
         for part in block.parts:
@@ -91,12 +119,24 @@ class FileGenerator:
                 'classname': space_str_to_camel_case(part)
             })
         methods = []
+        rendered_methods = []
         for operation in block.operations:
-            methods.append({
-                'name': space_str_to_camel_case(operation),
+            operation_name = space_str_to_camel_case(operation)
+            operation_prompt = "".join([self.give_contextual_sentences(sentence) for sentence in block.operation_sentences[operation]])
+            attribute_dict = self.get_attribute_dictionary_from_attribute_set(block.attributes)
+            guessed_function : GuessFunctionResult = self.codeGenerator.guess_function(operation_name, attribute_dict, surrounding_numeric_attributes, operation_prompt)
+            if guessed_function:
+                print(f"Guessed function name: {guessed_function}")
+                print(f"Operation name: {operation_name}")
+                print(f"Block name: {block.block_name}")
+                rendered_methods.append(guessed_function.function_implementation)
+                pass
+            else:
+                methods.append({
+                'name': operation_name,
                 'parameters': [],
                 'body': None,
-                'comments': "".join([self.give_contextual_sentences(sentence) for sentence in block.operation_sentences[operation]])
+                'comments': operation_prompt
             })
         general_parents = []
         for general_parent in block.general_parents:
@@ -109,9 +149,10 @@ class FileGenerator:
                                           attributes = attributes,
                                           parts = parts,
                                           general_parents = general_parents,
-                                          methods = methods)
+                                          methods = methods,
+                                          rendered_methods = rendered_methods)
 
-    def generate_block_code(self, block: BDDBlock, dir: Path):
+    def generate_block_code(self, block: BDDBlock, dir: Path) -> None:
         if block.block_name in self.generated:
             return
         ""

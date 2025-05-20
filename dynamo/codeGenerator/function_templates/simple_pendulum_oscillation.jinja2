@@ -1,22 +1,22 @@
 def {{function_name}}(self, time_step, previous_angle, previous_angular_velocity):
-    """
-    {{function_prompt}}
-    """
+        """
+        {{function_prompt}}
+        """
 
-    # System Variables
-    length = {{length}}  # Length of the pendulum
-    g = {{gravity}}  # Gravitational acceleration
+        # System Variables
+        length = {{length}}  # Length of the pendulum
+        g = {{gravity}}  # Gravitational acceleration
 
-    # Simulation Variables
-    time_step = time_step
-    prev_theta = previous_angle
-    prev_omega = previous_angular_velocity
+        # Simulation Variables
+        time_step = time_step
+        prev_theta = previous_angle
+        prev_omega = previous_angular_velocity
 
-    alpha = -(g / length) * np.sin(prev_theta)  # Angular acceleration
-    omega = prev_omega + alpha * time_step
-    curr_theta = prev_theta + omega * time_step
+        alpha = -(g / length) * np.sin(prev_theta)  # Angular acceleration
+        omega = prev_omega + alpha * time_step
+        curr_theta = prev_theta + omega * time_step
 
-    self.angle = curr_theta
-    self.angular_velocity = omega
+        self.angle = curr_theta
+        self.angular_velocity = omega
 
-    return {"angle": curr_theta, "angular_velocity": omega}
+        return {"angle": curr_theta, "angular_velocity": omega}
