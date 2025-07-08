@@ -1,0 +1,26 @@
+blocks:
+  - block_name: pendulum
+    parts:
+      - Bob
+      - string
+    attributes:
+      - category: motion
+        value: periodic
+      - category: model
+        value: simple harmonic motion
+      - category: period
+        value: depends on length of string and gravity, not mass of bob
+  - block_name: bob
+    attributes:
+      - category: weight
+        value: 2
+        unit: kg
+  - block_name: string
+    attributes:
+      - category: length
+        value: 1.5
+        unit: meter
+      - category: position
+        value: fixed at one end
+      - category: extensibility
+        value: inextensible

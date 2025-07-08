@@ -16,19 +16,26 @@ cache = Cache(CACHE_DIR)
 # chosen_document_name = "chapter_16_resolved.txt"
 # yaml_path = Path(__file__).parent / 'Assets' / 'FlyingMachines' / 'ground_truth' / 'chapter_16_blocks_with_attrs.yaml'
 
-
-# corpus_id = "Patents" # use the patents as the corpus
-# corpus_dir_id = "txt"
-# chosen_document_path = Path(__file__).resolve().parent / 'Assets' / "test_systems" / "text_files" / "avis_system.txt"
-# resolved_document_path = Path(__file__).resolve().parent / 'Assets' / "test_systems" / "resolved_files" / "avis_system_resolved.txt"
-# chosen_document_name = os.path.basename(resolved_document_path)
-
 corpus_id = "Patents" # use the patents as the corpus
 corpus_dir_id = "txt"
 chosen_document_path = Path(__file__).resolve().parent / 'Assets' / "test_systems" / "text_files" / "hydraulic.txt"
-resolved_document_path = Path(__file__).resolve().parent / 'Assets' / "test_systems" / "resolved_files" / "hydraulic.txt"
+resolved_document_path = Path(__file__).resolve().parent / 'Assets' / "test_systems" / "text_files" / "hydraulic.txt"
 chosen_document_name = os.path.basename(resolved_document_path)
 yaml_path = Path(__file__).parent / 'Assets' / 'test_systems' / 'ground_truth' / 'attr_hydraulic_ground_truth.yaml'
+
+# corpus_id = "Patents" # use the patents as the corpus
+# corpus_dir_id = "txt"
+# chosen_document_path = Path(__file__).resolve().parent / 'Assets' / "test_systems" / "text_files" / "hydraulic.txt"
+# resolved_document_path = Path(__file__).resolve().parent / 'Assets' / "test_systems" / "resolved_files" / "hydraulic_resolved.txt"
+# chosen_document_name = os.path.basename(resolved_document_path)
+# yaml_path = Path(__file__).parent / 'Assets' / 'test_systems' / 'ground_truth' / 'attr_hydraulic_ground_truth.yaml'
+
+# corpus_id = "Patents" # use the patents as the corpus
+# corpus_dir_id = "txt"
+# chosen_document_path = Path(__file__).resolve().parent / 'Assets' / "SimpleSystems" / "text_files" / "write_pendulum.txt"
+# resolved_document_path = Path(__file__).resolve().parent / 'Assets' / "test_systems" / "resolved_files" / "write_pendulum_resolved.txt"
+# chosen_document_name = os.path.basename(resolved_document_path)
+# yaml_path = Path(__file__).parent / 'Assets' / 'SimpleSystems' / 'ground_truth' / 'write_pendulum_blocks.yaml'
 
 
 block_dict = cache.get_value(getCacheName(corpus_id, chosen_document_name, CacheComponent.BDD_BLOCK_DICT), 'bdd_block_dict')
@@ -47,9 +54,9 @@ if show_digraph:
     extracted_digraph.render(filename=chosen_document_name + '_extracted_attr', format='png', cleanup=True)
 
 attributeTester = AttributeTester()
-exact_compare_results = attributeTester.compare_block_dict(ground_truth_dict, block_dict)
+# exact_compare_results = attributeTester.compare_block_dict(ground_truth_dict, block_dict)
 # print(ground_truth_dict)
-print(f"Block Dict Recall: {exact_compare_results}")
+# print(f"Block Dict Recall: {exact_compare_results}")
 
 nonexact_comparison_results = attributeTester.compare_block_dict_nonexact(ground_truth_dict, block_dict)
 print(f"Block Dict Recall Non-Exact: {nonexact_comparison_results}")
