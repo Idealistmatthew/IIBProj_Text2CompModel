@@ -8,7 +8,11 @@ This is the code repository for my IIB project under Dr Alice Cicirello on "From
 
 This README will serve as a brief outline of the repository and its structure so that if someone intends to continue working on the project that they can have a headstart on figuring how all these files fit together
 
-I will eventually leave a link to the final project report here so that people can have additional context to the repository
+I will eventually leave a link to the final project report here so that people can have additional context to the repository.
+
+The data and documents used in this project have been taken from Project Gutenberg and to the author's knowledge should be for fair use. If there is any issue with this, please contact the owner of this repository.
+
+The cleanliness of the code written in this project is not representative of the code standards the author uses in a production environment.
 
 ## Prerequisites
 
